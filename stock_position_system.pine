@@ -1,160 +1,185 @@
 //@version=5
-indicator("주가위치분석시스템 (Stock Position System) [v5]", overlay=true, max_lines_count=500, max_labels_count=500)
+indicator("주가위치분석시스템 (Stock Position System) [댕기왕자 공식 모델]", overlay=true, max_lines_count=500, max_labels_count=500)
 
-// ==========================================
-// 1. 설정 및 파라미터 (Inputs)
-// ==========================================
-grp_base = "기준 이평선 설정 (무릎 기준축)"
-ma_len   = input.int(300, "기준선 기간 (무릎선)", minval=50, maxval=500, group=grp_base)
-ma_type  = input.string("TMA", "기준선 종류", options=["TMA (이중삼각평활)", "SMA (단순)", "EMA (지수)"], group=grp_base)
+// ==============================================================================
+// 1. 파라미터 설정 (Inputs)
+// ==============================================================================
+grp_ma = "기준축 및 보조 이동평균선"
+ma_knee_len = input.int(240, "무릎선(기준축) 기간", minval=50, maxval=500, group=grp_ma)
+show_sub_ma = input.bool(true, "보조 이평선(40/50/60/120) 표시", group=grp_ma)
 
-grp_sub  = "보조 이동평균선 (정배열 추세 확인)"
-show_sub = input.bool(true, "보조 이평선 표시", group=grp_sub)
-len_40   = input.int(40, "단기 40선", group=grp_sub)
-len_50   = input.int(50, "수급 50선", group=grp_sub)
-len_60   = input.int(60, "중기 60선", group=grp_sub)
-len_120  = input.int(120, "경기 120선", group=grp_sub)
+grp_ratios = "주가위치 11개 라인 배율 (역대 주도주 실측 피보나치 등비)"
+r_ultra   = input.float(8.88, "울트라상투 배율 (100% 임계점)", step=0.01, group=grp_ratios)
+r_grand   = input.float(6.18, "대상투 배율 (광기의 시작)", step=0.01, group=grp_ratios)
+r_top     = input.float(4.25, "상투 배율 (현실적 최종 천정)", step=0.01, group=grp_ratios)
+r_shldr   = input.float(2.85, "어깨 배율 (1차 70% 분할매도)", step=0.01, group=grp_ratios)
+r_waist   = input.float(2.12, "허리 배율 (시세 지지축)", step=0.01, group=grp_ratios)
+r_thigh   = input.float(1.46, "허벅지 배율 (시세 분출선)", step=0.01, group=grp_ratios)
+// 하단 라인
+r_turn1   = input.float(0.82, "턴어라운드1 배율", step=0.01, group=grp_ratios)
+r_ankle   = input.float(0.68, "발목 배율", step=0.01, group=grp_ratios)
+r_turn2   = input.float(0.58, "턴어라운드2 배율", step=0.01, group=grp_ratios)
+r_gaksul  = input.float(0.51, "각설이패턴 배율 (바닥권)", step=0.01, group=grp_ratios)
 
-grp_pos  = "주가위치 7단계 배율 (역대 주도주 20선 실측 역산)"
-ratio_gaksul = input.float(2.246, "각설이 역산 배율 (무릎 / 2.246)", step=0.001, group=grp_pos)
-ratio_ankle  = input.float(1.531, "발목 역산 배율 (무릎 / 1.531)", step=0.001, group=grp_pos)
-ratio_thigh  = input.float(1.581, "허벅지 배율 (무릎 * 1.581)", step=0.001, group=grp_pos)
-ratio_waist  = input.float(1.618, "허리 배율 (허벅지 * 1.618)", step=0.001, group=grp_pos)
-ratio_shldr  = input.float(1.406, "어깨 배율 (허리 * 1.406)", step=0.001, group=grp_pos)
-ratio_top    = input.float(5.911, "상투 배율 (무릎 * 5.911 = 약 13.3배)", step=0.001, group=grp_pos)
+grp_ui = "시그널 및 대시보드 테이블"
+show_signals = input.bool(true, "3대 매매 화살표 신호 표시", group=grp_ui)
+show_table   = input.bool(true, "실시간 상태 요약표 표시", group=grp_ui)
+table_pos    = input.string("우측 상단", "테이블 위치", options=["우측 상단", "우측 하단", "좌측 상단"], group=grp_ui)
 
-grp_ui   = "시각화 및 대시보드"
-show_table  = input.bool(true, "실시간 요약 정보표 표시", group=grp_ui)
-table_pos   = input.string("우측 상단", "테이블 위치", options=["우측 상단", "우측 하단", "좌측 상단"], group=grp_ui)
-show_marker = input.bool(true, "핵심 타점 시그널 마커 표시", group=grp_ui)
-
-// ==========================================
-// 2. 이동평균선 계산
-// ==========================================
-f_calc_ma(src, len, type) =>
-    if type == "TMA (이중삼각평활)"
-        ta.sma(ta.sma(src, math.ceil(len / 2)), math.floor(len / 2) + 1)
-    else if type == "EMA (지수)"
-        ta.ema(src, len)
-    else
-        ta.sma(src, len)
-
-// 기준선 (무릎 = 2.25배 중심축)
-line_knee = f_calc_ma(close, ma_len, ma_type)
+// ==============================================================================
+// 2. 이동평균선 및 11개 라인 계산
+// ==============================================================================
+line_knee = ta.sma(close, ma_knee_len) // 파란색 240 무릎선
 
 // 보조 이평선
-ma40  = ta.sma(close, len_40)
-ma50  = ta.sma(close, len_50)
-ma60  = ta.sma(close, len_60)
-ma120 = ta.sma(close, len_120)
+ma40  = ta.sma(close, 40)
+ma50  = ta.sma(close, 50)
+ma60  = ta.sma(close, 60)
+ma120 = ta.sma(close, 120)
 
-// 주가위치 7단계 라인 계산
-line_gaksul = line_knee / ratio_gaksul                    // 1. 각설이 (바닥권)
-line_ankle  = line_knee / ratio_ankle                     // 2. 발목 (1차 턴어라운드)
-line_thigh  = line_knee * ratio_thigh                     // 4. 허벅지 (본격 분출)
-line_waist  = line_thigh * ratio_waist                    // 5. 허리 (중간 눌림/지지)
-line_shldr  = line_waist * ratio_shldr                    // 6. 어깨 (분할 매도)
-line_top    = line_knee * ratio_top                       // 7. 상투 (최종 고점 과열권)
+// 상단 라인 (시세 국면 ~ 광기 영역)
+line_thigh = line_knee * r_thigh
+line_waist = line_knee * r_waist
+line_shldr = line_knee * r_shldr
+line_top   = line_knee * r_top
+line_grand = line_knee * r_grand
+line_ultra = line_knee * r_ultra
 
-// ==========================================
-// 3. 플롯 (Plotting)
-// ==========================================
-// 주가위치 7단계 선
-p_top    = plot(line_top,    "7. 상투선 (13.3배 고점)",  color=color.new(#FF1744, 0), linewidth=2, style=plot.style_line)
-p_shldr  = plot(line_shldr,  "6. 어깨선 (8.06배 분할매도)", color=color.new(#FF9100, 15), linewidth=2, style=plot.style_line)
-p_waist  = plot(line_waist,  "5. 허리선 (5.73배 중간지지)", color=color.new(#FFD600, 20), linewidth=2, style=plot.style_line)
-p_thigh  = plot(line_thigh,  "4. 허벅지선 (3.55배 본격분출)", color=color.new(#00E676, 25), linewidth=2, style=plot.style_line)
-p_knee   = plot(line_knee,   "3. 무릎선 (기준축 300일선)", color=color.new(#2979FF, 0), linewidth=3, style=plot.style_line)
-p_ankle  = plot(line_ankle,  "2. 발목선 (1.47배 턴어라운드)", color=color.new(#00E5FF, 30), linewidth=2, style=plot.style_line)
-p_gaksul = plot(line_gaksul, "1. 각설이선 (1.00배 바닥권)", color=color.new(#7C4DFF, 10), linewidth=2, style=plot.style_line)
+// 하단 라인 (바닥 ~ 턴어라운드)
+line_turn1 = line_knee * r_turn1
+line_ankle = line_knee * r_ankle
+line_turn2 = line_knee * r_turn2
+line_gaksul= line_knee * r_gaksul
 
-// 채우기 (배경색 그라데이션)
-fill(p_top, p_shldr, color.new(#FF1744, 88), "과열 매도구간")
-fill(p_waist, p_thigh, color.new(#FFD600, 90), "시세 중간구간")
-fill(p_knee, p_ankle, color.new(#2979FF, 88), "적극 매수구간")
+// ==============================================================================
+// 3. 차트 플롯 (Plotting - 블로그 HTS와 동일한 색상 체계)
+// ==============================================================================
+// 상단 광기 및 시세 라인
+p_ultra = plot(line_ultra, "울트라상투 (핫핑크)", color=color.new(#FF007F, 0), linewidth=2)
+p_grand = plot(line_grand, "대상투 (빨강)",     color=color.new(#D50000, 10), linewidth=2)
+p_top   = plot(line_top,   "상투 (얇은검정)",   color=color.new(#212121, 0), linewidth=2)
+p_shldr = plot(line_shldr, "어깨 (초록색)",     color=color.new(#00C853, 0), linewidth=2)
+p_waist = plot(line_waist, "허리 (굵은검정)",   color=color.new(#000000, 0), linewidth=3)
+p_thigh = plot(line_thigh, "허벅지 (주황색)",   color=color.new(#FF6D00, 0), linewidth=2)
+
+// 기준축 (무릎)
+p_knee  = plot(line_knee,  "무릎 (파란색 기준선)", color=color.new(#2962FF, 0), linewidth=3)
+
+// 하단 턴어라운드 및 바닥 라인
+p_turn1 = plot(line_turn1, "턴어라운드1",      color=color.new(#BA68C8, 30), linewidth=1)
+p_ankle = plot(line_ankle, "발목 (분홍색)",     color=color.new(#FF4081, 20), linewidth=2)
+p_turn2 = plot(line_turn2, "턴어라운드2",      color=color.new(#CE93D8, 30), linewidth=1)
+p_gaksul= plot(line_gaksul,"각설이패턴 (바닥)", color=color.new(#7B1FA2, 20), linewidth=2)
+
+// 영역 배경 채우기
+fill(p_ultra, p_top, color.new(#FF007F, 90), "광기/과열 구간")
+fill(p_shldr, p_waist, color.new(#00C853, 92), "시세 국면 1차 익절구간")
+fill(p_knee, p_ankle, color.new(#2962FF, 88), "무릎 매수구간")
 
 // 보조 이평선 플롯
-plot(show_sub ? ma40 : na,  "40선 (단기)", color=color.new(#F06292, 50), linewidth=1)
-plot(show_sub ? ma50 : na,  "50선 (수급)", color=color.new(#BA68C8, 50), linewidth=1)
-plot(show_sub ? ma60 : na,  "60선 (중기)", color=color.new(#FFB74D, 50), linewidth=1)
-plot(show_sub ? ma120 : na, "120선 (경기)", color=color.new(#90A4AE, 40), linewidth=1)
+plot(show_sub_ma ? ma40 : na, "단순 40", color=color.new(#F48FB1, 40), linewidth=1)
+plot(show_sub_ma ? ma50 : na, "단순 50", color=color.new(#90CAF9, 40), linewidth=1)
+plot(show_sub_ma ? ma60 : na, "단순 60", color=color.new(#FFE082, 40), linewidth=1)
+plot(show_sub_ma ? ma120 : na, "단순 120", color=color.new(#B0BEC5, 30), linewidth=1)
 
-// ==========================================
-// 4. 매매 시그널 로직 및 마커
-// ==========================================
-// 발목 턴어라운드: 주가가 발목선을 상향 돌파
-sig_ankle_turn = ta.crossover(close, line_ankle)
+// ==============================================================================
+// 4. 3대 매매 화살표 신호 (성호전자·삼천당제약 실측 시그널)
+// ==============================================================================
+// 1) 🔴 무릎통과신호: 바닥에서 240 무릎선을 상향 돌파하는 정석 매수 타점
+sig_knee_cross = ta.crossover(close, line_knee) and (close > open)
 
-// 무릎 추세 돌파: 주가가 무릎선(300선) 상향 돌파 (가장 핵심 매수 타점)
-sig_knee_break = ta.crossover(close, line_knee)
+// 2) 🌱 턴어라운드신호: 발목/바닥을 딛고 턴어라운드선 돌파
+sig_turn_cross = ta.crossover(close, line_turn1)
 
-// 허리 눌림목 지지: 주가가 허리선 근처에서 반등
-sig_waist_bounce = (low <= line_waist) and (close > line_waist) and (close > open)
+// 3) 🔵 상투신호: 상투선/대상투/울트라상투 터치 또는 어깨 위에서 꺾일 때
+sig_top_alert  = ta.crossover(high, line_top) or ta.crossunder(close, line_top) or ta.crossover(high, line_ultra)
 
-// 어깨/상투 과열 경고: 주가가 어깨선/상투선 돌파
-sig_top_alert = ta.crossover(close, line_shldr) or ta.crossover(close, line_top)
+plotshape(show_signals and sig_knee_cross, "무릎통과신호 (매수)", shape.labelup, location.belowbar, color.new(#D50000, 0), size=size.normal, text="무릎통과", textcolor=color.white)
+plotshape(show_signals and sig_turn_cross, "턴어라운드신호", shape.triangleup, location.belowbar, color.new(#00E5FF, 0), size=size.small, text="턴어라운드")
+plotshape(show_signals and sig_top_alert,  "상투신호 (전량매도)", shape.labeldown, location.abovebar, color.new(#2962FF, 0), size=size.normal, text="상투탈출", textcolor=color.white)
 
-plotshape(show_marker and sig_ankle_turn, "발목 턴어라운드", shape.triangleup, location.belowbar, color.new(#00E5FF, 0), size=size.small, text="발목")
-plotshape(show_marker and sig_knee_break, "무릎 돌파 (핵심매수)", shape.labelup, location.belowbar, color.new(#2979FF, 0), size=size.normal, text="무릎돌파", textcolor=color.white)
-plotshape(show_marker and sig_top_alert, "상투/어깨 과열경고", shape.labeldown, location.abovebar, color.new(#FF1744, 0), size=size.normal, text="분할익절", textcolor=color.white)
+// 알림 설정 (Alerts)
+alertcondition(sig_knee_cross, "무릎통과신호 발생", "★ [주가위치] 무릎선(240선) 돌파! 정석 매수 타점 발생!")
+alertcondition(sig_top_alert,  "상투신호 발생", "▲ [주가위치] 상투선 도달/이탈! 전량 매도 및 수직낙하 경고!")
 
-// 알림 (Alerts)
-alertcondition(sig_knee_break, "무릎 돌파 발생", "★ 주가위치시스템: 무릎선(300일선) 상향 돌파 매수 타점 발생!")
-alertcondition(sig_top_alert,  "어깨/상투 도달", "▲ 주가위치시스템: 어깨/상투 구간 도달 - 분할 익절 권고!")
+// ==============================================================================
+// 5. 실시간 상태 판별 및 투자 매뉴얼 요약표
+// ==============================================================================
+var string stage_text  = "바닥권"
+var string action_text = "관망"
+var color  stage_bg    = color.purple
 
-// ==========================================
-// 5. 실시간 상태 판별 및 정보표 (Dashboard Table)
-// ==========================================
-var string current_stage = "각설이 (바닥권)"
-var color stage_color    = color.purple
-
-if close >= line_top
-    current_stage := "🚨 7. 상투 (최종 과열)"
-    stage_color   := color.red
-else if close >= line_shldr
-    current_stage := "⚠️ 6. 어깨 (분할 매도)"
-    stage_color   := color.orange
-else if close >= line_waist
-    current_stage := "⭐ 5. 허리 (중간 눌림/지지)"
-    stage_color   := color.yellow
-else if close >= line_thigh
-    current_stage := "🚀 4. 허벅지 (본격 분출)"
-    stage_color   := color.green
-else if close >= line_knee
-    current_stage := "🔥 3. 무릎 (추세 돌파 성공)"
-    stage_color   := color.blue
-else if close >= line_ankle
-    current_stage := "🌱 2. 발목 (1차 턴어라운드)"
-    stage_color   := color.teal
+// 최근 120봉 이내에 상투선을 터치했는지 확인 (기준선 전이 착시 감지용)
+var int bars_since_top = 9999
+if ta.crossover(high, line_top)
+    bars_since_top := 0
 else
-    current_stage := "❄️ 1. 각설이 (바닥 수렴)"
-    stage_color   := color.purple
+    bars_since_top := bars_since_top + 1
 
-// 300일선 이격도 및 잔여 상승 여력
-ratio_to_knee = ((close - line_knee) / line_knee) * 100
-gain_to_top   = ((line_top - close) / close) * 100
+bool is_transition_trap = (bars_since_top < 120) and (close < line_shldr)
+
+if close >= line_ultra
+    stage_text  := "🚨 울트라상투 (100% 임계점)"
+    action_text := "미련 없이 전량 매도 (수학적 100% 고점)"
+    stage_bg    := color.maroon
+else if close >= line_grand
+    stage_text  := "⚡ 대상투 (광기의 영역)"
+    action_text := "전량 매도 권고 (0.1% 영역)"
+    stage_bg    := color.red
+else if close >= line_top
+    stage_text  := "⚠️ 상투 (현실적 최종 천정)"
+    action_text := "전량 매도 (삼천당제약 수직낙하 방지)"
+    stage_bg    := color.orange
+else if close >= line_shldr
+    stage_text  := "🔔 어깨 (1차 분할 매도권)"
+    action_text := "물량 70% 1차 매도 후 상투 대기"
+    stage_bg    := color.green
+else if is_transition_trap
+    stage_text  := "⛔ 기준선 전이 착시 주의구간"
+    action_text := "신규 매수 절대 금지 / 반등 시 잔여 탈출"
+    stage_bg    := color.navy
+else if close >= line_waist
+    stage_text  := "⭐ 허리 (시세 국면 지지축)"
+    action_text := "추세 홀딩 / 허리선 지지 여부 관찰"
+    stage_bg    := color.olive
+else if close >= line_thigh
+    stage_text  := "🚀 허벅지 (시세 본격 분출)"
+    action_text := "추세 추종 홀딩 (신규 진입 마지노선 마감)"
+    stage_bg    := color.teal
+else if close >= line_knee
+    stage_text  := "🔥 무릎 (핵심 매수 타점)"
+    action_text := "적극 매수 (어깨까지 우직하게 홀딩)"
+    stage_bg    := color.blue
+else if close >= line_ankle
+    stage_text  := "🌱 발목 (턴어라운드 모색)"
+    action_text := "매수 금지 (무릎 돌파 시까지 대기)"
+    stage_bg    := color.purple
+else
+    stage_text  := "❄️ 각설이 (바닥권 수렴)"
+    stage_bg    := color.gray
+    action_text := "관망 (지하실 경계)"
 
 if show_table and barstate.islast
     t_pos = table_pos == "우측 상단" ? position.top_right : table_pos == "우측 하단" ? position.bottom_right : position.top_left
-    var table stat_tbl = table.new(t_pos, 2, 7, bgcolor=color.new(#1E222D, 10), border_color=color.new(#363A45, 0), border_width=1)
+    var table tbl = table.new(t_pos, 2, 7, bgcolor=color.new(#131722, 10), border_color=color.new(#363A45, 0), border_width=1)
     
-    table.cell(stat_tbl, 0, 0, "주가위치분석시스템", bgcolor=color.new(#2962FF, 20), text_color=color.white, text_size=size.small)
-    table.cell(stat_tbl, 1, 0, "실시간 진단", bgcolor=color.new(#2962FF, 20), text_color=color.white, text_size=size.small)
+    table.cell(tbl, 0, 0, "주가위치분석시스템", bgcolor=color.new(#1E88E5, 30), text_color=color.white, text_size=size.small)
+    table.cell(tbl, 1, 0, "댕기왕자 공식 모델", bgcolor=color.new(#1E88E5, 30), text_color=color.white, text_size=size.small)
     
-    table.cell(stat_tbl, 0, 1, "현재 진단 단계", text_color=color.white, text_size=size.small)
-    table.cell(stat_tbl, 1, 1, current_stage, bgcolor=stage_color, text_color=color.white, text_size=size.small)
+    table.cell(tbl, 0, 1, "현재 진단 위치", text_color=color.white, text_size=size.small)
+    table.cell(tbl, 1, 1, stage_text, bgcolor=stage_bg, text_color=color.white, text_size=size.small)
     
-    table.cell(stat_tbl, 0, 2, "현재 주가", text_color=color.gray, text_size=size.small)
-    table.cell(stat_tbl, 1, 2, str.tostring(close, "#,###"), text_color=color.white, text_size=size.small)
+    table.cell(tbl, 0, 2, "투자 행동 매뉴얼", text_color=color.gray, text_size=size.small)
+    table.cell(tbl, 1, 2, action_text, text_color=#FFEB3B, text_size=size.small)
     
-    table.cell(stat_tbl, 0, 3, "무릎선 (300선)", text_color=color.gray, text_size=size.small)
-    table.cell(stat_tbl, 1, 3, str.tostring(line_knee, "#,###"), text_color=#2979FF, text_size=size.small)
+    table.cell(tbl, 0, 3, "현재가", text_color=color.gray, text_size=size.small)
+    table.cell(tbl, 1, 3, str.tostring(close, "#,###") + " 원", text_color=color.white, text_size=size.small)
     
-    table.cell(stat_tbl, 0, 4, "무릎 대비 이격", text_color=color.gray, text_size=size.small)
-    table.cell(stat_tbl, 1, 4, (ratio_to_knee >= 0 ? "+" : "") + str.tostring(ratio_to_knee, "#.##") + "%", text_color=(ratio_to_knee >= 0 ? color.red : color.blue), text_size=size.small)
+    table.cell(tbl, 0, 4, "무릎선 (240선)", text_color=color.gray, text_size=size.small)
+    table.cell(tbl, 1, 4, str.tostring(line_knee, "#,###") + " 원", text_color=#2962FF, text_size=size.small)
     
-    table.cell(stat_tbl, 0, 5, "상투 목표가 (13.3배)", text_color=color.gray, text_size=size.small)
-    table.cell(stat_tbl, 1, 5, str.tostring(line_top, "#,###"), text_color=#FF1744, text_size=size.small)
+    table.cell(tbl, 0, 5, "1차 매도가 (어깨)", text_color=color.gray, text_size=size.small)
+    table.cell(tbl, 1, 5, str.tostring(line_shldr, "#,###") + " 원 (70% 익절)", text_color=#00C853, text_size=size.small)
     
-    table.cell(stat_tbl, 0, 6, "상투까지 잔여여력", text_color=color.gray, text_size=size.small)
-    table.cell(stat_tbl, 1, 6, (gain_to_top >= 0 ? "+" : "") + str.tostring(gain_to_top, "#.##") + "%", text_color=(gain_to_top >= 0 ? #00E676 : color.gray), text_size=size.small)
+    table.cell(tbl, 0, 6, "최종 천정 (상투)", text_color=color.gray, text_size=size.small)
+    table.cell(tbl, 1, 6, str.tostring(line_top, "#,###") + " 원 (전량 매도)", text_color=#FF5252, text_size=size.small)
