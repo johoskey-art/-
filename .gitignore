@@ -4,3 +4,8 @@ __pycache__/
 .venv/
 env/
 *.mp4
+*.png
+*.jpg
+*.jpeg
+video_frames/
+blog_images/
