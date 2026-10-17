@@ -16,3 +16,9 @@
 
 ## 운영 규칙
 새 공정/PLAY를 만들지 않고 기존 기업의 공시·IR·공식 제품 자료를 기준으로 실제 오류만 교정한다. 변경 시 출처 URL과 검산 날짜, 수정 전후 배치를 남긴다.
+
+## 2026-10-17 추가 백업
+- [`data/SEMI_STACK_MASTER_20261016.csv`](data/SEMI_STACK_MASTER_20261016.csv): 367개 기업/법인 항목, 검증 등급과 근거 URL, 기존 원장 출처 포함
+- [`audit/CORRECTIONS_20261016.csv`](audit/CORRECTIONS_20261016.csv): 기존 교정·검토 기록 44건
+- `.xlsx` 파일 자체는 아직 GitHub에 저장되지 않았다. GitHub CSV는 엑셀의 기업 MASTER 시트를 재구성한 텍스트 백업이다.
+- C등급 추가 조사 결과(Piotech, Aehr, Teradyne, Chroma)는 `audit/C_VALIDATION_20261017.md`에 기록했으며, **2026-10-16 CSV와 별도 델타**로 관리한다.
