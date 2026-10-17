@@ -22,3 +22,12 @@
 - [`audit/CORRECTIONS_20261016.csv`](audit/CORRECTIONS_20261016.csv): 기존 교정·검토 기록 44건
 - `.xlsx` 파일 자체는 아직 GitHub에 저장되지 않았다. GitHub CSV는 엑셀의 기업 MASTER 시트를 재구성한 텍스트 백업이다.
 - C등급 추가 조사 결과(Piotech, Aehr, Teradyne, Chroma)는 `audit/C_VALIDATION_20261017.md`에 기록했으며, **2026-10-16 CSV와 별도 델타**로 관리한다.
+
+
+## 2026-10-18 검토용 증분 — 원본과 구분
+- [SESSION_20261018.md](audit/SESSION_20261018.md): 이번 세션 GitHub 복구·공식 출처·결정·후속 대기 로그
+- [C_VALIDATION_DELTA_20261018.csv](audit/C_VALIDATION_DELTA_20261018.csv): C등급 기업 15개 사례 기록, 검증상태 및 출처
+- [SEMI_STACK_MASTER_20261018_REVIEW.csv](data/SEMI_STACK_MASTER_20261018_REVIEW.csv): 367행 기존 MASTER CSV 기반 복원·교정 초안. 기존 20261016 원본 불변.
+- [SEMI_STACK_WATCHLIST_20261018_REVIEW.csv](watchlists/SEMI_STACK_WATCHLIST_20261018_REVIEW.csv): 기존 279행에 공식 제품 근거 신규 공정 9행을 합친 **288행 검토본**, 고유기업 208개.
+- [SEMI_STACK_POP_MANUAL_20GROUPS_20261018.txt](watchlists/SEMI_STACK_POP_MANUAL_20GROUPS_20261018.txt): POP HTS 20개 그룹별 **수동 검색·등록 보조용** 명단. 삼성 공식 import 파일 아님.
+- 이번 공식 제품 대조 12개사, 나머지 C기업 전수 검증 및 HTS 실제 종목 검색 테스트 미완료. 최신 원장을 FINAL로 잘못 표기하지 않을 것.
