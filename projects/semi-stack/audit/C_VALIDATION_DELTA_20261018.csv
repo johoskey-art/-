@@ -1,0 +1,16 @@
+기업키,기업,기존공정,추가공정,판정,확인제품,공식근거1,공식근거2,확인일,추가주의사항
+CN:688072,Piotech,F03,B05,추가,Dione 300 웨이퍼 하이브리드 본딩,https://piotech.cn/index.php/Pro/detail?id=637,,2026-10-18,증착과 본딩 별도 제품 확인. 고객 납품·삼성HTS 지원 미검증
+US:AEHR,Aehr Test Systems,B09,B01,추가,FOX-XP wafer-level burn-in; 2026-08-12 추가 생산 발주,https://www.aehr.com/2026/08/aehr-receives-22-million-follow-on-order-for-ai-processor-wafer-level-burn-in-systems/,,2026-10-18,"B09 유지, B01 웨이퍼레벨 번인 별도"
+NL:ASM.AS,ASM International,F03,F05/F07,추가,SONORA vertical furnace 산화·확산 / Axus Capstone CMP (2025-12 인수),https://www.asm.com/our-technology-products/vertical-furnace,https://www.globenewswire.com/news-release/2026/03/03/3248697/0/en/ASM-reports-Q4-and-full-year-2025-results.html,2026-10-18,"F07 CMP는 화합물 반도체·More-than-Moore 장비, 범용 DRAM 배선 수혜로 오해 금지"
+NL:BESI,BE Semiconductor Industries,B05,B06,추가,Fico 브랜드 몰딩·트림/포밍·패키지 싱귤레이션 장비,https://www.besi.com/products-technology/,,2026-10-18,B05 다이 본딩 유지
+US:KLIC,Kulicke & Soffa,B06,B05,추가,Fluxless thermo-compression bonding (TCB),https://www.semi.org/en/semi-press-release/kulicke-and-soffa-earns-2026-semi-award-for-north-america-at-semicon-west,,2026-10-18,2026-10-13 SEMI 공식 수상 발표. 기존 B06 유지
+KR:083500,에프엔에스테크,F08,F07,추가+기존배치보류,반도체 wafer CMP pad (자사 기술/제품) / TGV 유리기판 세정기,https://fnstech.com/en/business/pad.php,https://fnstech.com/en/product/list.php?idx=13&mode=view,2026-10-18,F07 CMP PAD 직접확인. F08은 공식 세정기 주요 제시품목이 유리기판 TGV 및 OLED이므로 실리콘 Fab 웨이퍼 세정 직접근거 없음; 배치 확정 보류
+US:COHU,Cohu,B09,B02,추가,Test contactors / spring probes / handlers,https://www.cohu.com/contact-help-center,https://ir.cohu.com/,2026-10-18,"B09 최종검사장비 유지, B02 접촉부품 직접 노출"
+TW:2360,Chroma ATE,B09,B08,추가,Advanced packaging 3D metrology 7980/7981 및 7961 검사,https://www.chromaate.com/en/newsroom/news1039,,2026-10-18,기존 B09 ATE 유지. 패키지 계측 B08 추가
+JP:6315,TOWA,B06,,역할수정,Compression / transfer molding 장비,https://www.towajapan.co.jp/en/products/molding/,,2026-10-18,WATCHLIST 원본 B06 제품역할 '소재·소모품' 오기 → '장비·서비스'. 공정 유지
+JP:6125,Okamoto Machine Tool Works,B03,,유지,GNX200B/GNX300B 웨이퍼 백그라인더,https://www.okamoto.co.jp/en/products/gnx200b/,,2026-10-18,"B03 유지, F07 범용 메모리 CMP로 확장 안 함"
+JP:6988,Nitto Denko,B03/B04/B07,,유지,Back grinding tape / dicing tape / die attach film,https://www.nitto.com/us/en/markets/industry/electronic/semicon/,,2026-10-18,B03 B04 B07 제품 직접근거 확인
+TW:3711,ASE Technology Holding,B10,,유지,OSAT packaging & testing; TWSE 3711/NYSE ASX ADR 중복 경제적 노출,https://www.aseglobal.com/about/,,2026-10-18,TWSE 3711만 원장 유지; NYSE ASX는 ADR 참고. 삼성 POP 지원 별도
+US:ACLS,Axcelis,F06,,합병여부보류,이온주입 장비; VECO와 합병 예정,https://www.sec.gov/Archives/edgar/data/1113232/000110465926091999/acls-20260630x10q.htm,,2026-10-18,공식 2026-06 보고서상 중국 승인 대기. 2026-10-18 종결 공식공시 확인 실패. 임의 티커 통합하지 않음
+US:VECO,Veeco,F03/F05,,합병여부보류,MOCVD/레이저 어닐링 등 장비; ACLS와 합병 예정,https://www.sec.gov/Archives/edgar/data/103145/000110465926091158/veco-20260630x10q.htm,,2026-10-18,"종결 공시 미확인, 기존 ACLS/VECO 개별 등록 유지"
+US:TER,Teradyne,B01/B09,,유지+경계주의,KGD: wafer sort와 개별 다이 프리패키지 테스트 구분 필요,https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron,,2026-10-18,2026-10-17 기존 기록 계승. 신규 고객사/매출 추정하지 않음
