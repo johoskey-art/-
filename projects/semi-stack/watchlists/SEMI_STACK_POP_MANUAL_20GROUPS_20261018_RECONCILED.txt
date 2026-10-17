@@ -1,0 +1,354 @@
+SEMI STACK | 삼성 POP/mPOP 검색·수동등록 참조 | 2026-10-18 RECONCILED
+주의: 삼성 POP CSV/TXT 가져오기 공식 규격 아님. 거래소 일반티커일 뿐 삼성 내부 코드·거래/차트 지원 실기기 미확인.
+유지·추가·보류 등급은 사업증거 수준이며 주식 투자 등급이 아님. 코셈 F09/코세스 B05/에프엔에스테크 F08/ACLS VECO 합병 공정·상장 확인 대기.
+
+[F01 웨이퍼·기판 원재료] | 11종목
+US | COHR      | Coherent (코히런트)
+US | WOLF      | 울프스피드 (Wolfspeed)
+JP | 3436      | SUMCO
+JP | 4043      | 토쿠야마
+JP | 4063      | 신에츠화학
+TW | 3532      | 포모사SUMCO
+TW | 6488      | GlobalWafers
+CN | 688126    | National Silicon Industry Group (沪硅产业)
+CN | 688234    | SICC (Tianyue Advanced)
+DE | WAF       | Siltronic
+FR | SOI       | 소이텍
+
+[F02 노광·포토] | 25종목
+KR | 005290    | 동진쎄미켐
+KR | 036810    | 에프에스티
+KR | 101490    | 에스앤에스텍
+KR | 102710    | 이엔에프테크놀로지
+KR | 112290    | 와이씨켐
+KR | 445180    | 퓨릿
+KR | 482630    | 삼양엔씨켐
+US | PLAB      | 포트로닉스
+US | Q         | 큐니티일렉트로닉스(Qnity)
+JP | 4005      | 스미토모화학
+JP | 4021      | 닛산화학
+JP | 4063      | 신에츠화학
+JP | 4186      | 도쿄오카공업(TOK)
+JP | 429A      | Tekscend Photomask
+JP | 4901      | 후지필름홀딩스
+JP | 6920      | 레이저텍
+JP | 7731      | Nikon (ニコン)
+JP | 7741      | HOYA
+JP | 7751      | 캐논
+JP | 7912      | DNP
+JP | 8035      | 도쿄일렉트론
+CN | 300346    | Nata Opto (Jiangsu Nata Opto-electronic Material)
+NL | ASML      | ASML Holding
+DE | MRK       | 머크 KGaA
+DE | SMHN      | SUSS MicroTec
+
+[F03 증착] | 32종목
+KR | 014680    | 한솔케미칼
+KR | 036930    | 주성엔지니어링
+KR | 074600    | 원익QnC
+KR | 084370    | 유진테크
+KR | 092070    | 디엔에프
+KR | 095610    | 테스
+KR | 104830    | 원익머트리얼즈
+KR | 146320    | 비씨엔씨
+KR | 240810    | 원익IPS
+KR | 241770    | 메카로
+KR | 281740    | 레이크머티리얼즈
+KR | 311320    | 지오엘리먼트
+KR | 489500    | 엘케이켐
+US | ACMR      | ACM리서치
+US | AMAT      | 어플라이드 머티어리얼즈
+US | LRCX      | 램리서치
+US | VECO      | 비코(Veeco) [보류]
+JP | 4401      | ADEKA
+JP | 5016      | JX금속
+JP | 6387      | SAMCO
+JP | 6525      | Kokusai Electric
+JP | 6728      | ULVAC
+JP | 6971      | Kyocera
+JP | 8035      | 도쿄일렉트론
+CN | 002371    | Naura Technology Group (北方华创)
+CN | 688072    | Piotech (拓荆科技)
+NL | ASM.AS    | ASM International
+DE | AIXA      | AIXTRON SE
+DE | MRK       | 머크 KGaA
+CN | 300346    | Nata Opto (Jiangsu Nata Opto-electronic Material) [신규배치]
+CN | 688012    | AMEC (Advanced Micro-Fabrication Equipment / 中微公司) [신규배치]
+CN | 688082    | ACM Research Shanghai (盛美上海) [신규배치]
+
+[F04 식각] | 26종목
+KR | 059090    | 미코
+KR | 064760    | 티씨케이
+KR | 089970    | 브이엠 (V&M)
+KR | 093370    | 후성
+KR | 095610    | 테스
+KR | 101160    | 월덱스 (Worldex)
+KR | 102710    | 이엔에프테크놀로지
+KR | 104830    | 원익머트리얼즈
+KR | 144960    | 뉴파워프라즈마
+KR | 166090    | 하나머티리얼즈
+KR | 171010    | 램테크놀러지
+KR | 272110    | 케이엔제이
+KR | 319660    | 피에스케이
+KR | 357780    | 솔브레인
+KR | 425040    | 티이엠씨
+US | AMAT      | 어플라이드 머티어리얼즈
+US | APD       | 에어프로덕츠
+US | LIN       | 린데
+US | LRCX      | 램리서치
+JP | 4047      | 칸토덴카
+JP | 6728      | ULVAC
+JP | 6971      | Kyocera
+JP | 8035      | 도쿄일렉트론
+CN | 688012    | AMEC (Advanced Micro-Fabrication Equipment / 中微公司)
+CN | 688268    | Huate Gas (Guangdong Huate Gas)
+CN | 002371    | Naura Technology Group (北方华创) [신규배치]
+
+[F05 산화·열처리] | 11종목
+KR | 039030    | 이오테크닉스
+KR | 110990    | 디아이티
+KR | 122640    | 예스티
+KR | 240810    | 원익IPS
+KR | 265520    | AP시스템
+KR | 403870    | HPSP (에이치피에스피)
+US | VECO      | 비코(Veeco) [보류]
+JP | 6525      | Kokusai Electric
+JP | 8035      | 도쿄일렉트론
+NL | ASM.AS    | ASM International [신규배치]
+CN | 002371    | Naura Technology Group (北方华创) [신규배치]
+
+[F06 이온주입] | 4종목
+US | ACLS      | 액셀리스 [보류]
+US | AMAT      | 어플라이드 머티어리얼즈
+JP | 6302      | 스미토모중공업
+CN | 002371    | Naura Technology Group (北方华创) [신규배치]
+
+[F07 금속배선·CMP] | 16종목
+KR | 112290    | 와이씨켐
+KR | 281820    | 케이씨텍
+KR | 357780    | 솔브레인
+US | AMAT      | 어플라이드 머티어리얼즈
+US | ENTG      | 인테그리스
+US | Q         | 큐니티일렉트로닉스(Qnity)
+JP | 4004      | 레조낙
+JP | 5016      | JX금속
+JP | 5384      | 후지미
+JP | 6361      | 에바라
+CN | 300054    | Dinglong (Hubei Dinglong)
+CN | 688019    | Anji Micro (Anji Microelectronics Technology Shanghai)
+DE | MRK       | 머크 KGaA
+NL | ASM.AS    | ASM International [신규배치]
+KR | 083500    | 에프엔에스테크 [신규배치]
+CN | 688082    | ACM Research Shanghai (盛美上海) [신규배치]
+
+[F08 세정] | 20종목
+KR | 014680    | 한솔케미칼
+KR | 079370    | 제우스
+KR | 083500    | 에프엔에스테크 [보류]
+KR | 102710    | 이엔에프테크놀로지
+KR | 170920    | 엘티씨 (LTC)
+KR | 171010    | 램테크놀러지
+KR | 183300    | 코미코
+KR | 187870    | 디바이스 (구 디바이스이엔지)
+KR | 281820    | 케이씨텍
+KR | 319660    | 피에스케이
+KR | 357780    | 솔브레인
+US | ACMR      | ACM리서치
+US | ENTG      | 인테그리스
+JP | 7735      | SCREEN홀딩스
+JP | 8035      | 도쿄일렉트론
+TW | 3583      | Scientech
+CN | 688082    | ACM Research Shanghai (盛美上海)
+CN | 002371    | Naura Technology Group (北方华创) [신규배치]
+CN | 688019    | Anji Micro (Anji Microelectronics Technology Shanghai) [신규배치]
+KR | 095340    | ISC [신규배치]
+
+[F09 인라인 계측·검사] | 12종목
+KR | 140860    | 파크시스템스
+KR | 322310    | 오로스테크놀로지
+KR | 348210    | 넥스틴 (NEXTIN)
+KR | 360350    | 코셈 (Coxem) [보류]
+US | KLAC      | KLA
+US | NVMI      | 노바(Nova)
+US | ONTO      | 온토 이노베이션
+JP | 6501      | 히타치제작소
+JP | 6856      | 호리바
+JP | 6920      | 레이저텍
+JP | 7729      | Tokyo Seimitsu (東京精密)
+JP | 7731      | Nikon (ニコン)
+
+[F10 Fab 인프라·공통부품] | 41종목
+KR | 011930    | 신성이엔지
+KR | 036200    | 유니셈
+KR | 039440    | 에스티아이
+KR | 045100    | 한양이엔지
+KR | 056190    | SFA
+KR | 059090    | 미코
+KR | 064760    | 티씨케이
+KR | 071280    | 로체시스템즈
+KR | 074600    | 원익QnC
+KR | 083310    | 엘오티베큠
+KR | 083450    | GST
+KR | 101160    | 월덱스 (Worldex)
+KR | 114810    | 한솔아이원스
+KR | 146320    | 비씨엔씨
+KR | 159010    | 아스플로
+KR | 160980    | 싸이맥스 (Cymecs)
+KR | 166090    | 하나머티리얼즈
+KR | 241770    | 메카로
+KR | 264660    | 씨앤지하이테크
+KR | 272110    | 케이엔제이
+KR | 311320    | 지오엘리먼트
+KR | 402490    | 그린리소스
+KR | 417840    | 저스템
+KR | 425040    | 티이엠씨
+US | AEIS      | 어드밴스드에너지
+US | APD       | 에어프로덕츠
+US | ENTG      | 인테그리스
+US | ICHR      | 아이코어홀딩스
+US | LIN       | 린데
+US | MKSI      | MKS인스트루먼츠
+US | UCTT      | 울트라클린홀딩스
+JP | 5016      | JX금속
+JP | 6258      | 히라타기공
+JP | 6323      | 로체(RORZE)
+JP | 6622      | 다이헨
+JP | 6728      | ULVAC
+JP | 6890      | 페로텍홀딩스
+JP | 6971      | Kyocera
+FR | AIL       | 에어리퀴드
+KR | 144960    | 뉴파워프라즈마 [신규배치]
+KR | 095340    | ISC [신규배치]
+
+[B01 웨이퍼 전기검사] | 11종목
+KR | 003160    | 디아이
+KR | 232140    | 와이씨
+US | TER       | Teradyne
+JP | 6857      | Advantest
+JP | 6871      | Micronics Japan
+JP | 7729      | Tokyo Seimitsu (東京精密)
+TW | 6223      | MPI Corporation
+US | AEHR      | Aehr Test Systems [신규배치]
+KR | 086390    | 유니테스트 (UniTest) [신규배치]
+CN | 300604    | Changchuan Technology (长川科技) [신규배치]
+CN | 688200    | AccoTEST (华峰测控) [신규배치]
+
+[B02 프로브카드·접촉부품] | 13종목
+KR | 131290    | 티에스이 (TSE)
+KR | 147760    | 피엠티 (PMT)
+KR | 219130    | 타이거일렉 (Tiger Elec)
+KR | 252990    | 샘씨엔에스 (SemCNS)
+KR | 424980    | 마이크로투나노 (Micro2Nano)
+US | FORM      | FormFactor
+JP | 6855      | Japan Electronic Materials
+JP | 6871      | Micronics Japan
+TW | 6223      | MPI Corporation
+TW | 6683      | Keystone Microtech
+IT | TPRO      | Technoprobe
+US | COHU      | Cohu [신규배치]
+KR | 080580    | 오킨스전자 (OKins Electronics) [신규배치]
+
+[B03 웨이퍼 박막화] | 5종목
+JP | 6125      | Okamoto Machine Tool Works
+JP | 6146      | Disco
+JP | 6988      | Nitto Denko
+JP | 7729      | Tokyo Seimitsu (東京精密)
+JP | 7966      | Lintec
+
+[B04 다이싱·분리] | 6종목
+KR | 039030    | 이오테크닉스
+JP | 6146      | Disco
+JP | 6988      | Nitto Denko
+JP | 7729      | Tokyo Seimitsu (東京精密)
+JP | 7966      | Lintec
+KR | 042700    | 한미반도체 [신규배치]
+
+[B05 본딩·디본딩] | 11종목
+KR | 042700    | 한미반도체
+KR | 089890    | 코세스 (Koses) [보류]
+KR | 489790    | 한화비전 (한화세미텍 모회사)
+JP | 6590      | Shibaura Mechatronics
+TW | 3583      | Scientech
+NL | BESI      | BE Semiconductor Industries
+DE | SMHN      | SUSS MicroTec
+HK | 0522      | ASMPT
+CN | 688072    | Piotech (拓荆科技) [신규배치]
+US | KLIC      | Kulicke & Soffa (K&S) [신규배치]
+CN | 002371    | Naura Technology Group (北方华创) [신규배치]
+
+[B06 Descum·Reflow·Molding] | 5종목
+KR | 031980    | 피에스케이홀딩스
+KR | 053610    | 프로텍 (Protec)
+US | KLIC      | Kulicke & Soffa (K&S)
+JP | 6315      | TOWA
+NL | BESI      | BE Semiconductor Industries [신규배치]
+
+[B07 패키징 소재] | 8종목
+KR | 033160    | 엠케이전자
+KR | 077360    | 덕산하이메탈
+KR | 195870    | 해성디에스
+US | Q         | 큐니티일렉트로닉스(Qnity)
+JP | 4004      | 레조낙
+JP | 4203      | Sumitomo Bakelite
+JP | 6988      | Nitto Denko
+JP | 7966      | Lintec
+
+[B08 패키지 검사·계측] | 7종목
+KR | 064290    | 인텍플러스 (INTEKPLUS)
+KR | 098460    | 고영 (Koh Young Technology)
+KR | 168360    | 펨트론 (Pemtron)
+US | CAMT      | Camtek
+US | KLAC      | KLA
+TW | 2360      | Chroma ATE (致茂電子) [신규배치]
+KR | 042700    | 한미반도체 [신규배치]
+
+[B09 최종 테스트] | 23종목
+KR | 003160    | 디아이
+KR | 058470    | 리노공업
+KR | 080580    | 오킨스전자 (OKins Electronics)
+KR | 086390    | 유니테스트 (UniTest)
+KR | 089030    | 테크윙
+KR | 089790    | 제이티 (JT)
+KR | 092870    | 엑시콘 (Exicon)
+KR | 095340    | ISC
+KR | 098120    | 마이크로컨텍솔 (MCT)
+KR | 131290    | 티에스이 (TSE)
+KR | 219130    | 타이거일렉 (Tiger Elec)
+KR | 253590    | 네오셈 (Neosem)
+KR | 425420    | 티에프이 (TFE)
+US | AEHR      | Aehr Test Systems
+US | COHU      | Cohu
+US | TER       | Teradyne
+JP | 6857      | Advantest
+JP | 6871      | Micronics Japan
+TW | 2360      | Chroma ATE (致茂電子)
+CN | 300604    | Changchuan Technology (长川科技)
+CN | 688200    | AccoTEST (华峰测控)
+SG | AWX       | AEM Holdings
+TW | 6683      | Keystone Microtech [신규배치]
+
+[B10 OSAT] | 22종목
+KR | 033170    | 시그네틱스
+KR | 033640    | 네패스
+KR | 036540    | SFA반도체
+KR | 061970    | LB세미콘 (엘비세미콘)
+KR | 067310    | 하나마이크론
+KR | 097800    | 윈팩 (Winpac)
+KR | 119830    | 아이텍
+KR | 131970    | 두산테스나
+KR | 200470    | 에이팩트 (Apect)
+KR | 330860    | 네패스아크
+US | AMKR      | Amkor Technology
+US | IMOS      | ChipMOS Technologies
+TW | 2441      | Greatek Electronics
+TW | 2449      | King Yuan Electronics (KYEC)
+TW | 3711      | ASE Technology Holding
+TW | 6147      | Chipbond Technology
+TW | 6239      | Powertech Technology (PTI)
+TW | 6257      | Sigurd Microelectronics
+CN | 002156    | Tongfu Microelectronics (TFME)
+CN | 002185    | Huatian Technology (HT-Tech / TSHT)
+CN | 600584    | JCET Group
+KR | 080580    | 오킨스전자 (OKins Electronics) [신규배치]
+
+총 20개 공정 / 309배치행 / 208개 상장기업 후보 (실기기 확인 전).
