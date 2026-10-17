@@ -31,3 +31,13 @@
 - [SEMI_STACK_WATCHLIST_20261018_REVIEW.csv](watchlists/SEMI_STACK_WATCHLIST_20261018_REVIEW.csv): 기존 279행에 공식 제품 근거 신규 공정 9행을 합친 **288행 검토본**, 고유기업 208개.
 - [SEMI_STACK_POP_MANUAL_20GROUPS_20261018.txt](watchlists/SEMI_STACK_POP_MANUAL_20GROUPS_20261018.txt): POP HTS 20개 그룹별 **수동 검색·등록 보조용** 명단. 삼성 공식 import 파일 아님.
 - 이번 공식 제품 대조 12개사, 나머지 C기업 전수 검증 및 HTS 실제 종목 검색 테스트 미완료. 최신 원장을 FINAL로 잘못 표기하지 않을 것.
+
+
+## 2026-10-18 C등급 74사 전수검산 결과 — 최신 읽을 파일
+- [전수검산 감사보고서](audit/FULL_AUDIT_20261018.md): 74사 중 이전 검증 12사 + 잔여 62사 공식자료 전수 대조, 신규배치 30행과 공정 적합성 보류 사유.
+- [잔여 62사 최종 검증표](audit/C_VALIDATION_REMAINING_62_20261018_FINAL_REVIEW.csv): **기업당 1행**, 확인 제품/상장·자료 수준/출처 URL/유지·추가·보류 판정.
+- [최신 MASTER 교정 검토본](data/SEMI_STACK_MASTER_20261018_FINAL_REVIEW.csv): 367개 기업·법인 항목 중 STACK 208개/별도관리 159개. 최초 44개 교정 이력 보존.
+- [최신 WATCHLIST 교정 검토본](watchlists/SEMI_STACK_WATCHLIST_20261018_FINAL_REVIEW.csv): 기존 279배치 + 10/18 공식 근거 신규 30배치 = **309배치**, 고유기업 208개, 공정 정확히 20개.
+- [삼성 POP 수동검색용 20그룹](watchlists/SEMI_STACK_POP_MANUAL_20GROUPS_20261018_RECONCILED.txt): **309개 배치**, 삼성증권 내부종목코드/CSV import 규격 미확인. 파일 자체는 HTS 공식 업로드 형식 아님.
+- **전수조사 완료 ≠ 최종 전부 PASS**. 잔여 62사 가운데 직접 제품/발행인사업 49사, 부분 공식자료 12사, 공정 매칭 보류 1사. Veeco/Axcelis 합병, 코세스 B05, 에프엔에스테크 F08 및 Samsung POP의 해외거래소 검색·등록 가능성은 별도 검증 중.
+- 2026-10-16 원본 MASTER/44교정기록/279행 WATCHLIST와 2026-10-18 과정 파일들은 모두 히스토리로 유지하며 덮어쓰지 않음.
