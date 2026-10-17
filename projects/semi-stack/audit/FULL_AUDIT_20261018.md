@@ -41,3 +41,12 @@
 - 동일 상장기업 복수 배치 허용. ADR 및 이중상장 동일 발행인은 경제적 중복을 주석으로만 둔다.
 - 조사 끝난 후보 수와 최종승인 수는 별개. C등급으로 시작한 74사 종목의 현재 상장·티커는 일괄 실기기 검증 완료 아님.
 - 최신 RECONCILED 파일은 **감사 검토본이지 삼성증권 전용 업로드 형식이나 최종 PASS 원장은 아님**.
+
+
+## 2026-10-18 최종 공식출처 보강 (FULL_REVIEW)
+- Huate Gas(688268): 회사 공식 C4F6 플라즈마 식각 가스 제품 확인 → F04 적합성 근거 확보. https://www.huategas.com/en/GasProducts/info.aspx?itemid=2634&lcid=30
+- 아스플로(159010): 2026-03-16 한국거래소 공시에서 반도체 초고순도 배관·피팅·밸브·필터 제조 확인 → F10 적합성 근거 확보. https://kind.krx.co.kr/external/2026/03/16/002276/20260316006494/11011.htm
+- 잔여 62사 1행 1판정 최종 파일: `audit/C_VALIDATION_REMAINING_62_20261018_FINAL_REVIEW.csv`. 회사공식 제품/발행인 공시 직접 근거 **49사**, 거래소·공시 일부 근거 **12사**, 제품 존재하나 기존 Fab inline 공정 매칭 불충분 **1사(COXEM)**. 이 구분은 **상장/제품/공정 3가지 모두 최종 PASS** 수치가 아님.
+- 추가로 공정 매칭 보류: 코세스 B05 (PKG Stack이 곧 TC/Hybrid/Temporary Bonding은 아님), 에프엔에스테크 F08(TGV 세정과 silicon Fab 세정 다름). Veeco·Axcelis 합병 종결 확인도 여전히 필요.
+- `data/SEMI_STACK_MASTER_20261018_FINAL_REVIEW.csv` 367원장행과 `watchlists/SEMI_STACK_WATCHLIST_20261018_FINAL_REVIEW.csv` 309공정행은 추가 공식 근거를 반영한 최신 파일. 원래 20 공정 분류는 변경하지 않음.
+- 삼성 POP 수동등록용 최신 309배치행: `watchlists/SEMI_STACK_POP_MANUAL_20GROUPS_20261018_RECONCILED.txt`. 새 파일 포맷 가정 금지.
