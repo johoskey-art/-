@@ -1,0 +1,569 @@
+기업키(발행인),일반티커,기업명,시장/상장국,STACK 포함,공정(복수 가능),공정별 제품·역할,검증 상태,증거 등급,기존 원장 행 ID,자료 출처,확인사항·메모,원본 데이터,HTS 등록,20261018 검산판정,20261018 공식근거 URL,잔여62 검증상태,잔여62 공식근거,잔여62 제약
+KR:265520,265520,AP시스템,KR,대상,F05,산화·RTP 열처리 장비 (LS증권 산화-RTP),기존 검증원장,B·기존 QA2,10.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techinsights.com/blog/wfe-market-share",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:083450,083450,GST,KR,대상,F10,칠러/스크러버 (신영 표),기존 검증원장,B·기존 QA2,84.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:403870,403870,HPSP (에이치피에스피),KR,대상,F05,"Annealing, 고압 수소 어닐링장비 (신영 표)",기존 검증원장,B·기존 QA2,97.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techinsights.com/blog/wfe-market-share",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:095340,095340,ISC,KR,대상,B09,"Pin/Socket (테스트소켓, 신영 표)",기존 원장,C·기존원장,168.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.skc.kr/kor/creation/detailView.do?cate1=258&cate2=370&cate3=371&cate4=&lang=kor&menuCd=002006"," | 10/18잔여검산:그룹·회사 계열 자료(세부 재검증); 모회사 공식 사업 소개, B09 유지",원본318,국내 KRX 코드 확인 필요,,,그룹·회사 계열 자료(세부 재검증),https://www.skc.kr/kor/creation/detailView.do?cate1=258&cate2=370&cate3=371&cate4=&lang=kor&menuCd=002006,"모회사 공식 사업 소개, B09 유지"
+KR:061970,061970,LB세미콘 (엘비세미콘),KR,대상,B10,범핑·후공정 OSAT,기존 원장,C·기존원장,136.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.lbsemicon.com/company.lb", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.lbsemicon.com/company.lb,B10 유지
+KR:056190,056190,SFA,KR,대상,F10,팹 자동화·물류·이송장비,기존 원장,C·기존원장,82.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.sfa.co.kr/company03"," | 10/18잔여검산:공식 제품·사업 직접확인; F10 범위 확인, display/general automation 매출과 구별",원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.sfa.co.kr/company03,"F10 범위 확인, display/general automation 매출과 구별"
+KR:036540,036540,SFA반도체,KR,대상,B10,OSAT,기존 원장,C·기존원장,133.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2025/12/12/000091/20251212000213/00591.htm", | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); B10 유지,원본318,국내 KRX 코드 확인 필요,,,거래소·공시 확인(제품 상세 일부미확인),https://kind.krx.co.kr/external/2025/12/12/000091/20251212000213/00591.htm,B10 유지
+KR:098460,098460,고영 (Koh Young Technology),KR,대상,B08,고영 반도체 패키징 검사·계측 시스템,공식 확인,A·직접근거,312.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kohyoung.com/en/",패키징 검사 사업 누락; 2026 교정: 고영 반도체 패키징 검사·계측 시스템,원본318/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:402490,402490,그린리소스,KR,대상,F10,공정 부품 코팅,기존 검증원장,B·기존 QA2,,https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf,QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:253590,253590,네오셈 (Neosem),KR,대상,B09,SSD 테스터 (신영: 후공정-테스터),기존 원장,C·기존원장,173.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.neosem.com/bbs/board.php?bo_table=s1_1&swr_1=10", | 10/18잔여검산:공식 제품·사업 직접확인; B09 유지,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.neosem.com/bbs/board.php?bo_table=s1_1&swr_1=10,B09 유지
+KR:033640,033640,네패스,KR,대상,B10,OSAT (WLP 등 패키징),기존 원장,C·기존원장,132.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2026/03/18/002439/20260318011385/11011.htm", | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); B10 유지,원본318,국내 KRX 코드 확인 필요,,,거래소·공시 확인(제품 상세 일부미확인),https://kind.krx.co.kr/external/2026/03/18/002439/20260318011385/11011.htm,B10 유지
+KR:330860,330860,네패스아크,KR,대상,B10,"반도체 테스트 전문 (신영: 테스트, OSAT Test)",기존 원장,C·기존원장,174.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.nepesark.co.kr/solution/", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.nepesark.co.kr/solution/,B10 유지
+KR:348210,348210,넥스틴 (NEXTIN),KR,대상,F09,웨이퍼 패턴 광학 검사장비 (Wafer Test),기존 검증원장,B·기존 QA2,107.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://securities.miraeasset.com/bbs/download/2093651.pdf?attachmentId=2093651",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:144960,144960,뉴파워프라즈마,KR,대상,F04/F10,RF 플라즈마 발생장치 (식각/증착 챔버용),기존 원장,C·기존원장,68.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.newpower.co.kr/sub_eng/sub_02_01.php", | 10/18잔여검산:공식 제품·사업 직접확인; F04 관련성 유지 + F10 공통장비부품; 직접 wafer etcher로 분류하지 않음,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.newpower.co.kr/sub_eng/sub_02_01.php,F04 관련성 유지 + F10 공통장비부품; 직접 wafer etcher로 분류하지 않음
+KR:077360,077360,덕산하이메탈,KR,대상,B07,솔더볼 등 패키징 부품 (신영: 패키징부품),기존 원장,C·기존원장,138.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.dshm.co.kr/about_overview.aspx", | 10/18잔여검산:공식 제품·사업 직접확인; B07 유지,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.dshm.co.kr/about_overview.aspx,B07 유지
+KR:005290,005290,동진쎄미켐,KR,대상,F02,포토레지스트(감광액PR) (LS 표),기존 검증원장,B·기존 QA2,54.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.techinsights.com/blog/wfe-market-share",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:131970,131970,두산테스나,KR,대상,B10,"반도체 테스트 전문 (신영: 테스트, OSAT Test)",기존 원장,C·기존원장,171.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.doosan.com/en/media-center/press-release_view?id=20172387"," | 10/18잔여검산:그룹·회사 계열 자료(세부 재검증); 그룹 공식 사업 소개, B10 유지",원본318,국내 KRX 코드 확인 필요,,,그룹·회사 계열 자료(세부 재검증),https://www.doosan.com/en/media-center/press-release_view?id=20172387,"그룹 공식 사업 소개, B10 유지"
+KR:187870,187870,디바이스 (구 디바이스이엔지),KR,대상,F08,現 사명 디바이스; 반도체 FOUP·웨이퍼 세정장비,공식 확인,A·직접근거,70.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.theinvest.co.kr/compinfo.php?cd=187870",2026 교정: 現 사명 디바이스; 반도체 FOUP·웨이퍼 세정장비,원본318/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:003160,003160,디아이,KR,대상,B01/B09,웨이퍼·메모리 테스트 및 번인 장비,공식 확인,A·직접근거,100.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.di.co.kr/main/main.aspx",공정 오배치; 2026 교정: 웨이퍼·메모리 테스트 및 번인 장비,원본318/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:110990,110990,디아이티,KR,대상,F05,레이저 어닐링 반도체 장비; 디아이(003160)와 별도 법인,공식 확인,A·직접근거,95.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2026/03/17/000551/20260317002186/11011.htm
+https://www.techinsights.com/blog/wfe-market-share",공정 오배치; QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시; 2026 교정: 레이저 어닐링 반도체 장비; 디아이(003160)와 별도 법인,원본318/전공정QA2/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:092070,092070,디엔에프,KR,대상,F03,반도체 전구체 (LS 표 증착-전구체),기존 검증원장,B·기존 QA2,20.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:171010,171010,램테크놀러지,KR,대상,F04/F08,반도체용 식각액·세정액 (세정재료),기존 검증원장,B·기존 QA2,42.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:281740,281740,레이크머티리얼즈,KR,대상,F03,TMA 등 전구체 (신영 소재: 전구체),기존 검증원장,B·기존 QA2,27.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:071280,071280,로체시스템즈,KR,대상,F10,반도체 반송 자동화,기존 검증원장,B·기존 QA2,,https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf,QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:058470,058470,리노공업,KR,대상,B09,테스트 핀/소켓 (LS 표 후공정검사-Pin/Socket),기존 원장,C·기존원장,162.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2026/03/18/000195/20260318000896/11011.htm", | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); B09 유지; 최종 test socket을 웨이퍼 B02 probe card로 이중 집계하지 않음,원본318,국내 KRX 코드 확인 필요,,,거래소·공시 확인(제품 상세 일부미확인),https://kind.krx.co.kr/external/2026/03/18/000195/20260318000896/11011.htm,B09 유지; 최종 test socket을 웨이퍼 B02 probe card로 이중 집계하지 않음
+KR:098120,098120,마이크로컨텍솔 (MCT),KR,대상,B09,마이크로컨텍솔 테스트 접촉부품,공식 확인,A·직접근거,101.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,공정 오배치; 2026 교정: 마이크로컨텍솔 테스트 접촉부품,원본318/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:424980,424980,마이크로투나노 (Micro2Nano),KR,대상,B02,MEMS 프로브카드 (Probe Card),기존 원장,C·기존원장,109.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.micro2nano.com/",공정 오배치 | 10/18잔여검산:공식 제품·사업 직접확인; B02 유지,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.micro2nano.com/,B02 유지
+KR:241770,241770,메카로,KR,대상,F03/F10,ALD 전구체 공급용기·밸브 (전구체),기존 검증원장,B·기존 QA2,26.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2026/05/13/000530/20260513001194/11013.htm",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:059090,059090,미코,KR,대상,F04/F10,세라믹 히터·정전척 (식각/증착 챔버 부품),기존 검증원장,B·기존 QA2,64.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:089970,089970,브이엠 (V&M),KR,대상,F04,건식 식각장비 (LS 표 식각-Dry Etcher),기존 검증원장,B·기존 QA2,66.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:146320,146320,비씨엔씨,KR,대상,F03/F10,"쿼츠 챔버 부품 (신영 부품: 쿼츠부품, Si/Quartz Tube·Boats)",기존 검증원장,B·기존 QA2,24.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:482630,482630,삼양엔씨켐,KR,대상,F02,PR용 폴리머·PAG (ArF/EUV 포토레지스트 소재),기존 검증원장,B·기존 QA2,60.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:252990,252990,샘씨엔에스 (SemCNS),KR,대상,B02,프로브카드용 세라믹 STF,공식 확인,A·직접근거,71.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2026/05/15/000756/20260515001608/11013.htm",공정 오배치; 2026 교정: 프로브카드용 세라믹 STF,원본318/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:357780,357780,솔브레인,KR,대상,F04/F07/F08,실제 습식 공정 소재·CMP 사업 주체,공식 확인,A·직접근거,,"https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시; 2026 교정: 실제 습식 공정 소재·CMP 사업 주체,전공정QA2/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:033170,033170,시그네틱스,KR,대상,B10,OSAT (신영: 패키징),기존 원장,C·기존원장,131.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.signetics.com/", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.signetics.com/,B10 유지
+KR:011930,011930,신성이엔지,KR,대상,F10,클린룸 엔지니어링,기존 검증원장,B·기존 QA2,,https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf,QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:160980,160980,싸이맥스 (Cymecs),KR,대상,F10,웨이퍼 이송장비 (신영: 이송장비),기존 검증원장,B·기존 QA2,87.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:264660,264660,씨앤지하이테크,KR,대상,F10,"화학약품 중앙공급장비 (신영: 화학약품공급장비, CCSS)",기존 원장,C·기존원장,88.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2026/05/15/002722/20260515006191/11013.htm", | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); KIND 사업 공시 F10,원본318,국내 KRX 코드 확인 필요,,,거래소·공시 확인(제품 상세 일부미확인),https://kind.krx.co.kr/external/2026/05/15/002722/20260515006191/11013.htm,KIND 사업 공시 F10
+KR:159010,159010,아스플로,KR,대상,F10,고청정 배관·밸브 (가스캐비닛/가스 공급),기존 원장,C·기존원장,86.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://asflow.com/"," | 10/18잔여검산:그룹·회사 계열 자료(세부 재검증); 회사 사이트/기존 회사보고서 기반, 2026 최신 상품·시장 검증 추가 필요",원본318,국내 KRX 코드 확인 필요,,,그룹·회사 계열 자료(세부 재검증),https://asflow.com/,"회사 사이트/기존 회사보고서 기반, 2026 최신 상품·시장 검증 추가 필요"
+KR:119830,119830,아이텍,KR,대상,B10,반도체 테스트 전문 (OSAT Test),기존 원장,C·기존원장,169.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.iteksemi.com/", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.iteksemi.com/,B10 유지
+KR:101490,101490,에스앤에스텍,KR,대상,F02,블랭크마스크·펠리클 (LS 표 포토-마스크/펠리클),기존 검증원장,B·기존 QA2,56.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techinsights.com/blog/wfe-market-share",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:039440,039440,에스티아이,KR,대상,F10,"화학약품 중앙공급장비 (신영: 화학약품공급장비, CCSS)",기존 검증원장,B·기존 QA2,80.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:200470,200470,에이팩트 (Apect),KR,대상,B10,반도체 패키징+모듈 테스트 수행하는 후공정 OSAT,기존 원장,C·기존원장,144.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.k5.co.kr/stock/200470/company_info"," | 10/18잔여검산:2차자료 확인(공식근거 미완); B10 2차 자료 근거, 공식 원본 검산 보류",원본318,국내 KRX 코드 확인 필요,,,2차자료 확인(공식근거 미완),https://www.k5.co.kr/stock/200470/company_info,"B10 2차 자료 근거, 공식 원본 검산 보류"
+KR:036810,036810,에프에스티,KR,대상,F02,블랭크마스크·펠리클 제조사,기존 검증원장,B·기존 QA2,55.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techinsights.com/blog/wfe-market-share",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:083500,083500,에프엔에스테크,KR,대상,F07/F08,"에프엔에스테크, 반도체 세정장비 노출 별도 확인 / 2026-10-18: 반도체 wafer CMP pad (자사 기술/제품) / TGV 유리기판 세정기",확인·후속검토,C·추가검증,40.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://fnstech.com/en/business/pad.php
+https://fnstech.com/en/product/list.php?idx=13&mode=view","2026 교정: 에프엔에스테크, 반도체 세정장비 노출 별도 확인 | 2026-10-18: F07 CMP PAD 직접확인. F08은 공식 세정기 주요 제시품목이 유리기판 TGV 및 OLED이므로 실리콘 Fab 웨이퍼 세정 직접근거 없음; 배치 확정 보류",원본318/최신교정,국내 KRX 코드 확인 필요,추가+기존배치보류,"https://fnstech.com/en/business/pad.php
+https://fnstech.com/en/product/list.php?idx=13&mode=view",기존 기록 승계,,
+KR:092870,092870,엑시콘 (Exicon),KR,대상,B09,메모리 테스터·번인 테스터·SSD 테스터 공급,기존 원장,C·기존원장,167.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=092870", | 10/18잔여검산:2차자료 확인(공식근거 미완); 발행사 공식 제품 근거 미확보,원본318,국내 KRX 코드 확인 필요,,,2차자료 확인(공식근거 미완),https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=092870,발행사 공식 제품 근거 미확보
+KR:083310,083310,엘오티베큠,KR,대상,F10,반도체용 진공펌프 전공정장비,기존 검증원장,B·기존 QA2,83.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:489500,489500,엘케이켐,KR,대상,F03,반도체 ALD 전구체,기존 검증원장,B·기존 QA2,,https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf,QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:170920,170920,엘티씨 (LTC),KR,대상,F08,자회사 반도체 세정장비 및 공정 소재,공식 확인,A·직접근거,41.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,2026 교정: 자회사 반도체 세정장비 및 공정 소재,원본318/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:033160,033160,엠케이전자,KR,대상,B07,반도체용 솔더볼·본딩와이어 제조사,기존 원장,C·기존원장,130.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2026/04/01/001144/20260326000346/72101.htm", | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); B07 유지,원본318,국내 KRX 코드 확인 필요,,,거래소·공시 확인(제품 상세 일부미확인),https://kind.krx.co.kr/external/2026/04/01/001144/20260326000346/72101.htm,B07 유지
+KR:122640,122640,예스티,KR,대상,F05,"고압 수소 어닐링(HPA)·퍼니스·가압 Cure 장비, HBM 언더필 수혜",기존 검증원장,B·기존 QA2,96.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techinsights.com/blog/wfe-market-share",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:322310,322310,오로스테크놀로지,KR,대상,F09,오버레이 계측장비 (전공정 검사장비),기존 검증원장,B·기존 QA2,106.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://securities.miraeasset.com/bbs/download/2093651.pdf?attachmentId=2093651",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:080580,080580,오킨스전자 (OKins Electronics),KR,대상,B09,반도체 테스트 소켓·커넥터,기존 원장,C·기존원장,164.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=080580", | 10/18잔여검산:2차자료 확인(공식근거 미완); 회사 공식 제품 링크 404; 2차 정보만 있어 추가 공식 검산 보류,원본318,국내 KRX 코드 확인 필요,,,2차자료 확인(공식근거 미완),https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=080580,회사 공식 제품 링크 404; 2차 정보만 있어 추가 공식 검산 보류
+KR:232140,232140,와이씨,KR,대상,B01,웨이퍼 전기검사 장비 (ATE); 프로버와 구분,공식 확인,A·직접근거,105.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.yikcorp.com/",공정 오배치; 2026 교정: 웨이퍼 전기검사 장비 (ATE); 프로버와 구분,원본318/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:112290,112290,와이씨켐,KR,대상,F02/F07,PR 공정 소재 + SK엔펄스 CMP 슬러리 사업 양수,공식 확인,A·직접근거,,"https://kind.krx.co.kr/external/2025/10/21/000564/20251020000142/91969.htm
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.techinsights.com/blog/wfe-market-share",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시; 2026 교정: PR 공정 소재 + SK엔펄스 CMP 슬러리 사업 양수,전공정QA2/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:240810,240810,원익IPS,KR,대상,F03/F05,PECVD·ALD 증착장비,기존 검증원장,B·기존 QA2,25.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.techinsights.com/blog/wfe-market-share",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:074600,074600,원익QnC,KR,대상,F03/F10,증착용 쿼츠 튜브·보트 부품,기존 검증원장,B·기존 QA2,18.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:104830,104830,원익머트리얼즈,KR,대상,F03/F04,반도체 전구체·특수가스,기존 검증원장,B·기존 QA2,23.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:101160,101160,월덱스 (Worldex),KR,대상,F04/F10,식각 공정용 실리콘 부품,기존 검증원장,B·기존 QA2,67.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:097800,097800,윈팩 (Winpac),KR,대상,B10,메모리 패키징 중심 OSAT,기존 원장,C·기존원장,142.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://comp.nicebizline.com/co/CO0100M010GE.nice?nav=2&stockcd=097800", | 10/18잔여검산:2차자료 확인(공식근거 미완); B10 보류성 유지,원본318,국내 KRX 코드 확인 필요,,,2차자료 확인(공식근거 미완),https://comp.nicebizline.com/co/CO0100M010GE.nice?nav=2&stockcd=097800,B10 보류성 유지
+KR:036200,036200,유니셈,KR,대상,F10,스크러버·칠러 서브장비,기존 검증원장,B·기존 QA2,79.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:086390,086390,유니테스트 (UniTest),KR,대상,B01/B09,메모리 테스터·핸들러 (전공정 Wafer Test 병행),기존 원장,C·기존원장,165.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.uni-test.com/kr/semiconductor/semiconductor_list.php", | 10/18잔여검산:공식 제품·사업 직접확인; B09 유지 B01 웨이퍼 테스터 추가,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.uni-test.com/kr/semiconductor/semiconductor_list.php,B09 유지 B01 웨이퍼 테스터 추가
+KR:084370,084370,유진테크,KR,대상,F03,LPCVD·ALD 증착장비,기존 검증원장,B·기존 QA2,19.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:102710,102710,이엔에프테크놀로지,KR,대상,F02/F04/F08,포토 신너·현상액 (식각액/세정액 병행),기존 검증원장,B·기존 QA2,57.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:039030,039030,이오테크닉스,KR,대상,F05/B04,레이저 어닐링 장비 (레이저 다이싱 병행),기존 검증원장,B·기존 QA2,94.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techinsights.com/blog/wfe-market-share",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:064290,064290,인텍플러스 (INTEKPLUS),KR,대상,B08,반도체 패키지 3D 외관검사 장비,기존 원장,C·기존원장,163.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.intekplus.com/kr/sub/products/semiconductor-post-process/list.asp",공정 오배치 | 10/18잔여검산:공식 제품·사업 직접확인; B08 유지,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.intekplus.com/kr/sub/products/semiconductor-post-process/list.asp,B08 유지
+KR:417840,417840,저스템,KR,대상,F10,N₂ Purge System (FOUP 습도제어) 수율 개선 장비,기존 원장,C·기존원장,89.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://njustem.cafe24.com/main/sub04_01_01.php?mode=step01"," | 10/18잔여검산:그룹·회사 계열 자료(세부 재검증); 사업자 공식 도메인 확인 보류, F10 제품 정합",원본318,국내 KRX 코드 확인 필요,,,그룹·회사 계열 자료(세부 재검증),https://njustem.cafe24.com/main/sub04_01_01.php?mode=step01,"사업자 공식 도메인 확인 보류, F10 제품 정합"
+KR:079370,079370,제우스,KR,대상,F08,반도체 세정장비,기존 검증원장,B·기존 QA2,39.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:089790,089790,제이티 (JT),KR,대상,B09,제이티 테스트 핸들러,공식 확인,A·직접근거,85.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,공정 오배치; 2026 교정: 제이티 테스트 핸들러,원본318/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:036930,036930,주성엔지니어링,KR,대상,F03,PECVD·ALD 증착장비,기존 검증원장,B·기존 QA2,17.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:311320,311320,지오엘리먼트,KR,대상,F03/F10,전구체 기화·공급·타깃,기존 검증원장,B·기존 QA2,,"https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:281820,281820,케이씨텍,KR,대상,F07/F08,CMP 장비·슬러리 국내 1위,기존 검증원장,B·기존 QA2,35.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:272110,272110,케이엔제이,KR,대상,F04/F10,CVD-SiC 포커스링 등 식각 공정용 소모품,기존 검증원장,B·기존 QA2,72.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:183300,183300,코미코,KR,대상,F08,웨이퍼 직접 세정이 아니라 반도체 장비부품 세정·코팅,공식 확인,A·직접근거,43.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf
+https://www.komico.com/",제품 역할 보정; QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시; 2026 교정: 웨이퍼 직접 세정이 아니라 반도체 장비부품 세정·코팅,원본318/전공정QA2/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:089890,089890,코세스 (Koses),KR,대상,B05,와이어본더·다이본더 후공정 패키징 장비,기존 원장,C·기존원장,140.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.koses.co.kr/", | 10/18잔여검산:2차자료 확인(공식근거 미완); B05 공식 제품별 상세 미확보,원본318,국내 KRX 코드 확인 필요,,,2차자료 확인(공식근거 미완),https://www.koses.co.kr/,B05 공식 제품별 상세 미확보
+KR:360350,360350,코셈 (Coxem),KR,대상,F09,전자현미경 계측 장비; 실제 인라인 팹 점유 확인 필요,확인·후속검토,C·추가검증,108.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://coxem.com/","2026 교정: 전자현미경 계측 장비; 실제 인라인 팹 점유 확인 필요 | 10/18잔여검산:공정 적합성/합병 상태 보류; F09 편입 근거 보류, 별도 분석·계측 참고 후보",원본318/최신교정,국내 KRX 코드 확인 필요,,,공정 적합성/합병 상태 보류,https://coxem.com/,"F09 편입 근거 보류, 별도 분석·계측 참고 후보"
+KR:219130,219130,타이거일렉 (Tiger Elec),KR,대상,B02/B09,프로브카드용 기판·로드보드/테스트 인터페이스 특수 PCB; 일반 기판산업과 구분,공식 확인,A·직접근거,104.0,"https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=219130
+https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view",공정 오배치; 2026 교정: 프로브카드용 기판·로드보드/테스트 인터페이스 특수 PCB; 일반 기판산업과 구분,원본318/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:095610,095610,테스,KR,대상,F03/F04,PECVD 증착장비,기존 검증원장,B·기존 QA2,22.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:089030,089030,테크윙,KR,대상,B09,반도체 테스트 핸들러,기존 원장,C·기존원장,166.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techwing.co.kr/kor/product/product01.asp", | 10/18잔여검산:공식 제품·사업 직접확인; B09 유지; 차세대 웨이퍼 검사 장비는 개별 공식 모델 검증 전 미추가,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://www.techwing.co.kr/kor/product/product01.asp,B09 유지; 차세대 웨이퍼 검사 장비는 개별 공식 모델 검증 전 미추가
+KR:064760,064760,티씨케이,KR,대상,F04/F10,SiC/실리콘 식각 부품,기존 검증원장,B·기존 QA2,65.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:131290,131290,티에스이 (TSE),KR,대상,B02/B09,테스트소켓·프로브카드·인터페이스보드 통합 테스트 솔루션,기존 원장,C·기존원장,170.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2026/05/21/000733/20260521001892/10001.htm", | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); B02 제품 구분 및 B09 소켓 세부 확인 보조,원본318,국내 KRX 코드 확인 필요,,,거래소·공시 확인(제품 상세 일부미확인),https://kind.krx.co.kr/external/2026/05/21/000733/20260521001892/10001.htm,B02 제품 구분 및 B09 소켓 세부 확인 보조
+KR:425420,425420,티에프이 (TFE),KR,대상,B09,반도체 테스트소켓,기존 원장,C·기존원장,176.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://tfe2026.webiz.kr/interface-board"," | 10/18잔여검산:그룹·회사 계열 자료(세부 재검증); 임시 스테이징 도메인으로 확인, 상장 발행사 공식 사이트 재검증 필요",원본318,국내 KRX 코드 확인 필요,,,그룹·회사 계열 자료(세부 재검증),https://tfe2026.webiz.kr/interface-board,"임시 스테이징 도메인으로 확인, 상장 발행사 공식 사이트 재검증 필요"
+KR:425040,425040,티이엠씨,KR,대상,F04/F10,반도체 특수가스 (식각가스),기존 검증원장,B·기존 QA2,73.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:140860,140860,파크시스템스,KR,대상,F09,AFM 원자현미경 계측장비,기존 검증원장,B·기존 QA2,102.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://securities.miraeasset.com/bbs/download/2093651.pdf?attachmentId=2093651",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:168360,168360,펨트론 (Pemtron),KR,대상,B08,3D CT/X-ray 반도체 검사장비,기존 원장,C·기존원장,172.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/dst/irReference/18298/펨트론_IR자료(2026).pdf",공정 오배치 | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); 발행사 IR 자료 존재; PDF 내용 직접 시각 검토 이전까지 세부 제품 보류,원본318,국내 KRX 코드 확인 필요,,,거래소·공시 확인(제품 상세 일부미확인),https://kind.krx.co.kr/external/dst/irReference/18298/펨트론_IR자료(2026).pdf,발행사 IR 자료 존재; PDF 내용 직접 시각 검토 이전까지 세부 제품 보류
+KR:445180,445180,퓨릿,KR,대상,F02,포토 신너 원재료(PGMEA·PGME·EL) 국산화 소재사,기존 검증원장,B·기존 QA2,59.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:053610,053610,프로텍 (Protec),KR,대상,B06,반도체 디스펜서 (후공정 패키징 장비),기존 원장,C·기존원장,135.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2026/06/29/000774/20260629001239/71381.htm", | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); B06 관련 직접 제품 확인 자료 부족: 보류성 유지,원본318,국내 KRX 코드 확인 필요,,,거래소·공시 확인(제품 상세 일부미확인),https://kind.krx.co.kr/external/2026/06/29/000774/20260629001239/71381.htm,B06 관련 직접 제품 확인 자료 부족: 보류성 유지
+KR:319660,319660,피에스케이,KR,대상,F04/F08,PR Strip·Ashing·Dry Clean. 노광 스캐너 직접 제조 아님,공식 확인,A·직접근거,58.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report",공정 오배치; QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시; 2026 교정: PR Strip·Ashing·Dry Clean. 노광 스캐너 직접 제조 아님,원본318/전공정QA2/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:031980,031980,피에스케이홀딩스,KR,대상,B06,반도체 후공정 Descum / Fluxless Reflow,공식 확인,A·직접근거,9.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.pskholdings.com/",공정 오배치; 2026 교정: 반도체 후공정 Descum / Fluxless Reflow,원본318/최신교정,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:147760,147760,피엠티 (PMT),KR,대상,B02,MEMS 프로브카드 전문 (구 마이크로프랜드),기존 원장,C·기존원장,103.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://kind.krx.co.kr/external/2026/06/29/000774/20260629001239/71381.htm",공정 오배치 | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); 상장사 피엠티와 프로텍 관계 혼동 금지,원본318,국내 KRX 코드 확인 필요,,,거래소·공시 확인(제품 상세 일부미확인),https://kind.krx.co.kr/external/2026/06/29/000774/20260629001239/71381.htm,상장사 피엠티와 프로텍 관계 혼동 금지
+KR:067310,067310,하나마이크론,KR,대상,B10,OSAT 패키징 업체,기존 원장,C·기존원장,137.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://hanamicron.com/", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,국내 KRX 코드 확인 필요,,,공식 제품·사업 직접확인,https://hanamicron.com/,B10 유지
+KR:166090,166090,하나머티리얼즈,KR,대상,F04/F10,식각 공정용 실리콘 부품,기존 검증원장,B·기존 QA2,69.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:042700,042700,한미반도체,KR,대상,B05,반도체 본더 (TC본더 등 HBM 패키징 장비),기존 원장,C·기존원장,134.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.hanmisemi.com/", | 10/18잔여검산:2차자료 확인(공식근거 미완); B05 제품 노출 관련 기존자료 존재하나 이번 확인에서는 회사 세부 페이지 미확보,원본318,국내 KRX 코드 확인 필요,,,2차자료 확인(공식근거 미완),https://www.hanmisemi.com/,B05 제품 노출 관련 기존자료 존재하나 이번 확인에서는 회사 세부 페이지 미확보
+KR:114810,114810,한솔아이원스,KR,대상,F10,정밀 부품·코팅,기존 검증원장,B·기존 QA2,,https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf,QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:014680,014680,한솔케미칼,KR,대상,F03/F08,반도체 전구체·과산화수소·식각액 (세정재료 병행),기존 검증원장,B·기존 QA2,16.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:045100,045100,한양이엔지,KR,대상,F10,반도체 가스·화학약품 공급설비,기존 검증원장,B·기존 QA2,81.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:489790,489790,한화비전 (한화세미텍 모회사),KR,대상,B05,비상장 한화세미텍(본더 제조사)의 상장 모회사,공식 확인,A·직접근거,,https://www.awakeplus.co.kr/data/view/20260429800542,2026 교정: 한화세미텍 지분 100%를 보유한 상장 모회사; TC·Hybrid 본더,최신교정/후공정 보강,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+KR:195870,195870,해성디에스,KR,대상,B07,반도체 리드프레임 (패키징 부품),기존 원장,C·기존원장,143.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=195870", | 10/18잔여검산:2차자료 확인(공식근거 미완); B07 리드프레임만; IC package substrate 제조업은 별도 기판 STACK,원본318,국내 KRX 코드 확인 필요,,,2차자료 확인(공식근거 미완),https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=195870,B07 리드프레임만; IC package substrate 제조업은 별도 기판 STACK
+KR:093370,093370,후성,KR,대상,F04,불소계 특수가스 (식각가스·전구체),기존 검증원장,B·기존 QA2,21.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 국내 거래소코드 확인·미래에셋 HTS 직접검사 미실시,원본318/전공정QA2,국내 KRX 코드 확인 필요,,,기존 기록 승계,,
+US:ACMR,ACMR,ACM리서치,US,대상,F03/F08,습식 세정·Cu 도금 장비 전문 (ACM Shanghai와 동일 사업),기존 검증원장,B·기존 QA2,44.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.sec.gov/Archives/edgar/data/1680062/000162828026054832/acmr-20260630.htm",연결기업 중복 점검; QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:AEHR,AEHR,Aehr Test Systems,US,대상,B01/B09,"Tester/Handler, 번인 테스트 시스템 전문 / 2026-10-18: FOX-XP wafer-level burn-in; 2026-08-12 추가 생산 발주",기존 원장,C·기존원장,180.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.aehr.com/2026/08/aehr-receives-22-million-follow-on-order-for-ai-processor-wafer-level-burn-in-systems/"," | 2026-10-18: B09 유지, B01 웨이퍼레벨 번인 별도",원본318,삼성 POP/mPOP 전용코드 미확인,추가,https://www.aehr.com/2026/08/aehr-receives-22-million-follow-on-order-for-ai-processor-wafer-level-burn-in-systems/,기존 기록 승계,,
+US:AMKR,AMKR,Amkor Technology,US,대상,B10,"OSAT Packaging, 미국 최대 OSAT",기존 원장,C·기존원장,156.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://amkor.com/test-services/", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,삼성 POP/mPOP 전용코드 미확인,,,공식 제품·사업 직접확인,https://amkor.com/test-services/,B10 유지
+US:CAMT,CAMT,Camtek,US,대상,B08,첨단 패키지 검사/계측 장비,공식 확인,A·직접근거,,https://www.camtek.com/,2026 교정: 첨단 패키징 검사 및 3D 계측,최신교정/후공정 보강,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:IMOS,IMOS,ChipMOS Technologies,US,대상,B10,테스트·패키징·범핑 위탁 서비스; 대만 8150과 동일 회사,공식 확인,A·직접근거,,https://www.chipmos.com/english/ir/shareholders.aspx,,후공정 보강,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:COHR,COHR,Coherent (코히런트),US,대상,F01,SiC 웨이퍼·에피 기판 사업,공식 확인,A·직접근거,315.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.coherent.com/materials/wide-bandgap-electronics/sic-substrates-epitaxy/sic-for-power-electronics",SiC 기판사업 누락; 2026 교정: SiC 웨이퍼·에피 기판 사업,원본318/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:COHU,COHU,Cohu,US,대상,B02/B09,Tester/Handler (핸들러·테스트 장비) / 2026-10-18: Test contactors / spring probes / handlers,기존 원장,C·기존원장,181.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.cohu.com/contact-help-center
+https://ir.cohu.com/"," | 2026-10-18: B09 최종검사장비 유지, B02 접촉부품 직접 노출",원본318,삼성 POP/mPOP 전용코드 미확인,추가,"https://www.cohu.com/contact-help-center
+https://ir.cohu.com/",기존 기록 승계,,
+US:FORM,FORM,FormFactor,US,대상,B02,프로브카드 중심,공식 확인,A·직접근거,110.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.formfactor.com/",공정 오배치; 2026 교정: 프로브카드 중심,원본318/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:KLAC,KLAC,KLA,US,대상,F09/B08,인라인 계측/검사와 첨단 패키징 검사·계측,공식 확인,A·직접근거,111.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://ir.kla.com/
+https://securities.miraeasset.com/bbs/download/2093651.pdf?attachmentId=2093651",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시; 2026 교정: 인라인 계측/검사와 첨단 패키징 검사·계측,원본318/전공정QA2/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:KLIC,KLIC,Kulicke & Soffa (K&S),US,대상,B05/B06,와이어본더·볼본더 세계 1위 후공정 장비 / 2026-10-18: Fluxless thermo-compression bonding (TCB),기존 원장,C·기존원장,157.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.semi.org/en/semi-press-release/kulicke-and-soffa-earns-2026-semi-award-for-north-america-at-semicon-west", | 2026-10-18: 2026-10-13 SEMI 공식 수상 발표. 기존 B06 유지,원본318,삼성 POP/mPOP 전용코드 미확인,추가,https://www.semi.org/en/semi-press-release/kulicke-and-soffa-earns-2026-semi-award-for-north-america-at-semicon-west,기존 기록 승계,,
+US:MKSI,MKSI,MKS인스트루먼츠,US,대상,F10,진공·RF파워·가스전달 등 공정장비용 서브시스템,기존 검증원장,B·기존 QA2,91.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:TER,TER,Teradyne,US,대상,B01/B09,SoC 테스터 (Tester),기존 원장,C·기존원장,182.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron
+https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron"," | 2026-10-18: 2026-10-17 기존 기록 계승. 신규 고객사/매출 추정하지 않음 | 10/18잔여검산:공식 제품·사업 직접확인; B01 B09 유지, KGD를 B01 wafer 검사 전체로 오인 금지",원본318,삼성 POP/mPOP 전용코드 미확인,유지+경계주의,https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron,공식 제품·사업 직접확인,https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron,"B01 B09 유지, KGD를 B01 wafer 검사 전체로 오인 금지"
+US:NVMI,NVMI,노바(Nova),US,대상,F09,광학·물질·화학 계측·공정제어,기존 검증원장,B·기존 QA2,,https://www.novami.com/investors/press-releases/nova-to-report-second-quarter-2026-financial-results-on-august-6/,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:LRCX,LRCX,램리서치,US,대상,F03/F04,드라이에치 글로벌 1위 (증착 장비도 병행),기존 검증원장,B·기존 QA2,76.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:LIN,LIN,린데,US,대상,F04/F10,건식각·공정용 특수가스·벌크가스 공급,기존 검증원장,B·기존 QA2,75.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:VECO,VECO,비코(Veeco),US,대상,F03/F05,"MOCVD·에피 증착, 레이저 어닐링; ACLS 합병 종결 미확인",확인·후속검토,C·추가검증,29.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.sec.gov/Archives/edgar/data/103145/000110465926091158/veco-20260630x10q.htm
+https://www.sec.gov/Archives/edgar/data/103145/000110465926091158/veco-20260630x10q.htm
+https://www.sec.gov/Archives/edgar/data/103145/000110465926091158/veco-20260630x10q.htm","QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시; 2026 교정: MOCVD·에피 증착, 레이저 어닐링; ACLS 합병 종결 미확인 | 2026-10-18: 종결 공시 미확인, 기존 ACLS/VECO 개별 등록 유지 | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); 종결 증거 미확보, ACLS와 임의 합치지 않음",원본318/전공정QA2/최신교정,삼성 POP/mPOP 전용코드 미확인,합병여부보류,https://www.sec.gov/Archives/edgar/data/103145/000110465926091158/veco-20260630x10q.htm,거래소·공시 확인(제품 상세 일부미확인),https://www.sec.gov/Archives/edgar/data/103145/000110465926091158/veco-20260630x10q.htm,"종결 증거 미확보, ACLS와 임의 합치지 않음"
+US:ICHR,ICHR,아이코어홀딩스,US,대상,F10,가스캐비닛 (가스·유체 공급 서브시스템),기존 검증원장,B·기존 QA2,90.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.sec.gov/Archives/edgar/data/1652535/000165253526000012/ichr-20251226.htm",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:ACLS,ACLS,액셀리스,US,대상,F06,"이온주입 장비, VECO 합병 종결은 미확인(별도 종목 유지)",확인·후속검토,C·추가검증,93.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.sec.gov/Archives/edgar/data/103145/000110465926091158/veco-20260630x10q.htm
+https://www.sec.gov/Archives/edgar/data/1113232/000110465926091999/acls-20260630x10q.htm
+https://www.sec.gov/Archives/edgar/data/1113232/000110465926091999/acls-20260630x10q.htm
+https://www.sec.gov/Archives/edgar/data/1113232/000110465926091999/acls-20260630x10q.htm","QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시; 2026 교정: 이온주입 장비, VECO 합병 종결은 미확인(별도 종목 유지) | 2026-10-18: 공식 2026-06 보고서상 중국 승인 대기. 2026-10-18 종결 공식공시 확인 실패. 임의 티커 통합하지 않음 | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); 2026-06 10-Q로만 종결 전 상태 파악. 2026-10 종결 재확인 보류",원본318/전공정QA2/최신교정,삼성 POP/mPOP 전용코드 미확인,합병여부보류,https://www.sec.gov/Archives/edgar/data/1113232/000110465926091999/acls-20260630x10q.htm,거래소·공시 확인(제품 상세 일부미확인),https://www.sec.gov/Archives/edgar/data/1113232/000110465926091999/acls-20260630x10q.htm,2026-06 10-Q로만 종결 전 상태 파악. 2026-10 종결 재확인 보류
+US:AEIS,AEIS,어드밴스드에너지,US,대상,F10,RF/DC 전원,기존 검증원장,B·기존 QA2,,"https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:AMAT,AMAT,어플라이드 머티어리얼즈,US,대상,F03/F04/F06/F07,"CVD·PVD 종합 증착장비 (CMP·식각 장비 병행, 증착 중심 배치)",기존 검증원장,B·기존 QA2,28.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:APD,APD,에어프로덕츠,US,대상,F04/F10,건식각가스·공정용 산업/특수가스 공급,기존 검증원장,B·기존 QA2,74.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:ONTO,ONTO,온토 이노베이션,US,대상,F09,공정제어·계측/검사 장비,기존 검증원장,B·기존 QA2,112.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://securities.miraeasset.com/bbs/download/2093651.pdf?attachmentId=2093651",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:UCTT,UCTT,울트라클린홀딩스,US,대상,F10,가스 전달·서브팹 시스템 (가스캐비닛),기존 검증원장,B·기존 QA2,92.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.sec.gov/Archives/edgar/data/1275014/000162828026010744/uctt-20251226.htm",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:WOLF,WOLF,울프스피드 (Wolfspeed),US,대상,F01,SiC 웨이퍼/에피 제조; 2025-09-29 구주 취소·신주 발행 이력 분리,공식 확인,A·직접근거,8.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.sec.gov/Archives/edgar/data/895419/000089541925000132/wolf-20250928.htm",주식 이력 교정; 2026 교정: SiC 웨이퍼/에피 제조; 2025-09-29 구주 취소·신주 발행 이력 분리,원본318/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:ENTG,ENTG,인테그리스,US,대상,F07/F08/F10,세정재료 (CMP 슬러리·필터·FOUP·케미컬),기존 검증원장,B·기존 QA2,45.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:Q,Q,큐니티일렉트로닉스(Qnity),US,대상,F02/F07/B07,전자재료 독립상장 Qnity; CMP 패드·슬러리·포토·패키징 소재,공식 확인,A·직접근거,,"https://ir.qnityelectronics.com/sec-filings/all-sec-filings/content/0002058873-26-000010/q-20251231.htm
+https://www.dupont.com/news/dupont-completes-separation-of-qnity-electronics.html",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시; 2026 교정: 전자재료 독립상장 Qnity; CMP 패드·슬러리·포토·패키징 소재,전공정QA2/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+US:PLAB,PLAB,포트로닉스,US,대상,F02,상업용 반도체 포토마스크,기존 검증원장,B·기존 QA2,,https://www.techinsights.com/blog/wfe-market-share,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:4401,4401,ADEKA,JP,대상,F03,전구체·공정 화학,기존 검증원장,B·기존 QA2,,https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6857,6857,Advantest,JP,대상,B01/B09,"Tester/Handler, 메모리·SoC 테스터 글로벌 선두",기존 원장,C·기존원장,161.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.advantest.com/en/products/semiconductor-test-system/memory/t5833/", | 10/18잔여검산:공식 제품·사업 직접확인; B01/B09 모두 자사 장비 직접 확인,원본318,삼성 POP/mPOP 전용코드 미확인,,,공식 제품·사업 직접확인,https://www.advantest.com/en/products/semiconductor-test-system/memory/t5833/,B01/B09 모두 자사 장비 직접 확인
+JP:6146,6146,Disco,JP,대상,B03/B04,연삭·절단 장비,공식 확인,A·직접근거,113.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,2026 교정: 연삭·절단 장비,원본318/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:7912,7912,DNP,JP,대상,F02,포토마스크 제조,기존 검증원장,B·기존 QA2,,https://www.techinsights.com/blog/wfe-market-share,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:7741,7741,HOYA,JP,대상,F02,Blank Mask·Pellicle (EUV 펠리클),기존 검증원장,B·기존 QA2,52.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techinsights.com/blog/wfe-market-share",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6855,6855,Japan Electronic Materials,JP,대상,B02,반도체 프로브카드(웨이퍼 테스트),보강 후보(출처 확인),C·추가검증,,"https://www.jem-net.co.jp/
+https://www.jem-net.co.jp/en/profile/outline", | 10/18잔여검산:공식 제품·사업 직접확인; B02 유지,후공정 보강,삼성 POP/mPOP 전용코드 미확인,,,공식 제품·사업 직접확인,https://www.jem-net.co.jp/en/profile/outline,B02 유지
+JP:5016,5016,JX금속,JP,대상,F03/F07/F10,스퍼터링 타깃,기존 검증원장,B·기존 QA2,,"https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6525,6525,Kokusai Electric,JP,대상,F03/F05,배치식 ALD·열처리 전공정 장비 (구 히타치국제전기),기존 검증원장,B·기존 QA2,15.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.techinsights.com/blog/wfe-market-share",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6971,6971,Kyocera,JP,대상,F03/F04/F10,Kyocera 반도체 장비용 세라믹 챔버 부품·핸들링,공식 확인,A·직접근거,222.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://global.kyocera.com/prdct/fc/wp/catalog/semiconductor/index.html",공정부품 사업 누락; 2026 교정: Kyocera 반도체 장비용 세라믹 챔버 부품·핸들링,원본318/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:7966,7966,Lintec,JP,대상,B03/B04/B07,백그라인딩·다이싱 테이프/DAF 소재,공식 확인,A·직접근거,,https://www.lintec-global.com/ir/library/annual/pdf/Integrated_Report_2025_all.pdf,,후공정 보강,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6871,6871,Micronics Japan,JP,대상,B01/B02/B09,프로브카드·프로버·테스터·소켓,공식 확인,A·직접근거,,https://www.mjc.co.jp/en/products_service/,"2026 교정: 프로브카드, 웨이퍼 프로버, IC 테스터, 최종 테스트 소켓",최신교정/후공정 보강,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:7731,7731,Nikon (ニコン),JP,대상,F02/F09,스테퍼·스캐너 노광장비 (포토리소그래피),기존 검증원장,B·기존 QA2,51.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://securities.miraeasset.com/bbs/download/2093651.pdf?attachmentId=2093651
+https://www.techinsights.com/blog/wfe-market-share",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6988,6988,Nitto Denko,JP,대상,B03/B04/B07,백그라인딩 보호·다이싱·패키징용 테이프,보강 후보(출처 확인),C·추가검증,,"https://www.nitto.com/
+https://www.nitto.com/us/en/markets/industry/electronic/semicon/", | 2026-10-18: B03 B04 B07 제품 직접근거 확인,후공정 보강,삼성 POP/mPOP 전용코드 미확인,유지,https://www.nitto.com/us/en/markets/industry/electronic/semicon/,기존 기록 승계,,
+JP:6125,6125,Okamoto Machine Tool Works,JP,대상,B03,정밀 웨이퍼 연삭·박막화,보강 후보(출처 확인),C·추가검증,,"
+https://www.okamoto.co.jp/en/products/gnx200b/"," | 2026-10-18: B03 유지, F07 범용 메모리 CMP로 확장 안 함",후공정 보강,삼성 POP/mPOP 전용코드 미확인,유지,https://www.okamoto.co.jp/en/products/gnx200b/,기존 기록 승계,,
+JP:6387,6387,SAMCO,JP,대상,F03,PECVD·드라이 공정,기존 검증원장,B·기존 QA2,,https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:7735,7735,SCREEN홀딩스,JP,대상,F08,웨이퍼 세정장비 글로벌 강자,기존 검증원장,B·기존 QA2,38.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6590,6590,Shibaura Mechatronics,JP,대상,B05,반도체 본딩 장비,공식 확인,A·직접근거,,,2026 교정: 하이브리드/플립칩 본딩 장비,최신교정/후공정 보강,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:3436,3436,SUMCO,JP,대상,F01,실리콘 웨이퍼 2위,기존 검증원장,B·기존 QA2,5.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://indexes.nikkei.co.jp/en/nkave/index/component?idx=nkscd",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:4203,4203,Sumitomo Bakelite,JP,대상,B07,첨단 패키징 EMC·MUF·몰딩 소재 (2026-10 설비증설 발표),공식 확인,A·직접근거,,https://www.sumibe.co.jp/english/topics/2026/it-materials/1007_01/index.html,,후공정 보강,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:429A,429A,Tekscend Photomask,JP,대상,F02,상장 포토마스크 제조사,공식 확인,A·직접근거,,https://www.toppanphotomasks.com/en/ir/faq/,2026 교정: 포토마스크 직접 제조 상장사. TOPPAN과 종목 분리,최신교정/후공정 보강,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:7729,7729,Tokyo Seimitsu (東京精密),JP,대상,F09/B01/B03/B04,웨이퍼 프로버·연삭·다이싱 및 계측,공식 확인,A·직접근거,114.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://securities.miraeasset.com/bbs/download/2093651.pdf?attachmentId=2093651",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시; 2026 교정: 웨이퍼 프로버·연삭·다이싱 및 계측,원본318/전공정QA2/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6315,6315,TOWA,JP,대상,B06,반도체 패키징 Compression/Transfer Molding 장비(소재 아님),기존 원장,C·기존원장,125.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.towajapan.co.jp/en/products/molding/", | 2026-10-18: WATCHLIST 원본 B06 제품역할 '소재·소모품' 오기 → '장비·서비스'. 공정 유지,원본318,삼성 POP/mPOP 전용코드 미확인,역할수정,https://www.towajapan.co.jp/en/products/molding/,기존 기록 승계,,
+JP:6728,6728,ULVAC,JP,대상,F03/F04/F10,진공기술 기반 스퍼터링 증착장비,기존 검증원장,B·기존 QA2,77.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",실제 제품 재배치; QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:4021,4021,닛산화학,JP,대상,F02,반도체 코팅·고순도 화학,기존 검증원장,B·기존 QA2,,"https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.techinsights.com/blog/wfe-market-share",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6622,6622,다이헨,JP,대상,F10,반도체 로봇·전원,기존 검증원장,B·기존 QA2,,https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:4186,4186,도쿄오카공업(TOK),JP,대상,F02,포토레지스트(감광액PR) 제조,기존 검증원장,B·기존 QA2,49.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.techinsights.com/blog/wfe-market-share",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:8035,8035,도쿄일렉트론,JP,대상,F02/F03/F04/F05/F08,건식 식각장비·포토 코터/디벨로퍼,기존 검증원장,B·기존 QA2,63.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6920,6920,레이저텍,JP,대상,F02/F09,EUV 마스크·펠리클 결함검사 장비,기존 검증원장,B·기존 QA2,99.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://securities.miraeasset.com/bbs/download/2093651.pdf?attachmentId=2093651
+https://www.techinsights.com/blog/wfe-market-share",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:4004,4004,레조낙,JP,대상,F07/B07,"Resonac 패키징 소재·CMP 소재, 사업별 구분",공식 확인,A·직접근거,214.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.resonac.com/","소재사업 누락; QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시; 2026 교정: Resonac 패키징 소재·CMP 소재, 사업별 구분",원본318/전공정QA2/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6323,6323,로체(RORZE),JP,대상,F10,웨이퍼 이송 로봇,기존 검증원장,B·기존 QA2,,https://www.rorze.com/en/,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6302,6302,스미토모중공업,JP,대상,F06,그룹 계열사 제품,기존 검증원장,B·기존 QA2,,https://www.techinsights.com/blog/wfe-market-share,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:4005,4005,스미토모화학,JP,대상,F02,포토레지스트,기존 검증원장,B·기존 QA2,,https://www.techinsights.com/blog/wfe-market-share,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:4063,4063,신에츠화학,JP,대상,F01/F02,실리콘 웨이퍼 1위,기존 검증원장,B·기존 QA2,6.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://indexes.nikkei.co.jp/en/nkave/index/component?idx=nkscd
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6361,6361,에바라,JP,대상,F07,연마 장비,기존 검증원장,B·기존 QA2,,https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:4047,4047,칸토덴카,JP,대상,F04,불소계 특수가스,기존 검증원장,B·기존 QA2,,https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:7751,7751,캐논,JP,대상,F02,노광장비 (i-line·KrF),기존 검증원장,B·기존 QA2,53.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techinsights.com/blog/wfe-market-share",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:4043,4043,토쿠야마,JP,대상,F01,고순도 폴리실리콘,기존 검증원장,B·기존 QA2,,https://indexes.nikkei.co.jp/en/nkave/index/component?idx=nkscd,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6890,6890,페로텍홀딩스,JP,대상,F10,진공씰·세라믹·석영 부품 (진공계 부품),기존 검증원장,B·기존 QA2,78.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6856,6856,호리바,JP,대상,F09,공정 가스·계측,기존 검증원장,B·기존 QA2,,https://securities.miraeasset.com/bbs/download/2093651.pdf?attachmentId=2093651,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:5384,5384,후지미,JP,대상,F07,CMP Slurry,기존 검증원장,B·기존 QA2,32.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf
+https://www.semi.org/en/products-services/market-data/advanced-cleaning-and-surface-preparation-report",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:4901,4901,후지필름홀딩스,JP,대상,F02,감광액PR (포토레지스트),기존 검증원장,B·기존 QA2,50.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techinsights.com/blog/wfe-market-share",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6258,6258,히라타기공,JP,대상,F10,공정 자동화,기존 검증원장,B·기존 QA2,,https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+JP:6501,6501,히타치제작소,JP,대상,F09,Hitachi High-Tech 모회사,기존 검증원장,B·기존 QA2,,https://securities.miraeasset.com/bbs/download/2093651.pdf?attachmentId=2093651,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+TW:3711,3711,ASE Technology Holding,TW,대상,B10,"OSAT Packaging, 글로벌 최대 OSAT",기존 원장,C·기존원장,152.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.aseglobal.com/about/", | 2026-10-18: TWSE 3711만 원장 유지; NYSE ASX는 ADR 참고. 삼성 POP 지원 별도,원본318,해외주식 거래지원·종목별 매매 확인,유지,https://www.aseglobal.com/about/,기존 기록 승계,,
+TW:6147,6147,Chipbond Technology,TW,대상,B10,위탁 반도체 패키징·테스트 서비스,공식 확인,A·직접근거,,,2026 교정: Chipbond 패키징·테스트,최신교정/후공정 보강,해외주식 거래지원·종목별 매매 확인,,,기존 기록 승계,,
+TW:2360,2360,Chroma ATE (致茂電子),TW,대상,B08/B09,Tester/Handler (ATE·자동측정장비) / 2026-10-18: Advanced packaging 3D metrology 7980/7981 및 7961 검사,기존 원장,C·기존원장,177.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.chromaate.com/en/newsroom/news1039", | 2026-10-18: 기존 B09 ATE 유지. 패키지 계측 B08 추가,원본318,해외주식 거래지원·종목별 매매 확인,추가,https://www.chromaate.com/en/newsroom/news1039,기존 기록 승계,,
+TW:6488,6488,GlobalWafers,TW,대상,F01,실리콘 웨이퍼 제조,기존 원장,C·기존원장,7.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.sas-globalwafers.com/en/products/", | 10/18잔여검산:공식 제품·사업 직접확인; F01 웨이퍼 직접 제품,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.sas-globalwafers.com/en/products/,F01 웨이퍼 직접 제품
+TW:2441,2441,Greatek Electronics,TW,대상,B10,위탁 반도체 패키징·테스트 서비스,공식 확인,A·직접근거,,,2026 교정: Greatek 패키징·테스트,최신교정/후공정 보강,해외주식 거래지원·종목별 매매 확인,,,기존 기록 승계,,
+TW:6683,6683,Keystone Microtech,TW,대상,B02/B09,프로브카드·접촉부품 관련 상장사,보강 후보(출처 확인),C·추가검증,,"
+https://www.ksmt.com.tw/en/product_02", | 10/18잔여검산:공식 제품·사업 직접확인; B02 유지 + B09 최종검사 인터페이스 보드,후공정 보강,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.ksmt.com.tw/en/product_02,B02 유지 + B09 최종검사 인터페이스 보드
+TW:2449,2449,King Yuan Electronics (KYEC),TW,대상,B10,OSAT Test (테스트 전문 OSAT),기존 원장,C·기존원장,178.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.kyec.com/en"," | 10/18잔여검산:공식 제품·사업 직접확인; B10 하위 test service 유지, 순수 packaging 업체 오분류 금지",원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.kyec.com/en,"B10 하위 test service 유지, 순수 packaging 업체 오분류 금지"
+TW:6223,6223,MPI Corporation,TW,대상,B01/B02,프로브카드·웨이퍼 프로빙 테스트·측정,공식 확인,A·직접근거,,https://www.mpi-corporation.com/about/,,후공정 보강,해외주식 거래지원·종목별 매매 확인,,,기존 기록 승계,,
+TW:6239,6239,Powertech Technology (PTI),TW,대상,B10,메모리 패키징·테스트 OSAT,기존 원장,C·기존원장,154.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.pti.com.tw/", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.pti.com.tw/,B10 유지
+TW:3583,3583,Scientech,TW,대상,F08/B05,Pyxis 임시 본딩·디본딩 장비 및 웨이퍼 세정,공식 확인,A·직접근거,,"https://www.scientech.com.tw/en/Products/Scientech/All
+https://www.scientech.com.tw/en/Products/Scientech/TBDB","2026 교정: 임시 본딩·디본딩(PYxIS), 웨이퍼 습식 세정 장비",최신교정/후공정 보강,해외주식 거래지원·종목별 매매 확인,,,기존 기록 승계,,
+TW:6257,6257,Sigurd Microelectronics,TW,대상,B10,테스트 전문 OSAT,기존 원장,C·기존원장,179.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.sigurd.com.tw/about", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.sigurd.com.tw/about,B10 유지
+TW:3532,3532,포모사SUMCO,TW,대상,F01,실리콘 웨이퍼,기존 검증원장,B·기존 QA2,,https://www.twse.com.tw/pdf/en/3532_en.pdf,QA2: TWSE 상장 확인 / 대만 오프라인 국가 지원 / 종목별 매매·HTS 검색 미확인,전공정QA2,해외주식 거래지원·종목별 매매 확인,,,기존 기록 승계,,
+CN:688200,688200,AccoTEST (华峰测控),CN,대상,B01/B09,"Tester/Handler, 아날로그·혼합신호 ATE",기존 원장,C·기존원장,160.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.accotest.com/products/sts8200-axe-fet/", | 10/18잔여검산:공식 제품·사업 직접확인; B09 유지 + B01 wafer test,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.accotest.com/products/sts8200-axe-fet/,B09 유지 + B01 wafer test
+CN:688082,688082,ACM Research Shanghai (盛美上海),CN,대상,F03/F07/F08,세정장비 중국 자립도 30~40% 주역 (미래에셋/Yole 표),중복 관계 검토,C·추가검증,37.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.acmr.com/",연결기업 중복 점검 | 10/18잔여검산:공식 제품·사업 직접확인; ACMR 미국 모회사와 중국 688082 경제적/지배구조 연계 별도,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.acmr.com/,ACMR 미국 모회사와 중국 688082 경제적/지배구조 연계 별도
+CN:688012,688012,AMEC (Advanced Micro-Fabrication Equipment / 中微公司),CN,대상,F03/F04,"Dry Etcher·MOCVD 장비, 중국 자립도 40% 상회 (미래에셋/Yole 표)",기존 원장,C·기존원장,61.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.amec-inc.com/"," | 10/18잔여검산:공식 제품·사업 직접확인; 식각 F04 유지, 증착 F03 추가",원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.amec-inc.com/,"식각 F04 유지, 증착 F03 추가"
+CN:688019,688019,Anji Micro (Anji Microelectronics Technology Shanghai),CN,대상,F07/F08,CMP Slurry 중국 국산화 대표 (安集科技),기존 원장,C·기존원장,31.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.anjimicro.com/en/gongnengxingshidianzihuaxuepin.html", | 10/18잔여검산:공식 제품·사업 직접확인; F07 유지 + F08 세정 화학 소재,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.anjimicro.com/en/gongnengxingshidianzihuaxuepin.html,F07 유지 + F08 세정 화학 소재
+CN:300604,300604,Changchuan Technology (长川科技),CN,대상,B01/B09,Tester/Handler (테스터·프로브 ATE),기존 원장,C·기존원장,159.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.hzcctech.com/index.aspx", | 10/18잔여검산:공식 제품·사업 직접확인; B09 유지 + B01 wafer prober. AOI 대상이 패키지인지 공식 세부 확인 전 B08 미추가,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.hzcctech.com/index.aspx,B09 유지 + B01 wafer prober. AOI 대상이 패키지인지 공식 세부 확인 전 B08 미추가
+CN:300054,300054,Dinglong (Hubei Dinglong),CN,대상,F07,"CMP Slurry (CMP 패드 중국 국산화, 鼎龙股份)",기존 원장,C·기존원장,30.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://en.dl-kg.com/products.html"," | 10/18잔여검산:공식 제품·사업 직접확인; F07 유지, 포토레지스트/패키징 접착제별 상품화 상태 재검증 전 추가 배치 보류",원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://en.dl-kg.com/products.html,"F07 유지, 포토레지스트/패키징 접착제별 상품화 상태 재검증 전 추가 배치 보류"
+CN:688268,688268,Huate Gas (Guangdong Huate Gas),CN,대상,F04,"건식각가스 (반도체 특수가스, 중국)",기존 원장,C·기존원장,62.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.huategas.com/en/"," | 10/18잔여검산:공정 적합성/합병 상태 보류; 제품 업체 자체 확인, 특정 F04 가스/공정 지정은 보류",원본318,해외주식 거래지원·종목별 매매 확인,,,공정 적합성/합병 상태 보류,https://www.huategas.com/en/,"제품 업체 자체 확인, 특정 F04 가스/공정 지정은 보류"
+CN:002185,002185,Huatian Technology (HT-Tech / TSHT),CN,대상,B10,OSAT Packaging (华天科技),기존 원장,C·기존원장,116.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.ht-tech.com/", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.ht-tech.com/,B10 유지
+CN:600584,600584,JCET Group,CN,대상,B10,"OSAT Packaging, 중국 최대 OSAT (长电科技)",기존 원장,C·기존원장,121.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.jcetglobal.com/en", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.jcetglobal.com/en,B10 유지
+CN:300346,300346,Nata Opto (Jiangsu Nata Opto-electronic Material),CN,대상,F02/F03,ArF 포토레지스트(PR) 소재,기존 원장,C·기존원장,46.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.natachem.com/", | 10/18잔여검산:공식 제품·사업 직접확인; 자사 PR 페이지에 양산 준비 중 표기: 제품 개발/양산 구분 필수,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.natachem.com/,자사 PR 페이지에 양산 준비 중 표기: 제품 개발/양산 구분 필수
+CN:688126,688126,National Silicon Industry Group (沪硅产业),CN,대상,F01,실리콘 웨이퍼 제조사,기존 원장,C·기존원장,1.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://star.sse.com.cn/star/market/stocklist/info/company/index.shtml?COMPANY_CODE=688126", | 10/18잔여검산:거래소·공시 확인(제품 상세 일부미확인); 거래소 상장 자료만 확인; 회사 공식 제품 사양 근거 부족,원본318,해외주식 거래지원·종목별 매매 확인,,,거래소·공시 확인(제품 상세 일부미확인),https://star.sse.com.cn/star/market/stocklist/info/company/index.shtml?COMPANY_CODE=688126,거래소 상장 자료만 확인; 회사 공식 제품 사양 근거 부족
+CN:002371,002371,Naura Technology Group (北方华创),CN,대상,F03/F04/F05/F06/F08/B05,"중국 장비 국산화 대표 (증착·식각, 자립도 40% 상회)",기존 원장,C·기존원장,11.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.naura.com/product/semiconductor.html", | 10/18잔여검산:공식 제품·사업 직접확인; F06는 화합물반도체용 이온주입 노출 포함; 장비군별 매출 기여 별도 확인,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.naura.com/product/semiconductor.html,F06는 화합물반도체용 이온주입 노출 포함; 장비군별 매출 기여 별도 확인
+CN:688072,688072,Piotech (拓荆科技),CN,대상,F03/B05,PECVD·ALD 중국 장비사 / 2026-10-18: Dione 300 웨이퍼 하이브리드 본딩,기존 원장,C·기존원장,12.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://piotech.cn/index.php/Pro/detail?id=637", | 2026-10-18: 증착과 본딩 별도 제품 확인. 고객 납품·삼성HTS 지원 미검증,원본318,해외주식 거래지원·종목별 매매 확인,추가,https://piotech.cn/index.php/Pro/detail?id=637,기존 기록 승계,,
+CN:688234,688234,SICC (Tianyue Advanced),CN,대상,F01,SiC 기판(웨이퍼) 제조사,기존 원장,C·기존원장,2.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.sicc.cc/product.html"," | 10/18잔여검산:공식 제품·사업 직접확인; 상장 대체 H주 2631.HK 별도 기록(동일 회사, 중복 수량 금지)",원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.sicc.cc/product.html,"상장 대체 H주 2631.HK 별도 기록(동일 회사, 중복 수량 금지)"
+CN:002156,002156,Tongfu Microelectronics (TFME),CN,대상,B10,OSAT (패키징),기존 원장,C·기존원장,115.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.tfme.com/", | 10/18잔여검산:공식 제품·사업 직접확인; B10 유지,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.tfme.com/,B10 유지
+NL:ASM.AS,ASM.AS,ASM International,NL,대상,F03/F05/F07,ALD 증착장비 글로벌 선두 / 2026-10-18: SONORA vertical furnace 산화·확산 / Axus Capstone CMP (2025-12 인수),기존 원장,C·기존원장,14.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.asm.com/our-technology-products/vertical-furnace
+https://www.globenewswire.com/news-release/2026/03/03/3248697/0/en/ASM-reports-Q4-and-full-year-2025-results.html"," | 2026-10-18: F07 CMP는 화합물 반도체·More-than-Moore 장비, 범용 DRAM 배선 수혜로 오해 금지",원본318,삼성 POP/mPOP 전용코드 미확인,추가,"https://www.asm.com/our-technology-products/vertical-furnace
+https://www.globenewswire.com/news-release/2026/03/03/3248697/0/en/ASM-reports-Q4-and-full-year-2025-results.html",기존 기록 승계,,
+NL:ASML,ASML,ASML Holding,NL,대상,F02,EUV/DUV 스캐너,기존 검증원장,B·기존 QA2,47.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.techinsights.com/blog/wfe-market-share",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시; 원장 거래소/국가 코드 중복 합산,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+NL:BESI,BESI,BE Semiconductor Industries,NL,대상,B05/B06,Bonder (다이 어태치·하이브리드 본딩 장비) / 2026-10-18: Fico 브랜드 몰딩·트림/포밍·패키지 싱귤레이션 장비,기존 원장,C·기존원장,123.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.besi.com/products-technology/", | 2026-10-18: B05 다이 본딩 유지,원본318,삼성 POP/mPOP 전용코드 미확인,추가,https://www.besi.com/products-technology/,기존 기록 승계,,
+DE:AIXA,AIXA,AIXTRON SE,DE,대상,F03,GaN/SiC·LED용 MOCVD 증착장비,기존 원장,C·기존원장,13.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.aixtron.com/en/products", | 10/18잔여검산:공식 제품·사업 직접확인; F03 유지; 메모리 DRAM 증착과 시장 구분,원본318,삼성 POP/mPOP 전용코드 미확인,,,공식 제품·사업 직접확인,https://www.aixtron.com/en/products,F03 유지; 메모리 DRAM 증착과 시장 구분
+DE:WAF,WAF,Siltronic,DE,대상,F01,실리콘 웨이퍼,기존 검증원장,B·기존 QA2,4.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/viewhttps://indexes.nikkei.co.jp/en/nkave/index/component?idx=nkscd,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시; 원장 거래소/국가 코드 중복 합산,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+DE:SMHN,SMHN,SUSS MicroTec,DE,대상,F02/B05,노광 후공정 및 임시 본딩,공식 확인,A·직접근거,48.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,2026 교정: 노광 후공정 및 임시 본딩; 원장 거래소/국가 코드 중복 합산,원본318/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+DE:MRK,MRK,머크 KGaA,DE,대상,F02/F03/F07,전자재료·공정 화학,기존 검증원장,B·기존 QA2,,https://msg.ls-sec.co.kr/eum/K_20241106_31780_96.pdf,QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+FR:SOI,SOI,소이텍,FR,대상,F01,SOI 등 엔지니어드 기판(웨이퍼),기존 검증원장,B·기존 QA2,3.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.tradegatebsx.com/orderbuch.php?isin=FR0013227113&lang=en",QA2: 프랑스 본사 독일 상장 코드 / 과거 HTS 접두어,원본318/전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+FR:AIL,AIL,에어리퀴드,FR,대상,F10,반도체용 고순도 가스,기존 검증원장,B·기존 QA2,,https://live.deutsche-boerse.com/equity/air-liquide-s-a,QA2: 프랑스 본사 독일 상장 코드 / 과거 HTS 접두어,전공정QA2,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+IT:TPRO,TPRO,Technoprobe,IT,대상,B02,프로브카드 전문,공식 확인,A·직접근거,98.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.technoprobe.com/",공정 오배치; 2026 교정: 프로브카드 전문,원본318/최신교정,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+HK:0522,0522,ASMPT,HK,대상,B05,Bonder (다이본더·와이어본더 후공정 장비),기존 원장,C·기존원장,118.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.asmpt.com/en/investor-relations/news-events/asmpt-extends-technology-leadership-with-key-tcb-aor-chip-to-wafer-milestone/", | 10/18잔여검산:공식 제품·사업 직접확인; B05 유지,원본318,해외주식 거래지원·종목별 매매 확인,,,공식 제품·사업 직접확인,https://www.asmpt.com/en/investor-relations/news-events/asmpt-extends-technology-leadership-with-key-tcb-aor-chip-to-wafer-milestone/,B05 유지
+SG:AWX,AWX,AEM Holdings,SG,대상,B09,시스템 레벨 테스트 장비,공식 확인,A·직접근거,,https://www.aem.com.sg/,2026 교정: AEM 시스템 레벨 반도체 테스트 장비,최신교정/후공정 보강,삼성 POP/mPOP 전용코드 미확인,,,기존 기록 승계,,
+KR:445090,445090,ASICLAND (에이직랜드),KR,별도관리,,ASIC 디자인하우스 (팹리스),별도 산업,대상 제외,259.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:000990,000990,DB하이텍,KR,별도관리,,8인치 파운드리,별도 산업,대상 제외,226.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:092220,092220,KEC,KR,별도관리,,"디스크리트 소자 IDM, 메모리 무관",별도 산업,대상 제외,236.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:011070,011070,LG이노텍,KR,별도관리,,"카메라모듈·기판·광학부품, 메모리 밸류체인 직접 무관",별도 산업,대상 제외,229.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:108320,108320,LX세미콘 (구 실리콘웍스),KR,별도관리,,디스플레이 구동칩 팹리스,별도 산업,대상 제외,240.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:MX,MX,Magnachip Semiconductor,KR,별도관리,,OLED DDI·파워 아날로그 (파운드리 성격),별도 산업,대상 제외,263.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:218410,218410,RFHIC,KR,별도관리,,"GaN RF 전력소자, 메모리 무관",별도 산업,대상 제외,248.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:327260,327260,RF머트리얼즈,KR,별도관리,,"RF 부품·소재, 메모리 밸류체인 직접 무관",별도 산업,대상 제외,252.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:011790,011790,SKC,KR,별도관리,,CMP 슬러리·패드·블랭크마스크 사업 매각 이후 직접 제조사로 등재하지 않음,별도 관리 / 사업주체 변경,대상 제외,33.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,사업 매각 확인; 2026 교정: CMP 슬러리·패드·블랭크마스크 사업 매각 이후 직접 제조사로 등재하지 않음,원본318/최신교정,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:000660,000660,SK하이닉스,KR,별도관리,,D램·낸드 메모리 제조사,별도 산업,대상 제외,187.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:399720,399720,가온칩스,KR,별도관리,,ARM 디자인 서비스 팹리스(디자인하우스),별도 산업,대상 제외,256.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:420770,420770,기가비스 (GigaVis),KR,별도관리,,"PCB 검사장비(AOI), 메모리 공정 직접 무관",별도 산업,대상 제외,313.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(기타),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:085670,085670,뉴프렉스,KR,별도관리,,"연성PCB(FPCB, 패키징 기판)",별도 산업,대상 제외,139.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:353200,353200,대덕전자,KR,별도관리,,PCB (패키징 기판),별도 산업,대상 제외,147.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:094170,094170,동운아나텍,KR,별도관리,,전력관리반도체 팹리스,별도 산업,대상 제외,237.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:000150,000150,두산,KR,별도관리,,"지주사, 메모리 소부장 직접 무관",별도 산업,대상 제외,225.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:020150,020150,롯데에너지머티리얼즈,KR,별도관리,,"전지용 동박, 메모리 공정 직접 무관",별도 산업,대상 제외,310.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(기타),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:090460,090460,비에이치,KR,별도관리,,FPCB (패키징 기판),별도 산업,대상 제외,141.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:069540,069540,빛과전자,KR,별도관리,,"광통신 모듈, 메모리 소부장 직접 무관",별도 산업,대상 제외,234.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:452430,452430,사피엔반도체,KR,별도관리,,마이크로LED 구동 IC 팹리스,별도 산업,대상 제외,260.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:009150,009150,삼성전기,KR,별도관리,,FC-BGA 등 반도체 기판 (패키징 기판),별도 산업,대상 제외,129.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:005930,005930,삼성전자,KR,별도관리,,메모리 완제품 (LS 표),별도 산업,대상 제외,188.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:001820,001820,삼화콘덴서,KR,별도관리,,"MLCC/콘덴서, 메모리 소부장 직접 무관",별도 산업,대상 제외,227.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:089980,089980,상아프론테크,KR,별도관리,,"불소수지 고기능 소재, 공정 귀속 불명확",별도 산업,대상 제외,311.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(기타),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:043260,043260,성호전자,KR,별도관리,,"필름콘덴서, 메모리 소부장 직접 무관",별도 산업,대상 제외,230.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:490470,490470,세미파이브,KR,별도관리,,SoC 디자인 플랫폼 (팹리스/디자인하우스),별도 산업,대상 제외,262.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:036830,036830,솔브레인홀딩스,KR,별도관리,,솔브레인홀딩스; CMP 제조사업은 솔브레인 357780과 분리,별도 관리 / 사업주체 변경,대상 제외,34.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,법인 주체 오류; 2026 교정: 솔브레인홀딩스; CMP 제조사업은 솔브레인 357780과 분리,원본318/최신교정,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:222800,222800,심텍,KR,별도관리,,PCB (패키징 기판),별도 산업,대상 제외,145.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:234030,234030,싸이닉솔루션 (Synic Solution),KR,별도관리,,디자인하우스 (팹리스),별도 산업,대상 제외,249.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:123860,123860,아나패스,KR,별도관리,,디스플레이 IC 팹리스,별도 산업,대상 제외,241.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:125210,125210,아모그린텍,KR,별도관리,,"자성소재·전장부품, 메모리 소부장 직접 무관",별도 산업,대상 제외,242.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:052710,052710,아모텍,KR,별도관리,,"세라믹 칩 부품, 메모리 소부장 직접 무관",별도 산업,대상 제외,232.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:102120,102120,어보브반도체,KR,별도관리,,MCU 팹리스,별도 산업,대상 제외,239.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:200710,200710,에이디테크놀로지,KR,별도관리,,"삼성전자 파운드리 디자인하우스로 시스템반도체 설계 전담, 메모리 소부장 무관",별도 산업,대상 제외,246.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:295310,295310,에이치브이엠 (HVM),KR,별도관리,,Ni계 초내열합금·Ti계 특수금속 제조사로 우주(스페이스X 공급망) 매출 53%+ — 반도체 공정 직접 무관,별도 산업,대상 제외,251.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:138080,138080,오이솔루션,KR,별도관리,,"광통신 트랜시버 업체, 메모리 소부장 무관",별도 산업,대상 제외,243.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:394280,394280,오픈엣지테크놀로지,KR,별도관리,,AI NPU 팹리스,별도 산업,대상 제외,255.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:380540,380540,옵티코어,KR,별도관리,,"광통신 모듈 업체, 메모리 소부장 무관",별도 산업,대상 제외,254.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:142210,142210,유니트론텍 (Unitrontech),KR,별도관리,,"전자부품 유통업체, 메모리 소부장 무관",별도 산업,대상 제외,244.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:272290,272290,이녹스첨단소재,KR,별도관리,,"OLED 소재·방열소재 업체, 메모리 소부장 무관",별도 산업,대상 제외,250.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:007660,007660,이수페타시스,KR,별도관리,,MLB/PCB 제조사 (AI 서버용 고다층 기판),별도 산업,대상 제외,127.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:051370,051370,인터플렉스,KR,별도관리,,"FPCB 업체, 반도체 공정 무관",별도 산업,대상 제외,231.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:204270,204270,제이앤티씨,KR,별도관리,,"휴대폰 강화유리·커넥터 업체, 반도체 공정 무관",별도 산업,대상 제외,247.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:080220,080220,제주반도체 (Jeju Semiconductor),KR,별도관리,,메모리 반도체 팹리스 (모바일 메모리),별도 산업,대상 제외,190.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:094360,094360,칩스앤미디어 (Chips&Media),KR,별도관리,,비디오 코덱 IP 팹리스,별도 산업,대상 제외,238.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:007810,007810,코리아써키트,KR,별도관리,,PCB 제조사 (패키지/모듈 기판),별도 산업,대상 제외,128.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:355150,355150,코스텍시스,KR,별도관리,,"SiC 전력반도체 업체, 메모리 소부장 무관",별도 산업,대상 제외,253.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:432720,432720,퀄리타스반도체 (Qualitas Semiconductor),KR,별도관리,,SerDes IP·칩 팹리스,별도 산업,대상 제외,257.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:405100,405100,큐알티 (QRT),KR,별도관리,,반도체 신뢰성 테스트·분석,별도 관리 / 사업주체 변경,대상 제외,175.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,테스트 서비스 범위 검토,원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:323280,323280,태성,KR,별도관리,,PCB/FC-BGA·유리기판용 습식(식각·세정·도금) 장비,별도 산업,대상 제외,146.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:054450,054450,텔레칩스,KR,별도관리,,AP 팹리스,별도 산업,대상 제외,233.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:475960,475960,토모큐브 (Tomocube),KR,별도관리,,"홀로토모그래피 바이오 이미징 장비, 반도체 무관",별도 산업,대상 제외,261.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:356860,356860,티엘비,KR,별도관리,,반도체용 PCB (메모리 모듈 기판),별도 산업,대상 제외,148.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:440110,440110,파두,KR,별도관리,,SSD 컨트롤러 팹리스,별도 산업,대상 제외,258.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:032580,032580,피델릭스 (Fidelix),KR,별도관리,,메모리 반도체 팹리스,별도 산업,대상 제외,189.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:087600,087600,픽셀플러스,KR,별도관리,,이미지센서 팹리스,별도 산업,대상 제외,235.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:161580,161580,필옵틱스,KR,별도관리,,"디스플레이·이차전지 레이저 장비, 반도체 공정 무관",별도 산업,대상 제외,245.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+KR:004710,004710,한솔테크닉스,KR,별도관리,,"TV 파워보드·태양광 모듈·전장부품 전자부품사, 메모리 소부장 무관",별도 산업,대상 제외,228.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:AMBA,AMBA,Ambarella,US,별도관리,,AI 비전 칩 팹리스,별도 산업,대상 제외,281.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:AMD,AMD,AMD,US,별도관리,,"CPU·GPU 팹리스, 메모리 소부장 무관",별도 산업,대상 제외,282.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:ADI,ADI,Analog Devices,US,별도관리,,"아날로그 IDM, 메모리 소부장 무관",별도 산업,대상 제외,279.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:ANET,ANET,Arista Networks (아리스타),US,별도관리,,"네트워크 스위치 업체, 메모리 밸류체인 외",별도 산업,대상 제외,283.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:ARM,ARM,Arm Holdings,US,별도관리,,"CPU IP 라이선스, 메모리 무관",별도 산업,대상 제외,284.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:ALAB,ALAB,Astera Labs,US,별도관리,,데이터센터 연결 칩 팹리스,별도 산업,대상 제외,280.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:AVGO,AVGO,Broadcom,US,별도관리,,네트워크·AI 칩 팹리스,별도 산업,대상 제외,285.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:CDNS,CDNS,Cadence Design Systems,US,별도관리,,"EDA 툴, 메모리 무관",별도 산업,대상 제외,287.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:CBRS,CBRS,Cerebras Systems,US,별도관리,,웨이퍼스케일 AI 칩 팹리스,별도 산업,대상 제외,286.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:CIEN,CIEN,Ciena (시에나),US,별도관리,,"광통신 네트워크 장비, 메모리 밸류체인 외",별도 산업,대상 제외,314.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(기타),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:CSCO,CSCO,Cisco (시스코),US,별도관리,,"네트워크 장비, 메모리 밸류체인 외",별도 산업,대상 제외,316.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(기타),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:GLW,GLW,Corning,US,별도관리,,"특수유리·광섬유, 메모리 밸류체인 외",별도 산업,대상 제외,318.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(기타),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:CRDO,CRDO,Credo Technology Group,US,별도관리,,SerDes 연결 칩 팹리스,별도 산업,대상 제외,288.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:DD,DD,DuPont (DuPont de Nemours),US,별도관리,,전자재료 사업은 Qnity(Q)로 분리; DD에 직접 반도체 CMP/포토 노출 기록 금지,별도 관리 / 사업주체 변경,대상 제외,36.0,"https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view
+https://www.dupont.com/news/dupont-completes-separation-of-qnity-electronics.html",사업 분할; 2026 교정: 전자재료 사업은 Qnity(Q)로 분리; DD에 직접 반도체 CMP/포토 노출 기록 금지,원본318/최신교정,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:MRAM,MRAM,Everspin Technologies,US,별도관리,,MRAM 메모리 전문 제조,별도 산업,대상 제외,194.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:FN,FN,Fabrinet (패브리넷),US,별도관리,,"광모듈 위탁생산(EMS), 메모리 밸류체인 외",별도 산업,대상 제외,317.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(기타),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:GFS,GFS,GlobalFoundries,US,별도관리,,파운드리,별도 산업,대상 제외,289.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:INTC,INTC,Intel,US,별도관리,,CPU IDM·파운드리,별도 산업,대상 제외,290.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:LSCC,LSCC,Lattice Semiconductor,US,별도관리,,FPGA 저전력 팹리스,별도 산업,대상 제외,293.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:LFUS,LFUS,Littelfuse,US,별도관리,,"회로보호·파워반도체 부품사, 메모리 무관",별도 산업,대상 제외,291.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:LITE,LITE,Lumentum (루멘텀),US,별도관리,,"광통신 레이저·광부품, 메모리 무관",별도 산업,대상 제외,292.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:MTSI,MTSI,MACOM Technology Solutions (메이컴),US,별도관리,,"RF·마이크로웨이브 반도체, 메모리 무관",별도 산업,대상 제외,297.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:MRVL,MRVL,Marvell Technology,US,별도관리,,데이터인프라용 팹리스,별도 산업,대상 제외,296.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:MCHP,MCHP,Microchip Technology,US,별도관리,,MCU·아날로그 IDM,별도 산업,대상 제외,294.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:MU,MU,Micron Technology,US,별도관리,,D램·낸드 메모리 3사 중 하나,별도 산업,대상 제외,195.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:MPWR,MPWR,Monolithic Power Systems,US,별도관리,,파워매니지먼트 IC 팹리스,별도 산업,대상 제외,295.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:NVDA,NVDA,NVIDIA,US,별도관리,,GPU 팹리스,별도 산업,대상 제외,298.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:ON,ON,ON Semiconductor,US,별도관리,,"파워·아날로그 반도체, 메모리 무관",별도 산업,대상 제외,299.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:QRVO,QRVO,Qorvo,US,별도관리,,"RF 반도체, 메모리 무관",별도 산업,대상 제외,302.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:QCOM,QCOM,Qualcomm,US,별도관리,,모바일 AP 팹리스,별도 산업,대상 제외,301.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:RMBS,RMBS,Rambus,US,별도관리,,메모리 인터페이스 IP 라이선싱,별도 산업,대상 제외,303.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:SNDK,SNDK,SanDisk,US,별도관리,,낸드플래시·스토리지,별도 산업,대상 제외,196.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:SMTC,SMTC,Semtech (셈텍),US,별도관리,,아날로그·믹스드시그널 팹리스,별도 산업,대상 제외,304.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:SWKS,SWKS,Skyworks Solutions,US,별도관리,,"RF 반도체, 메모리 무관",별도 산업,대상 제외,306.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:SNPS,SNPS,Synopsys,US,별도관리,,EDA 툴,별도 산업,대상 제외,305.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:TXN,TXN,Texas Instruments,US,별도관리,,아날로그 IDM,별도 산업,대상 제외,307.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:TTMI,TTMI,TTM Technologies,US,별도관리,,PCB 제조 (패키징 기판),별도 산업,대상 제외,158.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:VSH,VSH,Vishay Intertechnology,US,별도관리,,"디스크리트·수동부품, 메모리 소부장 직접 무관",별도 산업,대상 제외,308.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:WDC,WDC,Western Digital,US,별도관리,,스토리지(HDD) 완제품,별도 산업,대상 제외,197.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+US:POWI,POWI,파워인티그레이션 (Power Integrations),US,별도관리,,"전력 IC 팹리스, 메모리 소부장 무관",별도 산업,대상 제외,300.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:6504,6504,Fuji Electric,JP,별도관리,,"전력반도체 IDM, 메모리 무관",별도 산업,대상 제외,216.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:4062,4062,Ibiden,JP,별도관리,,패키징 기판 (FC-BGA IC 기판),별도 산업,대상 제외,124.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:4185,4185,JSR Corporation,JP,별도관리,,"포토레지스트 관련 기업, 2024-06-25 TSE 상장폐지",상장폐지(산업 참고만),대상 제외,,https://www.jpx.co.jp/english/news/1023/20240605-11.html,상장관심종목 등록 제외. 비상장 소재 공급망 MEMO 보존,상장폐지 확인,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:285A,285A,Kioxia Holdings,JP,별도관리,,낸드플래시 전문 메모리 제조사,별도 산업,대상 제외,186.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:3132,3132,Macnica Holdings,JP,별도관리,,"반도체 유통상사, 제조 무관",별도 산업,대상 제외,213.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:6787,6787,Meiko Electronics,JP,별도관리,,PCB 제조사,별도 산업,대상 제외,126.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:6503,6503,Mitsubishi Electric,JP,별도관리,,"전력반도체·종합전기, 메모리 무관",별도 산업,대상 제외,215.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:6981,6981,Murata Manufacturing,JP,별도관리,,"MLCC·수동부품, 메모리 무관",별도 산업,대상 제외,224.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:3110,3110,Nitto Boseki (Nittobo),JP,별도관리,,"유리섬유·특수유리, 메모리 소부장 직접 무관",별도 산업,대상 제외,212.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:6723,6723,Renesas Electronics,JP,별도관리,,MCU·아날로그 IDM,별도 산업,대상 제외,218.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:6963,6963,ROHM,JP,별도관리,,"파워·아날로그 반도체, 메모리 무관",별도 산업,대상 제외,221.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:6520,6520,Socionext,JP,별도관리,,SoC 설계·팹리스,별도 산업,대상 제외,217.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:6758,6758,Sony Group (소니),JP,별도관리,,"이미지센서 중심, 메모리 무관",별도 산업,대상 제외,219.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:6976,6976,Taiyo Yuden,JP,별도관리,,"MLCC 등 수동부품, 메모리 소부장 직접 무관",별도 산업,대상 제외,223.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:6762,6762,TDK,JP,별도관리,,"수동부품·HDD헤드, 메모리 무관",별도 산업,대상 제외,220.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+JP:7911,7911,TOPPAN,JP,별도관리,,Tekscend Photomask(429A) 상장 후 TOPPAN은 간접 지분 노출로 분리,별도 관리 / 사업주체 변경,대상 제외,,"https://www.techinsights.com/blog/wfe-market-share
+https://www.toppanphotomasks.com/en/ir/faq/",QA2: 공개 거래소/기존 접두어 참고·HTS 개별검색/주문 미실시; 2026 교정: Tekscend Photomask(429A) 상장 후 TOPPAN은 간접 지분 노출로 분리,전공정QA2/최신교정,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:6526,6526,Airoha Technology,TW,별도관리,,블루투스·와이파이 칩 팹리스,별도 산업,대상 제외,276.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:3661,3661,Alchip Technologies,TW,별도관리,,ASIC 디자인 서비스 (팹리스),별도 산업,대상 제외,271.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:5274,5274,ASPEED Technology,TW,별도관리,,"BMC 칩 팹리스, 메모리 무관",별도 산업,대상 제외,273.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:2458,2458,ELAN Microelectronics,TW,별도관리,,터치·지문 IC 팹리스,별도 산업,대상 제외,268.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:2383,2383,Elite Material (EMC),TW,별도관리,,"패키징 기판 (고속 CCL 기판 재료, 台光電)",별도 산업,대상 제외,149.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:3443,3443,Global Unichip,TW,별도관리,,TSMC 계열 ASIC 디자인 서비스,별도 산업,대상 제외,270.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:6202,6202,Holtek Semiconductor,TW,별도관리,,MCU 팹리스,별도 산업,대상 제외,275.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:3189,3189,Kinsus Interconnect Technology,TW,별도관리,,패키징 기판 (IC 기판 BT·ABF),별도 산업,대상 제외,151.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:2337,2337,Macronix International,TW,별도관리,,NOR플래시 전문 메모리 제조사,별도 산업,대상 제외,191.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:2454,2454,MediaTek,TW,별도관리,,모바일 AP·SoC 팹리스,별도 산업,대상 제외,267.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:8046,8046,Nan Ya PCB,TW,별도관리,,PCB 제조사 (패키징 기판),별도 산업,대상 제외,155.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:2408,2408,Nanya Technology,TW,별도관리,,D램 전문 메모리 제조사,별도 산업,대상 제외,193.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:3034,3034,Novatek Microelectronics,TW,별도관리,,디스플레이 IC 팹리스,별도 산업,대상 제외,269.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:4919,4919,Nuvoton Technology,TW,별도관리,,MCU 팹리스,별도 산업,대상 제외,272.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:8299,8299,Phison Electronics,TW,별도관리,,낸드 컨트롤러 팹리스 (메모리 완제품 아님),별도 산업,대상 제외,278.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:6770,6770,Powerchip Semiconductor Manufacturing (PSMC),TW,별도관리,,파운드리 (메모리 완제품 아님),별도 산업,대상 제외,277.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:2379,2379,Realtek Semiconductor,TW,별도관리,,통신·네트워크 칩 팹리스,별도 산업,대상 제외,266.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:2330,2330,TSMC,TW,별도관리,,파운드리,별도 산업,대상 제외,265.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:3037,3037,Unimicron Technology,TW,별도관리,,IC 기판·PCB (패키징 기판),별도 산업,대상 제외,150.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:2303,2303,United Microelectronics,TW,별도관리,,파운드리,별도 산업,대상 제외,264.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:5347,5347,Vanguard International Semiconductor (VIS),TW,별도관리,,파운드리,별도 산업,대상 제외,274.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:2344,2344,Winbond Electronics,TW,별도관리,,NOR 플래시·DRAM,별도 산업,대상 제외,192.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+TW:4958,4958,Zhen Ding Technology Holding,TW,별도관리,,PCB 제조 (패키징 기판),별도 산업,대상 제외,153.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:688256,688256,Cambricon (한우지 / 寒武纪),CN,별도관리,,AI NPU 팹리스,별도 산업,대상 제외,204.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:UNKNOWN,UNKNOWN,CXMT (長鑫存储),CN,별도관리,,중국 DRAM 제조 (장신스토리지),별도 산업,대상 제외,184.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:603986,603986,GigaDevice,CN,별도관리,,NOR 플래시·MCU 팹리스 (메모리 제품),별도 산업,대상 제외,183.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:688347,688347,Hua Hong Semiconductor,CN,별도관리,,중국 파운드리,별도 산업,대상 제외,205.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:688041,688041,Hygon,CN,별도관리,,서버 CPU 팹리스,별도 산업,대상 제외,203.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:300308,300308,InnoLight Technology (中际旭创),CN,별도관리,,"광트랜시버 업체, 메모리 밸류체인 외",별도 산업,대상 제외,309.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(기타),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:688008,688008,Montage Technology,CN,별도관리,,DDR5 메모리 인터페이스칩 팹리스 (완제품 아님),별도 산업,대상 제외,202.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:603501,603501,OmniVision Group,CN,별도관리,,"이미지센서, 메모리 무관",별도 산업,대상 제외,200.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:603893,603893,Rockchip,CN,별도관리,,AP 팹리스,별도 산업,대상 제외,201.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:600183,600183,Shengyi Technology,CN,별도관리,,CCL(동박적층판) 제조사 (패키징 기판),별도 산업,대상 제외,120.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:002916,002916,Shennan Circuits,CN,별도관리,,PCB 제조사 (패키징 기판),별도 산업,대상 제외,117.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:0981.HK,0981.HK,SMIC,CN,별도관리,,중국 파운드리,별도 산업,대상 제외,198.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:300394,300394,"TFC (천부통신, Suzhou TFC Optical Communication)",CN,별도관리,,"광통신 모듈 부품사, 메모리 소부장 직접 무관",별도 산업,대상 제외,199.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:300476,300476,Victory Giant Technology (胜宏科技),CN,별도관리,,PCB 제조 (패키징 기판),별도 산업,대상 제외,119.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+CN:비상장,비상장,YMTC (Yangtze Memory Technologies / 長江存儲),CN,별도관리,,NAND 플래시,별도 산업,대상 제외,185.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(완제품),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+EU:ATS,ATS,AT&S (Austria Technologie & Systemtechnik),EU,별도관리,,패키징 기판 (IC 기판·PCB 제조),별도 산업,대상 제외,122.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(PCB·패키지기판),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+EU:IFX,IFX,Infineon Technologies,EU,별도관리,,"전력·자동차 IDM, 메모리 무관",별도 산업,대상 제외,206.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+EU:MELE,MELE,Melexis,EU,별도관리,,차량용 센서IC 팹리스,별도 산업,대상 제외,207.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+EU:NXPI,NXPI,NXP Semiconductors,EU,별도관리,,차량·임베디드 반도체 IDM,별도 산업,대상 제외,208.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+EU:STM,STM,STMicroelectronics,EU,별도관리,,"종합 반도체 IDM, 메모리 무관",별도 산업,대상 제외,209.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+IL:TSEM,TSEM,Tower Semiconductor,IL,별도관리,,아날로그 파운드리,별도 산업,대상 제외,211.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
+EU:XFAB,XFAB,X-FAB Silicon Foundries,EU,별도관리,,파운드리,별도 산업,대상 제외,210.0,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,범위 분리(팹리스·파운드리·타 산업),원본318,소부장 20공정 등록 대상 아님,,,기존 기록 승계,,
