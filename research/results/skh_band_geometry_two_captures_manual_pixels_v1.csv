@@ -1,0 +1,5 @@
+capture_date,source_file,image_sha256,approx_period,x_original_px,axis_beta_px_per_ln,axis_intercept_y_at_1m,red_top_y_px,green_shoulder_y_px,black_waist_y_px,orange_thigh_y_px,blue_knee_y_px,top_to_knee_gap_px,top_to_knee_ratio_approx,gap_red_green_px,gap_green_black_px,gap_black_orange_px,gap_orange_blue_px,q_thigh_from_top_to_knee,status
+2026-08-07,1000008429.jpg,6faac3497e7dc89959fa296816afccbdb2ffe7ef87d525c48830ec8877c4c809,2026-01,200,75.020,725.333,720,744,766,795,828,108,4.219,24,22,29,33,0.694,manual_pixel_approx
+2026-08-07,1000008429.jpg,6faac3497e7dc89959fa296816afccbdb2ffe7ef87d525c48830ec8877c4c809,2026-04_to_05,400,75.020,725.333,684,708,729,764,796,112,4.450,24,21,35,32,0.714,manual_pixel_approx
+2026-08-07,1000008429.jpg,6faac3497e7dc89959fa296816afccbdb2ffe7ef87d525c48830ec8877c4c809,2026-07,560,75.020,725.333,637,660,684,732,756,119,4.885,23,24,48,24,0.798,manual_pixel_approx
+2026-07-28,1000008432(1).jpg,da30d52196f882530629a845b1e848c098eb1bb038f23c5f812ccbcaae7516c5,2026-01,500,64.921,704.667,704,724,,,796,92,4.125,20,,,,manual_pixel_approx
