@@ -19,7 +19,10 @@
       "event_crosses_ma20_from_below": false,
       "event_is_first_after_previous_day": false,
       "source_csv": "research/results/robotis_108490_knee_20250514_verified_prev20_closes_v1.csv",
-      "observed_rows": 22
+      "observed_rows": 22,
+      "conventional_sma20_including_event": 36090,
+      "conventional_sma20_including_previous_day": 35330,
+      "conventional_sma20_below_to_above_on_event": false
     },
     {
       "symbol": "457190",
@@ -41,7 +44,10 @@
       "past31_max_close": 59700,
       "breaks_past31": false,
       "witness_older_prior_date": "2025-10-24",
-      "witness_older_close": 59700
+      "witness_older_close": 59700,
+      "conventional_sma20_including_event": 52227.5,
+      "conventional_sma20_including_previous_day": 51982.5,
+      "conventional_sma20_below_to_above_on_event": true
     }
   ],
   "limitations": [
@@ -50,5 +56,9 @@
     "holiday copied snapshots 2025-05-01/05/05/05/06 excluded",
     "no high, low, volume, full 252-day window or observed proprietary knee band values",
     "Isu cannot break prior 60/120/252-day closing high because known higher 2025-10-24 close; exact max for longer windows unknown"
+  ],
+  "notes": [
+    "prior20_average_close strictly excludes day t; conventional SMA20_t includes t",
+    "counterexample remains: Robotis previous day above conventional SMA20, so knee date not a fresh SMA20 cross"
   ]
 }
