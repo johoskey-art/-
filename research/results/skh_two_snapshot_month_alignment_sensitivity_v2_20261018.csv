@@ -1,0 +1,5 @@
+ticker,approx_historical_month_NOT_exact_day,snapshot_date,source_filename,sample_x_px,red_top_y_px,blue_knee_y_px,axis_beta_px_per_ln,y_gap_px,top_knee_ratio_estimate,ratio_min_line_centers_plusminus2px,ratio_max_line_centers_plusminus2px,ratio_min_line_centers_plusminus4px,ratio_max_line_centers_plusminus4px,measurement_grade
+000660,2026-01,2026-07-28,1000008432(1).jpg,520,696,789,64.921,93,4.1892,3.9389,4.4554,3.7035,4.7386,manual_screen_probe_not_exact_session
+000660,2026-01,2026-08-07,1000008429.jpg,230,716,825,75.02,109,4.2757,4.0537,4.5099,3.8432,4.7568,manual_screen_probe_not_exact_session
+000660,2026-04,2026-07-28,1000008432(1).jpg,565,663,766,64.921,103,4.8868,4.5948,5.1974,4.3203,5.5277,manual_screen_probe_not_exact_session
+000660,2026-04,2026-08-07,1000008429.jpg,399,684,798,75.02,114,4.5704,4.3331,4.8207,4.1081,5.0847,manual_screen_probe_not_exact_session
