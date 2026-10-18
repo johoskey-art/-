@@ -1,0 +1,12 @@
+ticker,snapshot_date,source_filename,axis_price_krw,y_axis_tick_approx_px,source_price_adjustment,stock_distribution_factor_from_pre_20260630_to_post_20260630
+000500,2026-05-11,1000008430.jpg,100000,825,pre_bonus_original,1.8
+000500,2026-05-11,1000008430.jpg,200000,768,pre_bonus_original,1.8
+000500,2026-05-11,1000008430.jpg,300000,712,pre_bonus_original,1.8
+000500,2026-05-11,1000008430.jpg,400000,655,pre_bonus_original,1.8
+000500,2026-05-11,1000008430.jpg,500000,598,pre_bonus_original,1.8
+000500,2026-10-14,1000008428.jpg,100000,778,post_bonus_quote_basis,1.8
+000500,2026-10-14,1000008428.jpg,200000,735,post_bonus_quote_basis,1.8
+000500,2026-10-14,1000008428.jpg,300000,712,post_bonus_quote_basis,1.8
+000500,2026-10-14,1000008428.jpg,400000,695,post_bonus_quote_basis,1.8
+000500,2026-10-14,1000008428.jpg,500000,684,post_bonus_quote_basis,1.8
+000500,2026-10-14,1000008428.jpg,600000,671,post_bonus_quote_basis,1.8
