@@ -1,0 +1,32 @@
+﻿공정ID,HTS그룹,국가,티커,기업명,하위ID,하위기능,검토상태,보류사유,증거URL,기존HTS단계
+F01,SEMI01,US,WOLF,울프스피드 (Wolfspeed),F01.SIC_SUBSTRATE,SiC 웨이퍼·에피기판,상장·티커 검증,구주 취소·신주 발행 이력에 따라 실제 상장 티커/시장 재확인 필요,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,HTS 2차검토
+F03,SEMI01,US,ACMR,ACM리서치,F03.DEPO_CVD_ALD,CVD·ALD 증착장비,PECVD 장비 고객출하·validation 단계 매출미확인,회사 공식제품 확인; 제품 매출비중은 별도 검증 필요,https://ir.acmr.com/news-releases/news-release-details/acm-research-ships-first-pecvd-sicn-system-advanced,HTS 2차검토
+F03,SEMI01,CN,300346,Nata Opto (Jiangsu Nata Opto-electronic Material),F03.DEPO_PRECURSOR,증착 전구체·특수가스,ALD CVD 프리커서 공식제품 매출비중 미확인,회사 공식제품 확인; 제품 매출비중은 별도 검증 필요,https://sonatamaterials.com/ald_cvd/,HTS 2차검토
+F03,SEMI01,CN,688082,ACM Research Shanghai (盛美上海),F03.DEPO_CVD_ALD,CVD·ALD 증착장비,상장법인 반기보고서 PECVD 고객출하 후 검증,회사 공식제품 확인; 제품 매출비중은 별도 검증 필요,https://static.cninfo.com.cn/finalpage/2026-08-08/1225464428.PDF,HTS 2차검토
+F04,SEMI02,KR,095610,테스,F04.ETCH_BOUNDARY,독립 식각제품 재확인,공정 경계 재검증,"테스 PECVD 주력, 독립 식각 장비 판매와 매출비중 확인",https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,HTS 1차후보
+F04,SEMI02,JP,6728,ULVAC,F04.DRY_ETCH_EQ,드라이·플라즈마 식각 장비,식각장비 공식제품 전력 화합물용 노출구분,회사 공식제품 확인; 제품 매출비중은 별도 검증 필요,https://www.ulvac.co.jp/en/products/etching_system/_ne-5700ne-7800/,HTS 2차검토
+F05,SEMI02,KR,240810,원익IPS,F05.RTP_ANNEAL,RTP·레이저 어닐링 장비,공정별 증빙 보완,원익IPS 열처리/RTP 별도 장비 SKU 매출 확인,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,HTS 1차후보
+F05,SEMI02,JP,8035,도쿄일렉트론,F05.THERMAL_FURNACE,배치 퍼니스·열처리 장비,공정별 증빙 보완,"TEL 열처리 제품은 원장에 미기재, 모델별 공식 근거 추가",https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,HTS 1차후보
+F06,SEMI02,CN,002371,Naura Technology Group (北方华创),F06.ION_BOUNDARY,이온주입 제품 독립성 재확인,공정 경계 재검증,"NAURA 증착·식각 중심 원장설명, 이온주입기 공급 독립자료 확인 필요",https://www.naura.com/product/semiconductor.html,HTS 1차후보
+F07,SEMI03,CN,688082,ACM Research Shanghai (盛美上海),F07.CU_PLATING,구리 도금/금속배선 장비,공정별 증빙 보완,ACM Shanghai Cu 전기도금 실제 설비 범위와 매출 확인,https://www.acmr.com/,HTS 2차검토
+F08,SEMI03,KR,083500,에프엔에스테크,F08.CLEAN_BOUNDARY,웨이퍼 세정 사업 또는 역할 재확인,공정 경계 재검증,에프엔에스테크의 유리기판 세정과 실리콘 웨이퍼 세정 구분 필요. CMP 패드는 F07,https://fnstech.com/en/business/pad.php,HTS 2차검토
+F08,SEMI03,KR,183300,코미코,F08.TOOL_PART_CLEAN,장비부품 세정·코팅 서비스,공정 경계 재검증,코미코는 반도체 제조장비 부품 세정·코팅. 웨이퍼 세정 장비·약품 피어와 분리하고 F10 이동 여부 검토,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,HTS 1차후보
+F08,SEMI03,KR,281820,케이씨텍,F08.CLEAN_BOUNDARY,웨이퍼 세정 사업 또는 역할 재확인,공정 경계 재검증,케이씨텍 CMP 중심; 실리콘 웨이퍼 독립 세정장비 사업 확인 필요,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,HTS 1차후보
+F08,SEMI03,JP,8035,도쿄일렉트론,F08.WAFER_WET_CLEAN,웨이퍼 습식 세정 장비,CELLESTA 300mm 웨이퍼 세정장비 제품존재 확인,회사 공식제품 확인; 제품 매출비중은 별도 검증 필요,https://www.tel.com/product/cellesta.html,HTS 1차후보
+F08,SEMI03,CN,002371,Naura Technology Group (北方华创),F08.CLEAN_BOUNDARY,웨이퍼 세정 사업 또는 역할 재확인,공정별 증빙 보완,NAURA 웨이퍼 세정장비 별도 SKU·매출노출 확인,https://www.naura.com/product/semiconductor.html,HTS 1차후보
+F08,SEMI03,CN,688019,Anji Micro (Anji Microelectronics Technology Shanghai),F08.CLEAN_CHEM,웨이퍼 세정 케미컬·고순도재,식각 후 CMP 후 세정액 공식 제품 매출비중 미확인,회사 공식제품 확인; 제품 매출비중은 별도 검증 필요,https://www.anjimicro.com/gongnengxingshidianzihuaxuepin.html,HTS 2차검토
+F08,SEMI03,KR,095340,ISC,F08.CLEAN_CHEM,웨이퍼 세정 케미컬·고순도재,승격 검토,아이세미 세정 케미컬 존재 확인; 매출비중 미확인. B09 테스트 소켓 주력과 구별,https://kind.krx.co.kr/external/2026/03/18/000082/20260318000201/11011.htm,HTS 1차후보
+F09,SEMI03,KR,360350,코셈 (Coxem),F09.EB_SEM,SEM·전자빔 계측,공정 경계 재검증,"코셈 SEM은 제품 존재, FAB 인라인 활용도/고객사 근거 미확인",https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,HTS 2차검토
+F09,SEMI03,JP,7731,Nikon (ニコン),F09.F09_BOUNDARY,인라인 계측 독립제품 재확인,공정 경계 재검증,Nikon 노광장비 원장 설명만으로 FAB 검사장비 배치 곤란,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,HTS 2차검토
+F10,SEMI04,JP,5016,JX금속,F10.F10_BOUNDARY,Fab 인프라 독립매출 재확인,공정 경계 재검증,JX금속 스퍼터링 타깃은 증착 소재 F03/F07 계열. 인프라 직접 공급 근거 부족,https://file.myasset.com/sitemanager/upload/2024/0813/170827/20240813170827660_0_ko.pdf,HTS 2차검토
+F10,SEMI04,JP,6728,ULVAC,F10.VACUUM,진공펌프·진공시스템,공정별 증빙 보완,ULVAC의 진공기술과 실질로 판매하는 Fab 진공 하위제품 구분 필요,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,HTS 2차검토
+F10,SEMI04,KR,095340,ISC,F10.ROBOT_EFEM_TRANSFER,웨이퍼·Fab 자동 이송/로봇,승격 검토,ISC EFEM 모듈은 인수 사업. 별도 매출비중 X% 미확인,https://kind.krx.co.kr/external/2026/03/18/000082/20260318000201/11011.htm,HTS 1차후보
+B02,SEMI04,IT,TPRO,Technoprobe,B02.PROBE_CARD,웨이퍼 프로브카드,POP 지원 보류,이탈리아·독일 대체시장 POP 검색 실패. 제품은 프로브카드로 정합하나 HTS 종목 등록 보류,https://drive.google.com/file/d/1BWBXR3is7w25jQFpuzmaelVoZOYFwQ-Q/view,HTS 1차후보
+B04,SEMI05,KR,042700,한미반도체,B04.PKG_SINGULATION,패키지·기판 싱귤레이션(MSVP),승격 검토,MSVP 패키지 절단·검사 상용 및 2026년 수주 확인. 계약액/매출 대비 비율을 연간 품목매출 비중으로 오인 금지,https://kind.krx.co.kr/external/2026/03/12/002053/20260312004659/11011.htm,HTS 1차후보
+B05,SEMI05,KR,042700,한미반도체,B05.HBM_TCB,HBM·첨단패키징 TC 본더,주력 위치 유지,"HBM TC본더 주력, Hybrid Bonder 연구개발 중 제품 매출로 집계 금지",https://kind.krx.co.kr/external/2026/03/12/002053/20260312004659/11011.htm,HTS 1차후보
+B05,SEMI05,KR,089890,코세스 (Koses),B05.BOND_BOUNDARY,본딩장비 상용 제품 재확인,공정 경계 재검증,코세스 제품 목록에 PKG Stack·Solder Ball Attach. TC/Hybrid 본더 분류와 직접 동치 아님,https://kind.krx.co.kr/external/2026/05/15/002905/20260515006626/11013.htm,HTS 2차검토
+B05,SEMI05,CN,688072,Piotech (拓荆科技),B05.DIE_ATTACH_HYBRID,다이 어태치·하이브리드 본딩,공정별 증빙 보완,Piotech 하이브리드 본딩 Dione 300 상용 고객 납품/양산수익 검증,https://piotech.cn/index.php/Pro/detail?id=637,HTS 2차검토
+B05,SEMI05,CN,002371,Naura Technology Group (北方华创),B05.BOND_BOUNDARY,본딩장비 상용 제품 재확인,공정 경계 재검증,"NAURA 증착·식각 중심 원장설명, 본딩제품 근거 확인 필요",https://www.naura.com/product/semiconductor.html,HTS 1차후보
+B06,SEMI05,US,KLIC,Kulicke & Soffa (K&S),B06.B06_BOUNDARY,B06 독립제품 재확인,공정 경계 재검증,"KLIC fluxless TCB는 B05, 독립 reflow 장비 부문 미확인",https://www.semi.org/en/semi-press-release/kulicke-and-soffa-earns-2026-semi-award-for-north-america-at-semicon-west,HTS 2차검토
+B08,SEMI05,KR,042700,한미반도체,B08.PKG_OPTICAL_AOI,2D/3D 패키지 광학·비전검사,승격 검토,별도 6-side inspection 판매제품 확인. 장비 내장 비전기능이 아닌 독립 제품 여부만 근거,https://kind.krx.co.kr/external/2026/03/12/002053/20260312004659/11011.htm,HTS 1차후보
+B09,SEMI06,KR,095340,ISC,B09.TEST_SOCKET_CONTACT,테스트 소켓·핀·컨택터,주력 위치 유지,"테스트 소켓 주력, 세정/EFEM 확장과 분리",https://kind.krx.co.kr/external/2026/03/18/000082/20260318000201/11011.htm,HTS 1차후보
