@@ -1,0 +1,144 @@
+{
+  "project": "blogger stock-position band geometry inverse analysis",
+  "ticker": "000500",
+  "research_date": "2026-10-19",
+  "screens": [
+    {
+      "date": "2026-10-14",
+      "source_sha256": "1d6d22ffe47724d8323187f3ae09cda4fd324390a5eaa0bfae66401e6692689e",
+      "axis_mode": "log",
+      "screen_points": 22,
+      "train_points": 7,
+      "test_points": 15,
+      "band_test_n": 45,
+      "first_x": 80,
+      "last_x": 600,
+      "first_top_knee_ratio": 4.842355071415777,
+      "last_top_knee_ratio": 5.452805838895355,
+      "ratio_change_pct": 12.606485036238734,
+      "price_spread_px_first": 93,
+      "price_spread_px_last": 100,
+      "logWidthChange": 0.11872912163133265,
+      "q_mean": [
+        0.20618703252729817,
+        0.3784495122443051,
+        0.704168780876054
+      ],
+      "q_start": [
+        0.20430107526881702,
+        0.40860215053763405,
+        0.7311827956989244
+      ],
+      "q_end": [
+        0.20000000000000043,
+        0.3599999999999995,
+        0.6299999999999999
+      ],
+      "rmse_H0_test_px": 2.6981979372987945,
+      "rmse_H1_test_px": 4.156898648285999,
+      "per_band": [
+        {
+          "band": "shoulder",
+          "fit_H0_log_gap": 0.3271108453108142,
+          "fit_H1_q": 0.20834166833366663,
+          "rmse_H0_px": 1.0354268895182408,
+          "rmse_H1_px": 0.6931681005260784
+        },
+        {
+          "band": "waist",
+          "fit_H0_log_gap": 0.6469525607258328,
+          "fit_H1_q": 0.41204907648196304,
+          "rmse_H0_px": 3.752006266040609,
+          "rmse_H1_px": 5.56227534781324
+        },
+        {
+          "band": "thigh",
+          "fit_H0_log_gap": 1.1412533936399527,
+          "fit_H1_q": 0.7268453690738149,
+          "rmse_H0_px": 2.586726978748431,
+          "rmse_H1_px": 4.518852736689708
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "source_sha256": "138b80af92da4d5ff715264fe9bc8c959a138184af8f7dd6b861e10409986496",
+      "axis_mode": "linear",
+      "screen_points": 14,
+      "train_points": 6,
+      "test_points": 8,
+      "band_test_n": 24,
+      "first_x": 80,
+      "last_x": 600,
+      "first_top_knee_ratio": 4.3717579250720435,
+      "last_top_knee_ratio": 4.887587822014041,
+      "ratio_change_pct": 11.799141347321896,
+      "price_spread_px_first": 117,
+      "price_spread_px_last": 166,
+      "logWidthChange": 0.11153369444690142,
+      "q_mean": [
+        0.21776884909075417,
+        0.4243716234428371,
+        0.7169640595243517
+      ],
+      "q_start": [
+        0.22594967150968243,
+        0.4448733817726378,
+        0.703983448945841
+      ],
+      "q_end": [
+        0.21788294293650248,
+        0.405337426839694,
+        0.6822039426492037
+      ],
+      "rmse_H0_test_px": 1.971583901105062,
+      "rmse_H1_test_px": 2.768039227417428,
+      "per_band": [
+        {
+          "band": "shoulder",
+          "fit_H0_log_gap": 0.33497671101069465,
+          "fit_H1_q": 0.22494100564357172,
+          "rmse_H0_px": 1.9801839224825304,
+          "rmse_H1_px": 2.8564164633192184
+        },
+        {
+          "band": "waist",
+          "fit_H0_log_gap": 0.6506723225699051,
+          "fit_H1_q": 0.43693148180603775,
+          "rmse_H0_px": 1.7198383160965542,
+          "rmse_H1_px": 3.515075374857017
+        },
+        {
+          "band": "thigh",
+          "fit_H0_log_gap": 1.0636513111758201,
+          "fit_H1_q": 0.7143193746069568,
+          "rmse_H0_px": 2.1868829499810527,
+          "rmse_H1_px": 1.5720221342963772
+        }
+      ]
+    }
+  ],
+  "axis_audit": {
+    "may_linear": {
+      "slope": -0.000567,
+      "intercept": 881.7,
+      "rmse": 0.2449489742783271
+    },
+    "oct_log": {
+      "slope": -58.957734242621555,
+      "intercept": 1455.925623997681,
+      "rmse": 0.9977381527501225
+    }
+  },
+  "notes": [
+    "One-screen tests only; never mix screenshot price-scale or corporate action units.",
+    "May source before 1:0.8 bonus issue; Oct after. Within-image ratios invariant to uniform split factor.",
+    "Oct top=red, May top=dark indigo candidate; brown upper line is additional super-top and excluded.",
+    "Each measurement is a manually seeded pixel center, some candle overlap is uncertain.",
+    "H0 and H1 test spatial reconstruction, H1 receives observed top and knee from test points and is not a forecast.",
+    "RMSE between different images is not directly comparable as image-axis modes differ.",
+    "Both source images 691x1536; screenshot evidence privately held in user's ChatGPT file Library.",
+    "Apr-June and rights period may change interpretation; requires same-day pre/post snapshots to test repainting.",
+    "Endpoint pixel uncertainty assessed in report; missing official band value time-series."
+  ]
+}
