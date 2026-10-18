@@ -46,6 +46,10 @@ def signal(rows, symbol, event_date):
     prev20max = max(x["close"] for x in prior)
     old20avg = sum(x["close"] for x in old_prior)/20
     old20max = max(x["close"] for x in old_prior)
+    # Conventional SMA20 on day t includes C[t], unlike our strict
+    # prior-20 reference mean used for breakout lookbacks.
+    sma20_t = sum(x["close"] for x in rows[i-19:i+1]) / 20
+    sma20_prev = sum(x["close"] for x in rows[i-20:i]) / 20
     return {
       "symbol":symbol, "event":event_date, "event_close":day,
       "previous_close":yesterday,
@@ -57,6 +61,9 @@ def signal(rows, symbol, event_date):
       "previous_day_above_its_prior20_mean":yesterday>old20avg,
       "previous_day_prior20_max_close":old20max,
       "previous_day_prior20_mean_close":old20avg,
+      "sma20_including_event":sma20_t,
+      "sma20_including_previous_day":sma20_prev,
+      "crosses_conventional_sma20":day>sma20_t and yesterday<=sma20_prev,
       "event_is_first_20d_break_after_previous_day":day>prev20max and not(yesterday>old20max),
       "event_crosses_above_ma20_from_yesterday":
         (day>prev20avg) and (yesterday<=old20avg),
@@ -72,12 +79,16 @@ def main():
     assert bysym["108490"]["event_close"]==49000
     assert bysym["108490"]["prior20_max_close"]==37700
     assert bysym["108490"]["prior20_mean_close"]==35330
+    assert bysym["108490"]["sma20_including_event"]==36090
+    assert not bysym["108490"]["crosses_conventional_sma20"]
     assert bysym["108490"]["previous_day_breaks_its_prior20_max"]
     assert bysym["108490"]["previous_day_above_its_prior20_mean"]
     assert not bysym["108490"]["event_is_first_20d_break_after_previous_day"]
     assert bysym["457190"]["event_close"]==59500
     assert bysym["457190"]["prior20_max_close"]==55600
     assert bysym["457190"]["prior20_mean_close"]==51982.5
+    assert bysym["457190"]["sma20_including_event"]==52227.5
+    assert bysym["457190"]["crosses_conventional_sma20"]
     assert bysym["457190"]["event_is_first_20d_break_after_previous_day"]
     print(json.dumps(results,ensure_ascii=False,indent=2))
 
