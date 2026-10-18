@@ -1,0 +1,91 @@
+{
+  "status": "independent Aug 7 single-screenshot test",
+  "source_filename": "1000008429.jpg",
+  "image_sha256": "6faac3497e7dc89959fa296816afccbdb2ffe7ef87d525c48830ec8877c4c809",
+  "screen_date": "2026-08-07",
+  "samples_total": 14,
+  "samples_valid_width": 12,
+  "train_x": [
+    205,
+    235,
+    265,
+    295,
+    325,
+    355
+  ],
+  "test_x": [
+    385,
+    415,
+    445,
+    475,
+    505,
+    535,
+    565,
+    595
+  ],
+  "width": {
+    "first_px": 108,
+    "last_px": 122,
+    "delta_px": 14,
+    "first_price_ratio": 4.21908,
+    "last_price_ratio": 5.08468,
+    "ratio_increase_pct": 20.52,
+    "delta_if_endpoints_plusminus_2px": [
+      6,
+      22
+    ],
+    "delta_if_endpoints_plusminus_4px": [
+      -2,
+      30
+    ]
+  },
+  "spatial_reconstruction": {
+    "n_test": 17,
+    "h0_fixed_log_offset_rmse_px": 3.5276,
+    "h1_variable_width_fixed_internal_q_rmse_px": 0.928,
+    "h1_using_july28_coefficients_rmse_px": 2.4569,
+    "per_band": [
+      {
+        "band": "green_shoulder_y_px",
+        "training_count": 4,
+        "test_count": 6,
+        "train_fixed_offset_px": 22.75,
+        "train_q": 0.20677,
+        "q_july28_training": 0.23345,
+        "holdout_h0_rmse_px": 1.9526,
+        "holdout_h1_rmse_px": 0.8281,
+        "july28_q_transfer_rmse_px": 3.3548
+      },
+      {
+        "band": "black_waist_y_px",
+        "training_count": 6,
+        "test_count": 6,
+        "train_fixed_offset_px": 46.33333,
+        "train_q": 0.42058,
+        "q_july28_training": 0.42937,
+        "holdout_h0_rmse_px": 2.6977,
+        "holdout_h1_rmse_px": 1.198,
+        "july28_q_transfer_rmse_px": 2.0988
+      },
+      {
+        "band": "orange_thigh_y_px",
+        "training_count": 6,
+        "test_count": 5,
+        "train_fixed_offset_px": 79,
+        "train_q": 0.71709,
+        "q_july28_training": 0.70579,
+        "holdout_h0_rmse_px": 5.3852,
+        "holdout_h1_rmse_px": 0.6187,
+        "july28_q_transfer_rmse_px": 1.3158
+      }
+    ]
+  },
+  "evaluation_notes": [
+    "Training only first six x samples, subsequent eight x samples test; missing color intersections not imputed.",
+    "H1 uses observed top/bottom width at test x: conditional reconstruction, NOT predictive.",
+    "July28 q transfer checks internal band proportion across distinct screenshots, affected by 2-4px color-center uncertainty.",
+    "Screenshot spans approx Oct2025-Aug2026 (about 10 months), while July28 screenshot shows 3+ years.",
+    "Red line x475,x505 intentionally missing due candle overlap; green x265,x295 and orange x565 missing.",
+    "No claim of author's actual indicator equation or manual/automatic revision."
+  ]
+}
