@@ -1,0 +1,54 @@
+{
+  "schema": "knee_two_exact_events_close_only_v1",
+  "as_of": "2026-10-18",
+  "method": "strict prior n exchange trading sessions, closing prices only, retrospective post-processed source",
+  "events": [
+    {
+      "symbol": "108490",
+      "event": "2025-05-14",
+      "close": 49000,
+      "previous_close": 37700,
+      "change_pct": 29.973474801061005,
+      "prior20_sessions": 20,
+      "prior20_max_close": 37700,
+      "prior20_average_close": 35330,
+      "previous_day_prior20_max_close": 37350,
+      "previous_day_prior20_average_close": 35017.5,
+      "event_breaks_prior20": true,
+      "previous_day_breaks_prior20": true,
+      "event_crosses_ma20_from_below": false,
+      "event_is_first_after_previous_day": false,
+      "source_csv": "research/results/robotis_108490_knee_20250514_verified_prev20_closes_v1.csv",
+      "observed_rows": 22
+    },
+    {
+      "symbol": "457190",
+      "event": "2025-12-08",
+      "close": 59500,
+      "previous_close": 51500,
+      "change_pct": 15.533980582524265,
+      "prior20_sessions": 20,
+      "prior20_max_close": 55600,
+      "prior20_average_close": 51982.5,
+      "previous_day_prior20_max_close": 55600,
+      "previous_day_prior20_average_close": 52032.5,
+      "event_breaks_prior20": true,
+      "previous_day_breaks_prior20": false,
+      "event_crosses_ma20_from_below": true,
+      "event_is_first_after_previous_day": true,
+      "source_csv": "research/results/isu_457190_knee_20251208_close_window_v1.csv",
+      "observed_rows": 33,
+      "past31_max_close": 59700,
+      "breaks_past31": false,
+      "witness_older_prior_date": "2025-10-24",
+      "witness_older_close": 59700
+    }
+  ],
+  "limitations": [
+    "data sourced from secondary archived daily research and post-hoc strategy close series; not official KRX OHLCV",
+    "Robotis daily posts have morning YAML timestamps yet report same-day final close: cannot treat as intraday-real-time evidence",
+    "holiday copied snapshots 2025-05-01/05/05/05/06 excluded",
+    "no high, low, volume, full 252-day window or observed proprietary knee band values",
+    "Isu cannot break prior 60/120/252-day closing high because known higher 2025-10-24 close; exact max for longer windows unknown"
+  ]
+}
