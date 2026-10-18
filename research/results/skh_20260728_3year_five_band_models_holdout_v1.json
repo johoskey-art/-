@@ -1,0 +1,85 @@
+{
+  "method": "screen-geometry reconstruction, not prediction",
+  "image": "user-library 1000008432(1).jpg",
+  "image_sha256": "da30d52196f882530629a845b1e848c098eb1bb038f23c5f812ccbcaae7516c5",
+  "samples": 17,
+  "train_first_six": [
+    85,
+    125,
+    165,
+    205,
+    245,
+    285
+  ],
+  "test_remaining": [
+    325,
+    365,
+    405,
+    445,
+    485,
+    525,
+    550,
+    565,
+    578,
+    585,
+    595
+  ],
+  "whole_band": {
+    "start_width_px": 79.4,
+    "end_width_px": 103.2,
+    "delta_width_px": 23.8,
+    "start_ratio": 3.3974,
+    "end_ratio": 4.9019,
+    "ratio_expansion_pct": 44.28,
+    "delta_error_if_each_endpoint_center_plusminus_2px": [
+      15.8,
+      31.8
+    ],
+    "delta_error_if_each_endpoint_center_plusminus_4px": [
+      7.8,
+      39.8
+    ]
+  },
+  "intermediate_bands": {
+    "n_test": 27,
+    "rmse_H0_fixed_px": 7.413,
+    "rmse_H1_variable_width_px": 1.5787,
+    "per_band": [
+      {
+        "band": "green_shoulder_y_px",
+        "train_n": 6,
+        "test_n": 8,
+        "train_offset_px": 18.7167,
+        "train_q": 0.23345,
+        "test_rmse_H0_px": 2.6579,
+        "test_rmse_H1_px": 1.2054
+      },
+      {
+        "band": "black_waist_y_px",
+        "train_n": 5,
+        "test_n": 8,
+        "train_offset_px": 34.34,
+        "train_q": 0.429368,
+        "test_rmse_H0_px": 4.1648,
+        "test_rmse_H1_px": 2.3861
+      },
+      {
+        "band": "orange_thigh_y_px",
+        "train_n": 5,
+        "test_n": 11,
+        "train_offset_px": 56.76,
+        "train_q": 0.705786,
+        "test_rmse_H0_px": 10.8227,
+        "test_rmse_H1_px": 0.9592
+      }
+    ]
+  },
+  "caveats": [
+    "SVG/Canvas vector coordinates unavailable; manually seeded, hue-assisted JPEG pixels",
+    "x positions not exact dated trading sessions",
+    "Some occluded/low-confidence points NA",
+    "Ratio inferred assuming log vertical price axis beta=64.921 px/ln",
+    "H1 observes red-blue width at test x, so is not a predictive model for new dates",
+    "Only one screenshot, no independent stock replication, no assertion of original author's formula"
+  ]
+}
