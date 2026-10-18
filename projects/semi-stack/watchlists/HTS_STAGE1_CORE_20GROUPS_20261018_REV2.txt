@@ -1,0 +1,248 @@
+SEMI STACK | POP HTS 20개 공정 우선등록안 / 2026-10-18 REV2
+일반 상장티커 검색용이며 삼성 공식 파일 업로드 규격이 아님.
+시총 기준은 국내 99개 가운데 7개만 확인했으며 3000억 미확인 잔여 한국기업은 게이트에서 관리.
+
+[F01 웨이퍼·기판 원재료] 5행
+▷ 글로벌 앵커
+JP | 3436 | SUMCO
+JP | 4063 | 신에츠화학
+TW | 6488 | GlobalWafers
+DE | WAF | Siltronic
+FR | SOI | 소이텍
+
+[F02 노광·포토] 14행
+▷ 글로벌 앵커
+US | PLAB | 포트로닉스
+US | Q | 큐니티일렉트로닉스(Qnity)
+JP | 4063 | 신에츠화학
+JP | 4186 | 도쿄오카공업(TOK)
+JP | 429A | Tekscend Photomask
+JP | 6920 | 레이저텍
+JP | 7741 | HOYA
+JP | 8035 | 도쿄일렉트론
+NL | ASML | ASML Holding
+▷ 국내 핵심 피어
+KR | 005290 | 동진쎄미켐
+KR | 036810 | 에프에스티
+KR | 101490 | 에스앤에스텍
+KR | 102710 | 이엔에프테크놀로지
+KR | 112290 | 와이씨켐
+
+[F03 증착] 16행
+▷ 글로벌 앵커
+US | AMAT | 어플라이드 머티어리얼즈
+US | LRCX | 램리서치
+JP | 6525 | Kokusai Electric
+JP | 8035 | 도쿄일렉트론
+CN | 002371 | Naura Technology Group (北方华创)
+NL | ASM.AS | ASM International
+CN | 688012 | AMEC (Advanced Micro-Fabrication Equipment / 中微公司)
+▷ 국내 핵심 피어
+KR | 014680 | 한솔케미칼
+KR | 036930 | 주성엔지니어링
+KR | 074600 | 원익QnC
+KR | 084370 | 유진테크
+KR | 095610 | 테스
+KR | 104830 | 원익머트리얼즈
+KR | 146320 | 비씨엔씨
+KR | 240810 | 원익IPS
+KR | 281740 | 레이크머티리얼즈
+
+[F04 식각] 18행
+▷ 글로벌 앵커
+US | AMAT | 어플라이드 머티어리얼즈
+US | LRCX | 램리서치
+JP | 8035 | 도쿄일렉트론
+CN | 688012 | AMEC (Advanced Micro-Fabrication Equipment / 中微公司)
+CN | 002371 | Naura Technology Group (北方华创)
+▷ 국내 핵심 피어
+KR | 059090 | 미코
+KR | 064760 | 티씨케이
+KR | 089970 | 브이엠 (V&M)
+KR | 093370 | 후성
+KR | 095610 | 테스
+KR | 101160 | 월덱스 (Worldex)
+KR | 102710 | 이엔에프테크놀로지
+KR | 104830 | 원익머트리얼즈
+KR | 144960 | 뉴파워프라즈마
+KR | 166090 | 하나머티리얼즈
+KR | 319660 | 피에스케이
+KR | 357780 | 솔브레인
+KR | 425040 | 티이엠씨
+
+[F05 산화·열처리] 8행
+▷ 글로벌 앵커
+JP | 6525 | Kokusai Electric
+JP | 8035 | 도쿄일렉트론
+NL | ASM.AS | ASM International
+CN | 002371 | Naura Technology Group (北方华创)
+▷ 국내 핵심 피어
+KR | 039030 | 이오테크닉스
+KR | 122640 | 예스티
+KR | 240810 | 원익IPS
+KR | 403870 | HPSP (에이치피에스피)
+
+[F06 이온주입] 2행
+▷ 글로벌 앵커
+US | AMAT | 어플라이드 머티어리얼즈
+CN | 002371 | Naura Technology Group (北方华创)
+
+[F07 금속배선·CMP] 9행
+▷ 글로벌 앵커
+US | AMAT | 어플라이드 머티어리얼즈
+US | ENTG | 인테그리스
+US | Q | 큐니티일렉트로닉스(Qnity)
+JP | 5384 | 후지미
+JP | 6361 | 에바라
+NL | ASM.AS | ASM International
+▷ 국내 핵심 피어
+KR | 112290 | 와이씨켐
+KR | 281820 | 케이씨텍
+KR | 357780 | 솔브레인
+
+[F08 세정] 12행
+▷ 글로벌 앵커
+US | ENTG | 인테그리스
+JP | 7735 | SCREEN홀딩스
+JP | 8035 | 도쿄일렉트론
+CN | 002371 | Naura Technology Group (北方华创)
+▷ 국내 핵심 피어
+KR | 014680 | 한솔케미칼
+KR | 079370 | 제우스
+KR | 102710 | 이엔에프테크놀로지
+KR | 183300 | 코미코
+KR | 281820 | 케이씨텍
+KR | 319660 | 피에스케이
+KR | 357780 | 솔브레인
+KR | 095340 | ISC
+
+[F09 인라인 계측·검사] 8행
+▷ 글로벌 앵커
+US | KLAC | KLA
+US | NVMI | 노바(Nova)
+US | ONTO | 온토 이노베이션
+JP | 6920 | 레이저텍
+JP | 7729 | Tokyo Seimitsu (東京精密)
+▷ 국내 핵심 피어
+KR | 140860 | 파크시스템스
+KR | 322310 | 오로스테크놀로지
+KR | 348210 | 넥스틴 (NEXTIN)
+
+[F10 Fab 인프라·공통부품] 19행
+▷ 글로벌 앵커
+US | AEIS | 어드밴스드에너지
+US | ENTG | 인테그리스
+US | MKSI | MKS인스트루먼츠
+JP | 6890 | 페로텍홀딩스
+▷ 시총확인 한국기업
+KR | 056190 | SFA
+▷ 국내 핵심 피어
+KR | 036200 | 유니셈
+KR | 039440 | 에스티아이
+KR | 045100 | 한양이엔지
+KR | 059090 | 미코
+KR | 064760 | 티씨케이
+KR | 074600 | 원익QnC
+KR | 083310 | 엘오티베큠
+KR | 083450 | GST
+KR | 101160 | 월덱스 (Worldex)
+KR | 146320 | 비씨엔씨
+KR | 166090 | 하나머티리얼즈
+KR | 425040 | 티이엠씨
+KR | 144960 | 뉴파워프라즈마
+KR | 095340 | ISC
+
+[B01 웨이퍼 전기검사] 6행
+▷ 글로벌 앵커
+US | TER | Teradyne
+JP | 6857 | Advantest
+JP | 6871 | Micronics Japan
+JP | 7729 | Tokyo Seimitsu (東京精密)
+▷ 국내 핵심 피어
+KR | 003160 | 디아이
+KR | 232140 | 와이씨
+
+[B02 프로브카드·접촉부품] 5행
+▷ 글로벌 앵커
+US | FORM | FormFactor
+JP | 6871 | Micronics Japan
+IT | TPRO | Technoprobe
+▷ 국내 핵심 피어
+KR | 131290 | 티에스이 (TSE)
+KR | 252990 | 샘씨엔에스 (SemCNS)
+
+[B03 웨이퍼 박막화] 2행
+▷ 글로벌 앵커
+JP | 6146 | Disco
+JP | 7729 | Tokyo Seimitsu (東京精密)
+
+[B04 다이싱·분리] 4행
+▷ 글로벌 앵커
+JP | 6146 | Disco
+JP | 7729 | Tokyo Seimitsu (東京精密)
+▷ 국내 핵심 피어
+KR | 039030 | 이오테크닉스
+KR | 042700 | 한미반도체
+
+[B05 본딩·디본딩] 5행
+▷ 글로벌 앵커
+NL | BESI | BE Semiconductor Industries
+HK | 0522 | ASMPT
+CN | 002371 | Naura Technology Group (北方华创)
+▷ 국내 핵심 피어
+KR | 042700 | 한미반도체
+KR | 489790 | 한화비전 (한화세미텍 모회사)
+
+[B06 Descum·Reflow·Molding] 3행
+▷ 글로벌 앵커
+JP | 6315 | TOWA
+NL | BESI | BE Semiconductor Industries
+▷ 국내 핵심 피어
+KR | 031980 | 피에스케이홀딩스
+
+[B07 패키징 소재] 4행
+▷ 글로벌 앵커
+US | Q | 큐니티일렉트로닉스(Qnity)
+JP | 4203 | Sumitomo Bakelite
+▷ 국내 핵심 피어
+KR | 077360 | 덕산하이메탈
+KR | 195870 | 해성디에스
+
+[B08 패키지 검사·계측] 5행
+▷ 글로벌 앵커
+US | CAMT | Camtek
+US | KLAC | KLA
+▷ 시총확인 한국기업
+KR | 064290 | 인텍플러스 (INTEKPLUS)
+▷ 국내 핵심 피어
+KR | 098460 | 고영 (Koh Young Technology)
+KR | 042700 | 한미반도체
+
+[B09 최종 테스트] 10행
+▷ 글로벌 앵커
+US | TER | Teradyne
+JP | 6857 | Advantest
+JP | 6871 | Micronics Japan
+▷ 국내 핵심 피어
+KR | 003160 | 디아이
+KR | 058470 | 리노공업
+KR | 089030 | 테크윙
+KR | 092870 | 엑시콘 (Exicon)
+KR | 095340 | ISC
+KR | 131290 | 티에스이 (TSE)
+KR | 253590 | 네오셈 (Neosem)
+
+[B10 OSAT] 10행
+▷ 글로벌 앵커
+US | AMKR | Amkor Technology
+TW | 2449 | King Yuan Electronics (KYEC)
+TW | 3711 | ASE Technology Holding
+TW | 6239 | Powertech Technology (PTI)
+CN | 600584 | JCET Group
+▷ 국내 핵심 피어
+KR | 033640 | 네패스
+KR | 036540 | SFA반도체
+KR | 067310 | 하나마이크론
+KR | 131970 | 두산테스나
+KR | 330860 | 네패스아크
+
