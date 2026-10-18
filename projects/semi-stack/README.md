@@ -41,3 +41,11 @@
 - [삼성 POP 수동검색용 20그룹](watchlists/SEMI_STACK_POP_MANUAL_20GROUPS_20261018_RECONCILED.txt): **309개 배치**, 삼성증권 내부종목코드/CSV import 규격 미확인. 파일 자체는 HTS 공식 업로드 형식 아님.
 - **전수조사 완료 ≠ 최종 전부 PASS**. 잔여 62사 가운데 직접 제품/발행인사업 49사, 부분 공식자료 12사, 공정 매칭 보류 1사. Veeco/Axcelis 합병, 코세스 B05, 에프엔에스테크 F08 및 Samsung POP의 해외거래소 검색·등록 가능성은 별도 검증 중.
 - 2026-10-16 원본 MASTER/44교정기록/279행 WATCHLIST와 2026-10-18 과정 파일들은 모두 히스토리로 유지하며 덮어쓰지 않음.
+
+## 2026-10-18 삼성 POP HTS 압축명단 최신 REV2
+- [20공정 핵심 TXT](watchlists/HTS_STAGE1_CORE_20GROUPS_20261018_REV2.txt): 106 고유 상장기업 / 165 공정배치행. 삼성 공식 파일 가져오기 규격이 아닌 수동 검색용.
+- [1차 핵심 CSV](watchlists/HTS_STAGE1_CORE_20GROUPS_20261018_REV2.csv)
+- [2차 시총/전문/보류](watchlists/HTS_STAGE2_VERIFY_20261018_REV2.csv): 144 배치행.
+- [한국 99사 시총 검산표](watchlists/KR_3000EOK_MARKETCAP_GATE_20261018_REV2.csv): 7개 시총 확인, 잔여 미검증.
+- [검산 출처](audit/HTS_MARKETCAP_CHECK_20261018.md), [선별정책](audit/HTS_SELECTION_POLICY_20261018.md).
+- 연구용 전체 208사/309배치 원장 보존. 국내 3000억원 이상 후보 누락 여부 검사는 미완료.
