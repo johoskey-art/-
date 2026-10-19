@@ -9,9 +9,8 @@
   "valid_trading_rows": 756,
   "excluded_rows": 82,
   "after_original_anchor_rows": 523,
-  "excluded_reason": "Volume missing / synthetic no-trading rows, not interpolated",
-  "rounding": "Volume stored as string x.xxM or x.xxK, approx rounded values: estimates, not raw exact exchange shares",
-  "definition": "HLC3 typical price × approx volume / cumulative approx volume; anchor inclusive; unweighted = mean HLC3 after anchor",
+  "source_volume_precision": "M or K with two decimal digits; volume approximate",
+  "definition": "AVWAP = sum(HLC3_i * V_rounded_i)/sum(V_rounded_i); inclusive anchor; mean(HLC3) is unweighted control",
   "anchor_dates": {
     "author_marked": "2023-07-27",
     "local_low": "2023-07-10",
@@ -21,16 +20,102 @@
     "date": "2025-09-18",
     "close": 353000,
     "tp": 348833.3333333333,
-    "volume": 4139999.9999999995,
+    "vol": 4139999.9999999995,
     "days": 523,
     "avwap_original": 184955.55525082286,
-    "avwap_prior_breakout": 184955.55525082286,
-    "avwap_local_low": 184955.55525082286,
+    "avwap_prior_breakout": 179544.3993385494,
+    "avwap_local_low": 183637.66803820754,
     "unweighted": 184928.99936265138,
     "sma120": 240964.16666666666,
     "sma240": 215620,
-    "ema120": 252301.12392173824
+    "ema120": 252301.12392173754
   },
+  "selected_observations": [
+    {
+      "date": "2023-07-27",
+      "close": 124000,
+      "tp": 120700,
+      "vol": 9430000,
+      "days": 1,
+      "avwap_original": 120700,
+      "avwap_prior_breakout": 113611.25048169558,
+      "avwap_local_low": 116156.57492354742,
+      "unweighted": 120700,
+      "sma120": 98195.83333333333,
+      "sma240": null,
+      "ema120": 102137.46295440718
+    },
+    {
+      "date": "2023-12-28",
+      "close": 141500,
+      "tp": 140866.66666666666,
+      "vol": 2350000,
+      "days": 104,
+      "avwap_original": 124707.11755047957,
+      "avwap_prior_breakout": 121022.66384722822,
+      "avwap_local_low": 123741.86760003456,
+      "unweighted": 124693.26923076926,
+      "sma120": 123389.16666666667,
+      "sma240": 108872.08333333333,
+      "ema120": 123214.00333369292
+    },
+    {
+      "date": "2024-06-03",
+      "close": 194200,
+      "tp": 192333.33333333334,
+      "vol": 2960000,
+      "days": 207,
+      "avwap_original": 146226.04683307584,
+      "avwap_prior_breakout": 140234.26732186368,
+      "avwap_local_low": 144678.76071623285,
+      "unweighted": 144522.0611916264,
+      "sma120": 160294.16666666666,
+      "sma240": 140497.08333333334,
+      "ema120": 164650.7743697239
+    },
+    {
+      "date": "2024-12-30",
+      "close": 173900,
+      "tp": 174033.33333333334,
+      "vol": 1410000,
+      "days": 348,
+      "avwap_original": 165373.99909090257,
+      "avwap_prior_breakout": 159866.8359620366,
+      "avwap_local_low": 164012.7041623378,
+      "unweighted": 162857.37547892725,
+      "sma120": 183812.5,
+      "sma240": 179757.08333333334,
+      "ema120": 179649.77346422334
+    },
+    {
+      "date": "2025-03-31",
+      "close": 190700,
+      "tp": 192233.33333333334,
+      "vol": 3930000,
+      "days": 406,
+      "avwap_original": 170442.39725403494,
+      "avwap_prior_breakout": 165163.7309789197,
+      "avwap_local_low": 169147.71540351203,
+      "unweighted": 168478.53037766836,
+      "sma120": 190834.16666666666,
+      "sma240": 191928.75,
+      "ema120": 193817.11473261958
+    },
+    {
+      "date": "2025-09-18",
+      "close": 353000,
+      "tp": 348833.3333333333,
+      "vol": 4139999.9999999995,
+      "days": 523,
+      "avwap_original": 184955.55525082286,
+      "avwap_prior_breakout": 179544.3993385494,
+      "avwap_local_low": 183637.66803820754,
+      "unweighted": 184928.99936265138,
+      "sma120": 240964.16666666666,
+      "sma240": 215620,
+      "ema120": 252301.12392173754
+    }
+  ],
   "diagnostics": {
     "meanAbsVolumeWeightedVsUnweightedPct": 1.0350845672704376,
     "medianAbsPct": 1.0143179993836071,
@@ -38,15 +123,15 @@
     "maxAbsPct": 2.1760593192051036,
     "maxAbsDate": {
       "date": "2024-08-16",
-      "absolute": 2.1760593192051036
+      "pct": 2.1760593192051036
     },
     "lastDiffWon": 26.555888171482366
   },
   "status": {
-    "SK_AVWAP": "computed_for_2023_07_to_2025_09",
-    "match_to_original_K": "not_identifiable_no_K_at_test_dates",
-    "original_band_JPEG": "2026 captures, not numeric band t matched to 2025_09_18",
-    "samsung": "pending_2025_26_consistent_full_OHLCV_and_band_num",
-    "old_hyundai": "blocked_Close_zero_2005_2007"
-  }
+    "AVWAP_SK": "historical calculation verified to 2025-09-18",
+    "SK_original_knee_comparison": "cannot_conclude_no_exact_knee_at_matching_2025_date",
+    "Samsung": "waiting_consistent_daily_OHLCV_and_band_points",
+    "old_009540": "cannot_standard_HLC3_close_zero_before_2017"
+  },
+  "audit_note": "CORRECTION: first draft incorrectly initialized alternative anchor cumulative sums at original Jul27; updated to accumulate each anchor from its own date before checkpoint creation. Alternative anchors now disagree numerically with author anchor as expected."
 }
