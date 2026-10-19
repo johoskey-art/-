@@ -1,0 +1,196 @@
+{
+  "study": "36th fourth-stock prereferenced q_thigh = 5/7, geometry only",
+  "ticker": "034730",
+  "screenshot_date": "2026-07-28",
+  "measurement_date": "2026-10-19",
+  "source": "1000008431.jpg",
+  "sha256": "6a07b23fcc31186c33561281339141b8dbc74a6c0701264c28891e26c0748511",
+  "source_dimensions": [
+    691,
+    1536
+  ],
+  "axis_ticks": [
+    {
+      "price": 200000,
+      "y": 810
+    },
+    {
+      "price": 300000,
+      "y": 766
+    },
+    {
+      "price": 400000,
+      "y": 734
+    },
+    {
+      "price": 600000,
+      "y": 696
+    },
+    {
+      "price": 700000,
+      "y": 680
+    },
+    {
+      "price": 800000,
+      "y": 667
+    },
+    {
+      "price": 1000000,
+      "y": 642
+    }
+  ],
+  "axis_model": {
+    "log": {
+      "slope": -102.95072059299474,
+      "intercept": 2064.994188774386,
+      "rmse": 1.4780267409264642
+    },
+    "linear": {
+      "slope": -0.00020167630057803468,
+      "intercept": 828.8150289017341,
+      "rmse": 12.464052356921044
+    }
+  },
+  "frozen_hypothesis": {
+    "metric": "q_thigh=(y_thigh-y_top)/(y_knee-y_top), same image log axis",
+    "fixed_value": 0.7142857142857143,
+    "excluded_hand_drawn_yellow_diagonal": true,
+    "no_retrofit": true,
+    "validity": "source axis is logarithmic to 1.48px RMSE; q pixel approximation"
+  },
+  "summary": {
+    "all": {
+      "n": 21,
+      "mean": 0.7232763805649798,
+      "median": 0.7213114754098361,
+      "min": 0.7083333333333334,
+      "max": 0.7631578947368421,
+      "sd": 0.01248931124956742
+    },
+    "strict_good": {
+      "n": 6,
+      "mean": 0.7216330285355118,
+      "median": 0.7226890756302521,
+      "min": 0.7163120567375887,
+      "max": 0.7288135593220338,
+      "sd": 0.004237873479606374
+    },
+    "nonmanual": {
+      "n": 19,
+      "mean": 0.722979238055428,
+      "median": 0.7213114754098361,
+      "min": 0.7083333333333334,
+      "max": 0.7631578947368421,
+      "sd": 0.012555413446118447
+    },
+    "early": {
+      "n": 10,
+      "mean": 0.7278746441496484,
+      "median": 0.7288135593220338,
+      "min": 0.7083333333333334,
+      "max": 0.7631578947368421,
+      "sd": 0.016384164302682625
+    },
+    "late": {
+      "n": 11,
+      "mean": 0.7190961409425539,
+      "median": 0.717741935483871,
+      "min": 0.7142857142857143,
+      "max": 0.7286821705426356,
+      "sd": 0.004129425340123515
+    }
+  },
+  "frozen_5over7_fit": {
+    "all": {
+      "n": 21,
+      "rmse_px": 1.7978742441733717,
+      "mae_px": 1.2537414965986282,
+      "bias_px": 1.0768707482992947
+    },
+    "strict_good": {
+      "n": 6,
+      "rmse_px": 1.0334540197242938,
+      "mae_px": 0.9047619047618696,
+      "bias_px": 0.9047619047618696
+    }
+  },
+  "fixed_competitors": [
+    {
+      "fixed_q": 0.7142857142857143,
+      "rmse_px": 1.7978742441733717,
+      "posthoc_baseline": false
+    },
+    {
+      "fixed_q": 0.7,
+      "rmse_px": 3.1741845597015415,
+      "posthoc_baseline": true
+    },
+    {
+      "fixed_q": 0.72,
+      "rmse_px": 1.5018639847108013,
+      "posthoc_baseline": true
+    },
+    {
+      "fixed_q": 0.75,
+      "rmse_px": 3.6921731889420997,
+      "posthoc_baseline": true
+    }
+  ],
+  "models_H0_H1": [
+    {
+      "train_n": 6,
+      "holdout_middle_bands_n": 45,
+      "rmse_H0_px": 4.877636039449167,
+      "rmse_H1_px": 3.1367284356168463
+    },
+    {
+      "train_n": 7,
+      "holdout_middle_bands_n": 42,
+      "rmse_H0_px": 5.092234317088727,
+      "rmse_H1_px": 3.159800536586109
+    },
+    {
+      "train_n": 8,
+      "holdout_middle_bands_n": 39,
+      "rmse_H0_px": 5.200600926816056,
+      "rmse_H1_px": 3.368362024108568
+    },
+    {
+      "train_n": 9,
+      "holdout_middle_bands_n": 36,
+      "rmse_H0_px": 5.394658042077046,
+      "rmse_H1_px": 3.582802817284833
+    }
+  ],
+  "model_quality_sensitivity": {
+    "n": 36,
+    "H0": 5.3267320257428095,
+    "H1": 3.315487070196377
+  },
+  "band_span": {
+    "start_width_px": 119,
+    "end_width_px": 141,
+    "delta_px": 22,
+    "ratio_start": 3.1768585531994114,
+    "ratio_end": 3.9337269323442117,
+    "ratio_increase_pct": 23.824428014982256,
+    "delta_error_px_2perendpoint": [
+      14,
+      30
+    ],
+    "delta_error_px_4perendpoint": [
+      6,
+      38
+    ]
+  },
+  "warnings": [
+    "The y line centers were manually seeded, HSV-supported and visually inspected; masks are not exact source indicator price values.",
+    "Same image contains thick yellow hand annotation; actual thin orange thigh band traced separately.",
+    "Subsets of 21 x positions are autocorrelated screen measurements, not 21 independent stocks.",
+    "Strict 6-point subset selected by objective color confidence, but confidence is imperfect.",
+    "5/7 matches within JPEG pixel error but is not mathematically identified as original blogger's specific coefficient.",
+    "Axis seven ticks manually read; logarithmic model is better than linear; y-ratio only approximate log-price ratio.",
+    "H1 uses observed test-time red and blue bands, not an ex-ante prediction.",
+    "No date-specific true original indicator values or 5/7 Fibonacci algorithm confirmed."
+  ]
+}
