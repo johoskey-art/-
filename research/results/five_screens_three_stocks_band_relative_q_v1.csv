@@ -1,0 +1,6 @@
+symbol,stock_name,snapshot_date,q_shoulder,q_waist,q_thigh,n_shoulder,n_waist,n_thigh,source_data_path,normalization
+000500,가온전선,2026-05-11,0.217769,0.424372,0.716964,14,14,14,research/results/gaon_000500_two_single_screen_h0_h1_audit_v1.json,q=ln(P_top/P_i)/ln(P_top/P_knee)
+000500,가온전선,2026-10-14,0.206187,0.378450,0.704169,22,22,22,research/results/gaon_000500_two_single_screen_h0_h1_audit_v1.json,q=ln(P_top/P_i)/ln(P_top/P_knee)
+000660,SK하이닉스,2026-07-28,0.227607,0.417802,0.712421,14,13,16,research/results/skh_20260728_3year_five_band_geometry_samples_v1.csv,q=ln(P_top/P_i)/ln(P_top/P_knee)
+000660,SK하이닉스,2026-08-07,0.206089,0.416678,0.716462,10,12,11,research/results/skh_20260807_single_screen_five_band_independent_v1.csv,q=ln(P_top/P_i)/ln(P_top/P_knee)
+009150,삼성전기,2026-10-14,0.212569,0.416206,0.717255,21,17,21,research/results/sem_009150_20261014_five_band_pixels_v1.csv,q=ln(P_top/P_i)/ln(P_top/P_knee)
