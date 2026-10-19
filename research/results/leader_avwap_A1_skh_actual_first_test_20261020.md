@@ -57,5 +57,5 @@
 - [SK 월말 및 시작일 기반 체크포인트 28행](avwap_a1_skh_000660_month_end_checkpoints_v1.csv)
 - [자료 필터·세 앵커·통제군·진단 JSON](avwap_a1_skh_000660_quality_and_summary_v1.json)
 - [2026 7월 원본 차트의 역사 3일 파란무릎 근사 & 픽셀 허용범위](avwap_a1_skh_20260728_original_knee_screen_3date_check_v1.csv)
-- [핀고정 CSV 재현 Python 스크립트](../scripts/leader_avwap_a1_skh_pinned_source.py). **이번 실제 숫자는 Github 원시 CSV를 연결 도구로 읽고 JS를 수행하여 2개 독립 누적구현 결과를 교차 대조했고, GitHub에 업로드된 Python 스크립트 자체의 본 머신 별도 실행은 소스 네트워크 제약으로 하지 못했다.** Python 스크립트에는 모든 핵심 체크포인트에 대한 검산 assertion을 탑재.
+- [핀고정 CSV 재현 Python 스크립트](../scripts/leader_avwap_a1_skh_pinned_source.py). **이번 실제 숫자는 GitHub 원시 CSV를 연결 도구로 읽어 JS로 직접 계산하고 저장본의 재조회로 검산했다. 처음 저장한 대체 앵커 누적구현에서 앵커별 시작일이 잘못 지정된 오류를 발견해 즉시 수정·재저장했고, 수정 사실은 품질 JSON에 남겼다. GitHub에 업로드된 Python 스크립트 자체의 본 머신 별도 실행은 소스 네트워크 제약으로 수행하지 못했다.** Python 스크립트에는 모든 핵심 체크포인트에 대한 검산 assertion을 탑재.
 - **기존 30주도주5/7 등분과 앱/백테스트/Pine 수정 없음.**
