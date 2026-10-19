@@ -100,3 +100,13 @@
 - [국내 99사 HTS 판정](audit/KR_99_HTS_FINAL_POLICY_DECISIONS_20261019.csv) / [309건 주·부 STACK 판정·confidence](data/SEMI_STACK_309_ROLE_AUDIT_20261019.csv).
 - [주력 후보 142사 고유종목표](watchlists/SEMI_HTS_ONE_FIRM_ONE_PRIMARY_CANDIDATE_20261019_142.csv): 한국97·해외45(이탈리아 Technoprobe 제외); 삼성 POP 6그룹/기존 11그룹 통합 SBT는 **현재 대화에 다운로드 파일로 제공**.
 - **SBT는 구조 QA PASS이나 삼성 POP 실기기 import와 해외 내부코드 일부 미검증**. 309개 품목의 매출비중 실측 및 Secondary X%는 **미완료**이므로 142사는 '후보 주력'이지 주/부 영구 확정 아님. 기존 20261019 REV5/REV6 숫자와 혼용하지 않을 것.
+
+
+## 2026-10-19 공식 매출검산 배치 01 / SBT 141기업 교정
+- **기존 142기업 검토용 SBT에서 확인된 오류:** 한화비전(489790)은 연결 시큐리티 매출이 최대, B05 TC본더는 한화세미텍 산하 사업이므로 연결기업 Primary 주장을 철회. 유니테스트(086390)는 B09 테스트 핸들러가 아니라 B09 메모리 테스터·번인.
+- [5개 회사 10개 제품·공정 배치 2026/2025 실적 근거](audit/SEMI_REVENUE_EVIDENCE_BATCH01_20261019.csv): 유니테스트 2026H1 메모리 테스트장비군 89.56%, 오킨스전자 2026Q1 소켓 제조 외 91.9%·테스트 용역 6.7%, ISC 2026H1 Test Socket 등 제조 제품 83.7%, 한화비전 2026Q2 세미텍 사업부 전체 27.24%(TCB 단독 아님), 에프엔에스테크 2025 소재부품 묶음 47.22%(CMP 단독 아님). 직접 묶음수치와 개별 제품 비중 구분.
+- [309행 원장 Batch01 증거 덧붙인 V2](data/SEMI_STACK_309_ROLE_AUDIT_20261019_V2_EVIDENCE.csv) / [142개 원형에 기업별 검증 메모 보강한 V2](watchlists/SEMI_HTS_142_PRIMARY_REVIEW_20261019_V2_EVIDENCE.csv).
+- [171?가 아닌 **17개 회사에서 18개 공정쌍** 잠재 동일제품 중복](audit/SEMI_SUBSTACK_PRODUCT_ALIAS_18_PAIRS_20261019.csv): F04 식각 부품 vs F10 공통부품, F03 전구체 공급 vs F10 인프라, 마스크 검사 F02/F09 등의 동일 제품설명 중복. 서로 다른 SKU가 존재할 수 있으므로 **중복 가능성 경고일 뿐 회사/공정 자동 삭제 아님**.
+- [**141기업 수정된 Primary 후보 시트**](watchlists/SEMI_HTS_PRIMARY_CANDIDATES_20261019_V3_141_NONPRIMARY_FILTER.csv): 국내 96·해외 45. 한화비전은 기업 원장 보존 및 Secondary/PLAY 검토 큐로 이동. 에프엔에스테크 F07은 CMP단독 비중 미공시이므로 주력 확정 아님.
+- **새 삼성 POP SBT 통합17그룹/반도체 독립6그룹의 141기업 버전**은 이번 대화에 각각 다운로드 제공. 원래 11그룹 내용 바이트 보존, CP949/CRLF/COUNT/20공정·141종목 기계검산 PASS. 실제 POP import·해외 종목코드 및 309개 개별 매출 X%는 여전히 미검증.
+- 과거 142기업 SBT는 유니테스트 소제목 오류 및 한화비전 주력 오분류로 **현재 기준 구판**이며 사용 전 141기업 교정본과 비교해야 함.
