@@ -110,3 +110,12 @@
 - [**141기업 수정된 Primary 후보 시트**](watchlists/SEMI_HTS_PRIMARY_CANDIDATES_20261019_V3_141_NONPRIMARY_FILTER.csv): 국내 96·해외 45. 한화비전은 기업 원장 보존 및 Secondary/PLAY 검토 큐로 이동. 에프엔에스테크 F07은 CMP단독 비중 미공시이므로 주력 확정 아님.
 - **새 삼성 POP SBT 통합17그룹/반도체 독립6그룹의 141기업 버전**은 이번 대화에 각각 다운로드 제공. 원래 11그룹 내용 바이트 보존, CP949/CRLF/COUNT/20공정·141종목 기계검산 PASS. 실제 POP import·해외 종목코드 및 309개 개별 매출 X%는 여전히 미검증.
 - 과거 142기업 SBT는 유니테스트 소제목 오류 및 한화비전 주력 오분류로 **현재 기준 구판**이며 사용 전 141기업 교정본과 비교해야 함.
+
+
+## 2026-10-19 추가 공식매출·중복 검산 — 최신 141기업 V2
+- [동일제품 중복 의심 18쌍 전수 판정](audit/SEMI_SUBSTACK_PRODUCT_ALIAS_18_PAIRS_20261019_V2_VERDICTS.csv): 17사/18쌍, 공식 독립 제품(PSK SUPRA vs INTEGER)와 포괄 적용 태그를 분리. 유효한 별도 SKU/매출 미검증 종목은 `REVIEW` 유지.
+- [공식 제품·매출 검산 Batch02 13행](audit/SEMI_REVENUE_EVIDENCE_BATCH02_20261019.csv): 메카로 히터블록 2026Q1 97.10%, 비씨엔씨 QD9·QD9+ 63.5%, 케이엔제이 2025 SiC 등 부품 98.25%, 월덱스 2026Q1 Si 69.4%, 원익QnC 세정·코팅 국내외 합산 12.0% 등. **제품군 매출비중을 특정 공정 매출비중으로 허위 전환하지 않음.**
+- [309 연구행 기존 원장 보존 + 중복·정량근거 주석 V3](data/SEMI_STACK_309_ROLE_AUDIT_20261019_V3_ALIAS_REVIEW.csv): 208기업/309연구배치 원형 보존. 운영 공정은 별도 교정열을 사용.
+- [HTS 주력후보 141개 공식매출 교정 V4](watchlists/SEMI_HTS_PRIMARY_CANDIDATES_20261019_V4_141_PRODUCT_CORRECTED.csv): 메카로 **F03 히터블록**, 비씨엔씨 **F04 식각 QD9**, 뉴파워프라즈마 **F10 RF 전원/RPG**로 정정, 한화비전 Primary 제외 유지.
+- 해당 GitHub V4와 동일하게 수정된 삼성 POP `.sbt` **통합17그룹/SEMI6그룹 각각 141기업**은 대화 내 최신 ZIP `SEMI_STACK_POP_20261019_공식매출검산_141기업_V2.zip`에서 제공. 원본 11그룹 17,585바이트 prefix 동일, CP949/CRLF/그룹 COUNT/소제목 번호/20공정/141고유기업 자동 QA PASS. **바이너리 SBT는 아직 GitHub 미업로드, 실기기 POP import·해외 종목코드 미확인.**
+- 구 142기업 SBT, 초기 141기업 SBT는 최신 하위기능과 불일치하므로 사용 권장하지 않음. Secondary X% 미확정 및 전사 최대 매출 공시 미분리 기업은 주력 **후보** 상태를 유지.
