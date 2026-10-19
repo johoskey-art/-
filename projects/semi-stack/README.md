@@ -49,3 +49,13 @@
 - [한국 99사 시총 검산표](watchlists/KR_3000EOK_MARKETCAP_GATE_20261018_REV2.csv): 7개 시총 확인, 잔여 미검증.
 - [검산 출처](audit/HTS_MARKETCAP_CHECK_20261018.md), [선별정책](audit/HTS_SELECTION_POLICY_20261018.md).
 - 연구용 전체 208사/309배치 원장 보존. 국내 3000억원 이상 후보 누락 여부 검사는 미완료.
+
+
+## 2026-10-19 현재 운영 기준 — 국내 시총 2000억원 (최신)
+- **국내 HTS 선정 시총 기준이 3000억 → 2000억원으로 변경됨.** 과거 REV2/3000억 목록은 이력용, 현재 운영본은 REV3.
+- [SEMI HTS 핵심 1차 REV3](watchlists/HTS_STAGE1_CORE_20GROUPS_20261019_REV3_2000EOK.csv): 111개 기업(국내 65/해외 46), 공정배치 172건.
+- [국내 99개 시총 판정 REV3](watchlists/KR_2000EOK_MARKETCAP_GATE_20261019_REV3.csv): 기존 검산 자료에서 7개만 확인, 92개 검증 대기.
+- [SEMI HTS 2차 검증 REV3](watchlists/HTS_STAGE2_VERIFY_20261019_REV3_2000EOK.csv): 137개 공정 배치.
+- [309배치 하위 STACK 88기능 V3](data/SEMI_SUBSTACK_309ROWS_20261019_REVIEW_V3_HTS2000EOK.csv) 및 [HTS 6그룹 하위 기능 프리뷰](watchlists/SEMI_SUBSTACK_6GROUP_PREVIEW_20261019_V3_2000EOK.txt).
+- [2천억 변경 근거·검산 로그](audit/HTS_SELECTION_POLICY_2000EOK_20261019.md). 기존 208기업/309배치 연구용 원장은 변동 없음.
+- **HTS 시총 게이트와 STACK 매출비중 Primary/Secondary 게이트는 독립**이며, 공정 검산 및 삼성 POP SBT 업데이트는 미완료.
