@@ -93,3 +93,10 @@
 - [HTS 1차 193배치의 시총 예외 표시 REV6](watchlists/HTS_STAGE1_CORE_20GROUPS_20261019_REV6_CAP_FLAGS.csv): 기존 128개/193배치 유지, 시총 미달 3개 기업 4배치 및 와이씨켐 1개 기업 2배치를 승격 보류로 표시. 시총 무쟁점은 124기업/187배치(구SBT 187배치와 다른 구성).
 - [52개 추가 시총 검산 로그](audit/KR_99CAP_52MISSING_RECHECK_20261019_REV7.md): 직접/반올림 표기, 경계출처 충돌, 2천억 미달 전문기업 명단 기록.
 - **이전 REV5 및 REV6의 시총 미검증 52개 또는 99개 모두 통과 표현은 낡은 내용이다.** 삼성 POP SBT 최종 확정이라고 표시하지 않는다.
+
+
+## 2026-10-19 4단계 산출물 — 현재 최신 운영 검토본
+- [4단계 통합 결과 및 미검증 경계](audit/SEMI_STACK_4STEPS_DELIVERY_20261019.md) — ①국내 99사: 시총통과78·공정전문성 예외19·비편입2, ②31건 검토이력, ③309건 정성 역할판정, ④POP SBT 제작·구조 QA.
+- [국내 99사 HTS 판정](audit/KR_99_HTS_FINAL_POLICY_DECISIONS_20261019.csv) / [309건 주·부 STACK 판정·confidence](data/SEMI_STACK_309_ROLE_AUDIT_20261019.csv).
+- [주력 후보 142사 고유종목표](watchlists/SEMI_HTS_ONE_FIRM_ONE_PRIMARY_CANDIDATE_20261019_142.csv): 한국97·해외45(이탈리아 Technoprobe 제외); 삼성 POP 6그룹/기존 11그룹 통합 SBT는 **현재 대화에 다운로드 파일로 제공**.
+- **SBT는 구조 QA PASS이나 삼성 POP 실기기 import와 해외 내부코드 일부 미검증**. 309개 품목의 매출비중 실측 및 Secondary X%는 **미완료**이므로 142사는 '후보 주력'이지 주/부 영구 확정 아님. 기존 20261019 REV5/REV6 숫자와 혼용하지 않을 것.
