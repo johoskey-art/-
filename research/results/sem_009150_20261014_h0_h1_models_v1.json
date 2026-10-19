@@ -1,0 +1,153 @@
+{
+  "symbol": "009150",
+  "snapshot_date": "2026-10-14",
+  "research_date": "2026-10-19",
+  "source_file": "1000008427.jpg",
+  "sha256": "e5e202d6fedaaa27613bc959a3d9e13bfe1bc0dfd42acde6faddbadc45cc2e1b",
+  "source_pixel_size": [
+    691,
+    1536
+  ],
+  "axis_tick_evidence": [
+    {
+      "price_krw": 500000,
+      "y_px": 793
+    },
+    {
+      "price_krw": 1000000,
+      "y_px": 751
+    },
+    {
+      "price_krw": 1500000,
+      "y_px": 730
+    },
+    {
+      "price_krw": 2000000,
+      "y_px": 705
+    },
+    {
+      "price_krw": 2500000,
+      "y_px": 690
+    },
+    {
+      "price_krw": 3000000,
+      "y_px": 680
+    },
+    {
+      "price_krw": 3500000,
+      "y_px": 673
+    },
+    {
+      "price_krw": 4000000,
+      "y_px": 665
+    }
+  ],
+  "axis_fits": {
+    "log": {
+      "slope": -62.752634575924816,
+      "intercept": 1617.5212201420982,
+      "rmse": 2.360473749811467
+    },
+    "linear": {
+      "slope": -0.00003454761904761905,
+      "intercept": 788.6071428571429,
+      "rmse": 11.993363740399262
+    }
+  },
+  "screen_x_sampling": [
+    90,
+    115,
+    140,
+    165,
+    190,
+    215,
+    240,
+    265,
+    290,
+    315,
+    340,
+    365,
+    390,
+    415,
+    440,
+    465,
+    490,
+    515,
+    540,
+    565,
+    590
+  ],
+  "training_screen_points": 8,
+  "testing_screen_points": 13,
+  "whole_band": {
+    "first_width_px": 78,
+    "last_width_px": 103,
+    "width_increase_px": 25,
+    "ratio_start": 3.465911654441853,
+    "ratio_end": 5.162212929036606,
+    "ratio_increase_pct": 48.94242680481491,
+    "pixel_center_error_pm2_delta_bounds": [
+      17,
+      33
+    ],
+    "pixel_center_error_pm4_delta_bounds": [
+      9,
+      41
+    ]
+  },
+  "inner_bands": {
+    "n_scored": 39,
+    "holdout_rmse_H0_px": 7.652011843718634,
+    "holdout_rmse_H1_px": 1.2528623148999187,
+    "per_band": [
+      {
+        "name": "green_shoulder_y_px",
+        "training_count": 8,
+        "test_count": 13,
+        "fit_H0_offset_px": 18.25,
+        "fit_H1_q": 0.22152143132964344,
+        "holdout_rmse_H0_px": 2.30071059257118,
+        "holdout_rmse_H1_px": 1.6025025601886007,
+        "q_fullscreen_mean": 0.2125691040238817,
+        "q_fullscreen_min": 0.19387755102040816,
+        "q_fullscreen_max": 0.23076923076923078
+      },
+      {
+        "name": "black_waist_y_px",
+        "training_count": 4,
+        "test_count": 13,
+        "fit_H0_offset_px": 36.25,
+        "fit_H1_q": 0.42638418469620515,
+        "holdout_rmse_H0_px": 4.822323889195716,
+        "holdout_rmse_H1_px": 1.4319631474497738,
+        "q_fullscreen_mean": 0.41620588482662674,
+        "q_fullscreen_min": 0.40594059405940597,
+        "q_fullscreen_max": 0.43209876543209874
+      },
+      {
+        "name": "orange_thigh_y_px",
+        "training_count": 8,
+        "test_count": 13,
+        "fit_H0_offset_px": 59.125,
+        "fit_H1_q": 0.7178162293363735,
+        "holdout_rmse_H0_px": 12.128964458936874,
+        "holdout_rmse_H1_px": 0.30076407568701935,
+        "q_fullscreen_mean": 0.7172550898943795,
+        "q_fullscreen_min": 0.7088607594936709,
+        "q_fullscreen_max": 0.7283950617283951
+      }
+    ]
+  },
+  "method": "pixel geometry only; H1 receives observed top and knee width at test x",
+  "warnings": [
+    "Not historical OHLCV; no original numeric values of indicator bands",
+    "This screenshot shows about Feb-Oct 2026, not multi-year price history",
+    "Top is red 상투; brown 대상투 and technical moving averages intentionally excluded",
+    "Black 허리 has 4 low-contrast/occluded observations marked missing",
+    "Manual seed plus local HSV line candidates; seed-selection, color misidentification and JPEG effects are not captured by pure ±pixel jitter",
+    "H0 tests fixed RED-relative offsets only for the three interior bands; full five-band fixed ratio is contradicted by changing red-blue gap",
+    "H1 uses known red and blue in its test region; not future prediction or trading/backtest",
+    "Axis tick centers visually read, log-price fit RMSE~2.36px",
+    "No original Fibonacci formula or manual edits inferred"
+  ]
+}
