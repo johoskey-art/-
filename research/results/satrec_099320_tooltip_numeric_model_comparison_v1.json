@@ -1,0 +1,151 @@
+{
+  "study": "satrec original screenshot tooltip numeric retrospective price reconstruction",
+  "data_origin": "user personal library originals separately visually inspected, SHA pinned",
+  "tooltipIndexMapping": "index 0 knee;1 thigh;2 shoulder;3 top;4 waist; index order is NOT low-to-high sequence",
+  "screenshots": [
+    {
+      "date": "2021-03-29",
+      "file": "1000008385.jpg",
+      "sha": "7ea45f92e375917b1e7eb1cad29b37d879bb8b6b32cbc0c1360926004f6175a2"
+    },
+    {
+      "date": "2026-02-04",
+      "file": "Screenshot_20261016_010829.jpg",
+      "sha": "4263b4778bee575f35162184a94365c8f5fb55da4b1b8f7e084d7726e53aaf4e"
+    }
+  ],
+  "perDate": [
+    {
+      "date": "2021-03-29",
+      "allBands": {
+        "knee": 26110.27,
+        "thigh": 42755.96,
+        "waist": 59122.69,
+        "shoulder": 91855.15,
+        "top": 140956.34
+      },
+      "topKneeRatio": 5.398501815569123,
+      "thighLogQ": 0.7075063184393127,
+      "thighArithmeticQ": 0.8550608653826814,
+      "candidates": [
+        {
+          "hypothesis": "5_over_7",
+          "q": 0.7142857142857143,
+          "modelThigh": 42270.004285217736,
+          "priceErrorPct": -1.136580057569203,
+          "posthoc": false
+        },
+        {
+          "hypothesis": "0_72",
+          "q": 0.72,
+          "modelThigh": 41864.689381730226,
+          "priceErrorPct": -2.0845529331344093,
+          "posthoc": false
+        },
+        {
+          "hypothesis": "sqrt_1_over_2",
+          "q": 0.7071067811865476,
+          "modelThigh": 42784.773040783315,
+          "priceErrorPct": 0.06738953068370357,
+          "posthoc": true
+        }
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "allBands": {
+        "knee": 53140.63,
+        "thigh": 86890.85,
+        "waist": 119817.87,
+        "shoulder": 185671.92,
+        "top": 284452.93
+      },
+      "topKneeRatio": 5.352833227607577,
+      "thighLogQ": 0.706900740256874,
+      "thighArithmeticQ": 0.8540924109958701,
+      "candidates": [
+        {
+          "hypothesis": "5_over_7",
+          "q": 0.7142857142857143,
+          "modelThigh": 85820.98086924887,
+          "priceErrorPct": -1.2312793933436428,
+          "posthoc": false
+        },
+        {
+          "hypothesis": "0_72",
+          "q": 0.72,
+          "modelThigh": 85002.19456881078,
+          "priceErrorPct": -2.1735952993775842,
+          "posthoc": false
+        },
+        {
+          "hypothesis": "sqrt_1_over_2",
+          "q": 0.7071067811865476,
+          "modelThigh": 86860.82053210605,
+          "priceErrorPct": -0.034559988645466166,
+          "posthoc": true
+        }
+      ]
+    }
+  ],
+  "bandPositionStability": [
+    {
+      "band": "shoulder",
+      "qlog2021": 0.25397773766396503,
+      "qlog2026": 0.2542798856544554,
+      "delta_qlog_pp": 0.030214799049038676,
+      "qlin2021": 0.42753913999843446,
+      "qlin2026": 0.42704607580314574,
+      "delta_qlin_pp": -0.049306419528871714,
+      "observed2026": 185671.92,
+      "predicted2026_frozen_logq": 185766.05934245448,
+      "pcterr_frozen_logq": 0.05070198145979976,
+      "predicted2026_frozen_linq": 185557.86818694015,
+      "pcterr_frozen_linq": -0.06142652753300393,
+      "predicted2026_frozen_knee_multiplier": 186947.14913880627,
+      "pcterr_frozen_knee_multiplier": 0.6868185231273749
+    },
+    {
+      "band": "waist",
+      "qlog2021": 0.5152863743235888,
+      "qlog2026": 0.5153681177804189,
+      "delta_qlog_pp": 0.008174345683009676,
+      "qlin2021": 0.7125507211522345,
+      "qlin2026": 0.7117436470088275,
+      "delta_qlin_pp": -0.08070741434069717,
+      "observed2026": 119817.87,
+      "predicted2026_frozen_logq": 119834.30234409179,
+      "pcterr_frozen_logq": 0.013714435160450122,
+      "predicted2026_frozen_linq": 119631.18382361799,
+      "pcterr_frozen_linq": -0.15580829168637678,
+      "predicted2026_frozen_knee_multiplier": 120328.78227206,
+      "pcterr_frozen_knee_multiplier": 0.4264074065579715
+    },
+    {
+      "band": "thigh",
+      "qlog2021": 0.7075063184393127,
+      "qlog2026": 0.706900740256874,
+      "delta_qlog_pp": -0.06055781824386708,
+      "qlin2021": 0.8550608653826814,
+      "qlin2026": 0.8540924109958701,
+      "delta_qlin_pp": -0.09684543868113682,
+      "observed2026": 86890.85,
+      "predicted2026_frozen_logq": 86802.61948290298,
+      "pcterr_frozen_logq": -0.1015417815535491,
+      "predicted2026_frozen_linq": 86666.83458834159,
+      "pcterr_frozen_linq": -0.2578124297994755,
+      "predicted2026_frozen_knee_multiplier": 87018.5812193746,
+      "pcterr_frozen_knee_multiplier": 0.1470019218071661
+    }
+  ],
+  "notes": [
+    "Both images are retrospective captures; 2021 trading-date tooltip screen was not necessarily archived in 2021.",
+    "2021 shoulder 91855.15 corrects prior transcription 91856.15.",
+    "Same ticker two dates, not two independent stocks; 2026 top and knee are observed inputs of q transfer.",
+    "Both linear q and log q fitted in 2021 can closely reconstruct 2026 because P/K ratios themselves are similar; do not conclude original model uses log interpolation from that test alone.",
+    "Fixed log q=5/7 is inconsistent with original thigh tooltip in BOTH dates by roughly 1.14-1.23% of price, assuming original tooltip accurate.",
+    "Posthoc sqrt(1/2) is shown only as numerical sensitivity, not a recovered Fibonacci/method formula.",
+    "2021 tooltips have two decimal places not proof output precision or original source formula.",
+    "Historical authorship not inferred beyond provided media and earlier research reports."
+  ]
+}
