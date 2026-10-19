@@ -1,0 +1,4 @@
+historical_date,original_screenshot_capture,estimated_x_px_year_tick_map,blue_knee_y_px_interpolated,screen_knee_krw_estimated,screen_knee_krw_low,screen_knee_krw_high,avwap_anchored_20230727_krw,screen_knee_vs_avwap_pct,avwap_within_pixel_uncertainty,source_jpeg_sha256,quality
+2023-07-27,2026-07-28,144.203,843.020,117493.68,104674.91,131882.26,120700.00,-2.656,yes,da30d52196f882530629a845b1e848c098eb1bb038f23c5f812ccbcaae7516c5,YEAR_TICK_DATE_APPROX_NOT_EXACT_T_TOOLTIP
+2024-06-03,2026-07-28,273.115,831.134,141099.33,125705.15,158378.72,146226.05,-3.506,yes,da30d52196f882530629a845b1e848c098eb1bb038f23c5f812ccbcaae7516c5,YEAR_TICK_DATE_APPROX_NOT_EXACT_T_TOOLTIP
+2025-09-18,2026-07-28,466.849,808.219,200824.67,178914.35,225418.18,184955.56,8.580,yes,da30d52196f882530629a845b1e848c098eb1bb038f23c5f812ccbcaae7516c5,YEAR_TICK_DATE_APPROX_NOT_EXACT_T_TOOLTIP
