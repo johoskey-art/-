@@ -1,0 +1,192 @@
+﻿회사KEY,기업명,공정,하위STACK,이전 Primary,20261019_근거판정,공시기간,공시금액및범위,원문URL,판정사유,confidence_출처,신규검증여부
+US:COHR,Coherent (코히런트),F01,F01.SIC_SUBSTRATE,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2026FY,"Datacenter & Communications $5,274.6m > Industrial $1,843.6m; SiC 전용 매출 미분리",https://ir.coherent.com/node/18116/xbrl-viewer,F01 SiC 기판은 연결 최대 매출 사업 아님,공식 10-K,이번 회차 공식 대조
+US:WOLF,울프스피드 (Wolfspeed),F01,F01.SIC_SUBSTRATE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:3436,SUMCO,F01,F01.SI_WAFER,주력 후보(추정),Primary 정성확인(전문사업),2025FY,"연결매출 약 ¥409.6bn, 실리콘 웨이퍼 전문 사업",https://www.sumcosi.com/english/ir/,"F01 전문회사 정성확인, 직경별 SKU 매출 분리 없음",공식 기업 IR,이번 회차 공식 대조
+JP:4043,토쿠야마,F01,F01.POLYSILICON,주력 후보(추정),Primary 매출 검증보류,2025FY 전기,기존 공시 Chemicals 32% vs Electronic & Advanced Materials 25%; 최신 및 고순도 poly-Si 단독 매출 미검증,https://www.tokuyama.co.jp/eng/ir/pdf/AR2025-e-01.pdf,"과거년도 비최대+제품단독 불명, 최신 재검증 필요",과거 공식 통합보고서,이번 회차 공식 대조
+JP:4063,신에츠화학,F01,F01.SI_WAFER,주력 후보(추정),사업부 최대매출 확인·하위공정 보류,2026FY/3,"Electronics Materials ¥1,015.765bn > Infrastructure Materials ¥981.370bn; wafer 매출은 그 안 일부",https://www.shinetsu.co.jp/wp-content/uploads/2025/07/20260428_con_E.pdf,최대 사업부 검증. F01 실리콘 웨이퍼만의 Primary 정량화 불가,공식 결산공시,이번 회차 공식 대조
+TW:3532,포모사SUMCO,F01,F01.SI_WAFER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:6488,GlobalWafers,F01,F01.SI_WAFER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:688126,National Silicon Industry Group (沪硅产业),F01,F01.SI_WAFER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:688234,SICC (Tianyue Advanced),F01,F01.SIC_SUBSTRATE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+DE:WAF,Siltronic,F01,F01.SI_WAFER,주력 후보(추정),Primary 정성확인(전문사업),2025FY,"연결매출 €1,346.7m, silicon wafer specialty manufacturer",https://www.siltronic.com/en/press/press-releases/siltronic-ag-robust-business-performance-in-2025-demonstrates-resilience-despite-challenging-conditions.html,"웨이퍼 전문사업 정성확인, 직경별 매출 미확인",공식 실적발표,이번 회차 공식 대조
+FR:SOI,소이텍,F01,F01.SOI_ENGINEERED,주력 후보(추정),Primary 정성확인(전문사업),2025FY/3,"Engineered substrates €891m, Mobile €546m / Auto €129m / Edge&Cloud €216m (수요처 구분)",https://www.soitec.com/home/group/corporate/newsroom/press-releases/2025/05/27/soitec-reports-fourth-quarter-revenue-and-full-year-results-of-fiscal-year-2025,"F01 engineered substrate 전문회사, 수요처 금액은 SKU별 구분 아님",공식 회사 IR,이번 회차 공식 대조
+KR:005290,동진쎄미켐,F02,F02.PHOTO_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:036810,에프에스티,F02,F02.MASK_PELLICLE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:101490,에스앤에스텍,F02,F02.MASK_PELLICLE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:102710,이엔에프테크놀로지,F02,F02.PHOTO_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:112290,와이씨켐,F02,F02.PHOTO_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:445180,퓨릿,F02,F02.PHOTO_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:482630,삼양엔씨켐,F02,F02.PHOTO_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:PLAB,포트로닉스,F02,F02.PHOTOMASK,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:Q,큐니티일렉트로닉스(Qnity),F02,F02.PHOTO_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:4005,스미토모화학,F02,F02.PHOTO_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:4021,닛산화학,F02,F02.PHOTO_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:4186,도쿄오카공업(TOK),F02,F02.PHOTO_CHEM,주력 후보(추정),사업부 최대매출 확인·하위공정 보류,2025FY/12,Electronic Functional Materials ¥124.7bn(52.6%) vs High-Purity Chemicals ¥109.4bn(46.2%); PR만 미분리,https://www.tok.co.jp/eng/company/outline,전자기능재료 최대 사업부지만 F02 포토 PR 별도 매출은 미검증,공식 회사+공시 재게시,이번 회차 공식 대조
+JP:429A,Tekscend Photomask,F02,F02.PHOTOMASK,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:4901,후지필름홀딩스,F02,F02.PHOTO_CHEM,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2026FY/3,"Business Innovation ¥1,174.8bn > Electronics ¥456.2bn; PR 소재 후자 일부",https://ir.fujifilm.com/en/investors/ir-materials/earnings-presentations/main/01113/teaserItems5/00/linkList/00/link/ff_fy2025q4_002e.pdf,F02 포토레지스트는 연결 최대 매출 아님,공식 결산실적,이번 회차 공식 대조
+JP:7731,Nikon (ニコン),F02,F02.LITHO_SCANNER,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2026FY/3,"Imaging ¥290.053bn > Precision Equipment ¥167.258bn, 노광장비는 후자 일부",https://www.nikon.com/company/ir/finance/segment/,F02 노광기 연결 최대매출 사업 아님,공식 재무부문,이번 회차 공식 대조
+JP:7741,HOYA,F02,F02.MASK_PELLICLE,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2025FY/3 + 2026FY 추세,"Life Care ¥550.9bn(64%) vs IT ¥311.1bn(36%), FY26에도 Life Care 규모 우위",https://www.hoya.com/ir/2025/en/highlight/index.html,F02 마스크는 IT 하위 제품군; 연결 Primary 아님,공식 통합보고서(전기 수치),이번 회차 공식 대조
+JP:7751,캐논,F02,F02.LITHO_SCANNER,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2025FY,"Printing ¥2,494.4bn(54%) > Industrial ¥361.1bn(8%); 노광기 후자 일부",https://global.canon/en/ir/finance/business-unit.html,F02 노광기 연결 Primary 불가,공식 재무부문,이번 회차 공식 대조
+JP:7912,DNP,F02,F02.PHOTOMASK,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2026FY/3,Smart Communication ¥750.3bn(49.6%) > Electronics ¥251.8bn(16.6%),https://www.global.dnp/en/our-business/business-field/,F02 포토마스크 연결 최대 매출 아님,공식 사업별 매출,이번 회차 공식 대조
+CN:300346,Nata Opto (Jiangsu Nata Opto-electronic Material),F02,F02.PHOTO_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+NL:ASML,ASML Holding,F02,F02.LITHO_SCANNER,주력 후보(추정),Primary 정량확인(공시 범위),2025FY,EUV system €11.6bn + DUV system €12.0bn = €23.6bn / 연결 €32.667bn ≈72.2%,https://www.asml.com/news/press-releases/2026/q4-2025-financial-results,F02 노광장비 Primary 직접 확인; 서비스·검사장비와 분리,공식 회사 IR + SEC,이번 회차 공식 대조
+DE:MRK,머크 KGaA,F02,F02.PHOTO_CHEM,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2025FY,"Life Science €8,980m(42%) > Healthcare €8,607m(41%) > Electronics €3,515m(17%)",https://www.reports.emdgroup.com/en/annualreport/2025/notes/operating-activities/segment-reporting.html,"F02 전자재료는 Electronics 하위제품, 연결 최대 사업 아님",공식 연차보고서 세그먼트,추가 공식 근거 대조
+KR:036930,주성엔지니어링,F03,F03.DEPO_CVD_ALD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:074600,원익QnC,F03,F03.DEPO_CHAMBER,"Primary 추정(쿼츠 제품군, 증착 전용매출 분리불가)",기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:084370,유진테크,F03,F03.DEPO_CVD_ALD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:092070,디엔에프,F03,F03.DEPO_PRECURSOR,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:095610,테스,F03,F03.DEPO_CVD_ALD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:104830,원익머트리얼즈,F03,F03.DEPO_PRECURSOR,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:240810,원익IPS,F03,F03.DEPO_CVD_ALD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:281740,레이크머티리얼즈,F03,F03.DEPO_PRECURSOR,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:489500,엘케이켐,F03,F03.DEPO_PRECURSOR,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:AMAT,어플라이드 머티어리얼즈,F03,F03.DEPO_PVD_EPI,주력 후보(추정),사업부 최대매출 확인·하위공정 보류,2025FY/10,Semiconductor Systems $20.798bn / 연결 $28.368bn ≈73%; 증착만 별도 미공시,https://www.sec.gov/Archives/edgar/data/6951/000162828025056742/amat-20251026.htm,연결 Semiconductor Systems 최대이나 F03 Deposition 제품만의 최대매출 불확실,SEC 10-K 직접,이번 회차 공식 대조
+US:VECO,비코(Veeco),F03,F03.DEPO_PVD_EPI,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:4401,ADEKA,F03,F03.DEPO_PRECURSOR,주력 후보(추정),Primary 매출 검증보류,2025FY/3,연결 매출 ¥416.5bn; 반도체 전용 소재 ¥36bn 추정은 원문 EDINET 직접 대조 못함,https://www.adeka.co.jp/en/ir/stock/glance/,"F03 전구체 비중 산정 불가, 추정 정량 사용 금지",공식 연결매출+2차 추정,이번 회차 공식 대조
+JP:5016,JX금속,F03,F03.DEPO_TARGET,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6387,SAMCO,F03,F03.DEPO_CVD_ALD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6525,Kokusai Electric,F03,F03.DEPO_CVD_ALD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6728,ULVAC,F03,F03.DEPO_PVD_EPI,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:002371,Naura Technology Group (北方华创),F03,F03.DEPO_CVD_ALD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:688072,Piotech (拓荆科技),F03,F03.DEPO_CVD_ALD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+NL:ASM.AS,ASM International,F03,F03.DEPO_CVD_ALD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+DE:AIXA,AIXTRON SE,F03,F03.DEPO_PVD_EPI,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:059090,미코,F04,F04.ETCH_CHAMBER_PART,"주력 후보(제품군 확인, 개별 SKU 매출 보류)",기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:089970,브이엠 (V&M),F04,F04.DRY_ETCH_EQ,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:093370,후성,F04,F04.ETCH_CHEM_GAS,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:171010,램테크놀러지,F04,F04.ETCH_CHEM_GAS,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:425040,티이엠씨,F04,F04.ETCH_CHEM_GAS,Primary 추정(특수가스 내 식각 전용매출 미분리),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:LRCX,램리서치,F04,F04.DRY_ETCH_EQ,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:4047,칸토덴카,F04,F04.ETCH_CHEM_GAS,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:8035,도쿄일렉트론,F04,F04.DRY_ETCH_EQ,주력 후보(추정),사업부 최대매출 확인·하위공정 보류,2026FY/3,"반도체 제조장비 단일 보고세그먼트, 연결 ¥2,443,533m; 식각 장비만의 매출 미공개",https://www.tel.com/ir/library/consolidated-financial-statements/i242su00000000yk-att/Consolidated_Financial_Statements_FY2026.pdf,F04 Dry Etch와 증착·세정·코터 등을 단일 SKU처럼 합산 금지,공식 연결재무제표,추가 공식 근거 대조
+CN:688012,AMEC (Advanced Micro-Fabrication Equipment / 中微公司),F04,F04.DRY_ETCH_EQ,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:688268,Huate Gas (Guangdong Huate Gas),F04,F04.ETCH_CHEM_GAS,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:039030,이오테크닉스,F05,F05.RTP_ANNEAL,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:110990,디아이티,F05,F05.RTP_ANNEAL,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:122640,예스티,F05,F05.HIGH_PRESSURE_ANNEAL,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:265520,AP시스템,F05,F05.RTP_ANNEAL,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:403870,HPSP (에이치피에스피),F05,F05.HIGH_PRESSURE_ANNEAL,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:ACLS,액셀리스,F06,F06.ION_IMPLANT,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6302,스미토모중공업,F06,F06.ION_IMPLANT,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:281820,케이씨텍,F07,F07.CMP_EQ,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:ENTG,인테그리스,F07,F07.CMP_SLURRY_PAD,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2025FY,"Advanced Purity Solutions $1,799.1m > Materials Solutions $1,406.7m; CMP는 Materials Solutions 일부",https://www.sec.gov/Archives/edgar/data/1101302/000110130226000012/entg-20251231.htm,F07 CMP Slurry 제품은 최대 사업부보다 작은 소재부문 하위라 전사 Primary 될 수 없음,SEC 10-K 직접,이번 회차 공식 대조
+JP:4004,레조낙,F07,F07.CMP_SLURRY_PAD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:5384,후지미,F07,F07.CMP_SLURRY_PAD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6361,에바라,F07,F07.CMP_EQ,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:300054,Dinglong (Hubei Dinglong),F07,F07.CMP_SLURRY_PAD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:688019,Anji Micro (Anji Microelectronics Technology Shanghai),F07,F07.CMP_SLURRY_PAD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:083500,에프엔에스테크,F07,F07.CMP_SLURRY_PAD,주력 후보(추정),Primary 매출 검증보류,2025FY(기존 Batch01),"소재·부품 348억원 / 연결 737억원=47.22%, CMP Pad 단독 미분리",https://fnstech.com/en/business/pad.php,기존 Batch01 자료다. 최대 세그먼트/Pad 매출 구분 없어 F07 Primary 보류,공식 제품 카탈로그+리서치 추정,이전 검증 자료 재판정
+KR:014680,한솔케미칼,F08,F08.CLEAN_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:079370,제우스,F08,F08.WAFER_WET_CLEAN,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:170920,엘티씨 (LTC),F08,F08.WAFER_WET_CLEAN,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:183300,코미코,F10,F10.TOOL_PART_CLEAN,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:187870,디바이스 (구 디바이스이엔지),F08,F08.WAFER_WET_CLEAN,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:357780,솔브레인,F08,F08.CLEAN_CHEM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:ACMR,ACM리서치,F08,F08.WAFER_WET_CLEAN,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:7735,SCREEN홀딩스,F08,F08.WAFER_WET_CLEAN,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:3583,Scientech,F08,F08.WAFER_WET_CLEAN,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:688082,ACM Research Shanghai (盛美上海),F08,F08.WAFER_WET_CLEAN,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:140860,파크시스템스,F09,F09.AFM_SURFACE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:322310,오로스테크놀로지,F09,F09.OVERLAY_DIM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:348210,넥스틴 (NEXTIN),F09,F09.OPTICAL_DEFECT,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:KLAC,KLA,F09,F09.OPTICAL_DEFECT,주력 후보(추정),Primary 정량확인(공시 범위),2026FY/6,"Semiconductor Process Control $12,244.733m / 전체 $13,579.212m ≈90.2%",https://ir.kla.com/sec-filings/annual-reports/content/0000319201-26-000027/klac-20260630.htm,"F09 검사/계측 제품군 최대사업 직접 확인, 상세 검사 모델별 비중 미분리",공식 SEC 10-K,이번 회차 공식 대조
+US:NVMI,노바(Nova),F09,F09.PROCESS_METRO,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:ONTO,온토 이노베이션,F09,F09.OPTICAL_DEFECT,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6501,히타치제작소,F09,F09.EB_SEM,주력 후보(추정),Primary 매출 검증보류,2025FY,"Hitachi CI 매출 ¥3,262.7bn, 반도체 계측은 Measurement & Analysis Systems 일부로 미분리",https://www.hitachi.com/en/ir/investor/,F09 SEMI 계측 연결 최대 제품이라는 근거 없음,공식 그룹 IR,추가 공식 근거 대조
+JP:6856,호리바,F09,F09.PROCESS_METRO,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:011930,신성이엔지,F10,F10.FAB_ENVIRONMENT,주력 후보(추정),Primary 매출 검증보류,2025FY,"클린환경 매출 5,056억/전사 5,675억(외부 2차 자료), 원 공시 미대조",https://www.shinsungeng.com/board/board.php?bbsid=news&idx=460&pg=1,클린환경이 최대일 가능성 있지만 2차자료만으로 정량 확정 금지,공식 제품정보 + 2차 외부 추정,이번 회차 공식 대조
+KR:036200,유니셈,F10,F10.SUBFAB_SCRUBBER_CHILLER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:039440,에스티아이,F10,F10.CCSS_GAS_CHEM_DELIVERY,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:045100,한양이엔지,F10,F10.CCSS_GAS_CHEM_DELIVERY,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:056190,SFA,F10,F10.ROBOT_EFEM_TRANSFER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:071280,로체시스템즈,F10,F10.ROBOT_EFEM_TRANSFER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:083310,엘오티베큠,F10,F10.VACUUM,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:083450,GST,F10,F10.SUBFAB_SCRUBBER_CHILLER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:114810,한솔아이원스,F10,F10.CHAMBER_CONSUMABLES,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:159010,아스플로,F10,F10.CCSS_GAS_CHEM_DELIVERY,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:160980,싸이맥스 (Cymecs),F10,F10.ROBOT_EFEM_TRANSFER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:264660,씨앤지하이테크,F10,F10.CCSS_GAS_CHEM_DELIVERY,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:402490,그린리소스,F10,F10.CHAMBER_CONSUMABLES,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:417840,저스템,F10,F10.FOUP_PURGE_FILTER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:AEIS,어드밴스드에너지,F10,F10.RF_POWER,주력 후보(추정),사업부 최대매출 확인·하위공정 보류,2025FY,"Semiconductor Equipment $839.9m / total $1,798.8m=46.7%, 최대 수요처",https://www.sec.gov/Archives/edgar/data/927003/000110465926014731/aeis-20251231x10k.htm,Semiconductor end-market 매출은 F10 RF Generator/Matcher만의 매출 아님,SEC 10-K 직접,이번 회차 공식 대조
+US:ICHR,아이코어홀딩스,F10,F10.CCSS_GAS_CHEM_DELIVERY,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:MKSI,MKS인스트루먼츠,F10,F10.CCSS_GAS_CHEM_DELIVERY,주력 후보(추정),사업부 최대매출 확인·하위공정 보류,2025FY,"Semiconductor end-market $1,696m(43%) > Specialty Industrial $1,124m(29%) > Electronics/Packaging $1,111m(28%)",https://www.sec.gov/Archives/edgar/data/1049502/000119312526066820/mksi-20251231.htm,가장 큰 최종 수요처는 반도체지만 F10 가스전달 제품군 매출 미분리,SEC 10-K 직접,이번 회차 공식 대조
+US:UCTT,울트라클린홀딩스,F10,F10.CCSS_GAS_CHEM_DELIVERY,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6258,히라타기공,F10,F10.ROBOT_EFEM_TRANSFER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6323,로체(RORZE),F10,F10.ROBOT_EFEM_TRANSFER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6622,다이헨,F10,F10.ROBOT_EFEM_TRANSFER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6890,페로텍홀딩스,F10,F10.CHAMBER_CONSUMABLES,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+FR:AIL,에어리퀴드,F10,F10.GAS_MATERIAL,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2025FY,Industrial Merchant 45% vs Electronics 9%; 팹용 가스 Electronics 일부,https://airliquide.publispeak.com/integrated-annual-report-2025/article/9/,F10 반도체 고순도 가스 연결 Primary 아님,공식 통합보고서,이번 회차 공식 대조
+KR:232140,와이씨,B01,B01.WAFER_ATE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6871,Micronics Japan,B01,B01.WAFER_PROBER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:7729,Tokyo Seimitsu (東京精密),B01,B01.WAFER_PROBER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:6223,MPI Corporation,B01,B01.WAFER_PROBER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:AEHR,Aehr Test Systems,B01,B01.WAFER_BURN_IN,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:300604,Changchuan Technology (长川科技),B01,B01.WAFER_ATE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:688200,AccoTEST (华峰测控),B01,B01.WAFER_ATE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:131290,티에스이 (TSE),B02,B02.PROBE_CARD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:147760,피엠티 (PMT),B02,B02.PROBE_CARD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:219130,타이거일렉 (Tiger Elec),B02,B02.PROBE_SUBSTRATE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:252990,샘씨엔에스 (SemCNS),B02,B02.PROBE_SUBSTRATE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:424980,마이크로투나노 (Micro2Nano),B02,B02.PROBE_CARD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:FORM,FormFactor,B02,B02.PROBE_CARD,주력 후보(추정),Primary 정량확인(공시 범위),2025FY,Probe Cards $637.898m / 연결 $784.993m =81.26%,https://www.sec.gov/Archives/edgar/data/1039399/000103939926000009/form-20251227.htm,B02 프로브카드 최대 사업 직접 확인,SEC 10-K 직접,이번 회차 공식 대조
+JP:6855,Japan Electronic Materials,B02,B02.PROBE_CARD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:6683,Keystone Microtech,B02,B02.PROBE_CARD,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:COHU,Cohu,B02,B02.PROBE_CARD,주력 후보(추정),Primary 매출 검증보류,2025FY,"Test & inspection systems 40%, recurring interface/spares/software/service 합계60%; contactor 단독 미분리",https://www.sec.gov/Archives/edgar/data/21535/000143774926004339/cohu20251227_10k.htm,60% 묶음을 B02 contactor로 오인하면 안 됨; B09 핸들러 vs B02 접촉부품 구조 재검산,SEC 10-K 직접,이번 회차 공식 대조
+JP:6125,Okamoto Machine Tool Works,B03,B03.BACKGRIND_EQ,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6988,Nitto Denko,B03,B03.BACKGRIND_FILM,주력 후보(추정),사업부 최대매출 확인·하위공정 보류,2026FY/3,"Optronics ¥527,812m > Industrial Tape ¥366,607m, BG/Dicing 테이프만 분리불가",https://www.nitto.com/kr/ko/ir/finance/segment/,B03 백그라인딩 테이프 단독 매출 미확인,공식 회사 재무,추가 공식 근거 대조
+JP:7966,Lintec,B03,B03.BACKGRIND_FILM,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2026FY/3,"Printing & Industrial Materials ¥182,644m(57.2%) > Electronic & Optical ¥100,726m(31.5%)",https://www.lintec-global.com/ir/library/pdf/2025_4qs.pdf,B03 Backgrinding/Dicing film은 Electronic & Optical 부문 일부. 연결 Primary 불가,회사 공식 결산 PDF,이번 회차 공식 대조
+JP:6146,Disco,B04,B04.WAFER_MECH_DICING,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:089890,코세스 (Koses),B05,B05.BOND_BOUNDARY,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:489790,한화비전 (한화세미텍 모회사),B05,B05.HBM_TCB,주력 후보(추정),연결 전사 Primary 취소(승격 검토),2026Q2(기존 Batch01),"연결매출 5,423억 중 한화세미텍 전체 1,477억; Security 더 큼",https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?id=157963&jkGubun=6,이미 기존 141 후보에서 제외. 309 원장에 남은 주력 추정 상태만 정정,기존 Batch01 증권사 리포트,이전 검증 자료 재판정
+JP:6590,Shibaura Mechatronics,B05,B05.DIE_ATTACH_HYBRID,주력 후보(추정),Primary 매출 검증보류,2025FY,"연결매출 ¥88,039m, 반도체·FPD·진공·헬스케어 장비 사업. 개별 제품별 매출 미공개",https://www.shibaura.co.jp/e/company/info.html,B05 본딩 장비가 연결 최대 매출 사업인지 판단 불가,공식 회사정보(매출 구조 불충분),추가 공식 근거 대조
+NL:BESI,BE Semiconductor Industries,B05,B05.DIE_ATTACH_HYBRID,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+DE:SMHN,SUSS MicroTec,B05,B05.TEMP_BOND_DEBOND,주력 후보(추정),사업부 최대매출 확인·하위공정 보류,2025FY,Advanced Backend Solutions €349.7m > Photomask Solutions €153.4m; Bonding은 Backend 하위,https://www.suss.com/tw/news/corporate-news/2026/suss-achieved-all-forecast-figures-in-the-2025-financial-year-and-hit-a-new-sales-record,"B05 본딩 단독 최대매출 미공개, Coating/Imaging 포함하지 말 것",공식 회사 IR,추가 공식 근거 대조
+HK:0522,ASMPT,B05,B05.DIE_ATTACH_HYBRID,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:KLIC,Kulicke & Soffa (K&S),B05,B05.HBM_TCB,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:031980,피에스케이홀딩스,B06,B06.DESCUM_REFLOW,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:053610,프로텍 (Protec),B06,B06.DISPENSING,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+JP:6315,TOWA,B06,B06.MOLDING,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:033160,엠케이전자,B07,B07.SOLDER_WIRE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:077360,덕산하이메탈,B07,B07.SOLDER_WIRE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:195870,해성디에스,B07,B07.LEADFRAME,주력 후보(추정),Primary 정량확인(공시 범위),2025FY,"Leadframe 494,027백만원 / 연결 653,397백만원 =75.61%; 기판 159,370백만원",https://kind.krx.co.kr/external/2026/03/18/002181/20260318010171/11011.htm,B07 Leadframe 최대 제품 직접공시 확인,공식 KIND 사업보고서,이번 회차 공식 대조
+JP:4203,Sumitomo Bakelite,B07,B07.MOLD_COMPOUND,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:064290,인텍플러스 (INTEKPLUS),B08,B08.PKG_OPTICAL_AOI,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:098460,고영 (Koh Young Technology),B08,B08.PKG_OPTICAL_AOI,주력 후보(추정),Primary 매출 검증보류,2025FY,"연결 3D AOI 117,955백만원(50.7%), 3D SPI 86,019(37.0%), 기타 28,673(12.3%). B08 단독 미분리",https://kind.krx.co.kr/external/2026/03/12/001240/20260312003078/11011.htm,3D AOI·SPI 대부분 SMT 관련; 반도체 패키징 검사 Meister/Zenstar 별도매출 없음,공식 KIND 사업보고서,추가 공식 근거 대조
+KR:168360,펨트론 (Pemtron),B08,B08.PKG_XRAY_3D,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:CAMT,Camtek,B08,B08.PKG_OPTICAL_AOI,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:2360,Chroma ATE (致茂電子),B08,B08.PKG_XRAY_3D,주력 후보(추정),사업부 최대매출 확인·하위공정 보류,2025FY,"Test Instruments NT$27,166,591천 / 연결 NT$28,310,935천≈96.0%, 3D 포장검사 SKU 미분리",https://www.chromaate.com/en/investors/financial_reports,테스트기기 최대 사업이나 B08 3D 계측 장비 매출 미공개,회사 IR 원문목록+회계보고 재게시,추가 공식 근거 대조
+KR:003160,디아이,B09,B09.BURN_IN,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:058470,리노공업,B09,B09.TEST_SOCKET_CONTACT,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:080580,오킨스전자 (OKins Electronics),B09,B09.TEST_SOCKET_CONTACT,주력 후보(추정),Primary 정량확인(공시 범위),2026Q1(기존 Batch01),"소켓 제조 등 91.9%, 테스트 수탁 6.7%; Socket 단독 SKU 비중 아님",https://kind.krx.co.kr/external/2026/05/15/001408/20260515003065/11013.htm,기존 공식 분기공시 배치의 B09 주력 확인을 원장에 재반영,기존 Batch01 공식 공시,이전 검증 자료 재판정
+KR:086390,유니테스트 (UniTest),B09,B09.TEST_HANDLER,주력 후보(추정),Primary 매출 검증보류,2026H1(기존 자료),"테스트장비 제품군 89.56% (과거 Batch01 실측 이력), 원문 공식 재검산 아직 안함",https://financialfilings.com/filings/unitestinc/interim-quarterly-report/2026/59760506/,기존 89.56%는 인정 가능하나 별도 장비 SKU 아닌 제품군이며 이번 회차 공식원문 확인 보류,기존 재게시 자료 / 공식원문 미확인,이전 검증 자료 재판정
+KR:089030,테크윙,B09,B09.TEST_HANDLER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:089790,제이티 (JT),B09,B09.TEST_HANDLER,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:092870,엑시콘 (Exicon),B09,B09.FINAL_ATE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:098120,마이크로컨텍솔 (MCT),B09,B09.TEST_SOCKET_CONTACT,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:253590,네오셈 (Neosem),B09,B09.FINAL_ATE,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:425420,티에프이 (TFE),B09,B09.TEST_SOCKET_CONTACT,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:TER,Teradyne,B09,B09.FINAL_ATE,주력 후보(추정),Primary 정량확인(공시 범위),2025Q4,"Semiconductor Test $883m / 연결 $1,083m ≈81.5%, 분기 실적",https://investors.teradyne.com/news-events/press-releases/detail/433/teradyne-reports-fourth-quarter-and-full-year-2025-results,"B09 테스트 장비 제품군 우세, 모델별·연간 분리 미확인",공식 실적(분기),이번 회차 공식 대조
+JP:6857,Advantest,B09,B09.FINAL_ATE,주력 후보(추정),Primary 정량확인(공시 범위),2026Q1,"Test System ¥333.6bn vs Services & Others ¥33.9bn, 테스트장비 약90.8%, 분기 기준",https://www.advantest.com/en/investors/financial-highlights/review/,"B09 ATE 테스트시스템 Primary 정량 확인, 특정 모델별 미분리",공식 회사 1Q 실적,이번 회차 공식 대조
+SG:AWX,AEM Holdings,B09,B09.SYSTEM_LEVEL_TEST,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:033170,시그네틱스,B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:033640,네패스,B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:036540,SFA반도체,B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:061970,LB세미콘 (엘비세미콘),B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:067310,하나마이크론,B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:097800,윈팩 (Winpac),B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:119830,아이텍,B10,B10.OSAT_TEST,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:131970,두산테스나,B10,B10.OSAT_TEST,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:200470,에이팩트 (Apect),B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+KR:330860,네패스아크,B10,B10.OSAT_TEST,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:AMKR,Amkor Technology,B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+US:IMOS,ChipMOS Technologies,B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:2441,Greatek Electronics,B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:2449,King Yuan Electronics (KYEC),B10,B10.OSAT_TEST,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:3711,ASE Technology Holding,B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:6147,Chipbond Technology,B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:6239,Powertech Technology (PTI),B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+TW:6257,Sigurd Microelectronics,B10,B10.OSAT_TEST,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:002156,Tongfu Microelectronics (TFME),B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:002185,Huatian Technology (HT-Tech / TSHT),B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
+CN:600584,JCET Group,B10,B10.OSAT_PKG,주력 후보(추정),기존 Primary 추정 유지(이번 차수 미검증),,,,공식 사업부/제품 매출 원문 미검산,기존원장(직접 검증 없음),이번 회차 미검증
