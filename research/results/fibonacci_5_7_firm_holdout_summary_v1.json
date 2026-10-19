@@ -96,5 +96,27 @@
       "Geometric segment model assumes log price scaling; arithmetic price segmentation is a separate research branch",
       "Fibonacci ratio φ need not be 1 interval; cannot negate undisclosed original n-th function formula from these comparisons"
     ]
+  },
+  "linear_price_split_specificity": {
+    "source": "research/results/kr_30_per_stock_two_stage_averages_v2.csv",
+    "n_episodes": 30,
+    "n_firms": 27,
+    "mean_linear5_adjacent_price_ratio": 1.5575778227520665,
+    "mean_linear7_adjacent_price_ratio": 1.361408391669166,
+    "company_equal_mean_linear5_adjacent_price_ratio": 1.5727706399014263,
+    "cluster_resample_10000_seed20261021_95_percentile_band_linear5": [
+      1.495760979158926,
+      1.6553106327453335
+    ],
+    "relative_mean_linear5_vs_phi_pct": -3.7363965416163714,
+    "mean_linear5_price_level": 4.579596271165466,
+    "mean_linear7_price_level": 4.579596271165466,
+    "max_single_episode_linear_price_mean_identity_error": 5.009326287108706e-13,
+    "interpretation": [
+      "Linear 5-segment adjacent arithmetic ratio mean is visually closer to phi than log case, but stage ratios within each stock are unequal so raising this average to 5th power is not a valid linear price-grid forecast.",
+      "Company-bootstrap descriptive band spans phi, so this cohort cannot exclude phi for mean of linear adjacent ratios; proximity does not establish original Fibonacci formula.",
+      "Arithmetic average of linear level prices is identical for 5 and 7 due midpoint identity.",
+      "The firm-holdout peak projection metrics in this JSON apply ONLY to log/geometric segment multiplier, not linear adjacent arithmetic ratio."
+    ]
   }
 }
