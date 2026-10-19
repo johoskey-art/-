@@ -70,7 +70,7 @@
 - [원본 2날짜 × 5개 밴드 가격 10행 CSV](satrec_099320_original_tooltip_2dates_5bands_v1.csv).
 - [로그·산술 비율 및 원본값 조건부 모델 2021→2026 전이 JSON](satrec_099320_tooltip_numeric_model_comparison_v1.json).
 - [Python 재현 스크립트](../scripts/satrec_original_tooltip_two_dates_audit_v1.py).
-- 최초 숫자의 과거 참조 [`position_hypothesis_review.html`](../../README.md)과 [`original_knee_observation_report.html`](../../README.md)은 사용자의 **ChatGPT Library HTML**에서 이번에 복구. 링크가 GitHub 내부 원문을 지칭한다고 오해하지 말 것. 숫자를 이용한 JS/GitHub 연결 결과 재조회 및 로컬 Python 별도 계산은 확인. **GitHub 저장본 Python 파일 자체를 다시 받아 동일 출력으로 실행하는 최종 확인은 아직 별도 단계**.
+- 초기 숫자를 담은 `position_hypothesis_review.html`과 수정된 전사를 담은 `original_knee_observation_report.html`은 사용자의 **ChatGPT Library에 남아 있는 과거 HTML 파일**에서 이번에 복구. 두 파일은 GitHub 저장소의 README 파일이 아니다. 링크가 GitHub 내부 원문을 지칭한다고 오해하지 말 것. 숫자를 이용한 JS/GitHub 연결 결과 재조회 및 로컬 Python 별도 계산은 확인. **GitHub 저장본 Python 파일 자체를 다시 받아 동일 출력으로 실행하는 최종 확인은 아직 별도 단계**.
 - 기존 30개 가격5·7등분 사후 에피소드, 실전 `app.py`/backtest/Pine **변경하지 않음**.
 
 **결론:** 저해상도 이미지 대신 실제 원작 툴팁 **정량 가격값 10개**를 찾아 기존의 정확 로그 5/7 허벅지 가설을 반증했고, **어깨/허리/허벅지의 상대배치가 2021과 2026 두 역사일에서 0.1% 내외로 안정적**이라는 강한 단서를 찾았다. 그러나 두 과거 스냅샷만으로 **상단·하단 미래 생성함수, Fibonacci n항, 수동 수정/리페인팅 유무**까지 알아낸 것은 아니다.
