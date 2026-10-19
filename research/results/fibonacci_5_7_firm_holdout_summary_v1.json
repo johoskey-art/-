@@ -1,0 +1,100 @@
+{
+  "audit_date": "2026-10-20",
+  "source_path": "research/results/kr_30_clean_episodes_v1.csv",
+  "source_blob_sha": "f87d85b07800a2dd7527266f079ade752ba53161",
+  "source_summary_path": "research/results/kr_30_two_level_price_averages_v2_20261017.md",
+  "sample": {
+    "episodes": 30,
+    "distinct_companies": 27,
+    "years": [
+      2003,
+      2018
+    ],
+    "high_low": "Retrospective maxima and minima, not known at knee crossing"
+  },
+  "definitions": {
+    "R": "peak_close/low_close",
+    "b5": "R^(1/5) geometric log-price equal 5 segments",
+    "b7": "R^(1/7) geometric log-price equal 7 segments",
+    "phi": "(1+sqrt(5))/2",
+    "holdout": "For each episode, exclude all episodes with same ticker, fit step mean then exponentiate"
+  },
+  "observed": {
+    "R_mean": 8.159192542330974,
+    "R_median": 6.837740366516586,
+    "five_step_episode_mean": 1.4935080411621835,
+    "seven_step_episode_mean": 1.3305043122180331,
+    "five_step_firm_equal_mean": 1.5041534201804678,
+    "seven_step_firm_equal_mean": 1.3372537859108262,
+    "five_step_median": 1.468865932722514,
+    "phi": 1.618033988749895,
+    "relative_five_step_mean_vs_phi_pct": -7.696126809049364,
+    "firm_cluster_resample_10000_95_interval_b5": [
+      1.4516070957039735,
+      1.55987964209494
+    ],
+    "interpretation_bootstrap": "Resampling selected firms describes observed sample stability only; not a population confidence interval",
+    "five_step_mean_power_5": 7.430838560691989,
+    "seven_step_mean_power_7": 7.38097960322421,
+    "tautology_linear5and7_step_price_mean": 4.579596271165487,
+    "max_identity_error_same_episode_b5pow5_minus_b7pow7": 1.7763568394002505e-14,
+    "within_2pct_phi": 5,
+    "within_5pct_phi": 9,
+    "within_10pct_phi": 18
+  },
+  "cross_validation": {
+    "unit": "episode, but all same-ticker episodes removed from training",
+    "loss": "absolute log ratio of predicted total cycle R to retrospective total cycle R",
+    "metrics": [
+      {
+        "label": "five_segment_trained_other_firms",
+        "mean_abs_log_error": 0.41247129555670287,
+        "median_abs_log_error": 0.361275570455461,
+        "n_within_50_pct_of_realized_peak": 21,
+        "mean_realized_over_predicted": 1.1055048738411444
+      },
+      {
+        "label": "seven_segment_trained_other_firms",
+        "mean_abs_log_error": 0.41179896918499875,
+        "median_abs_log_error": 0.36812276824490975,
+        "n_within_50_pct_of_realized_peak": 21,
+        "mean_realized_over_predicted": 1.1129169059672925
+      },
+      {
+        "label": "simple_median_R_other_firms",
+        "mean_abs_log_error": 0.3998345214378792,
+        "median_abs_log_error": 0.39707217723028454,
+        "n_within_50_pct_of_realized_peak": 21,
+        "mean_realized_over_predicted": 1.1910677530683034
+      },
+      {
+        "label": "fixed_phi_power_5",
+        "mean_abs_log_error": 0.5239965609410577,
+        "median_abs_log_error": 0.49044043589000264,
+        "n_within_50_pct_of_realized_peak": 14,
+        "mean_realized_over_predicted": 0.7357139325831135
+      },
+      {
+        "label": "fixed_phi_power_7",
+        "mean_abs_log_error": 1.386409558126519,
+        "median_abs_log_error": 1.4460306762853565,
+        "n_within_50_pct_of_realized_peak": 1,
+        "mean_realized_over_predicted": 0.2810177162499007
+      }
+    ],
+    "samsung_2009": {
+      "name": "삼성전기",
+      "actual_R": 5.406779661016949,
+      "other_firm_mean5_to_power5": 7.510117040982549,
+      "overprediction_pct": 38.90185122820389
+    },
+    "limitations": [
+      "Uses ex-post finished cycles; no knee-cross event, no real-time upper band labels; not trading strategy validation",
+      "No free parameters beyond pre-declared 5,7,phi powers, median",
+      "Fixed Fibonacci integer n=5 or 7 is a test of an explicit narrow hypothesis, not all possible Fibonacci algorithms",
+      "Selection and data-quality bias from 46 candidates; only 30 passed archived price audits",
+      "Geometric segment model assumes log price scaling; arithmetic price segmentation is a separate research branch",
+      "Fibonacci ratio φ need not be 1 interval; cannot negate undisclosed original n-th function formula from these comparisons"
+    ]
+  }
+}
