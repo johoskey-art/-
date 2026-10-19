@@ -1,0 +1,8 @@
+symbol,cursor_date,indicator,precision,source,known_knee_krw,uncertainty_note,full_5_band_tooltip,priority
+099320,2021-03-29,주가위치2,exact_tooltip,user_original_1000008385.jpg,26110.27,original_tooltip_5_values_yes,yes,reference
+099320,2026-02-04,주가위치2,exact_tooltip,user_original_Screenshot_20261016_010829.jpg,53140.63,original_tooltip_5_values_yes,yes,reference
+099320,2026-03-27,주가위치2,pixel_estimate_only,original_knee_observations_stage1.zip,65333.71,knee_only_price_uncertainty_approximately_plusminus_1306.67_KRW_no_popup,no,first_manual_cursor_candidate
+099320,2026-01-02,주가위치2,pixel_estimate_only,original_knee_observations_stage1.zip,50475.06,knee_only_pixel_estimate_not_full_tooltip,no,alternative
+099320,2025-12-12,주가위치2,pixel_estimate_only,original_knee_observations_stage1.zip,50565.15,knee_only_pixel_estimate_not_full_tooltip,no,alternative
+099320,2025-12-10,주가위치2,pixel_estimate_only,original_knee_observations_stage1.zip,50590.53,knee_only_pixel_estimate_not_full_tooltip,no,alternative
+099320,2025-04-09,주가위치2,pixel_estimate_only,original_knee_observations_stage1.zip,51660.65,knee_only_pixel_estimate_not_full_tooltip,no,alternative
