@@ -59,3 +59,16 @@
 - [309배치 하위 STACK 88기능 V3](data/SEMI_SUBSTACK_309ROWS_20261019_REVIEW_V3_HTS2000EOK.csv) 및 [HTS 6그룹 하위 기능 프리뷰](watchlists/SEMI_SUBSTACK_6GROUP_PREVIEW_20261019_V3_2000EOK.txt).
 - [2천억 변경 근거·검산 로그](audit/HTS_SELECTION_POLICY_2000EOK_20261019.md). 기존 208기업/309배치 연구용 원장은 변동 없음.
 - **HTS 시총 게이트와 STACK 매출비중 Primary/Secondary 게이트는 독립**이며, 공정 검산 및 삼성 POP SBT 업데이트는 미완료.
+
+
+## 2026-10-19 후속검산 REV5/하위STACK V4 — 현재 최신 파일
+- 국내 시총 기준: **2,000억원** (기존 3,000억원 판본은 히스토리 보존).
+- [HTS 국내외 1차 핵심 REV5](watchlists/HTS_STAGE1_CORE_20GROUPS_20261019_REV5_2000EOK.csv): 국내 82 + 해외 46 = **128기업, 193 공정배치**.
+- [HTS 2차 검토 REV4](watchlists/HTS_STAGE2_VERIFY_20261019_REV4_2000EOK.csv): **116 공정배치**, 전체 309 보존.
+- [국내 시총 99사 전수표 REV4](watchlists/KR_2000EOK_MARKETCAP_GATE_20261019_REV4.csv): 시총확인 41사(충족24/미달17), 미확인 58사(현재 핵심 선편입분).
+- [20공정/87개 제품기능/309배치 최신 하위STACK V4](data/SEMI_SUBSTACK_309ROWS_20261019_REVIEW_V4_2000EOK.csv).
+- [하위기능 재현 규칙 V3](data/SEMI_SUBSTACK_RULEBOOK_20261019_V3_OFFICIAL.tsv).
+- [6관심그룹 하위소제목 V4 미리보기](watchlists/SEMI_SUBSTACK_6GROUP_PREVIEW_20261019_V4_2000EOK.txt).
+- [31건 공정/매출 게이트 보류](audit/SEMI_SUBSTACK_REVIEW_QUEUE_20261019_V4.csv).
+- [이번 후속검산 및 공식 제품 출처/재분류 로그](audit/SEMI_STACK_CAP_AND_SUBSTACK_AUDIT_20261019_V4.md).
+- **주의:** 모든 309배치 품목 매출비중 및 Secondary X%는 아직 검증/확정되지 않았으므로 위 193배치는 HTS 우선후보지 최종 승인 등록 대상이 아님. 삼성 POP `.sbt` 새 파일은 아직 제작/검증되지 않음.
