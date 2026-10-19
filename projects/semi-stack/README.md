@@ -72,3 +72,13 @@
 - [31건 공정/매출 게이트 보류](audit/SEMI_SUBSTACK_REVIEW_QUEUE_20261019_V4.csv).
 - [이번 후속검산 및 공식 제품 출처/재분류 로그](audit/SEMI_STACK_CAP_AND_SUBSTACK_AUDIT_20261019_V4.md).
 - **주의:** 모든 309배치 품목 매출비중 및 Secondary X%는 아직 검증/확정되지 않았으므로 위 193배치는 HTS 우선후보지 최종 승인 등록 대상이 아님. 삼성 POP `.sbt` 새 파일은 아직 제작/검증되지 않음.
+
+
+## 2026-10-19 추가 검산 — POP SBT 제작 및 심사 고정
+- 실제 데이터 구조 검산을 거친 삼성 POP CP949·CRLF SBT(기존 11그룹 보존 통합17 / SEMI 독립6)가 **현재 대화 다운로드 파일**로 제공됨. 바이너리 `.sbt`는 이 GitHub 저장소에 아직 업로드되지 않았으므로 **이 문서 링크를 SBT 다운로드 링크로 오해하지 말 것**.
+- 기준 stage1은 128기업, 193 기업-공정배치; Technoprobe(이탈리아 POP 지원 미확인) 1건과 ISC F08·F10, 한미 B04·B08, 원익IPS F05 5건의 매출/제품 게이트 보류를 제외하고 **187개 배치를 SBT 검토용으로 수록**. 개별 POP 종목코드 실제 인식은 테스트 미완료.
+- [31건 공정 심사 결과](audit/SEMI_SUBSTACK_31CASE_DECISIONS_20261019.csv): KEEP/REMAP/DROP/HOLD 개별 근거 및 URL 완료. 이 판정은 제품 존재 확인과 수익비중 승격을 명확히 분리.
+- [2천억 미만 국내 17사 예외 심사](audit/KR_UNDER_2000EOK_EXCEPTIONS_17_DECISIONS_20261019.csv): 잠정 제외1·조건부 전문기업15·공정 증빙 보류1. 15사는 유동성 floor 미확인으로 별도 보조 후보, 정식 SBT 편입 미실시.
+- [2천억 시총 검산 REV5](watchlists/KR_2000EOK_MARKETCAP_GATE_20261019_REV5_PARTIAL_VERIFIED.csv): 99기업 중 확인47(충족30·미달17), **미확인 52**. 마지막 52는 이미 HTS stage1에 있는 기업이라 이 미확인이 POP 관심그룹 파일 작성을 지연시키는 사유가 되어서는 안 됨. 하지만 공식 시총 전수검증 완료 주장 금지.
+- 기능 교정: 케이씨텍 F08 300mm 웨이퍼 Wet Clean, NAURA F08 12인치 세정·F06 이온주입·B05 하이브리드 본딩, Nikon F09 인라인 검사, TES F04 Gas Phase Etch & Clean, 코미코 F10 장비부품 정밀세정.
+- 309개 전 공정 배치의 공시직접 세부 매출비중 및 Secondary X% 게이트는 별도 미확인·미합의. 특정 제품 존재를 곧바로 Secondary 승격으로 자동 판정하지 말 것.
