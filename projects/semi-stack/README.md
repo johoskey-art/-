@@ -82,3 +82,7 @@
 - [2천억 시총 검산 REV5](watchlists/KR_2000EOK_MARKETCAP_GATE_20261019_REV5_PARTIAL_VERIFIED.csv): 99기업 중 확인47(충족30·미달17), **미확인 52**. 마지막 52는 이미 HTS stage1에 있는 기업이라 이 미확인이 POP 관심그룹 파일 작성을 지연시키는 사유가 되어서는 안 됨. 하지만 공식 시총 전수검증 완료 주장 금지.
 - 기능 교정: 케이씨텍 F08 300mm 웨이퍼 Wet Clean, NAURA F08 12인치 세정·F06 이온주입·B05 하이브리드 본딩, Nikon F09 인라인 검사, TES F04 Gas Phase Etch & Clean, 코미코 F10 장비부품 정밀세정.
 - 309개 전 공정 배치의 공시직접 세부 매출비중 및 Secondary X% 게이트는 별도 미확인·미합의. 특정 제품 존재를 곧바로 Secondary 승격으로 자동 판정하지 말 것.
+
+
+- [309행 31건 심사 병합본 V5](data/SEMI_SUBSTACK_309ROWS_20261019_V5_31_DECISIONS_MERGED.csv): 기존 309 기업-공정 연구배치를 유지하면서 31건 모든 개별판정을 원장에 직접 반영. 해당 공정 제외도 연구원장 삭제 대신 `DROP_THIS_PROCESS`로 기록함.
+- 기존 주력 Primary와 부매출 중요도 미확인 Secondary를 분리. 현재 최종 이용 파일은 **대화 다운로드 `검산반영187건.sbt`**(6그룹 독립 및 기존11그룹 통합17), GitHub는 원장/감사기록 저장소 역할.
