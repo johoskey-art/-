@@ -6,8 +6,7 @@ Run locally:
 
 from __future__ import annotations
 
-import csv
-from io import StringIO
+from pathlib import Path
 
 import pandas as pd
 import streamlit as st
@@ -16,20 +15,16 @@ from leader_gate_v0 import GateInput, evaluate_leader_gate
 from position_finder_core import historical_stage_references, named_layout_ranges, classify_price
 
 
-DEFAULT_STAGE_URL = (
-    "https://raw.githubusercontent.com/johoskey-art/-/main/"
-    "research/leader_universe_rebuild_20261020/STAGE_AVERAGES.csv"
-)
-DEFAULT_LAYOUT_URL = (
-    "https://raw.githubusercontent.com/johoskey-art/-/main/"
-    "research/position_finder_engine_20261020/results/"
-    "screen_relative_layout_prior_v0_20261020.csv"
-)
+BASE_DIR = Path(__file__).resolve().parent
+# Keep v0 self-contained: a refetch must be an explicit, versioned research
+# action rather than an unrecorded network dependency at runtime.
+DEFAULT_STAGE_PATH = BASE_DIR / "data" / "historical_stage_reference_legacy38_v0.csv"
+DEFAULT_LAYOUT_PATH = BASE_DIR / "data" / "screen_relative_layout_prior_v0.csv"
 
 
 @st.cache_data(show_spinner=False)
-def load_csv(url: str) -> pd.DataFrame:
-    return pd.read_csv(url)
+def load_csv(path: Path) -> pd.DataFrame:
+    return pd.read_csv(path)
 
 
 def checkbox_or_unknown(label: str, help_text: str) -> bool | None:
@@ -59,8 +54,8 @@ def main() -> None:
         post_top = checkbox_or_unknown("1�� �������޶� ���� ����", "���� �ű� ���� �ؼ��� �ߴ�")
 
     try:
-        stage_data = load_csv(DEFAULT_STAGE_URL)
-        layout_data = load_csv(DEFAULT_LAYOUT_URL)
+        stage_data = load_csv(DEFAULT_STAGE_PATH)
+        layout_data = load_csv(DEFAULT_LAYOUT_PATH)
     except Exception as exc:  # UI should remain usable even if remote source is unavailable.
         st.error(f"���� CSV�� �ҷ����� ���߽��ϴ�: {exc}")
         return
@@ -87,6 +82,11 @@ def main() -> None:
         st.subheader("������ 5��7��� ���� ����")
         cohort = st.selectbox("���� ��ȣƮ", sorted(stage_data["sample_origin"].dropna().unique()))
         subset = stage_data[(stage_data["sample_origin"] == cohort) & (stage_data["weighting"] == "cycle_equal")]
+        st.warning(
+            "This v0 bundle contains only LEGACY38 selected-sample calibration. "
+            "It is a temporary reference, not the rebuilt all-leader universe "
+            "or an original-formula coefficient."
+        )
         tabs = st.tabs(["�α� 5���", "�α� 7���"])
         for tab, k in zip(tabs, (5, 7)):
             with tab:
