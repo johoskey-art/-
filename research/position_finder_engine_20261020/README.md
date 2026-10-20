@@ -76,7 +76,7 @@ B(q,t)=T(t)^{1-q}K(t)^q
 로그거리다. 원본 6개 로그 화면에서 직접 Fibonacci 위치
 (0.236/0.382/0.618)는 내부 3선과 잘 맞지 않았다. 대신
 `MIXED_5_7_A/B` 두 후보가 화면 정밀도 내에서 남아 있다.
-상세 판정: [FORMULA_IDENTIFICATION_AUDIT_v1_20261020.md](FORMULA_IDENTIFICATION_AUDIT_v1_20261020.md).
+상세 판정: [v1 후보 비교](FORMULA_IDENTIFICATION_AUDIT_v1_20261020.md) · [v2 동일화면 앵커 검산](FORMULA_IDENTIFICATION_AUDIT_v2_20261020.md).
 
 이것은 **선 배치 수식 후보**일 뿐이다. 실제 완성에는 동적으로 바뀌는
 (T(t)), (K(t))의 생성 규칙과 원문의 Fibonacci n 함수 연결을
