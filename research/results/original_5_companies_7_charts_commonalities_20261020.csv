@@ -1,0 +1,8 @@
+ticker,company,source_capture_or_period,original_library_image_name,original_price_axis,top_knee_ratio_screen_early,top_knee_ratio_screen_late,ratio_growth_pct,shoulder_q_from_top,waist_q_from_top,thigh_q_from_top,measurement_confidence,context_caveat
+009150,삼성전기,2026-10-14,1000008427.jpg,LOG,3.465900,5.162200,48.9426,0.212569000,0.416206000,0.717255000,high,post_rally_top_then_retrace; price_overshoots_bands
+000660,SK하이닉스,2026-07-28,1000008432(1).jpg,LOG,3.397400,4.901900,44.2839,0.227607000,0.417802000,0.712421000,high,long_phase_knee_to_top; long_window; yellow_manual_annotation
+000660,SK하이닉스,2026-08-07,1000008429.jpg,LOG,4.219100,5.084700,20.5162,0.206089000,0.416678000,0.716462000,high,shorter_view; top_zone_then_price_retraces
+000500,가온전선,2026-05-11,1000008430.jpg,LINEAR,4.371800,4.887600,11.7983,0.217769000,0.424372000,0.716964000,moderate,different_axis_linear; top_dark_indigo_candidate; pre_corporate_action
+000500,가온전선,2026-10-14,1000008428.jpg,LOG,4.842400,5.452800,12.6053,0.206187000,0.378450000,0.704169000,moderate,rights_adjustment_2026; crowded_line_overlap; price_revisit_top
+034730,SK㈜,2026-07-28,1000008431.jpg,LOG,3.176900,3.933700,23.8220,0.237198000,0.437572000,0.723276000,moderate,long_pause_then_sharp_rally_then_retrace; yellow_manual_diagonal
+017670,SK텔레콤,1998-2000_review,1000008434.jpg,LOG,3.657522,4.813380,31.6022,0.223431394,0.418487715,0.716579461,moderate,historical_one_screen; 2000_mania_and_reversal; axis_manual_approx
