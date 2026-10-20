@@ -2,13 +2,11 @@
 
 ## Scope
 
-This audit uses the six rows already labelled `LOG` in
+This audit uses all seven original-screen rows in
 `research/results/original_5_companies_7_charts_commonalities_20261020.csv`.
-The one legacy row carrying a different axis label is not used for the
-log-price comparison; it is not deleted or reclassified here.
-
-The source owner has separately confirmed that the active original charts are
-log-price charts.  On such a chart, a screen coordinate (q), measured from
+The source owner has confirmed that these original charts use log-price axes;
+an older per-row axis label is retained in the legacy file but is not used to
+exclude its q geometry.  On such a chart, a screen coordinate (q), measured from
 the upper top line (T(t)) at 0 to the lower knee line (K(t)) at 1, converts
 to price as:
 
@@ -24,17 +22,17 @@ unpublished algorithm that generates (T(t)), (K(t)), or the q values.
 
 | Quantity | Shoulder | Waist | Thigh |
 |---|---:|---:|---:|
-| Observed six-screen mean q | 0.218847 | 0.414199 | 0.715027 |
+| Observed seven-screen mean q | 0.218693 | 0.415653 | 0.715304 |
 | Observed range | 0.206089–0.237198 | 0.378450–0.437572 | 0.704169–0.723276 |
 
-Predeclared candidates were scored against all 18 observed band coordinates.
+Predeclared candidates were scored against all 21 observed band coordinates.
 
 | Candidate q (shoulder, waist, thigh) | MAE | RMSE | Result |
 |---|---:|---:|---|
-| (1/5, 2/5, 5/7) | 0.014988 | 0.018573 | compatible at screenshot precision |
-| (1/5, 3/7, 5/7) | 0.013651 | 0.018617 | compatible at screenshot precision |
-| Standard Fibonacci (0.236, 0.382, 0.618) | 0.049332 | 0.061157 | materially worse |
-| Sample mean (descriptive only) | 0.008990 | 0.012616 | fit benchmark; not a formula |
+| (1/5, 2/5, 5/7) | 0.014981 | 0.018421 | compatible at screenshot precision |
+| (1/5, 3/7, 5/7) | 0.012875 | 0.017700 | compatible at screenshot precision |
+| Standard Fibonacci (0.236, 0.382, 0.618) | 0.049886 | 0.061429 | materially worse |
+| Sample mean (descriptive only) | 0.007941 | 0.011868 | fit benchmark; not a formula |
 
 The full machine-readable score file is
 `results/original_log_q_formula_candidate_scores_v1_20261020.json`; the
