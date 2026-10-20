@@ -21,3 +21,14 @@
 2. 각 밴드의 픽셀 좌표와 가격축 역변환 범위를 `chart_band_observations`에 저장.
 3. EPS/PER 화면을 같은 종목·발행 시점으로 정합.
 4. `LeaderGate`와 `PositionBands`를 독립적으로 반증.
+
+
+## 2026-10-20 / 위치선 픽셀 추출 v0
+
+- 원본 위치선 차트 26장을 대상으로 색상·순서 제약 기반 자동 추출을 실행했다.
+- 관측값: 차트당 3개 화면 x 위치 × 5개 밴드 = 총 **390행**. PF032 일부 4행은 미검출 상태로 보존.
+- 재현 코드: `scripts/position_band_extract.py`.
+- 공개 저장: [화면 요약 CSV](results/chart_band_screen_summary_auto_draft_20261020.csv), [압축 좌표 CSV](results/chart_band_observations_auto_draft_20261020.csv), [QC](PIXEL_EXTRACTION_QC_20261020.md).
+- 8개 대표 화면의 오버레이를 육안 점검했다. 위치선 색상 위에 점이 대체로 놓였으나, 캔들·주석·선 중첩이 있는 화면은 `AUTO_REVIEW`을 유지한다.
+- 화면 상대좌표는 어깨 약 0.206~0.242, 허리 약 0.412~0.465, 허벅지 약 0.713~0.760인 안정 화면군이 있었지만, 다른 국면/곡선 화면의 폭은 달랐다. **전 종목 고정 상수·원작 Fibonacci 식으로 사용 금지.**
+- 다음: 가격축/차트일을 역변환할 수 있는 화면부터 실제 가격 범위 원장 작성, 그리고 EPS·밸류 특징과 시점 정합.
