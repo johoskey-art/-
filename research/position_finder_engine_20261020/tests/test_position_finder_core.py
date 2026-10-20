@@ -19,6 +19,7 @@ def test_named_band_ranges_and_classification() -> None:
             "waist": (0.412, 0.438, 0.465),
             "thigh": (0.713, 0.736, 0.760),
         },
+        axis_scale="log",
     )
     assert all(item.low <= item.median <= item.high for item in bands)
     assert classify_price(300, bands) == "thigh_to_waist"
