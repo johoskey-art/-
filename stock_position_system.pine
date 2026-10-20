@@ -1,5 +1,6 @@
 //@version=5
-indicator("주가위치분석시스템 (Stock Position System) [댕기왕자 공식 모델]", overlay=true, max_lines_count=500, max_labels_count=500)
+// LEGACY: This is a speculative SMA240 multiplier visualization, NOT the 38-cycle log 5/7 study or the original blogger algorithm.
+indicator("LEGACY 연구 데모: SMA240 고정배율 [원작 미검증]", overlay=true, max_lines_count=500, max_labels_count=500)
 
 // ==============================================================================
 // 1. 파라미터 설정 (Inputs)
@@ -8,7 +9,7 @@ grp_ma = "기준축 및 보조 이동평균선"
 ma_knee_len = input.int(240, "무릎선(기준축) 기간", minval=50, maxval=500, group=grp_ma)
 show_sub_ma = input.bool(true, "보조 이평선(40/50/60/120) 표시", group=grp_ma)
 
-grp_ratios = "주가위치 11개 라인 배율 (역대 주도주 실측 피보나치 등비)"
+grp_ratios = "LEGACY 고정 배율 입력 (로그5/7 검증식 아님)"
 r_ultra   = input.float(8.88, "울트라상투 배율 (100% 임계점)", step=0.01, group=grp_ratios)
 r_grand   = input.float(6.18, "대상투 배율 (광기의 시작)", step=0.01, group=grp_ratios)
 r_top     = input.float(4.25, "상투 배율 (현실적 최종 천정)", step=0.01, group=grp_ratios)
