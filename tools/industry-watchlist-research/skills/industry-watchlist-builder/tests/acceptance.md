@@ -12,3 +12,13 @@
 10. **Source-free candidates**: A product asserted only in marketing roadmap must be OPTION/HOLD, not current revenue-producing CORE.
 
 This document defines intended tests; none is marked passed just by creation of the skill.
+
+## v0.2 material additions
+
+11. **Small/mid-cap retrieval evidence**: no `CLOSED` HOME without recorded search for domestic small/mid and foreign niche suppliers. A `NO_MATCH_FOUND` decision must reflect an actual search; absence of brokerage coverage is not adequate.
+12. **Two-way company/product audit**: a cable issuer's supplier/distributor busway contract can create a second HOME with `business_mode=SUPPLIER`, distinct from a manufacturing peer. Nonexistent claim for assigned HOME must be flagged.
+13. **Candidate decisions**: every included/held/excluded specialist must retain a reason and evidence. Do not pad to a numeric company target.
+14. **QA labels**: original 2026-10-21 power MASTER with no candidate or group-by-group discovery trail must return `HOLD`, not `0 holds`. Broker-search holds must also surface.
+15. **Fact boundary**: no validator score or confidence claim substitutes for externally reading primary sources. Script cannot know which stock is missing if searches were never performed.
+
+Run `python -m unittest discover -s tests -v` and `python scripts/validate_master.py audit <master>`; negative tests are intended to produce explicit HOLDs.

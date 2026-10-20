@@ -1,24 +1,24 @@
-# Independent quality gates
+# Independent QA gates — v0.2
 
-**G1 Scope**: no excluded company-product roles in HOME or EVENT (e.g., semiconductor test sockets when electronics PCB-only scope selected).
+**This checklist applies to the final product, not just syntax.** Script checks are structural; they cannot verify sources independently or find an unknown stock without a fresh search.
 
-**G2 Product truth**: product exists, actual business role/status established; divested businesses removed from current HOME. Past IR must not override newer facts.
+- **G1 Scope & HOME:** no prohibited company×product role; preserve stable IDs and proper physical/economic ordering; no new folder for a theme alone.
+- **G2 Role coverage:** per HOME inspect `coverage_audits`: global leaders, domestic small/mid, foreign specialists, and incumbent cross-product/supply-channel. If any track is undocumented, status must be OPEN/HOLD. One leading company or a 2–6-member aesthetically tidy block is **not** proof of sector coverage.
+- **G3 Candidate accountability:** `candidates` records discovered, included, held and excluded names, evidence and selection reasons. No arbitrary minimum count, market-cap cutoff, domestic-only bias, or routine rejection because a stock has weak brokerage coverage. Review exclusions for unsupported small-cap penalties.
+- **G4 Company×product×mode:** current products and subsidiaries/contracting entities matter. Manufacturer ≠ distributor/supplier; group memberships may overlap only where a product exposure or economic reason is supported. Every included company×HOME link needs its own evidence claim; a generic repeated text does not establish an actual product relationship.
+- **G5 Financial significance:** label actual revenue, estimated revenue, order/contract, qualification and speculative roadmap. Reconcile total-company vs product revenue; a supply framework maximum ≠ booked revenue. High market beta ≠ event earnings beta; do not claim EPS leverage without calculations.
+- **G6 Sources and listing:** prefer official annual reports/product catalogs/contract filings for company facts. Independently triangulate customer, competitive position and market shares. Check disposal and ticker changes; examine local exchange boards (e.g. TPEx) and both broker search capabilities separately.
+- **G7 Events:** identify Q/P/MIX/SHARE/UTIL/COST/YIELD chain to earnings with next indicator and negative case; weak indirect thematic links do not make an EVENT core.
+- **G8 Holds are real:** include outstanding `qa_holds`, per-company listing and broker holds, conditional claims, material coverage gaps and contradiction notes in report. Never say `0 holds` when only a syntax script happened to pass.
+- **G9 Output and persistence:** keep companies first; HOME vs EVENT separate; one-line explanations once; diff against prior master, and retain evidence log. Do not create/import broker files from guessed formats.
 
-**G3 Economic grouping**: nearest direct product competitors where possible; each product block has a reason for inclusion and peer economics are comparable. SIGNAL/OPTION not represented as large current pure-play earnings exposures.
+## Regression cases — MUST recheck after changes
 
-**G4 Numerical evidence**: label forecast vs actual; utilization refers to identified facilities and segments, not a blanket full-capacity assertion. ASP growth ≠ guaranteed pure same-SKU price increase.
+1. **Gaon busway (generic failure pattern)**: company is found under cables; an official supply/channel contract exposes it to busway. Verify actual legal entity and business mode; do not suppress second HOME just because it is not the manufacturer; avoid labelling all group members manufacturers. If evidence cannot be checked, explicit candidate HOLD.
+2. **Niche firms**: each HOME documented small/mid-cap domestic search, foreign specialist search and candidate disposition. Other than a documented `NOT_APPLICABLE`, an empty track blocks research coverage completion.
+3. **Inherited assumptions**: earlier MASTER classifications are starting hypotheses; meaningful recent primary evidence overrides inherited interpretation. Reopen only affected groups.
+4. **Placeholder claim**: a repeated non-specific phrase cannot count as verified evidence.
+5. **0 holds trap**: if broker registration is unverified, or role discovery is undocumented, QA must report outstanding work even if IDs and references are internally consistent.
+6. **Others**: divested businesses, obsolete tickers, out-of-scope semiconductor tests, FC-BGA primary/entrant contrast, aggregate-vs-product utilization, export syntax not established.
 
-**G5 Foreign instruments**: check current exchange ticker, listing status, security type/market (e.g. TWSE vs TPEx), corporate actions and intended broker discoverability separately. Historical report ticker not enough.
-
-**G6 Event causality**: identifiable Q/P/MIX/SHARE/UTIL/COST/YIELD route and next indicator and contradiction; eliminate weak-benefit cases from main EVENT.
-
-**G7 Consistent output**: stable HOME names, deliberate duplicates, no spurious new folders, companies-first density and minimal repeated explanations.
-
-**G8 Change safety**: compare current with previous MASTER; emit explicit ADD/REMOVE/MOVE/HOLD entries. Newly revised source only reopens affected facts. A broker import file requires independently tested target syntax and instrument availability; otherwise output text preview + HOLD.
-
-**Regression scenarios**:
-- Generac (GNRC) must be discoverable as a structural onsite power/BTM systems reference even without domestic sell-side reports; do not claim ESS-only pure play.
-- Divested copper foil lines must not be shown as current HOME after sale, if current verified official materials establish the sale.
-- Corporate-action ticker changes must replace old tradable codes, after exchange confirmation.
-- A company-product excluded by industry scope cannot enter via neighboring thematic research.
-- Package-substrate leaders and newcomers should not be collapsed into identical economic exposures merely because both make FC-BGA.
+`python scripts/validate_master.py audit <master.json>` prints a JSON structural coverage report. `validate <master.json> --strict` exits with code 3 on outstanding issues. A structural pass does **not** certify business facts, instrument trading status or live brokers.

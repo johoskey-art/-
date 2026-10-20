@@ -1,0 +1,23 @@
+{
+  "interface": {
+    "displayName": "Industry Watchlist Builder",
+    "shortDescription": "산업별 글로벌 관심종목 지도",
+    "longDescription": "Use connected research sources and independent verification to discover missing companies, construct global peers and HOME/EVENT watchlists, then validate and export broker-ready files only when supported.",
+    "developerName": "hakuna",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Google Drive 자료와 최신 해외 IR로 전기전자 관심종목 HOME/EVENT를 검산하고 업데이트해줘.",
+      "BTM 산업에서 Generac처럼 누락된 글로벌 기업을 찾아 피어를 다시 구성해줘.",
+      "기존 MASTER를 확인하고 삼성증권·한국투자증권 관심종목용으로 검증해줘."
+    ]
+  },
+  "name": "industry-watchlist-research",
+  "version": "0.2.0",
+  "description": "Build and audit evidence-backed cross-border industry watchlists, with peer groups, current earnings drivers, event maps, and broker format gates.",
+  "author": {
+    "name": "hakuna"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}
