@@ -7,15 +7,20 @@ Run locally:
 from __future__ import annotations
 
 from pathlib import Path
+import sys
 
 import pandas as pd
 import streamlit as st
+
+BASE_DIR = Path(__file__).resolve().parent
+SRC_DIR = BASE_DIR / "src"
+if SRC_DIR.exists() and str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
 
 from leader_gate_v0 import GateInput, evaluate_leader_gate
 from position_finder_core import historical_stage_references, named_layout_ranges, classify_price
 
 
-BASE_DIR = Path(__file__).resolve().parent
 # Keep v0 self-contained: a refetch must be an explicit, versioned research
 # action rather than an unrecorded network dependency at runtime.
 DEFAULT_STAGE_PATH = BASE_DIR / "data" / "historical_stage_reference_legacy38_v0.csv"
