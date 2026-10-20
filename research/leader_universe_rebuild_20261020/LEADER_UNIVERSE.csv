@@ -1,0 +1,46 @@
+era,industry_cycle,company,ticker,leader_role,leader_evidence_question,status,inclusion_decision_reason
+1995-1999,IT-telecom-internet,삼성전자,005930,hardware leader,Was it industry representative and high-turnover before peak?,RESEARCH_QUEUE,return not used
+1995-1999,IT-telecom-internet,SK텔레콤,017670,telecom leader,Was mobile adoption leadership observable?,RESEARCH_QUEUE,return not used
+1995-1999,IT-telecom-internet,한글과컴퓨터,030520,theme leader,Was turnover broad enough?,RESEARCH_QUEUE,counterexample retained
+1995-1999,IT-telecom-internet,다음커뮤니케이션,035720,portal leader,Corporate continuity and pre-peak evidence?,HOLD,entity audit
+2003-2007,China-reflation-ship-steel,POSCO홀딩스,005490,steel leader,Industry prices and relative strength?,RESEARCH_QUEUE,candidate
+2003-2007,China-reflation-ship-steel,HD한국조선해양,009540,ship leader,Orders and peer co-movement?,LEGACY_SELECTED_SAMPLE,archived
+2003-2007,China-reflation-ship-steel,삼성중공업,010140,ship leader,Orders and peer co-movement?,LEGACY_SELECTED_SAMPLE,archived
+2003-2007,China-reflation-ship-steel,HD현대미포,010620,ship leader,Orders and peer co-movement?,LEGACY_SELECTED_SAMPLE,archived
+2003-2007,China-reflation-ship-steel,HMM,011200,shipping leader,Freight cycle and entity history?,LEGACY_SELECTED_SAMPLE,archived
+2008-2011,Cha-hwa-jeong,현대차,005380,auto leader,Sales and turnover?,LEGACY_SELECTED_SAMPLE,archived
+2008-2011,Cha-hwa-jeong,기아,000270,auto leader,Sales and turnover?,LEGACY_SELECTED_SAMPLE,archived
+2008-2011,Cha-hwa-jeong,LG화학,051910,chemical leader,Margin cycle and strength?,RESEARCH_QUEUE,candidate
+2008-2011,Cha-hwa-jeong,롯데케미칼,011170,chemical leader,Margin cycle and strength?,LEGACY_SELECTED_SAMPLE,archived
+2008-2011,Cha-hwa-jeong,OCI홀딩스,010060,solar leader,Polysilicon cycle?,RESEARCH_QUEUE,candidate
+2010-2013,smartphone-platform,삼성전자,005930,smartphone leader,Export earnings and KOSPI role?,RESEARCH_QUEUE,separate cycle
+2010-2013,smartphone-platform,NAVER,035420,platform leader,Mobile transition and turnover?,RESEARCH_QUEUE,candidate
+2010-2013,smartphone-platform,엔씨소프트,036570,game leader,Industry leadership?,LEGACY_SELECTED_SAMPLE,archived
+2013-2015,China-consumption-bio,아모레퍼시픽,090430,consumption leader,Sales strength and split audit?,RESEARCH_QUEUE,entity QA
+2013-2015,China-consumption-bio,한샘,009240,consumption leader,Housing/earnings leadership?,LEGACY_SELECTED_SAMPLE,archived
+2013-2015,China-consumption-bio,한미약품,128940,bio leader,Pipeline and turnover?,LEGACY_SELECTED_SAMPLE,archived
+2016-2018,memory-supercycle,삼성전자,005930,memory leader,Memory earnings and KOSPI leadership?,PROVISIONAL_INCLUDED,price QA pending KRX
+2016-2018,memory-supercycle,SK하이닉스,000660,memory leader,Memory earnings and peer leadership?,PROVISIONAL_INCLUDED,price QA pending KRX
+2016-2018,memory-supercycle,삼성전기,009150,MLCC leader,MLCC cycle and turnover?,RESEARCH_QUEUE,missing semi candidate
+2016-2018,memory-supercycle,SK머티리얼즈,036490,materials leader,Capex linkage?,RESEARCH_QUEUE,missing semi candidate
+2016-2018,memory-supercycle,원익IPS,240810,equipment leader,Order cycle and turnover?,RESEARCH_QUEUE,missing semi candidate
+2016-2018,memory-supercycle,테스,095610,equipment leader,Order cycle and turnover?,RESEARCH_QUEUE,missing semi candidate
+2016-2018,bio,삼성바이오로직스,207940,bio leader,Contract growth?,LEGACY_SELECTED_SAMPLE,archived
+2016-2018,bio,신라젠,215600,theme-bio leader,Turnover and delisting risk?,LEGACY_SELECTED_SAMPLE,archived
+2019-2021,BBIG-covid-battery,카카오,035720,platform leader,Platform and turnover?,RESEARCH_QUEUE,entity QA
+2019-2021,BBIG-covid-battery,NAVER,035420,platform leader,Platform and turnover?,RESEARCH_QUEUE,candidate
+2019-2021,BBIG-covid-battery,에코프로비엠,247540,battery leader,EV chain and turnover?,RESEARCH_QUEUE,candidate
+2019-2021,BBIG-covid-battery,씨젠,096530,covid leader,Pandemic earnings and turnover?,RESEARCH_QUEUE,counterexample
+2019-2021,BBIG-covid-battery,SK바이오사이언스,302440,covid leader,IPO censoring?,HOLD,right-censored possible
+2022-2023,battery-materials,에코프로,086520,battery leader,Industry leadership pre-peak?,RESEARCH_QUEUE,candidate
+2022-2023,battery-materials,POSCO홀딩스,005490,battery materials leader,Li-ion narrative and turnover?,RESEARCH_QUEUE,separate cycle
+2022-2023,battery-materials,포스코퓨처엠,003670,battery leader,Industry leadership and turnover?,RESEARCH_QUEUE,candidate
+2022-2023,battery-materials,금양,001570,theme leader,Turnover counterexample?,RESEARCH_QUEUE,counterexample
+2022-2023,AI-HBM,한미반도체,042700,HBM equipment leader,Orders and turnover?,RESEARCH_QUEUE,candidate
+2022-2023,AI-HBM,HPSP,403870,equipment leader,IPO censoring?,HOLD,right-censored possible
+2023-2026,AI-power-ship-defense,SK하이닉스,000660,HBM leader,Ongoing completed-cycle status?,RIGHT_CENSORED,exclude from means
+2023-2026,AI-power-ship-defense,HD현대일렉트릭,267260,power leader,Orders and strength?,RIGHT_CENSORED,exclude from means
+2023-2026,AI-power-ship-defense,효성중공업,298040,power leader,Orders and strength?,RIGHT_CENSORED,exclude from means
+2023-2026,AI-power-ship-defense,LS ELECTRIC,010120,power leader,Orders and strength?,RIGHT_CENSORED,exclude from means
+2023-2026,AI-power-ship-defense,한화에어로스페이스,012450,defense leader,Export orders and strength?,RIGHT_CENSORED,exclude from means
+2023-2026,AI-power-ship-defense,한화오션,042660,ship leader,Orderbook and strength?,RIGHT_CENSORED,exclude from means
