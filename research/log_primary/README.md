@@ -12,6 +12,8 @@
 6. **독립 재생성 코드**: [build_log5_7_primary.py](../scripts/build_log5_7_primary.py) — 외부 API 없이 Python 표준 라이브러리로 38/37 로그단계표 재계산 및 일치 확인.
 7. **4개 원작 차트 검증**: [활성 4주도주 프로토콜](../methodology/FOUR_LEADERS_ONLY_5_7_FIBONACCI_20261020.md): LS ELECTRIC·삼성전기·SK하이닉스·SK텔레콤. 다른 종목의 역사학습 통계와 원작 차트 독립 검증(holdout)은 구분.
 
+[로그 전환 최종 검산 기록](MIGRATION_QA_20261020.md)에는 데이터 38건·532개 수준·28개 평균 전수 일치 검산과 구형 매매 코드 분리 범위를 정리했다.
+
 ## 1. 운영 수학 및 평균 통계
 
 - 가격원장: **사후** `L=최저 Adj_Close>0`, `H=L 이후 미리 정한 시세 종료기간 안의 최고 Adj_Close`. `R_i=H_i/L_i>0`.
