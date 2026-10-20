@@ -19,6 +19,7 @@ if SRC_DIR.exists() and str(SRC_DIR) not in sys.path:
 
 from leader_gate_v0 import GateInput, evaluate_leader_gate
 from position_finder_core import historical_stage_references, named_layout_ranges, classify_price
+from mixed_stage_layout_candidates import CANDIDATES, bands_from_anchors
 
 
 # Keep v0 self-contained: a refetch must be an explicit, versioned research
@@ -134,6 +135,19 @@ def main() -> None:
             ).sort_values("median")
             st.dataframe(band_table, use_container_width=True, hide_index=True)
             st.metric("���� ��ġ (���Ǻ�)", classify_price(current_price, bands))
+            st.caption("Mixed 5/7 candidates are shown separately; they are not asserted as the original formula.")
+            candidate_rows = []
+            for candidate_id in CANDIDATES:
+                candidate_bands = bands_from_anchors(knee_price, top_price, candidate_id)
+                candidate_rows.extend(
+                    {"candidate": candidate_id, "band": band, "price": round(price, 0)}
+                    for band, price in candidate_bands.items()
+                )
+            st.dataframe(
+                pd.DataFrame(candidate_rows),
+                use_container_width=True,
+                hide_index=True,
+            )
         except ValueError as exc:
             st.warning(str(exc))
     elif not observed_anchors:
