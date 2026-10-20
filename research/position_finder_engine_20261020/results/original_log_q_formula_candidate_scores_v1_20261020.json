@@ -1,0 +1,41 @@
+{
+  "input": "research/results/original_5_companies_7_charts_commonalities_20261020.csv",
+  "filter": "original_price_axis == LOG",
+  "n_log_screens": 6,
+  "observed_mean_q": {
+    "shoulder": 0.218846899,
+    "waist": 0.414199286,
+    "thigh": 0.715027077
+  },
+  "candidates": [
+    {
+      "name": "q_1_5__2_5__5_7",
+      "q": [0.2, 0.4, 0.714285714],
+      "mae": 0.01498823,
+      "rmse": 0.018573011,
+      "max_abs_error": 0.037572
+    },
+    {
+      "name": "q_1_5__3_7__5_7",
+      "q": [0.2, 0.428571429, 0.714285714],
+      "mae": 0.013651468,
+      "rmse": 0.018617278,
+      "max_abs_error": 0.050121429
+    },
+    {
+      "name": "canonical_fibonacci_0_236__0_382__0_618",
+      "q": [0.236068, 0.381966, 0.618034],
+      "mae": 0.049332043,
+      "rmse": 0.061157457,
+      "max_abs_error": 0.105242
+    },
+    {
+      "name": "sample_mean_not_a_formula",
+      "q": [0.218846899, 0.414199286, 0.715027077],
+      "mae": 0.008989904,
+      "rmse": 0.012616066,
+      "max_abs_error": 0.035749286
+    }
+  ],
+  "interpretation_constraint": "sample_mean is a descriptive benchmark, not a discovered formula"
+}
