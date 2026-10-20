@@ -42,5 +42,22 @@
 - [ ] 종목·관측일·가격축 전수 판독
 - [ ] 라인 좌표 원장
 - [ ] EPS·밸류 시점 정합 원장
-- [ ] LeaderGate v0 규칙
-- [ ] PositionBands v0 및 원작 화면 대조
+- [x] LeaderGate v0 규칙 (명시적 증거만 판정, 미래 고점 미사용)
+- [x] PositionBands v0 계산 모듈 (독립 앵커가 있을 때만 화면 배치→가격범위 변환)
+- [x] 오프라인 재현용 Streamlit v0 및 고정 데이터 번들
+- [ ] 원작 화면별 가격축(LOG/선형) 전수 판독 및 실제 앵커 입력
+- [ ] EPS·밸류 시점 정합 원장
+- [ ] PositionBands의 원작 화면 시점 외 대조
+
+
+## 실행 가능한 연구 화면 v0
+
+저장소의 이 폴더에서 다음을 실행한다.
+
+```powershell
+streamlit run app_position_finder_v0.py
+```
+
+- `data/historical_stage_reference_legacy38_v0.csv`은 이전 38개 **선정 표본**의 임시 보정값만 담는다. 전체 주도주 모집단 평균이나 원작 공식의 계수가 아니다.
+- `data/screen_relative_layout_prior_v0.csv`은 4개 화면의 화면상 상대배치만 담는다. 개별 화면이 로그 가격축임을 확인하고, 무릎·상투 앵커가 독립적으로 확인된 경우에만 가격 범위로 변환한다.
+- 화면은 가격·지표를 자동으로 수집하거나 매매 신호를 내지 않는다. 그 기능은 화면 판독 및 시점 정합 원장이 쌓인 뒤에만 추가한다.
