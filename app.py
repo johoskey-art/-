@@ -17,7 +17,7 @@ from backtest import calculate_position_levels, run_backtest
 
 # 페이지 설정
 st.set_page_config(
-    page_title="주가위치분석시스템 (댕기왕자 공식 모델)",
+    page_title="LEGACY: 주가위치 연구 데모 (SMA240 고정배율)",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -57,8 +57,8 @@ st.markdown("""
 # 사이드바 설정
 # -------------------------------------------------------------
 with st.sidebar:
-    st.title("📈 주가위치분석시스템")
-    st.caption("댕기왕자 공식 모델 (성호전자·삼천당제약·SK하이닉스 실측 기준)")
+    st.title("📈 LEGACY 주가위치 데모")
+    st.caption("SMA240×임의 고정배율 예전 데모 · 로그 5/7 연구 공식과 별개")
     st.divider()
 
     PRESET_STOCKS = {
@@ -93,10 +93,10 @@ with st.sidebar:
     
     st.divider()
     st.markdown("""
-    **📋 댕기왕자 공식 11개 라인 체계**
-    * 🚨 **울트라상투 (8.88배)**: 수학적 100% 상투
+    **📋 LEGACY 가정 11개 라인 체계 (원작 공식 검증 아님)**
+    * 🚨 **울트라상투 (8.88배)**: 임의 데모 기준 (상투 보장 불가)
     * ⚡ **대상투 (6.18배)**: 광기의 시작
-    * ⚠️ **상투 (4.25배)**: 현실적 최종 천정 (전량 매도)
+    * ⚠️ **상투 (4.25배)**: 과거 임의 데모 기준
     * 🔔 **어깨 (2.85배)**: 1차 70% 분할 매도
     * ⭐ **허리 (2.12배)**: 시세 국면 지지축
     * 🚀 **허벅지 (1.46배)**: 시세 분출 / 진입 마지노선
@@ -126,6 +126,7 @@ def load_data(ticker: str, years: int):
         st.error(f"데이터 로드 실패: {e}")
         return None
 
+st.warning("LEGACY 연구 데모: 표시되는 무릎·상투와 행동 문구는 SMA240×임의 고정배율로 계산되며, 38개 수정종가 로그 5·7등분 연구의 검증된 매매 신호나 원작 공식이 아닙니다. 차트의 로그축 체크박스는 표시 방식만 변경합니다.")
 with st.spinner(f"[{ticker_input}] 주가 데이터 로딩 중..."):
     raw_df = load_data(ticker_input, period_years)
 
