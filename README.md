@@ -17,6 +17,10 @@
 | **원작 직접 검증** | [LS ELECTRIC·삼성전기·SK하이닉스·SK텔레콤 4종목](research/methodology/FOUR_LEADERS_ONLY_5_7_FIBONACCI_20261020.md) | 원작 라벨/가격 부족 |
 | **과거 계산 파일 분류** | [LEGACY_MIGRATION_INDEX](research/log_primary/LEGACY_MIGRATION_INDEX_20261020.csv) | 이전 자료 삭제하지 않음 |
 
+## 최신 역산 과제 — 국면별 가변 상투·대상투
+
+**[SK하이닉스 중심 시계열 검증 프로토콜](research/methodology/STATE_DEPENDENT_DYNAMIC_BANDS_20261020.md)**: 상투선·대상투선은 수급·시세국면·시간에 따라 움직일 수 있으며 고정 피보나치 정수비를 강요하지 않는다. 한 회사의 정수패턴 재검증은 중단하고, 38개 로그 평균은 과거 분포 참고값만 유지한다. [SK하이닉스 화면 내 폭 변화 수치](research/results/skh_20261020_dynamic_top_knee_screen_spread_2views.csv).
+
 ## 현재 계산 기준
 
 사후 상승 사이클마다 시작가격 `L>0`, 사후 고점가격 `H>L`, `R=H/L`이면
