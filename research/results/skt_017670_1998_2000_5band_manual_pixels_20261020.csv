@@ -1,0 +1,14 @@
+x_px,top_red_y,shoulder_green_y,waist_black_y,thigh_orange_y,knee_blue_y,quality
+465,350,378.5,404,441,477.5,clear
+505,351,379.5,405,442,478,minor_overlap
+550,351,381,406,442.5,479.5,clear
+600,352,381,406,,476.5,orange_yellow_NA
+650,351,379.5,405,443,479.5,clear
+700,350,378.5,404,442,478,clear
+750,343,372.5,398,436.5,474,clear
+800,330,,386,427.5,465,green_yellow_NA
+850,313,,371.5,413,452,green_yellow_NA
+900,299,331,358.5,401,441.5,near_candles
+950,288.5,320.5,348,392,432,clear
+1050,244,276,304.5,351.5,394.5,near_candles
+1100,219,252,280.5,329.5,373.5,black_minor_overlap
