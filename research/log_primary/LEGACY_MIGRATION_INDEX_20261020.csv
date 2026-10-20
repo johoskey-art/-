@@ -1,5 +1,5 @@
 path,status,why,canonical_path
-"README.md","LEGACY_MODEL_DOC","stock SMA240 multiplier assertions not verified original formula","research/log_primary/README.md"
+"README.md","CURRENT_LOG_ENTRYPOINT","root overview rewritten to point to current log research; historical SMA240 claims moved to legacy status","research/log_primary/README.md"
 "app.py","LEGACY_UNVERIFIED_MODEL","dashboard uses fixed SMA240 multipliers; log chart is only visualization","research/log_primary/README.md"
 "backtest.py","LEGACY_UNVERIFIED_MODEL","backtest of fixed SMA240 multipliers, not 5/7 log method","research/log_primary/README.md"
 "stock_position_system.pine","LEGACY_UNVERIFIED_MODEL","TradingView indicator fixed ratios, not 5/7 log model","research/log_primary/README.md"
