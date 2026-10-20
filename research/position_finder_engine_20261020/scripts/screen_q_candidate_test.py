@@ -29,14 +29,14 @@ def losses(rows: list[dict[str, str]], q: tuple[float, float, float]) -> dict[st
 
 def analyze(input_path: Path) -> dict[str, object]:
     with input_path.open("r", encoding="utf-8-sig", newline="") as handle:
-        rows = [row for row in csv.DictReader(handle) if row["original_price_axis"] == "LOG"]
+        rows = list(csv.DictReader(handle))
     if not rows:
-        raise ValueError("no LOG rows")
+        raise ValueError("no original screen rows")
     observed_mean = tuple(sum(float(row[band]) for row in rows) / len(rows) for band in BANDS)
     candidates = dict(CANDIDATES)
     candidates["sample_mean_not_a_formula"] = observed_mean
     return {
-        "n_log_screens": len(rows),
+        "n_original_screens": len(rows),
         "bands": BANDS,
         "observed_mean_q": observed_mean,
         "scores": {name: {"q": q, **losses(rows, q)} for name, q in candidates.items()},
