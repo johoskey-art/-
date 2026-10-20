@@ -109,7 +109,10 @@ def main() -> None:
     st.subheader("���� ��Ʈ���� ������ ���� ��� ��ġ ? ���Ǻ� ǥ��")
     st.caption("�Ʒ��� ȭ��� �����ǥ ���������Դϴ�. ���� ��Ʈ�� �������� �α׷� ����ǰ�, ���������� ��Ŀ�� ���������� Ȯ�ε� ��쿡�� ��ȭ ������ ��ȯ�մϴ�.")
     observed_anchors = st.checkbox("������ ���������� ��Ŀ�� �ִ�", value=False)
-    if observed_anchors:
+    axis_scale = st.selectbox("Audited chart price-axis", ["unknown", "linear", "log"])
+    if observed_anchors and axis_scale == "unknown":
+        st.warning("Price conversion is blocked until the source chart axis is audited as linear or log.")
+    if observed_anchors and axis_scale != "unknown":
         col1, col2 = st.columns(2)
         with col1:
             knee_price = st.number_input("������ ���� ����", min_value=0.01, value=cycle_low)
@@ -120,7 +123,7 @@ def main() -> None:
             for row in layout_data.itertuples(index=False)
         }
         try:
-            bands = named_layout_ranges(knee_price, top_price, q_ranges)
+            bands = named_layout_ranges(knee_price, top_price, q_ranges, axis_scale=axis_scale)
             band_table = pd.DataFrame(
                 [{"band": item.band, "low": round(item.low, 0), "median": round(item.median, 0), "high": round(item.high, 0)} for item in bands]
             ).sort_values("median")
@@ -128,7 +131,7 @@ def main() -> None:
             st.metric("���� ��ġ (���Ǻ�)", classify_price(current_price, bands))
         except ValueError as exc:
             st.warning(str(exc))
-    else:
+    elif not observed_anchors:
         st.info("���� ��Ŀ�� ���Ƿ� ���� �ʽ��ϴ�. ��ġ�� ����ġ �ڷ�� �����ϵ�, ���簡�� ���� ��ǥ���� ��ȯ���� �ʽ��ϴ�.")
 
     st.divider()
