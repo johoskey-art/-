@@ -1,0 +1,21 @@
+{
+  "schema_version":"0.1",
+  "industry":"전기전자 — demonstration only",
+  "scope":{"exclude_company_ids":["KR:TEST-EXCLUDED"]},
+  "sources":[
+    {"id":"doc-1","type":"broker_research","title":"2026-10-20 Shinhan Electronics (illustrative extracted claims)","as_of":"2026-10-20"},
+    {"id":"doc-2","type":"broker_research","title":"2026-10-07 DB Isu Petasys (illustrative extracted claims)","as_of":"2026-10-07"}
+  ],
+  "companies":[
+    {"id":"KR:007660","name":"이수페타시스","market":"KR","ticker":"007660","role":"CORE","products":["서버·네트워크 다중적층 MLB"],"source_ids":["doc-1","doc-2"],"home_group_ids":["EE02-MLB"]},
+    {"id":"KR:353200","name":"대덕전자","market":"KR","ticker":"353200","role":"CORE","products":["FC-BGA 패키지기판","MLB"],"source_ids":["doc-1"],"home_group_ids":["EE02-MLB","EE03-FCBGA"],"duplicate_reason":"독립적 제품 매출 및 투자 민감도에 따른 HOME 중복"},
+    {"id":"JP:4062","name":"Ibiden","market":"JP","ticker":"4062","role":"CORE","products":["고급 FC-BGA 패키지기판"],"source_ids":["doc-1"],"home_group_ids":["EE03-FCBGA"]}
+  ],
+  "groups":[
+    {"id":"EE02-MLB","kind":"HOME","name":"AI / NETWORK HIGH-LAYER MLB","description":"AI 서버·스위치의 고다층 회로판","profit_driver":"ASP + 고사양 MIX + 가동률","companies":["KR:007660","KR:353200"]},
+    {"id":"EE03-FCBGA","kind":"HOME","name":"HIGH-END FC-BGA","description":"CPU·GPU·ASIC 아래 고급 패키지기판","profit_driver":"Q + 면적 증가 + 고부가 MIX","companies":["JP:4062","KR:353200"]}
+  ],
+  "events":[
+    {"id":"EV-FCBGA","title":"FC-BGA LARGE BODY","category":"SPEC-UP","companies":["JP:4062","KR:353200"],"profit_bridge":["제품 면적 증가","기판 유효 Capa 감소","ASP/MIX","영업이익률/EPS"],"next_indicator":"신규 고객 수주 및 제품별 매출/ASP","confirmatory":["수주잔고 상승","신규 공장 예약"],"contradictory":["고객 재고 증가","ASP 하락"]}
+  ]
+}
