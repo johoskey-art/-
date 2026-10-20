@@ -1,4 +1,4 @@
 band,q_low,q_median,q_high,screen_count,sample_count,source_screens,axis_status,usage_rule
-shoulder,0.200000,0.213203,0.234694,4,12,PF001|PF009|PF012|PF018,SCREEN_GEOMETRY_ONLY,"use only as a relative-layout range after an individual chart passes LOG-axis audit"
-waist,0.407609,0.426064,0.448980,4,12,PF001|PF009|PF012|PF018,SCREEN_GEOMETRY_ONLY,"use only as a relative-layout range after an individual chart passes LOG-axis audit"
-thigh,0.711111,0.717172,0.724490,4,12,PF001|PF009|PF012|PF018,SCREEN_GEOMETRY_ONLY,"use only as a relative-layout range after an individual chart passes LOG-axis audit"
+shoulder,0.200000,0.213203,0.234694,4,12,PF001|PF009|PF012|PF018,LINEAR_VERIFIED_ON_SOURCE_SCREENS,"use only as a linear-price relative-layout range after an individual chart passes price-axis audit"
+waist,0.407609,0.426064,0.448980,4,12,PF001|PF009|PF012|PF018,LINEAR_VERIFIED_ON_SOURCE_SCREENS,"use only as a linear-price relative-layout range after an individual chart passes price-axis audit"
+thigh,0.711111,0.717172,0.724490,4,12,PF001|PF009|PF012|PF018,LINEAR_VERIFIED_ON_SOURCE_SCREENS,"use only as a linear-price relative-layout range after an individual chart passes price-axis audit"
