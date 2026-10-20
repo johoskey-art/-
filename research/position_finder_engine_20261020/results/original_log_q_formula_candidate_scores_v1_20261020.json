@@ -1,40 +1,40 @@
 {
   "input": "research/results/original_5_companies_7_charts_commonalities_20261020.csv",
-  "filter": "original_price_axis == LOG",
-  "n_log_screens": 6,
+  "axis_confirmation": "source owner confirms all original charts use log price axes; q is screen geometry",
+  "n_original_screens": 7,
   "observed_mean_q": {
-    "shoulder": 0.218846899,
-    "waist": 0.414199286,
-    "thigh": 0.715027077
+    "shoulder": 0.218692913,
+    "waist": 0.415652531,
+    "thigh": 0.715303780
   },
   "candidates": [
     {
       "name": "q_1_5__2_5__5_7",
       "q": [0.2, 0.4, 0.714285714],
-      "mae": 0.01498823,
-      "rmse": 0.018573011,
+      "mae": 0.014981306,
+      "rmse": 0.018421166,
       "max_abs_error": 0.037572
     },
     {
       "name": "q_1_5__3_7__5_7",
       "q": [0.2, 0.428571429, 0.714285714],
-      "mae": 0.013651468,
-      "rmse": 0.018617278,
+      "mae": 0.012874911,
+      "rmse": 0.017700417,
       "max_abs_error": 0.050121429
     },
     {
       "name": "canonical_fibonacci_0_236__0_382__0_618",
       "q": [0.236068, 0.381966, 0.618034],
-      "mae": 0.049332043,
-      "rmse": 0.061157457,
+      "mae": 0.049886275,
+      "rmse": 0.061429204,
       "max_abs_error": 0.105242
     },
     {
       "name": "sample_mean_not_a_formula",
-      "q": [0.218846899, 0.414199286, 0.715027077],
-      "mae": 0.008989904,
-      "rmse": 0.012616066,
-      "max_abs_error": 0.035749286
+      "q": [0.218692913, 0.415652531, 0.715303780],
+      "mae": 0.007940738,
+      "rmse": 0.011868093,
+      "max_abs_error": 0.037202531
     }
   ],
   "interpretation_constraint": "sample_mean is a descriptive benchmark, not a discovered formula"
