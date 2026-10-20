@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 > nul
 echo ========================================================
-echo   주가위치분석시스템 (Stock Position System) 대시보드 실행
+echo   LEGACY 데모: SMA240 고정배율 (로그 5/7 연구공식 아님)
 echo ========================================================
 cd /d "%~dp0"
 streamlit run app.py
