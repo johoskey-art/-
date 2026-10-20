@@ -1,0 +1,4 @@
+heldout_firm,training_other_firms,available_internal_line_points,train_q_shoulder,train_q_waist,train_q_thigh,rmse_fibonacci_arithmetic_gap_px,rmse_log_mixed_5_7_px,rmse_learned_other_firms_px
+SEM,SKH+SKT,59,0.22103616,0.41787494,0.71532354,7.07265585,1.14535441,0.87809155
+SKH,SEM+SKT,76,0.21800025,0.41734680,0.71691728,8.30507731,1.54027380,1.05916954
+SKT,SEM+SKH,36,0.21560501,0.41673403,0.71566136,12.06016431,2.16650837,1.10000994
