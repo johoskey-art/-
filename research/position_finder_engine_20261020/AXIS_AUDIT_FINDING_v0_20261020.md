@@ -1,32 +1,36 @@
-# Price-axis audit: first disconfirming result
+# Price-axis correction — source owner confirmation
 
-## Finding
+## Corrected fact
 
-All 26 visible position-chart screens have now been reviewed. Twenty-five show
-evenly spaced numeric price ticks and are recorded as **LINEAR_VERIFIED**.
-PF030 (지니언스) instead has nonuniform tick intervals consistent with price-ratio
-spacing and is recorded as **LOG_VERIFIED**. Four screens used for the initial relative-layout prior
-(PF001, PF009, PF012, PF018) are included in that set.
+The source owner confirmed that **all original position-chart screenshots use a
+log-price axis**. The earlier classification of 25 linear and one log chart was
+based only on apparent rendered tick spacing and was wrong. That inference is
+retained in the work log as a failed QA step, but it is superseded by this
+source-setting confirmation.
 
-This rejects the prior shortcut of treating screen-space `q` values as
-log-price distances.
+The authoritative status of all 26 screenshots is therefore
+`LOG_USER_CONFIRMED`.
 
 ## Consequence for the finder
 
-| Component | Permitted transformation | Not permitted |
+For an original-chart screen, with independently audited price anchors
+(top, knee) and screen coordinate (q) from top (=0) to knee (=1):
+
+[
+P(q) = top 	imes (knee/top)^q
+]
+
+This is a coordinate conversion, not a discovery of the blogger's line
+formula. It only converts a line already observed on a log chart into a price.
+
+| Component | Valid use | Still not established |
 |---|---|---|
-| Original-chart relative layout | `price = top + q × (knee - top)` only after that chart's axis and independent anchors are audited | applying a log conversion merely because historical stages use logs |
-| Historical 5/7 stages | `L × (H/L)^(j/k)` for completed historical cycles | treating it as an original-chart line equation or a live future-peak forecast |
+| Screen-layout q | log-price conversion after two actual axis ticks are audited | why the original algorithm chose that q |
+| Historical 5/7 stages | completed-cycle distribution and calibration | a live future high or the original formula |
+| Named bands | compare multiple observed charts after time/axis calibration | fixed universal band constants |
 
-The engine now requires an explicit `axis_scale` (`linear` or `log`) to
-convert a chart-layout `q` into a price. `unknown` blocks conversion.
+## Required remaining evidence
 
-## Scope and remaining uncertainty
-
-- The audit only establishes the rendered **price-axis geometry** of these
-  screens. It does not establish the blogger's line-generation formula.
-- The `top` and `knee` values in the engine must come from independent
-  chart/cycle evidence; they are not inferred from a future high in live use.
-- A per-image tick-price calibration is still required before a y-coordinate
-  becomes a price. The current converter intentionally leaves all rows blank
-  until those two audited tick anchors are entered.
+Each screenshot still needs two reviewed right-axis tick values before any
+pixel y-coordinate becomes a price. The converter leaves values blank until
+that calibration is present.
