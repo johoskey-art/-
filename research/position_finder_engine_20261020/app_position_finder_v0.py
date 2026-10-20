@@ -109,11 +109,11 @@ def main() -> None:
     st.subheader("���� ��Ʈ���� ������ ���� ��� ��ġ ? ���Ǻ� ǥ��")
     st.caption("�Ʒ��� ȭ��� �����ǥ ���������Դϴ�. ���� ��Ʈ�� �������� �α׷� ����ǰ�, ���������� ��Ŀ�� ���������� Ȯ�ε� ��쿡�� ��ȭ ������ ��ȯ�մϴ�.")
     observed_anchors = st.checkbox("������ ���������� ��Ŀ�� �ִ�", value=False)
-    # The bundled q prior was measured only on audited linear-axis screens.
-    # The core supports log for a future separately-measured log-axis prior,
-    # but the UI must not apply this linear prior to a log chart.
+    # The bundled q prior was measured on source-owner-confirmed log charts.
+    # It must not be applied to a linear chart without a separately measured
+    # linear-axis prior.
     prior_axis_statuses = set(layout_data["axis_status"].dropna().astype(str))
-    allowed_axes = ["unknown", "linear"] if all("LINEAR" in status for status in prior_axis_statuses) else ["unknown"]
+    allowed_axes = ["unknown", "log"] if all("LOG" in status for status in prior_axis_statuses) else ["unknown"]
     axis_scale = st.selectbox("Audited chart price-axis", allowed_axes)
     if observed_anchors and axis_scale == "unknown":
         st.warning("Price conversion is blocked until the source chart axis is audited as linear or log.")
