@@ -69,29 +69,38 @@ def named_layout_ranges(
     knee_price: float,
     top_price: float,
     q_ranges: Mapping[str, tuple[float, float, float]],
+    axis_scale: str,
 ) -> list[NamedBandRange]:
     """Create named price ranges from independently supplied knee/top values.
 
-    q is measured in log-price distance from top (0) to knee (1).  A layout
-    observation from a *linear* chart must not be passed here; callers need to
-    retain the price-axis audit before invoking this function.
+    q is measured from top (0) to knee (1) in the chart's vertical coordinate.
+    The price transformation must match the individually audited source chart:
+    ``linear`` interpolates prices, while ``log`` interpolates log-prices.
+    Log 5/7 historical reference stages are a separate calculation and do not
+    imply that the source chart uses a log price axis.
     """
     if knee_price <= 0 or top_price <= 0:
         raise ValueError("knee_price and top_price must be positive")
     if top_price <= knee_price:
         raise ValueError("top_price must exceed knee_price")
 
-    log_top = __import__("math").log(top_price)
-    log_knee = __import__("math").log(knee_price)
-    delta = log_knee - log_top
+    if axis_scale not in {"linear", "log"}:
+        raise ValueError("axis_scale must be 'linear' or 'log'")
+
+    if axis_scale == "log":
+        log_top = __import__("math").log(top_price)
+        log_knee = __import__("math").log(knee_price)
+        transform = lambda q: __import__("math").exp(log_top + q * (log_knee - log_top))
+    else:
+        transform = lambda q: top_price + q * (knee_price - top_price)
 
     output: list[NamedBandRange] = []
     for band, (q_low, q_mid, q_high) in q_ranges.items():
         if not (0 <= q_low <= q_mid <= q_high <= 1):
             raise ValueError(f"invalid q range for {band}")
-        values = tuple(__import__("math").exp(log_top + q * delta) for q in (q_low, q_mid, q_high))
+        values = tuple(transform(q) for q in (q_low, q_mid, q_high))
         # Higher q is closer to the lower knee price, hence price order reverses.
-        output.append(NamedBandRange(band, min(values), values[1], max(values), "screen_relative_layout"))
+        output.append(NamedBandRange(band, min(values), values[1], max(values), f"screen_relative_layout_{axis_scale}"))
     return output
 
 
