@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# LEGACY research comparator. Current canonical is research/scripts/build_log5_7_primary.py
+# Historical raw-Close and/or linear/time comparisons are intentionally preserved.
+
 """Domestic leader 5/7 PRICE partition summaries, offline and reproducible.
 
 Inputs:
