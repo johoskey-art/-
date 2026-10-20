@@ -25,8 +25,17 @@ def test_named_band_ranges_and_classification() -> None:
     assert classify_price(300, bands) == "thigh_to_waist"
 
 
+def test_linear_and_log_layouts_are_explicitly_different() -> None:
+    ranges = {"shoulder": (0.2, 0.2, 0.2)}
+    linear = named_layout_ranges(100, 1000, ranges, axis_scale="linear")[0]
+    log = named_layout_ranges(100, 1000, ranges, axis_scale="log")[0]
+    assert linear.median == 820
+    assert round(log.median, 6) == round(1000 * (0.1 ** 0.2), 6)
+
+
 if __name__ == "__main__":
     test_historical_reference_prices()
     test_named_band_ranges_and_classification()
+    test_linear_and_log_layouts_are_explicitly_different()
     print("PASS")
 
