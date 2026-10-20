@@ -67,3 +67,44 @@ The following remain explicitly unknown: (q_b) exact rational assignment,
 (T(t)), (K(t)), the state-transition rule, and the original Fibonacci
 function.  They must be tested against same-date original band prices, not
 selected by minimum error.
+
+
+## 5/7-stage interpretation of the two surviving rational candidates
+
+Write (G(t)=T(t)/K(t)>1), so that the price position from the knee is
+(K(t)G(t)^f).  Because this audit measures q from top down, (f=1-q).
+
+The first candidate therefore has a concrete, predeclared mixed-stage form:
+
+| Band | q from top | f from knee | Candidate price |
+|---|---:|---:|---|
+| knee | 1 | 0 | (K) |
+| thigh | 5/7 | 2/7 | (K G^{2/7}) |
+| waist | 2/5 | 3/5 | (K G^{3/5}) |
+| shoulder | 1/5 | 4/5 | (K G^{4/5}) |
+| top | 0 | 1 | (K G) |
+
+The near-tied alternative replaces the waist by (f=4/7)
+((q=3/7)).  Thus the current screenshots narrow the problem to a small
+family of **mixed 5/7 log-stage layouts**; they do not select one member.
+
+This is the first meaningful connection between the blog's stated 5/7
+procedure and the observed line geometry.  It remains a *candidate* because
+the mean absolute-error gap between the two layouts is only 0.001337 in q,
+well below the uncertainty introduced by screenshots and line-center
+measurement.
+
+## What must be identified to turn this into the generator
+
+A complete active formula needs a rule for the two dynamic anchors:
+
+[
+K(t), qquad G(t)=T(t)/K(t).
+]
+
+Once those are known, every candidate band above is determined without a
+future realized high.  The screenshot evidence does not yet identify those
+two functions, nor does it identify whether the blogger's Fibonacci
+n-th-function produces (K), (G), a state switch, or something upstream of
+all three.  Fitting an arbitrary time trend to (K,G) would only disguise
+that missing evidence.
