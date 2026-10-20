@@ -1,0 +1,4 @@
+candidate_id,formula_status,thigh_from_knee,waist_from_knee,shoulder_from_knee,screen_q_top_order,observed_log_q_mae,decision
+MIXED_5_7_A,CANDIDATE_NOT_ORIGINAL,2/7,3/5,4/5,"shoulder=1/5;waist=2/5;thigh=5/7",0.014988230,COMPATIBLE_NOT_IDENTIFIED
+MIXED_5_7_B,CANDIDATE_NOT_ORIGINAL,2/7,4/7,4/5,"shoulder=1/5;waist=3/7;thigh=5/7",0.013651468,COMPATIBLE_NOT_IDENTIFIED
+CANONICAL_FIB_DIRECT,CANDIDATE_NOT_ORIGINAL,NA,NA,NA,"0.236;0.382;0.618",0.049332043,POOR_DIRECT_SCREEN_FIT
