@@ -2,10 +2,10 @@
 
 ## Finding
 
-The first 14 visible position-chart screens (PF000–PF009, PF012, PF014,
-PF016, PF018) show evenly spaced numeric price ticks in the price panel.
-They are therefore recorded as **LINEAR_VERIFIED**, not logarithmic, from the
-screen evidence. Four screens used for the initial relative-layout prior
+All 26 visible position-chart screens have now been reviewed. Twenty-five show
+evenly spaced numeric price ticks and are recorded as **LINEAR_VERIFIED**.
+PF030 (지니언스) instead has nonuniform tick intervals consistent with price-ratio
+spacing and is recorded as **LOG_VERIFIED**. Four screens used for the initial relative-layout prior
 (PF001, PF009, PF012, PF018) are included in that set.
 
 This rejects the prior shortcut of treating screen-space `q` values as
@@ -27,5 +27,6 @@ convert a chart-layout `q` into a price. `unknown` blocks conversion.
   screens. It does not establish the blogger's line-generation formula.
 - The `top` and `knee` values in the engine must come from independent
   chart/cycle evidence; they are not inferred from a future high in live use.
-- Remaining position charts need the same audit before they can expand the
-  relative-layout dataset.
+- A per-image tick-price calibration is still required before a y-coordinate
+  becomes a price. The current converter intentionally leaves all rows blank
+  until those two audited tick anchors are entered.
