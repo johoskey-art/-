@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# LEGACY research comparator. Current canonical is research/scripts/build_log5_7_primary.py
+# Historical raw-Close and/or linear/time comparisons are intentionally preserved.
+
 """주가위치 탐색기 — 사후 5/7등분 재현 실험 v1.
 Run: python research/scripts/split_cycles_v1.py
 Uses pinned public source CSVs; requires network. No trading signals.
