@@ -37,8 +37,11 @@ def convert(observations_path: Path, calibration_path: Path, output_path: Path) 
         writer.writeheader()
         for row in rows:
             calibration = calibrations.get(row["image_id"])
-            if not calibration or calibration.get("calibration_status") != "READY" or calibration.get("axis_scale") != "linear":
+            if not calibration or calibration.get("calibration_status") != "READY":
                 row.update(axis_scale="", line_price="", conversion_status="PENDING_CALIBRATION")
+                skipped += 1
+            elif calibration.get("axis_scale") != "linear":
+                row.update(axis_scale=calibration.get("axis_scale", ""), line_price="", conversion_status="PENDING_AXIS_SPECIFIC_CONVERTER")
                 skipped += 1
             else:
                 try:
