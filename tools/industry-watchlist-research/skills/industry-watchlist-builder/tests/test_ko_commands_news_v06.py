@@ -46,13 +46,13 @@ class TestKoreanCommandsNews(unittest.TestCase):
     def test_duplicate_audit_is_error(self):
         x=fixture();x['news_audits'].append(copy.deepcopy(x['news_audits'][0]))
         self.assertTrue(any('duplicate event/stage' in q for q in inspect(x)[0]))
-    def test_korean_commands_have_all_required_modes(self):
+    def test_two_korean_entrypoints(self):
         t=(ROOT/'references/commands-ko.md').read_text(encoding='utf8')
-        for phrase in ['관심종목 새로 만들어줘','관심종목 최신화해줘','누락기업 검산해줘','뉴스로 모멘텀과 리스크 검증해줘',
-                       '다음 보고서 20개 이어 읽어줘','조사 진행상황 보여줘','보고서 조사 마무리 검산해줘',
-                       '한투 관심종목 파일 만들어줘','텔레그램 수집 보고서']:
-            self.assertIn(phrase,t)
-    def test_news_position_documented(self):
+        self.assertIn('산업지도 만들어줘',t)
+        self.assertIn('계속 조사해줘',t)
+        self.assertIn('진행상황 보여줘',t)
+        self.assertIn('영문',t)
+    def test_adaptive_news_flow_documented(self):
         t=(ROOT/'SKILL.md').read_text(encoding='utf8')
-        self.assertTrue(t.index('3.5. **중간 뉴스') < t.index('7. **Construct selective EVENT'))
-        self.assertIn('7.5. **최종 뉴스',t)
+        self.assertIn('STRESS TEST',t)
+        self.assertIn('모든 이벤트마다',t)

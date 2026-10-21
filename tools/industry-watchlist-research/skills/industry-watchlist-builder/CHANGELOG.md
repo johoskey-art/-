@@ -1,3 +1,11 @@
+## 2026-10-21 — v0.7.0 quality refactor
+
+- Primary interface reduced to two Korean intents: build/update, continue researching; optional progress/export using natural language.
+- Main instructions rewritten to a single LOOP; repeated standalone documents consolidated from 13 topical references to 5 core references.
+- Remove arbitrary 100-report completion, fixed news twice for all events, fixed seven-source search and >6 peer warnings from v0.7 validation; preserve legacy schema regressions.
+- Evidence-driven, selectively retrieved reports + adaptive news contrarian check, incremental HOME/EVENT output, genuine private checkpoint readback.
+- No claim of full PDF corpus indexing, actual broker import, Android device automation or independent factual verification from a structural test.
+
 ## 2026-10-21 — v0.6.0
 
 - User-facing **Korean natural-language commands** are default. All existing English commands remain aliases. Added `references/commands-ko.md` with all task modes and source-filtered research actions.

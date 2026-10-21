@@ -63,16 +63,16 @@ def summary(data):
     for x in valid:
         unique.setdefault(canonical_key(x),x)
     sources=Counter(x.get('origin','UNKNOWN') for x in unique.values())
-    goal=int(data.get('target_unique_body_reviewed',100))
+    goal=int(data.get('target_unique_body_reviewed',0))
     return {'goal_unique_pdf_reports':goal,'catalogued_items':len(items),
             'body_reviewed_records':len(valid),'unique_body_reviewed':len(unique),
             'duplicate_review_records':sum(n-1 for n in counts.values()),
             'incomplete_read_receipts':sum(x.get('status') in ('BODY_REVIEWED','DEEP_READ') and not eligible(x) for x in items),
             'deep_read_unique':sum(x.get('status')=='DEEP_READ' for x in unique.values()),
-            'remaining_to_goal':max(goal-len(unique),0),
+            'remaining_to_goal':max(goal-len(unique),0) if goal>0 else None,
             'all_sources_count':dict(Counter(x.get('origin','UNKNOWN') for x in items)),
             'reviewed_source_mix':dict(sources),
-            'status':'ASPIRATION_REACHED_NOT_QA_CERTIFICATION' if len(unique)>=goal else 'ASPIRATION_NOT_YET_REACHED',
+            'status':('NO_NUMERIC_TARGET' if goal==0 else 'ASPIRATION_REACHED_NOT_QA_CERTIFICATION' if len(unique)>=goal else 'ASPIRATION_NOT_YET_REACHED'),
             'queued_unreviewed':sum(x.get('status') in ('CATALOGUED','DEFERRED') for x in items),
             'research_decision':data.get('research_decision',{}).get('decision','UNASSESSED'),
             'selection_policy':data.get('selection_policy','LEGACY_PRIORITY'),
@@ -149,13 +149,13 @@ def main():
     p.add_argument('file')
     p.add_argument('--count',type=int,default=10)
     p.add_argument('--origin',choices=sorted(ORIGINS))
-    p.add_argument('--target',type=int,default=100)
+    p.add_argument('--target',type=int,default=0)
     p.add_argument('--input',help='JSON file containing catalog records (import) or a real PDF read receipt with id (mark)')
     a=p.parse_args();path=Path(a.file)
     if a.action=='init':
         if path.exists(): p.error('queue exists; do not overwrite existing progress')
-        if a.target<1:p.error('target must be positive; 100 is an exploration goal, not a quality certificate')
-        data={'schema_version':'0.5','industry':'','target_unique_body_reviewed':a.target,'selection_policy':'INFORMATION_VALUE_FIRST','items':[],'source_search_audit':[],'research_decision':{'decision':'CONTINUE','reason':'Initial catalogue and coverage audit pending'}}
+        if a.target<0:p.error('target must be nonnegative; zero means no count target')
+        data={'schema_version':'0.7','industry':'','target_unique_body_reviewed':a.target,'selection_policy':'INFORMATION_VALUE_FIRST','items':[],'source_search_audit':[],'research_decision':{'decision':'CONTINUE','reason':'Initial catalogue and coverage audit pending'}}
         path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         print(str(path));return
     data=json.loads(path.read_text(encoding='utf-8'))

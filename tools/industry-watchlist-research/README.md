@@ -1,15 +1,21 @@
-# Industry Watchlist Builder — v0.6.0
+# Industry Watchlist Builder v0.7.0 — Quality Refactor
 
-Private ChatGPT plugin: https://chatgpt.com/plugins/plugins_6ad7f51ac7448191a4b84bf5d859d33e
+Private personal ChatGPT plugin: https://chatgpt.com/plugins/plugins_6ad7f51ac7448191a4b84bf5d859d33e
 
-## What changed
+**Two user-facing intents:** `전력기기 산업지도 만들어줘/최신화해줘` and `계속 조사해줘`. Optional natural-language requests for progress, an issue-specific audit or verified broker export. Previous English labels are legacy aliases, not recommended workflow steps.
 
-- Korean commands — [한국어 사용법](skills/industry-watchlist-builder/references/commands-ko.md). Mobile ChatGPT @ invocation with plain Korean requests for NEW, UPDATE, AUDIT, EXPORT, corpus START/NEXT/STATUS/FINALIZE, source filtering, and NEWS checks. Legacy English aliases remain.
-- News narrative stress-test — [뉴스 검증 방법](skills/industry-watchlist-builder/references/news-audit.md). Stress-test a report-derived EVENT against confirming/contradictory news and original sources BEFORE beneficiary selection, then recheck news changes before publication.
-- [SKILL.md](skills/industry-watchlist-builder/SKILL.md) — default Korean UX and two checkpoints in the workflow.
-- [Offline validator](skills/industry-watchlist-builder/scripts/validate_master.py) — v0.6 news_audits structure detects missing two-stage audit, risk-search omission, nonverified primary claims, invented source identifiers and duplicate stage records.
-- [Regression tests](skills/industry-watchlist-builder/tests/test_ko_commands_news_v06.py) — combined with earlier tests, 48 offline synthetic tests passed on 2026-10-21.
+**The skill's sole goal:** produce a company-first global HOME / peer / EVENT investment watchlist, including roles, earnings mechanisms, counterexamples, small-cap/foreign discovery, and actual source provenance. Research is a means to that output.
 
-## Quality limitations
+**Optimizations**
+- Main SKILL.md shortened about 66%; merged overlapping references into four core research/QA documents, plus Korean usage and broker output.
+- PDF count is not a pass gate. Retrieve by expected information gain, historical gaps, contract/earnings relevance and contrary evidence; source mix is adaptive and readable receipts are distinct from metadata.
+- News stress-testing is relevant-event dependent: verify competing narratives and observed outcomes; refresh if there is meaningful new information rather than twice for every minor EVENT.
+- Remove the legacy arbitrary peer count warning (>6), unconditional 100-PDF target, universal seven source requirement, and automatic dual NEWS-check requirement for v0.7. Legacy tests for earlier source schema continue working.
+- Incremental HOME/EVENT delivery and verified private checkpoint persistence; if storage fails, report STATE_NOT_PERSISTED and provide JSON for reattachment.
+- 60 local offline synthetic structural and regression tests passed on 2026-10-21.
 
-Offline regression tests validate structure and instructions only, not current news coverage, verified functionality on Android, EPS model accuracy or existence of specific events. Fresh news/primary regulation verification still depends on available tools in a user-initiated run. Korean phrases are natural-language skill intents, not standalone shell commands. Private report text, Telegram collector exports, real reading ledger and accounts must not be put in this public repo. Private author email omitted from the public manifest.
+The source here is **public, but the plugin is personal/private**. This repository contains generic skill source and synthetic examples, not private report PDFs, Telegram exports, investment holdings or account data. Private author contact metadata has been removed from public manifest copies.
+
+See [the skill](skills/industry-watchlist-builder/SKILL.md), [the two-line Korean user guide](skills/industry-watchlist-builder/references/commands-ko.md), and [the offline validator](skills/industry-watchlist-builder/scripts/validate_master.py).
+
+**Limits:** Structural unit tests cannot prove investment facts, comprehensiveness, broker import compatibility or that Android app invocation succeeded. The queue tool does not itself fetch PDFs or guarantee background research.

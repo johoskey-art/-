@@ -1,52 +1,19 @@
-# REPORT CORPUS RESEARCH v0.5 — priority-ranked, not quota-driven
+# 우선순위 기반 리포트 조사 — v0.7
 
-## Outcome standard
-A high-quality industry audit does NOT require exactly 100 PDFs, and reading 100 does not establish completeness. The default **100 is a planning ambition**, not a pass threshold or excuse to read duplicated/irrelevant reports. First rank by expected marginal investment information, then review as many unique source bodies as needed to close meaningful role/event/EPS/contradiction gaps. Always report actual reads and major unsearched regions.
+**목표는 정보의 추가 가치다.** 100건 달성, 7종류 출처 체크, 문서 수집 자체를 종료 조건으로 삼지 않는다.
 
-## Catalog widely BEFORE reading
-Search dated and historical reports and adjacent sectors, across Drive, public brokers, international sell-side/industry bodies, corporate IR, Telegram collector originals, KUVIC/SMIC/S.T.A.R. and KIRS. Build an indexed prioritized queue, title and paper date, issuer, subtype, source URL/file ID, estimated relevance, digest/hash if available, event hypotheses, and current read status. Don't stop search merely because a Drive query returns 35 results; page and broaden into folder and topic/date combinations.
+## 보고서 발견 및 선정
 
-## Resume as a user-facing workflow
-Commands supported in natural language after `@Industry Watchlist Builder` selection:
+1. 제품/경제적 역할 × EVENT × 지역 × 과거/현재 × 수혜/반증 × 실적 민감도에 빈칸을 표시한다.
+2. 사용자 Google Drive의 국내외/과거 보고서, 공개 증권사·산업연구기관·글로벌 기업 IR/원문, 텔레그램 수집기의 원본 보고서, KUVIC/SMIC/S.T.A.R./한국IR협의회 보고서 등 **현재 질문에 관련성 높은 경로**를 조사한다. 텔레그램 채널 메시지는 검색 단서이지 독립 원자료가 아니다.
+3. 목록 먼저: 문서 ID, 제목, 날짜, 발행처, URL, 문서 형태, 중복 후보, 논점(검증 전 가설), 읽기 상태를 기록한다. 일부 검색의 첫 결과 페이지만 보고 전체 없다고 결론내지 않는다.
+4. **다음 한 건의 예상 한계 정보가치**로 순위를 매긴다. (i) 누락된 중요 산업구조/기업/정책, (ii) 새 병목/표준/매출 원인, (iii) 공식 검산 가능한 데이터, (iv) 반론/리스크, (v) EPS 전이 설명, (vi) 읽기 비용과 이미 읽은 자료의 중복. 나중에 나온 동일 주장의 보고서는 낮아지지만 다른 시각의 논리나 수치 갱신이 있으면 다시 올라간다. 읽기 전 점수는 예상치.
+5. 한 번에 처리 가능한 양을 실제로 읽는다. 제목/목차/텔레그램 요약은 미열람; 원본 PDF의 실제 본문·표·섹션을 본 경우만 `BODY_REVIEWED`로 기록하고 광범위 본문을 검토한 경우만 `DEEP_READ`. 페이지/섹션·구체적 발견 2개 이상과 날짜를 남긴다. 서로 다른 저장소의 동일 PDF는 한 개.
+6. 읽은 뒤 이벤트/제품/기업의 공백을 수정하고 **다음 후보 우선순위 재산정**. 사용자가 `계속 조사해줘`라고 하면 재탕하지 않고 다음 가치 높은 자료를 선택한다. 자료 조사가 길어도 현재 발견을 HOME/EVENT에 즉시 반영한다.
 
-- `CORPUS START 전력기기 PRIORITY` (optionally `TARGET 100`) — create/update the industry's persistent queue without clearing existing confirmed report reads; broaden source discovery.
-- `CORPUS NEXT 10 PRIORITY` or `CORPUS NEXT 20 PRIORITY` — read the next **unique unread** PDF reports. N is a *request*, not a guarantee; the execution stops after actual work capacity, preserving exact remaining items. Do not repeat completed documents. Prefer varied sources and new/contradictory theses. If a PDF is long, use fewer reports per batch and accurately log status.
-- `CORPUS NEXT 10 UNIVERSITY` — prioritize student reports. `CORPUS NEXT 10 TELEGRAM` — prioritize saved collector **original** PDF attachments, not forwards. `CORPUS NEXT 10 GLOBAL` — prioritize external international research. `CORPUS NEXT 10 KIRS` — prioritize Korea IR Council reports.
-- `CORPUS STATUS` — return catalog size, verified substantive reads, current ranked top 10 unread documents *with reasons*, major remaining coverage gaps, source balance, duplicate count, and progress toward optional 100 ambition.
-- `CORPUS EVENT AUDIT` — form canonical EVENT registry from already read docs, flag coverage gaps and negative cases. It does **not** imply that target=100 was met.
-- `CORPUS FINALIZE` — evaluate coverage, contradictions, information-value saturation, highest-impact unread candidates, and remaining blockers. Never use a pure numeric threshold as the sole success condition. Otherwise output interim HOME/EVENT with explicit research HOLD and next commands. No auto-magic background ingestion.
+## 중단과 이어가기
 
-## What counts as a PDF read
-A PDF report is counted only if a read receipt documents:
-1. Original or authenticated PDF was **actually opened and inspected**. Stable source/document ID, report date, issuer, public/Drive URL, and dedupe hash or normalized bibliographic identity.
-2. `document_type: PDF_REPORT`, `status: BODY_REVIEWED` (targeted actual report-body review) or `DEEP_READ` (broad full document analysis), `read_log.reviewed_at`, `read_log.reader`.
-3. At least **two different substantive body sections** (e.g., product/spec & company competition, regulation & earnings model, tables & counterarguments) and at least two **concrete findings of ≥18 characters each**.
-4. Two or more identifiable report page numbers/chart/table/section locators. Model-generated guesses about page numbers do not count. If the PDF has no reliable page numbers, use original headings or quoted section labels and mark locator type.
-5. Each finding classified and linked to an EVENT/ROLE/COMPANY or rejection; numbers originating in student reports require a factual verification ticket.
-
-Opening only title/TOC/abstract, inferring content from filename, reading a Telegram message or copied summary, using an unread legacy report-corpus audit count, or reading duplicated copies must **not** increment the counter. Log inaccessible scans `UNAVAILABLE` with details. Do not label target-only reading as full-text if not all material body reviewed.
-
-## Batch selection
-Sort by **expected information value**: urgent missing industrial role or material EVENT, thesis novelty, investment sensitivity path, independent evidence, contradictions, then source diversity and recency. Re-rank each NEXT batch after its findings are indexed; no rigid source quotas. A batch of 5–10 may be comfortable for lengthy reports, but this is **never the total research threshold**. The user may ask NEXT 15/20/30; honor as many as can actually be substantively read, checkpoint progress, and state completed count. If a batch request exceeds execution capacity, mark remaining still queued rather than silently misrepresenting completion. Do not force the user to guess the right number or repeatedly pick files manually.
-
-## Durable storage
-Persist a private `REPORT_QUEUE_<industry>.json` containing items/read receipts; record every batch's completed IDs, next unread IDs, source-coverage audit and event registry delta. Prefer connected private Google Drive and **verify write/read-back** each batch. If writing is unavailable, provide generated checkpoint JSON (and current status) and tell the user to reattach it to continue. Never claim cross-session continuity from a mere chat summary. Do not upload private collector exports, licensed complete PDF bodies or personal holdings to public GitHub. Public GitHub can hold the generic reader/validator scripts and synthetic fixtures.
-
-## Deduplication & idempotence
-Prefer content SHA256 of the original PDF, otherwise known source report ID / canonical issuer+date+normalized original title. Same pdf in Telegram, Drive and original site = one unique read. A new dated/materially revised report version can count separately only with explicit delta and version identifier. Imported claims from a document don't become independent evidence when repeated by several later reviews.
-
-## Source-specific rules
-Consult `references/source-diversity.md`. Student/KUVIC/SMIC/S.T.A.R. and Korea IR Council reports have high discovery value for obscure firms and the physical value chain but their valuation targets, market-share estimates, sales forecasts and obscure named customer assertions require primary-source check. Telegram text is a discovery/search surface; save source-channel/time/file URL and open the original PDF before counting.
-
-## Event temporal lineage
-Across corpus searches preserve each canonical event's first report, later issuer-specific thesis changes, policy primary source and formal effective/enforcement dates, alternative explanations, and current status. Several analyst reports repeating one EO are not independent official confirmations. Revisit only reports where the legal status changed or meaningful missing product exposure is found.
-
-## Stop condition
-If fewer than 100 genuinely informative distinct reports exist, do not read weak duplicates merely to fill the quota. A smaller corpus may support a conditional completion after coverage and evidence-saturation audit; show its true size and remaining uncertainties. If over 100 are needed to close important gaps, continue. Never fabricate read receipts. Official legal and financial verification are mandatory regardless of report count.
-
-## Priority evaluation
-Read `reading-priority.md` for the two-pass selection rubric, deterministic queue signals, coverage-matrix reassessment and conditional research completion gate. `priority_reason` must explain why opening this PDF can alter HOME, EVENT, company EPS driver, negative case, or verification. A low-value title doesn't become more valuable just because the count is below 100.
-
-## 한글 보고서 명령 (v0.6)
-
-사용자에게는 영어 `CORPUS` 명령어를 요구하지 않는다. `전력기기 보고서 조사 시작해줘`, `다음 중요한 보고서 20개 이어 읽어줘`, `우선순위 다시 정해줘`, `조사 현황 보여줘`, `조사 마무리 검산해줘` 등 자연어를 먼저 제시한다. `references/commands-ko.md`에서 전체 명령/옛 별칭 매핑을 확인한다. 뉴스 검증은 보고서 숫자에 포함하지 않고 `references/news-audit.md`에 별도 보존한다.
+- 중단: 빈칸/모순·중요한 미열람이 여전히 있으면 `진행 중`; 충분히 조사했다면 근거와 한계를 기록해 `핵심 확인 완료`. 작은 자료집이 충분한 경우도 있고 100건 넘게 필요한 경우도 있다.
+- 다음 턴 재개는 **저장 원장 ID, 최종 저장 시점, 저장 후 재조회 성공**을 요구한다. 비공개 Drive 또는 접근 허용된 비공개 저장소, 아니면 사용자가 재첨부할 JSON 체크포인트. 공개 GitHub에는 스킬 코드/가상 예시만 보관.
+- `report_queue`에는 실제 조사 이력만. 오프라인 `scripts/report_queue.py`는 정렬·회계 도우미이며 스스로 PDF를 열거나 내용을 검색하지 않는다.
+- 사용자가 요청한 문서 수보다 실제 검토량이 작으면 그만큼만 기록한다. 뉴스/보도자료/공식 법규가 PDF가 아니어도 판단에 중요하면 사용하고 PDF 수에 포함하지 않는다.

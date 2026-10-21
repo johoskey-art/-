@@ -1,39 +1,26 @@
-# CANONICAL EVENT RESEARCH + TRANSMISSION v0.3
+# EVENT 계보·실적 전이·뉴스 반증 — v0.7
 
-## Event-led discovery
-Search for catalysts **before** deriving investor-facing EVENT names. The primary artifact is a canonical event register, not a story list. Sources are layered:
-- L0: law/regulatory text, official implementing agencies, regulator guidance, filings/contracts, actual customer procurement.
-- L1: dated independent corporate IR/product business evidence and major customer/supplier disclosures.
-- L2: historical and current brokerage/industry analysis; keep each issuer's distinct *inference* with dates and distinguish shared original evidence.
-- L3: news/secondary/commentary and model-derived conditional inferences. A quotation of L0 within an L2 paper is not itself a separate independent L0 source.
+## 이벤트를 먼저 발굴
 
-## Event ID and claim ledger
-Canonical event ID examples: `US_EO_14421_20260826` and `US_FCC_INVERTER_COVERED_LIST_20260728` (these are **different** possible events; only include verified IDs and dates). Store aliases/misquotes for retrieval without accepting them as truth. Source claim tuple: (event ID, exact assertion, fact|analyst_interpretation|model_inference|contradiction, original source, issuer, report date, target product, geography, stage, confidence, claim status, cited section). Preserve first seen, last verified, and superseded claims.
+오래된 보고서 → 정책/업계 원문 → 새로운 기업 IR/공시 → 현재 여러 증권사 해석을 연결한다. 하나의 사건에 ID, 발생/발효일, 법적·기술적 적용 범위, 구현 단계, 처음 언급한 자료, 현재 상태, 상충하는 전망과 예상 뒤집힘 조건을 기록한다. 여러 보고서가 같은 원문 하나를 재인용했다면 여러 독립 확증으로 세지 않는다. 최신 보고서에서 누락됐다는 이유만으로 과거 EVENT를 지우지 않는다.
 
-## Policy adjudication — exact gating
-For EACH regulation verify:
-1. Official law/order identifier, issue date, current status (proposed vs signed vs effective vs enforcement).
-2. The explicit physical system jurisdiction and item list (e.g., utility/grid-connected inverter vs rack BBU).
-3. Prohibited transaction criteria: country-of-manufacture, covered party ownership/control, actual risk finding, import/installation/retrofit distinction, exceptions and geography.
-4. Who enforces, implementation deadlines and whether secondary rulemaking/agency determinations are outstanding.
-5. Which direct products and component supply chains are affected vs merely discussed by analysts.
-6. Alternative interpretation, substitutes, project deferrals, US-made-but-foreign-controlled trade-offs, and contradictory cases.
-Never convert `may prohibit certain transactions` into `all Chinese or foreign equipment banned immediately`. The 2026 US bulk-power grid EO is **14421** (not 14420 in some older derivative notes), and addresses identified bulk-power equipment; do not assume all behind-the-meter server BBUs automatically qualify. Check original text and current follow-through each run.
+## 일차 출처부터
 
-## Beneficiary / non-beneficiary matrix
-For each candidate company×product create a conditional path:
-`regulatory scope -> displaced incumbent or incremental customer need -> eligible replacement / actual supply contract -> supply availability & certification -> revenue timing & price/mix -> operating margin/EPS/FCF`.
-Capture signs and tiers: DIRECT_CONFIRMED, CONDITIONAL_DIRECT, INDIRECT_UPSTREAM, INDIRECT_DOWNSTREAM, COMPETITOR_DISADVANTAGE, SUBSTITUTE_BENEFIT, NO_DOCUMENTED_EXPOSURE, UNCERTAIN. Separate actual observed contracts from investor/analyst narrative and explain why a headline winner might fail to capture profit. Distinguish regulatory scope from product availability. Evaluate small-caps and adjacent-sector names, not just existing HOME firms.
+- **공식 원문/공시(L0)**: 정책 ID/예외/범위, 고객 계약, 기업 실제 사업, 교체/집행 단계.
+- **기업/고객 IR(L1)**: 제품·자회사·생산능력·설비투자·검수·공급 진행.
+- **증권사/대학생/한국IR협의회(L2)**: 메커니즘·공통 추세·새 경쟁사·현장 구조·전망 가설. 특히 대학 팀의 숫자·고객 관계는 별도 검산.
+- **뉴스/텔레그램(L3)**: 최신 이슈, 계약·집행 힌트, 리스크 및 반론 발견. 보도 기사 속 공식 발표는 원자료 재확인.
 
-## Multi-analyst thesis clustering
-Group reports by the *same underlying event*; group claims separately by agreement vs disagreement. Track 1) independent sources count, 2) analyst issuers count, 3) relevant date coverage, 4) incremental contribution of each report, 5) contrary evidence. Five brokers referencing one EO are NOT five independent confirmations of the legal text. An independent official correction outranks analyst repetition. A thesis becomes stronger when separate business facts (contract, capacity, product availability) verify the expected transmission, not just when more brokers repeat it.
+## 중간 뉴스는 핵심 가설의 스트레스 테스트
 
-## Release outputs
-1. An EVENT inventory of `ACTIVE`, `WATCH`, `SUPERSEDED`, `REJECTED` plus short reasons; do not delete historical nodes.
-2. Current HOME-relevant EVENT display and related cross-sector secondary paths, with confirmed/contradictory evidence and a next indicator.
-3. A report-corpus audit showing which eras/neighbor sectors/broker theses were searched, which files were not readable, and what assumptions are still held.
-4. A change log: what was known in the past, what newer reports changed, what official sources rejected, why inclusion/beneficiary tier changed.
+- EVENT 후보를 발굴한 다음 수혜기업을 확정하기 전에 **긍정 사례와 반대 증거를 모두 검색**한다: 실제 주문 증가, 공급사 교체, 가격·납기, 고객 반응, 프로젝트 지연/중단, 법 적용 예외, 경쟁사 신규 CAPA.
+- 사건이 **영향 큰 ACTIVE 정책/수익 이벤트**이거나 신규 사실/반증이 생겼다면 최종 출력 전에 시의성 확인. 모든 사소한 EVENT마다 뉴스 두 차례를 의무 수행하지 않음. 변동이 없다는 판정도 검색 기간·출처·반대 질문을 기록.
+- 기사 수와 독립 사실 수를 구분하고 원본 링크·기사 날짜·사건 날짜·법적 적용 범위를 기록. 뉴스로 매출이나 EPS를 확정하지 않는다.
 
-## News stress check (v0.6)
+## 투자가치 전이
 
-After a canonical event has been formed from multi-period reports and primary sources, call `references/news-audit.md` for dated real-world **confirmatory and contradictory** news evidence *before* company-beneficiary assignments. Recheck critical changes before final publication. Save both checkpoints in `news_audits` and distinguish reposts, commentary, primary law, actual customer contracts and market reactions. Missing active-event news search is a HOLD, not proof the EVENT is still valid.
+`원인(정책/규격/수요) → 영향을 받는 제품·구매결정 → 대체 공급 가능성/수주 → Q·P·Mix·Share·가동률·원가 → 매출/OP/EPS/FCF`.
+
+긍정 기업만 나열하지 말고 직수혜, 상류 간접, 하류 간접, 경쟁자 불이익, 비수혜/반대 시나리오를 모두 기록. 실제 고객·계약/공급능력을 갖추지 못했다면 수혜는 조건부. 정책이 특정 BESS/UPS를 규제한다고 서버 랙 BBU를 일괄 규제된다고 말할 수 없다. EO 14420/14421 같은 번호 충돌은 반드시 공식 원문 검증 후 정정하고 과거 자료의 오기 기록은 보존한다.
+
+원장 필드는 기존 `event_registry`, `news_audits`를 활용한다. 새 `news_audits`는 영향이 높은 사건에 1차 CHECKED/OPEN, 필요한 최신 추가 검증 시 2차 기록. 반증·독립 출처·미확인·다음 지표를 기록; 구조 검사만으로 진위를 판정하지 않는다.

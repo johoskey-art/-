@@ -1,33 +1,20 @@
-# Role-based discovery & mandatory coverage audit (v0.2)
+# 기업과 HOME 조립 — v0.7
 
-The objective is not a small elegant list of widely covered leaders, nor a mechanically large watchlist. A product role is *not researched* until comparable public companies and meaningful challengers have been searched for at multiple sizes and geographies. Missing coverage is a research HOLD, not evidence that no firms exist.
+## 양방향 탐색
 
-## Discovery sequence
+**산업 역할 → 기업:** 제품·설치 위치·구매결정·가격/수요 동인이 비슷한 글로벌 대장, 국내 소형/중형, 해외 전문기업을 찾는다. 한 칸에 2~6종목을 맞추기 위한 인위적 제외 금지. 구조적으로 중요한 기업도 CORE/STRUCTURAL/SIGNAL/OPTION으로 노출 강도를 구분한다. **회사 → 산업 역할:** 선정한 기업의 실제 제품·자회사·계약 상대·공급/제조/유통 지위를 역으로 확인한다. 제품별 의미 있는 경제적 노출이 있으면 둘 이상의 HOME에 배치한다.
 
-1. Load previous industry HOME/MASTER, explicit inclusion/exclusion, previous candidate and exclusion logs. Preserve stable groups.
-2. Read recent domestic **and foreign** industry research, industry-body publications, and global leader IR / annual reports. Use report graphs and product comparisons to form focused questions. No sell-side coverage is required for a company to qualify.
-3. Build an initial **product and economic-role** map: upstream inputs, equipment/enablers, finished equipment, integration/installation, distribution/customer; include substitutes and branches. Do not treat themes/technologies/regions as same-level HOME products.
-4. For **each material existing and discovered product HOME**, execute and document four discovery tracks:
-   - `GLOBAL_LEADERS`: global leaders / pure plays / directly competing incumbents; official filings and product catalogs.
-   - `DOMESTIC_SMALL_MID`: smaller and mid-cap domestic specialists, recent contract winners, niche manufacturers, suppliers and relevant listed subsidiaries. **Do not use high capitalization or analyst coverage as an inclusion precondition.**
-   - `FOREIGN_SPECIALISTS`: small and mid-cap overseas names, Taiwan/Japan/China/U.S. niche peers, second-tier challengers, global competitors and substitutes.
-   - `INCUMBENT_CROSS_PRODUCT`: for **every discovered company**, review its *other important sellable product lines*, subsidiaries, channel/sales/distribution/supply contracts, and recheck whether it belongs in an additional HOME. A company's original HOME does not forbid other credible positions.
-5. Search each track with role-led product keywords, local naming variants, competitor/customer IR, distributor/installation networks, project award announcements, technical catalogs and filings. Repeat only when a meaningful role is unrepresented or a new source changes the underlying economics. Keep query/method, date, evidence refs, candidates and disposition.
-6. For product exposures distinguish `MANUFACTURER`, `SUPPLIER`, `DISTRIBUTOR`, `INTEGRATOR`, `INSTALLER`, `SERVICE`, `OTHER`. A listed channel entity with a disclosed supply contract may have meaningful earnings exposure *without owning production*. Do not incorrectly label it a manufacturing peer. A group may include a differentiated distributor/supplier where useful, with role annotated.
-7. Investigate every candidate's product, direct customer/end market, commercial stage, economics and listing. Distinguish primary company revenue from a small product option; verified existence is not proof of high EPS sensitivity. Record inclusion, hold, exclusion with source and reason.
-8. Close each role audit only after major material roles, global and local rivals, domestic small/mid, foreign specialists, subsidiary/channel connections and alternatives have been considered. The outcome may be `NO_MATCH_FOUND` (documented search) or `NOT_APPLICABLE` (reasoned), never silent omission. If new searches add no economically differentiated names, stop. No arbitrary company-count target.
+## 포함/제외 근거
 
-## Mandatory coverage output
+- 사업이 현재 유지되는가? 매각, 조직개편, 티커 변경 확인.
+- 실제 제조사/공급사/인티그레이터/유통사/최종 고객은 누구인가? 공시/카탈로그/IR에서 제품·역할 검산.
+- 매출 비중, 수주 규모, 고객수준, 향후 증가 규모가 명확한가? 확인/추정/옵션을 분리. 계약 한도 != 확정 수주 != 매출.
+- 직접 피어인가, 상류 공급사인가, 단순 동행 테마인가? 동일 가격·수주·설비투자 드라이버가 없는 경우 구분.
+- 발견한 후보는 편입/보류/제외 이유와 출처를 남긴다. 조사하지 않은 역할은 `OPEN`, 찾아보고도 없으면 `NO_MATCH_FOUND`+방법. 소형주 관련 분석 리포트 부족을 편입 제외 이유로 쓰지 않는다.
 
-Produce `coverage_audits[]` per HOME with four research tracks, status `CLOSED` or `OPEN`, and research provenance. Produce `candidates[]` including excluded/held candidates (do not silently drop). Every newly discovered product of an incumbent must appear as a company×product claim and HOME membership **or** as a recorded hold/exclusion with why.
+## 자주 발생한 실수의 회귀 사례
 
-## Two-way audit
-
-- **Role → Company**: who builds/sells/distributes/installs/maintains this product? What mid/small public competitor is missing? Who benefits from an unexpected project/order/spec shift?
-- **Company → Role**: what does each company *actually* sell through subsidiaries, contracts, service/channel roles, and optional businesses? Which second/third HOME would matter economically?
-
-Sample failure mode: a cable maker is already on the list, but its subsidiary is a contractual busway supply/channel participant. A one-HOME-only search may miss that. Review the agreement, contracting entity, manufacturing entity and revenue attribution, then keep cable as primary HOME and add busway exposure only with adequate evidence, marking it as `SUPPLIER` rather than producer.
-
-## Signal and beta-aware candidate review
-
-High *stock beta* is **not** the same as high earnings sensitivity to the industry event. When measurable, capture: market capitalization/float and liquidity (date/source), segment exposure, backlog/order change, incremental sales-to-operating-profit leverage, margin, pricing power, and customer concentration. Mark speculative or unmeasurable values `UNVERIFIED`; never invent quantitative ranks or EPS sensitivities. Micro/small-cap stocks can be CORE, STRUCTURAL, OPTION or SIGNAL based on actual **company×product** evidence.
+- 가온전선 케이블 주사업 + 미국 자회사의 버스덕트 공급 계약: 공급 경로 확인되면 `SUPPLIER`로 중복 HOME 가능하지만 제조사가 되지는 않음.
+- BTM/데이터센터: Generac 같은 발전·전력관리 사업을 누락하지 않으며 ESS 배터리 회사로 오분류하지 않음.
+- 반도체 기판 프로젝트: 전공정 테스트·소켓 종목을 범위 밖이라고 했으면 편입 금지.
+- 부품·완제품, 장비 CAPA/사업부 매출/전사 가동률, 인증·고객 샘플·양산/매출 등 단계 혼동 금지.

@@ -1,7 +1,7 @@
-## v0.4.0 — 100 substantive PDF reports across resumable sessions
-- `CORPUS START`, `CORPUS NEXT N [SOURCE]`, `CORPUS STATUS`, `CORPUS FINALIZE`.
-- 100 UNIQUE substantively body-reviewed PDF reports required before a comprehensive research claim; real read receipts, deduplication, source mix and continuity across sessions.
-- Global/public/Telegram original attachments/KUVIC/SMIC/S.T.A.R./KIRS added to discovery; source-dependent numerical validation.
+## v0.7 — 정보가치 중심 조사 및 간단 사용법
+- 두 가지 기본 자연어 요청: `산업지도 만들어줘/최신화해줘`, `계속 조사해줘`. 세부 지시를 사용자가 외우지 않음.
+- 100건은 선택적 목표이지 통과 기준이 아님. 후속 보고서를 점수와 검증 공백에 따라 선정하고 비공개 읽기 원장을 재확인.
+- 관련한 외부/텔레그램 원본/KUVIC/SMIC/S.T.A.R./KIRS 자료를 필요에 따라 선택하고 숫자/계약은 공식 자료로 검산.
 - Offline research queue, source diversity audit, v0.4 validator warnings for uncompleted corpus.
 
 # Acceptance tests BEFORE treating skill as production ready
@@ -33,4 +33,4 @@ Run `python -m unittest discover -s tests -v` and `python scripts/validate_maste
 
 - `@Industry Watchlist Builder` selected in chat, user says `전력기기 다음 중요한 보고서 20개 읽어줘` → map to the same resumable unread priority queue as legacy `CORPUS NEXT 20 PRIORITY`; no requirement to type English.
 - `뉴스로 전력기기 내러티브·리스크 검증해줘` → search independent news and original primary events, both confirming/contrary, distinguish reposts, production vs orders vs earnings, update event registry with dated results.
-- For important active canonical EVENT with no `PRE_BENEFICIARY` or `PRE_RELEASE`, v0.6 validator emits `NEWS_AUDIT_HOLD`. A Telegram forward alone is insufficient as original source validation. Two checkpoints validated structurally but not proof external live news was fetched.
+- v0.7은 고중요 EVENT만 1차 뉴스 반증을 요구하고, 최종 재확인은 새로운 변동·오래된 확인·사용자 요청에 따라 선택한다. 텔레그램 전언만으로는 실제 계약을 인증하지 않는다.

@@ -31,11 +31,12 @@ def inspect(data):
     gids = {g.get('id') for g in groups}
     sids = {s.get('id') for s in sources}
     schema = str(data.get('schema_version', '0.1'))
-    v3 = schema.startswith(('0.3', '0.4', '0.5', '0.6'))
-    v4 = schema.startswith(('0.4', '0.5', '0.6'))
-    v5 = schema.startswith(('0.5','0.6'))
+    v3 = schema.startswith(('0.3', '0.4', '0.5', '0.6', '0.7'))
+    v4 = schema.startswith(('0.4', '0.5', '0.6', '0.7'))
+    v5 = schema.startswith(('0.5','0.6','0.7'))
     v6 = schema.startswith('0.6')
-    v2 = schema.startswith(('0.2', '0.3', '0.4', '0.5', '0.6'))
+    v7 = schema.startswith('0.7')
+    v2 = schema.startswith(('0.2', '0.3', '0.4', '0.5', '0.6', '0.7'))
     for label, arr in [('company',companies),('group',groups),('source',sources),('event',events)]:
         keys=[x.get('id') for x in arr]
         if any(not k for k in keys): errors.append(f'{label}: missing id')
@@ -61,7 +62,7 @@ def inspect(data):
         if g.get('kind')!='HOME': errors.append(f'{k}: invalid kind (HOME required)')
         if not g.get('name'): errors.append(f'{k}: missing product/role name')
         if len(members)!=len(set(members)): errors.append(f'{k}: duplicated company')
-        if len(members)>6: warnings.append(f'{k}: {len(members)} companies; split only if economics differ')
+        if len(members)>6 and not v7: warnings.append(f'{k}: {len(members)} companies; split only if economics differ')
         if not members: warnings.append(f'{k}: empty group')
         for k2 in members:
             if k2 not in cids: errors.append(f'{k}: unknown company {k2}')
@@ -148,7 +149,8 @@ def inspect(data):
                     warnings.append(f'COVERAGE {gid}/{track}: not applicable without a reason')
                 for sid in s.get('source_ids',[]):
                     if sid not in sids: errors.append(f'COVERAGE {gid}/{track}: unknown source_id {sid}')
-            for track in TRACKS-set(searches):
+            required_tracks=(TRACKS if not v7 or row.get('materiality')=='HIGH' else {'DOMESTIC_SMALL_MID','INCUMBENT_CROSS_PRODUCT'})
+            for track in required_tracks-set(searches):
                 warnings.append(f'COVERAGE {gid}: unperformed {track} search')
         for gid in gids-set(bygroup):
             warnings.append(f'COVERAGE {gid}: missing group audit; peer completeness cannot be claimed')
@@ -260,8 +262,8 @@ def inspect(data):
             if any(not i for i in ids) or len(ids)!=len(set(ids)):
                 errors.append('PDF100: invalid or duplicate report record IDs')
             target=queue.get('target_unique_body_reviewed',0)
-            if not isinstance(target,int) or target<1:
-                warnings.append('CORPUS: expected target must be a positive integer (100 is an aspiration, not a quality pass)')
+            if not isinstance(target,int) or target<0 or (target==0 and not v7):
+                warnings.append('CORPUS: target must be a nonnegative integer (v0.7 permits no target)')
             elif not v5 and target<100:
                 warnings.append('PDF100: comprehensive industry audit target must be >=100 unique body-reviewed PDF reports')
             else:
@@ -317,9 +319,15 @@ def inspect(data):
             if not a.get('query_or_method') or not a.get('as_of'):
                 warnings.append(f'SOURCE-MIX {family}: search method/date missing')
             if a.get('status')!='SEARCHED':
-                warnings.append(f'SOURCE-MIX {family}: source family not searched or unavailable; research coverage HOLD')
-        for family in required-set(found):
-            warnings.append(f'SOURCE-MIX: unsearched source family {family}')
+                if not v7 or (a.get('status') in {'OPEN','UNAVAILABLE'} and a.get('critical',False)):
+                    warnings.append(f'SOURCE-MIX {family}: source family not searched or unavailable; research coverage HOLD')
+                elif v7 and a.get('status')=='NOT_APPLICABLE' and not a.get('reason'):
+                    warnings.append(f'SOURCE-MIX {family}: missing reason for NOT_APPLICABLE')
+        if not v7:
+            for family in required-set(found):
+                warnings.append(f'SOURCE-MIX: unsearched source family {family}')
+        elif not found:
+            warnings.append('SOURCE-MIX: no source-selection audit; choose relevant source families and record omissions')
     # v0.6: news is a stress-test AFTER event-led research and BEFORE beneficiary maps,
     # not a replacement for official documents or issuer IR. Structural inspection only.
     if v6:
@@ -363,6 +371,46 @@ def inspect(data):
             for stage in required_stages:
                 if (eid,stage) not in observed:
                     warnings.append(f'NEWS_AUDIT_HOLD {eid}: missing {stage} news narrative stress test')
+    # v0.7 adaptive news gate: one sourced contrarian check for high-impact EVENTs.
+    # A second check is required ONLY when material news changed or a high event
+    # is explicitly stale/needs a refresh. Legacy 0.6 two-stage behavior remains.
+    if v7:
+        rows=data.get('news_audits',[])
+        if not isinstance(rows,list):
+            errors.append('NEWS-AUDIT: news_audits must be an array')
+            rows=[]
+        ids={r.get('id') for r in data.get('event_registry',[])}
+        seen=set()
+        for i,row in enumerate(rows):
+            eid=row.get('event_id');stage=row.get('stage','PRE_BENEFICIARY')
+            ref=f'NEWS-AUDIT[{i}] {eid}/{stage}'
+            if eid not in ids:errors.append(f'{ref}: unknown event id')
+            if stage not in {'PRE_BENEFICIARY','PRE_RELEASE'}:errors.append(f'{ref}: unsupported stage')
+            if (eid,stage) in seen:errors.append(f'{ref}: duplicate event/stage audit')
+            seen.add((eid,stage))
+            if row.get('status') not in {'CHECKED','OPEN','NOT_APPLICABLE'}:
+                warnings.append(f'{ref}: invalid status')
+            if row.get('status')=='CHECKED':
+                for name in ('checked_at','query_or_method','source_ids','positive_signal','negative_signal','narrative_delta','next_indicator'):
+                    if not row.get(name):warnings.append(f'{ref}: missing {name}')
+                if row.get('primary_verification') not in {'VERIFIED','PARTIAL','HOLD'}:
+                    warnings.append(f'{ref}: primary verification status missing')
+                for sid in row.get('source_ids',[]):
+                    if sid not in sids: errors.append(f'{ref}: unknown source_id {sid}')
+            elif row.get('status') in {'OPEN','NOT_APPLICABLE'} and not row.get('reason'):
+                warnings.append(f'{ref}: pending/not applicable requires reason')
+        for event in data.get('event_registry',[]):
+            eid=event.get('id')
+            if event.get('status') not in {'ACTIVE','WATCH'}:continue
+            high=event.get('impact_level')=='HIGH' or event.get('materiality')=='HIGH' or event.get('news_required') is True
+            if not high:continue
+            primary=next((r for r in rows if r.get('event_id')==eid and r.get('stage','PRE_BENEFICIARY')=='PRE_BENEFICIARY'),None)
+            if primary is None or primary.get('status')=='OPEN':
+                warnings.append(f'NEWS_AUDIT_HOLD {eid}: high-impact EVENT has no completed contrarian source check')
+            if event.get('needs_news_refresh') is True:
+                new=next((r for r in rows if r.get('event_id')==eid and r.get('stage')=='PRE_RELEASE'),None)
+                if new is None or new.get('status')!='CHECKED':
+                    warnings.append(f'NEWS_AUDIT_HOLD {eid}: event changed; news refresh required')
     return errors,warnings
 
 
@@ -401,6 +449,7 @@ def audit_summary(data, errors, warnings):
         'canonical_events':len(data.get('event_registry',[])),
         'news_audit_checkpoints':len(data.get('news_audits',[])),
         'errors':errors,'holds_or_warnings':warnings,
+        'structural_gate_passed': len(errors)==0 and len(warnings)==0,
         'research_coverage_passed': len(errors)==0 and len(warnings)==0 and str(data.get('schema_version','')).startswith(('0.3','0.4','0.5','0.6')),
         'external_fact_check':'NOT_PERFORMED_BY_THIS_SCRIPT',
         'broker_import_check':'NOT_PERFORMED_BY_THIS_SCRIPT'
