@@ -6,6 +6,7 @@ sys.path.insert(0,str(ROOT/'scripts'))
 from validate_master import inspect,render,audit_summary
 OLD=json.loads((ROOT/'examples/electronics-minimal-master.json').read_text(encoding='utf-8'))
 NEW=json.loads((ROOT/'examples/role-coverage-synthetic-master-v0.2.json').read_text(encoding='utf-8'))
+EVENT_NEW=json.loads((ROOT/'examples/event-research-synthetic-master-v0.3.json').read_text(encoding='utf-8'))
 
 class TestValidator(unittest.TestCase):
     def test_new_synthetic_structural_pass(self):
@@ -57,5 +58,37 @@ class TestValidator(unittest.TestCase):
         self.assertTrue(any('causal bridge' in v for v in inspect(x)[0]))
     def test_company_first(self):
         self.assertTrue(render(NEW).startswith('Fictional Cable SupplyCo'))
+
+class TestEventResearch(unittest.TestCase):
+    def test_event_archive_pass_when_documented(self):
+        e,w=inspect(EVENT_NEW);self.assertEqual((e,w),([],[]))
+        self.assertTrue(audit_summary(EVENT_NEW,e,w)['research_coverage_passed'])
+    def test_missing_historical_window_not_certified(self):
+        x=copy.deepcopy(EVENT_NEW)
+        x['report_corpus_audit']=[q for q in x['report_corpus_audit'] if q['axis']!='HISTORICAL']
+        e,w=inspect(x)
+        self.assertTrue(any('missing search axis HISTORICAL' in a for a in w))
+        self.assertFalse(audit_summary(x,e,w)['research_coverage_passed'])
+    def test_missing_cross_sector_audit(self):
+        x=copy.deepcopy(EVENT_NEW)
+        x['report_corpus_audit']=[q for q in x['report_corpus_audit'] if q['axis']!='CROSS_SECTOR']
+        self.assertTrue(any('CROSS_SECTOR' in a for a in inspect(x)[1]))
+    def test_no_primary_policy_source_is_hold(self):
+        x=copy.deepcopy(EVENT_NEW);x['event_registry'][0]['primary_source_ids']=[]
+        self.assertTrue(any('primary document unverified' in a for a in inspect(x)[1]))
+    def test_orphan_event_display_is_hold(self):
+        x=copy.deepcopy(EVENT_NEW);x['events'][0]['registry_id']='NOT-FOUND'
+        self.assertTrue(any('missing linkage to a canonical' in a for a in inspect(x)[1]))
+    def test_same_report_repeated_but_nothing_reviewed(self):
+        x=copy.deepcopy(EVENT_NEW);x['report_corpus_audit'][0]['unique_reviewed_count']=0
+        self.assertTrue(any('no unique source reviewed' in a for a in inspect(x)[1]))
+    def test_regulation_number_typo_flagged(self):
+        x=copy.deepcopy(EVENT_NEW);x['event_registry'][0]['id']='US_EO_14420_20260826'
+        x['events'][0]['registry_id']='US_EO_14420_20260826'
+        self.assertTrue(any('14420/14421 confusion' in a for a in inspect(x)[1]))
+    def test_empty_event_registry_not_certified(self):
+        x=copy.deepcopy(EVENT_NEW);x['event_registry']=[]
+        e,w=inspect(x);self.assertTrue(any('missing canonical event ledger' in a for a in w))
+        self.assertFalse(audit_summary(x,e,w)['research_coverage_passed'])
 
 if __name__=='__main__':unittest.main()

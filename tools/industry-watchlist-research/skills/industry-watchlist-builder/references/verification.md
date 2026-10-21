@@ -22,3 +22,10 @@
 6. **Others**: divested businesses, obsolete tickers, out-of-scope semiconductor tests, FC-BGA primary/entrant contrast, aggregate-vs-product utilization, export syntax not established.
 
 `python scripts/validate_master.py audit <master.json>` prints a JSON structural coverage report. `validate <master.json> --strict` exits with code 3 on outstanding issues. A structural pass does **not** certify business facts, instrument trading status or live brokers.
+
+## EVENT completeness gate (v0.3)
+- `report_corpus_audit` must document HISTORICAL, CURRENT, MULTI_ISSUER and CROSS_SECTOR metadata/skim/deep-read work; an incomplete topic/year/sector window is OPEN/HOLD, not no-result.
+- `event_registry` must list researched event roots, source lineage, confirmed vs analyst vs inferred claims, product/legal scope, status, first_seen, next indicator, contradictory case, affected companies and excluded/non-beneficiaries. A final EVENT does not automatically prove historical coverage.
+- Legal identifiers must be matched to authoritative sources; do not silently inherit EO 14420 when controlling primary text is EO 14421. Multiple broker repeats of an erroneous identifier do not prove consensus.
+- Distinguish BESS, critical-infrastructure UPS and rack-level BBU; specific regulation may not cover all three. `UNKNOWN_SCOPE` blocks automatic direct benefit labeling.
+- Script audit can verify presence and internal consistency of these fields, but **cannot prove** that external reports were read or that beneficiaries truly capture profit.

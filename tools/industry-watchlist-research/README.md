@@ -1,29 +1,26 @@
-# Industry Watchlist Builder — ChatGPT plugin source
+# Industry Watchlist Builder — ChatGPT Plugin Source (v0.3.0)
 
-Version **0.2.0** of the private ChatGPT skill-plugin, stored for reproducibility and revision history. **GitHub hosting is not installation**.
+Private [Industry Watchlist Builder plugin](https://chatgpt.com/plugins/plugins_6ad7f51ac7448191a4b84bf5d859d33e). This public GitHub folder is for version control, not ChatGPT installation.
 
-- ChatGPT plugin: https://chatgpt.com/plugins/plugins_6ad7f51ac7448191a4b84bf5d859d33e
-- [Skill instructions](skills/industry-watchlist-builder/SKILL.md)
-- [v0.2 changelog](skills/industry-watchlist-builder/CHANGELOG.md)
-- [Discovery / small-cap / cross-product protocol](skills/industry-watchlist-builder/references/discovery.md)
-- [Offline validator](skills/industry-watchlist-builder/scripts/validate_master.py)
-- [Synthetic cross-product example](skills/industry-watchlist-builder/examples/role-coverage-synthetic-master-v0.2.json)
+## v0.3.0: historical EVENT discovery and research provenance
 
-## v0.2 additions
-- Four discovery tracks for each HOME: global leaders; domestic small/mid-caps; foreign specialists; incumbent cross-product and supply/channel review
-- Manufacturer vs supplier/distributor distinctions and secondary HOME economic roles
-- Evidence-bound candidate INCLUDED/EXCLUDED/HOLD log
-- Offline QA shows incomplete industry research, instrument lookup holds, and placeholder claims
-- 14 offline structural tests; **not** proof of completeness or trading compatibility
+- [SKILL.md](skills/industry-watchlist-builder/SKILL.md) — event discovery is mandatory *before* EVENT beneficiaries are selected.
+- [Report corpus](skills/industry-watchlist-builder/references/report-corpus.md) — two-pass Drive metadata indexing, date and cross-sector coverage, duplicate detection, selective deep reading, resumable audit.
+- [Canonical EVENT ledger](skills/industry-watchlist-builder/references/event-research.md) — source hierarchy, independent report theses, disagreements, first occurrence, date, legal scope, direct/indirect/negative benefit paths.
+- [Offline validator](skills/industry-watchlist-builder/scripts/validate_master.py) — missing historic/current/multi-issuer/cross-sector audit, policy source, registry links, unresolved gaps, and v0.2 firm coverage checks.
+- [Synthetic v0.3 example](skills/industry-watchlist-builder/examples/event-research-synthetic-master-v0.3.json) — **fictional** regression fixture with no user private sources.
 
-## Local test commands
+## Commands
 ```bash
 cd skills/industry-watchlist-builder
 python -m unittest discover -s tests -v
-python scripts/validate_master.py audit <master.json>
-python scripts/validate_master.py validate <master.json> --strict
+python scripts/validate_master.py audit path/to/master.json
+python scripts/validate_master.py validate path/to/master.json --strict
 ```
 
-**Privacy:** This is a public code archive. Do not push private report text, account details, positions, or nonpublic documents. The author email field is intentionally omitted from public manifests; the private ChatGPT plugin retains its own metadata.
+**Validation:** 22 structural Python tests passed on 2026-10-21. Passing tests do not prove that a live report catalog is complete, an EO interpretation is correct, EPS sensitivities are measured or broker instruments are supported.
 
-**Limits:** Independent web/IR searches remain necessary; offline validator cannot identify firms never researched or calculate beta/earnings sensitivity from missing data. Broker files require verified templates and per-instrument lookup.
+**Privacy:** Do not push full private broker report PDFs, authenticated Drive text, user portfolios, credentials or private user info into this public repository. The private plugin author contact is omitted from the public source manifest. Real report-corpus metadata and private evidence must remain in an authorized private location.
+
+## Regression example
+The official U.S. bulk-power security order dated 2026-08-26 uses **EO 14421**; some older secondary analyst notes label it EO 14420. Canonicalization must defer to primary source and preserve erroneous aliases for historical retrieval. BESS, grid-tied inverters, and certain critical UPS systems do not imply that all rack BBU units are automatically regulated.

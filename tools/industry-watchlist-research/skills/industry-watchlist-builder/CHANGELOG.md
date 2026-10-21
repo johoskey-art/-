@@ -1,3 +1,11 @@
+## v0.3.0 (2026-10-21) — event-led historical research
+- Catalogue historical/current broker reports by sector and adjacent-sector before concluding event coverage.
+- Two-pass retrieval (metadata -> novel claims/charts) and resumable corpus evidence; identify duplicates and analyst disagreements.
+- Canonical policy event IDs, original regulatory text priority, implementation conditions and source hierarchy. Explicit EO 14421 vs EO 14420 anti-regression case.
+- Economic impact graph includes conditional and negative exposures, product/geography/ownership/US production distinctions, BBU vs BESS vs critical UPS.
+- v0.3 structural event-coverage QA and offline regression tests.
+- Preserve v0.2 small-cap, cross-product and role-coverage safeguards.
+
 # Industry Watchlist Builder changelog
 
 ## 0.2.0 — coverage and evidence QA

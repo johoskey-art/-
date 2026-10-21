@@ -30,7 +30,8 @@ def inspect(data):
     gids = {g.get('id') for g in groups}
     sids = {s.get('id') for s in sources}
     schema = str(data.get('schema_version', '0.1'))
-    v2 = schema.startswith('0.2')
+    v3 = schema.startswith('0.3')
+    v2 = schema.startswith(('0.2', '0.3'))
     for label, arr in [('company',companies),('group',groups),('source',sources),('event',events)]:
         keys=[x.get('id') for x in arr]
         if any(not k for k in keys): errors.append(f'{label}: missing id')
@@ -171,6 +172,74 @@ def inspect(data):
             warnings.append('QA_HOLD: broker search is pending but no structured hold register exists')
     else:
         warnings.append('LEGACY_SCHEMA: v0.1 has no mandatory coverage/candidate gates; zero errors is NOT a discovery pass')
+
+    # v0.3: inspect whether a defensible EVENT research trail exists; not a content truth test.
+    if v3:
+        axes={'HISTORICAL','CURRENT','MULTI_ISSUER','CROSS_SECTOR'}
+        audit=data.get('report_corpus_audit',[])
+        seen=set()
+        if not audit: warnings.append('EVENT-CORPUS: no historical/multi-issuer/cross-sector report discovery audit')
+        for i,row in enumerate(audit):
+            key=row.get('axis')
+            if key not in axes: errors.append(f'EVENT-CORPUS[{i}]: unknown axis {key}')
+            elif key in seen: errors.append(f'EVENT-CORPUS: duplicate axis {key}')
+            seen.add(key)
+            status=row.get('status')
+            if status not in {'SEARCHED','OPEN','NOT_APPLICABLE'}: warnings.append(f'EVENT-CORPUS {key}: missing search status')
+            if status=='OPEN': warnings.append(f'EVENT-CORPUS {key}: unresolved report search')
+            if status=='NOT_APPLICABLE' and not row.get('reason'): warnings.append(f'EVENT-CORPUS {key}: NOT_APPLICABLE without reason')
+            if not row.get('query_or_method') or not row.get('as_of') or not row.get('range_or_scope'):
+                warnings.append(f'EVENT-CORPUS {key}: missing search method, timestamp or scope')
+            if status=='SEARCHED':
+                if not row.get('source_ids'): warnings.append(f'EVENT-CORPUS {key}: no source evidence from search')
+                if not isinstance(row.get('catalogued_count'),int) or row['catalogued_count']<1:
+                    warnings.append(f'EVENT-CORPUS {key}: no catalogued items')
+                if not isinstance(row.get('unique_reviewed_count'),int) or row['unique_reviewed_count']<1:
+                    warnings.append(f'EVENT-CORPUS {key}: no unique source reviewed')
+                if isinstance(row.get('catalogued_count'),int) and isinstance(row.get('unique_reviewed_count'),int) and row['unique_reviewed_count']>row['catalogued_count']:
+                    errors.append(f'EVENT-CORPUS {key}: unique_reviewed_count > catalogued_count')
+                if row.get('remaining_questions'): warnings.append(f'EVENT-CORPUS {key}: residual questions HOLD')
+            for sid in row.get('source_ids',[]):
+                if sid not in sids: errors.append(f'EVENT-CORPUS {key}: unknown source {sid}')
+        for axis in axes-seen: warnings.append(f'EVENT-CORPUS: missing search axis {axis}')
+        registry=data.get('event_registry',[])
+        if not registry: warnings.append('EVENT-REGISTRY: missing canonical event ledger; EVENT completeness untestable')
+        rids=[e.get('id') for e in registry]
+        if any(not x for x in rids) or len(rids)!=len(set(rids)): errors.append('EVENT-REGISTRY: missing or duplicate canonical id')
+        registered=set(rids)
+        for row in registry:
+            eid=row.get('id');status=row.get('status')
+            if status not in {'ACTIVE','WATCH','SUPERSEDED','REJECTED'}:
+                warnings.append(f'EVENT-REGISTRY {eid}: missing active/watch/superseded/rejected status')
+            if row.get('category') not in EVENT_CATS: warnings.append(f'EVENT-REGISTRY {eid}: missing/invalid category')
+            if not row.get('first_seen') or not row.get('last_verified'):
+                warnings.append(f'EVENT-REGISTRY {eid}: missing temporal lineage')
+            if not row.get('scope_conditions'):
+                warnings.append(f'EVENT-REGISTRY {eid}: no policy/technical scope conditions')
+            if not row.get('contrary_case'):
+                warnings.append(f'EVENT-REGISTRY {eid}: no contradictory/non-beneficiary case')
+            if not row.get('next_indicator'):
+                warnings.append(f'EVENT-REGISTRY {eid}: no next observable milestone')
+            for sid in row.get('source_ids',[])+row.get('primary_source_ids',[]):
+                if sid not in sids: errors.append(f'EVENT-REGISTRY {eid}: unknown source {sid}')
+            if not row.get('source_ids'): warnings.append(f'EVENT-REGISTRY {eid}: no broker/industry or source trail')
+            if status in {'ACTIVE','WATCH'} and not row.get('primary_source_ids'):
+                warnings.append(f'EVENT-REGISTRY {eid}: primary document unverified')
+            if status in {'ACTIVE','WATCH'} and not row.get('affected_products'):
+                warnings.append(f'EVENT-REGISTRY {eid}: no product scope map')
+            if status in {'ACTIVE','WATCH'} and not row.get('analyst_viewpoints'):
+                warnings.append(f'EVENT-REGISTRY {eid}: no differentiated broker interpretation record')
+            if status in {'ACTIVE','WATCH'} and not row.get('affected_company_ids'):
+                warnings.append(f'EVENT-REGISTRY {eid}: no investor candidate impact screen')
+            for cid in row.get('affected_company_ids',[])+row.get('rejected_company_ids',[]):
+                if cid not in cids: warnings.append(f'EVENT-REGISTRY {eid}: company {cid} not in master (cross-sector? must label)')
+        for e in events:
+            rid=e.get('registry_id')
+            if rid not in registered: warnings.append(f'EVENT {e.get("id")}: missing linkage to a canonical EVENT-REGISTRY id')
+        # Catch a known numbering conflation; a symbolic example, not external law verification.
+        for row in registry:
+            if row.get('id')=='US_EO_14420_20260826':
+                warnings.append('EVENT-REGISTRY: possible EO 14420/14421 confusion; verify original official text')
     return errors,warnings
 
 
@@ -203,8 +272,10 @@ def audit_summary(data, errors, warnings):
         'company_product_claim_count':len(claims),
         'candidate_review_count':len(data.get('candidates',[])),
         'role_coverage_groups':len(data.get('coverage_audits',[])),
+        'report_corpus_search_axes':len(data.get('report_corpus_audit',[])),
+        'canonical_events':len(data.get('event_registry',[])),
         'errors':errors,'holds_or_warnings':warnings,
-        'research_coverage_passed': len(errors)==0 and len(warnings)==0 and str(data.get('schema_version','')).startswith('0.2'),
+        'research_coverage_passed': len(errors)==0 and len(warnings)==0 and str(data.get('schema_version','')).startswith('0.3'),
         'external_fact_check':'NOT_PERFORMED_BY_THIS_SCRIPT',
         'broker_import_check':'NOT_PERFORMED_BY_THIS_SCRIPT'
     }

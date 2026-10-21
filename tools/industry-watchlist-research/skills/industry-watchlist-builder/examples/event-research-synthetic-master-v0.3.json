@@ -1,0 +1,371 @@
+{
+  "schema_version": "0.3",
+  "industry": "SYNTHETIC TEST ONLY: cable / busway product role",
+  "scope": {
+    "exclude_company_ids": []
+  },
+  "sources": [
+    {
+      "id": "SYN-1",
+      "type": "mock_record",
+      "title": "SYNTHETIC ONLY: simulated company product and supply evidence",
+      "as_of": "2026-10-21"
+    },
+    {
+      "id": "SYN-2",
+      "type": "mock_search",
+      "title": "SYNTHETIC ONLY: mocked cross-border discovery searches",
+      "as_of": "2026-10-21"
+    },
+    {
+      "id": "SYN-REG",
+      "type": "official",
+      "title": "Synthetic national inverter safety act (fictional)",
+      "as_of": "2026-01-01",
+      "issuer": "fictional government",
+      "authority_level": "PRIMARY"
+    }
+  ],
+  "companies": [
+    {
+      "id": "TEST:ABC",
+      "name": "Fictional Cable SupplyCo",
+      "market": "TEST",
+      "ticker": "ABC",
+      "role": "CORE",
+      "products": [
+        "Power cable",
+        "Busway supply and contracting"
+      ],
+      "source_ids": [
+        "SYN-1"
+      ],
+      "home_group_ids": [
+        "H-CABLE",
+        "H-BUSWAY"
+      ],
+      "duplicate_reason": "Separate sellable product and contract/channel exposures with distinct profit drivers"
+    },
+    {
+      "id": "TEST:BUS",
+      "name": "Fictional Busway ManufacturingCo",
+      "market": "TEST",
+      "ticker": "BUS",
+      "role": "CORE",
+      "products": [
+        "Busway equipment"
+      ],
+      "source_ids": [
+        "SYN-1"
+      ],
+      "home_group_ids": [
+        "H-BUSWAY"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "H-CABLE",
+      "kind": "HOME",
+      "name": "Power cables",
+      "description": "Power connection cabling",
+      "profit_driver": "Q and contract mix",
+      "companies": [
+        "TEST:ABC"
+      ]
+    },
+    {
+      "id": "H-BUSWAY",
+      "kind": "HOME",
+      "name": "Busway and busduct",
+      "description": "Distribution of high-current power within facilities",
+      "profit_driver": "Installation Q and contract margin",
+      "companies": [
+        "TEST:BUS",
+        "TEST:ABC"
+      ]
+    }
+  ],
+  "company_product_claims": [
+    {
+      "company_id": "TEST:ABC",
+      "product_group_id": "H-CABLE",
+      "product": "Power cable",
+      "business_mode": "MANUFACTURER",
+      "business_stage": "REVENUE",
+      "economic_role": "CORE",
+      "claim_status": "VERIFIED",
+      "claim_specifics": "SYNTHETIC: this company manufactures and invoices its power cables",
+      "profit_mechanism": "Sales volume and qualified-product mix drive operating revenue and margin",
+      "source_ids": [
+        "SYN-1"
+      ],
+      "as_of": "2026-10-21"
+    },
+    {
+      "company_id": "TEST:ABC",
+      "product_group_id": "H-BUSWAY",
+      "product": "Busway contract supply",
+      "business_mode": "SUPPLIER",
+      "business_stage": "ORDER",
+      "economic_role": "STRUCTURAL",
+      "claim_status": "VERIFIED",
+      "claim_specifics": "SYNTHETIC: subsidiary signs a supply contract; another entity makes equipment",
+      "profit_mechanism": "Booked sales and contract margin vary with deliveries; not necessarily manufacturing earnings",
+      "source_ids": [
+        "SYN-1"
+      ],
+      "as_of": "2026-10-21"
+    },
+    {
+      "company_id": "TEST:BUS",
+      "product_group_id": "H-BUSWAY",
+      "product": "Busway equipment",
+      "business_mode": "MANUFACTURER",
+      "business_stage": "REVENUE",
+      "economic_role": "CORE",
+      "claim_status": "VERIFIED",
+      "claim_specifics": "SYNTHETIC: the firm manufactures ready-to-install busway modules",
+      "profit_mechanism": "Product volume and ASP determine business revenue and conversion margin",
+      "source_ids": [
+        "SYN-1"
+      ],
+      "as_of": "2026-10-21"
+    }
+  ],
+  "coverage_audits": [
+    {
+      "group_id": "H-CABLE",
+      "status": "CLOSED",
+      "searches": [
+        {
+          "track": "GLOBAL_LEADERS",
+          "outcome": "SEARCHED",
+          "query_or_method": "mock global cable leaders lookup",
+          "as_of": "2026-10-21",
+          "source_ids": [
+            "SYN-2"
+          ]
+        },
+        {
+          "track": "DOMESTIC_SMALL_MID",
+          "outcome": "SEARCHED",
+          "query_or_method": "mock domestic specialist lookup",
+          "as_of": "2026-10-21",
+          "source_ids": [
+            "SYN-2"
+          ]
+        },
+        {
+          "track": "FOREIGN_SPECIALISTS",
+          "outcome": "SEARCHED",
+          "query_or_method": "mock global niche cable lookup",
+          "as_of": "2026-10-21",
+          "source_ids": [
+            "SYN-2"
+          ]
+        },
+        {
+          "track": "INCUMBENT_CROSS_PRODUCT",
+          "outcome": "SEARCHED",
+          "query_or_method": "mock segment and subsidiary product review",
+          "as_of": "2026-10-21",
+          "source_ids": [
+            "SYN-2"
+          ]
+        }
+      ]
+    },
+    {
+      "group_id": "H-BUSWAY",
+      "status": "CLOSED",
+      "searches": [
+        {
+          "track": "GLOBAL_LEADERS",
+          "outcome": "SEARCHED",
+          "query_or_method": "mock busway global leaders lookup",
+          "as_of": "2026-10-21",
+          "source_ids": [
+            "SYN-2"
+          ]
+        },
+        {
+          "track": "DOMESTIC_SMALL_MID",
+          "outcome": "SEARCHED",
+          "query_or_method": "mock domestic busway channel lookup",
+          "as_of": "2026-10-21",
+          "source_ids": [
+            "SYN-2"
+          ]
+        },
+        {
+          "track": "FOREIGN_SPECIALISTS",
+          "outcome": "SEARCHED",
+          "query_or_method": "mock international busway specialists lookup",
+          "as_of": "2026-10-21",
+          "source_ids": [
+            "SYN-2"
+          ]
+        },
+        {
+          "track": "INCUMBENT_CROSS_PRODUCT",
+          "outcome": "SEARCHED",
+          "query_or_method": "mock cross-role contracting entity review",
+          "as_of": "2026-10-21",
+          "source_ids": [
+            "SYN-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "company_id": "TEST:ABC",
+      "group_id": "H-CABLE",
+      "decision": "INCLUDED",
+      "reason": "SYNTHETIC: existing cable business with direct sales",
+      "source_ids": [
+        "SYN-1"
+      ]
+    },
+    {
+      "company_id": "TEST:ABC",
+      "group_id": "H-BUSWAY",
+      "decision": "INCLUDED",
+      "reason": "SYNTHETIC: supply agreement for independently manufactured busway equipment",
+      "source_ids": [
+        "SYN-1"
+      ]
+    },
+    {
+      "company_id": "TEST:BUS",
+      "group_id": "H-BUSWAY",
+      "decision": "INCLUDED",
+      "reason": "SYNTHETIC: busway manufacturing pure play",
+      "source_ids": [
+        "SYN-1"
+      ]
+    }
+  ],
+  "qa_holds": [],
+  "events": [
+    {
+      "id": "E-BUSWAY",
+      "title": "Busway end-demand expansion",
+      "category": "DEMAND",
+      "companies": [
+        "TEST:BUS",
+        "TEST:ABC"
+      ],
+      "profit_bridge": [
+        "Supply orders rise",
+        "Delivery Q affects sales",
+        "Contract margin affects EPS"
+      ],
+      "next_indicator": "Product deliveries and segment revenue disclosure",
+      "confirmatory": [
+        "Order backlog growth"
+      ],
+      "contradictory": [
+        "Contract cancellation"
+      ],
+      "registry_id": "SYN-POLICY-01"
+    }
+  ],
+  "report_corpus_audit": [
+    {
+      "axis": "HISTORICAL",
+      "status": "SEARCHED",
+      "query_or_method": "fictional catalog query for HISTORICAL",
+      "range_or_scope": "historical/current synthetic fixture",
+      "catalogued_count": 2,
+      "unique_reviewed_count": 1,
+      "deferred_count": 1,
+      "as_of": "2026-10-21",
+      "source_ids": [
+        "SYN-1"
+      ],
+      "remaining_questions": []
+    },
+    {
+      "axis": "CURRENT",
+      "status": "SEARCHED",
+      "query_or_method": "fictional catalog query for CURRENT",
+      "range_or_scope": "historical/current synthetic fixture",
+      "catalogued_count": 2,
+      "unique_reviewed_count": 1,
+      "deferred_count": 1,
+      "as_of": "2026-10-21",
+      "source_ids": [
+        "SYN-1"
+      ],
+      "remaining_questions": []
+    },
+    {
+      "axis": "MULTI_ISSUER",
+      "status": "SEARCHED",
+      "query_or_method": "fictional catalog query for MULTI_ISSUER",
+      "range_or_scope": "historical/current synthetic fixture",
+      "catalogued_count": 2,
+      "unique_reviewed_count": 1,
+      "deferred_count": 1,
+      "as_of": "2026-10-21",
+      "source_ids": [
+        "SYN-1"
+      ],
+      "remaining_questions": []
+    },
+    {
+      "axis": "CROSS_SECTOR",
+      "status": "SEARCHED",
+      "query_or_method": "fictional catalog query for CROSS_SECTOR",
+      "range_or_scope": "historical/current synthetic fixture",
+      "catalogued_count": 2,
+      "unique_reviewed_count": 1,
+      "deferred_count": 1,
+      "as_of": "2026-10-21",
+      "source_ids": [
+        "SYN-1"
+      ],
+      "remaining_questions": []
+    }
+  ],
+  "event_registry": [
+    {
+      "id": "SYN-POLICY-01",
+      "title": "Synthetic regulation scenario (fictional)",
+      "status": "ACTIVE",
+      "first_seen": "2026-01-01",
+      "last_verified": "2026-10-21",
+      "category": "POLICY/STRUCTURE",
+      "affected_products": [
+        "fictional supply cable"
+      ],
+      "primary_source_ids": [
+        "SYN-REG"
+      ],
+      "source_ids": [
+        "SYN-1"
+      ],
+      "analyst_viewpoints": [
+        {
+          "issuer": "fictional research A",
+          "position": "conditional beneficiary",
+          "source_id": "SYN-1"
+        }
+      ],
+      "scope_conditions": [
+        "applies to synthetic eligible grid devices only"
+      ],
+      "contrary_case": "non-compliant fixtures may face rising costs",
+      "next_indicator": "synthetic rulemaking update",
+      "affected_company_ids": [
+        "TEST:ABC"
+      ],
+      "rejected_company_ids": [
+        "TEST:BUS"
+      ]
+    }
+  ]
+}

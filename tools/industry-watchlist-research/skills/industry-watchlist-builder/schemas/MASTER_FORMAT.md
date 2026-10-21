@@ -18,3 +18,12 @@ Keep v0.1 fields `schema_version, industry, scope, companies, groups, events, so
 - `validate` reports outstanding source, cross-product, broker and discovery gaps as HOLD. `audit` emits machine-readable JSON. `validate --strict` returns nonzero for unresolved holds.
 - A master with zero total companies, zero reviewed candidates and empty research logs does not pass as comprehensive discovery.
 - Never use a minimum-stock rule to artificially pad HOME groups; blank roles with documented searches are allowed.
+
+
+## v0.3 addendum — cross-sector EVENT provenance
+Use `schema_version: "0.3"`. Retain all v0.2 fields and add:
+- `report_corpus_audit`: `[{axis, status, query_or_method, range_or_scope, catalogued_count, unique_reviewed_count, deferred_count, as_of, source_ids, remaining_questions}]` for HISTORICAL/CURRENT/MULTI_ISSUER/CROSS_SECTOR. Source counts are actual work performed, not generated defaults.
+- `event_registry`: `[{id, title, status, first_seen, last_verified, category, affected_products, primary_source_ids, source_ids, analyst_viewpoints, contrary_case, scope_conditions, next_indicator, affected_company_ids, rejected_company_ids}]`; unique canonical IDs, plus a separate alias record for incorrect historical numbering.
+- Each displayed `events[]` record links `registry_id` and contains an explicit documented profit pathway and company×product exposure. No `registry_id`, no fully audited display.
+- `sources[]` may add `issuer`, `analyst`, `report_date`, `authority_level`, `independence_cluster`, `section_or_page`, `read_status`, `as_of`, `uri`. Report title alone is not a reviewed claim.
+The event register may contain active and rejected/superseded candidates; only truly high-sensitivity current events render in the compact watchlist.
