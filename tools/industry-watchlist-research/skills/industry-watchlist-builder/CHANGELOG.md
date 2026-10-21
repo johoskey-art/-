@@ -1,3 +1,11 @@
+## v1.0.0 — sector-native source scouting and A/B/C output fidelity (2026-10-21)
+
+- Restores original A value-chain/simple technical explanation, B company×product segmented revenue comparison, C event/thematic momentum as **mandatory first visible result**. HOME/EVENT remain internal fields.
+- Finds sector-specific analysts/Telegram public channels **without user-seeded names**, then recursively expands native-language industry/trade sources, product names, foreign companies and primary IR. Source scouts adapt by region/sector, rather than hardcoding one expert or mandating Taiwan everywhere.
+- Stronger sales/profit heterogeneity: product business share, reporting denominator and dates, production vs sales, peer comparison, customer and EPS drivers; missing actual segment data remains unknown.
+- Explicit failure acceptance checks for shallow headlines-only reports, fixed analyst names and generic company lists.
+- Structural synthetic tests do not imply live access, PDF reading completeness or a guaranteed report depth across every run.
+
 ## 2026-10-21 — v0.9.0
 
 - Report-led THEME/EVENT discovery is now the primary path: sector/theme indepth reports, company deep-dive journalism, and independent technical/industry research form the initial causal thesis.

@@ -3,6 +3,10 @@
 ## Purpose
 Each user invocation must independently generate a **fresh, bounded, cited and decision-usable** industry/EVENT research snapshot, even with no earlier MASTER, queue, saved library, or automation. The user should not need to prime the agent with a policy headline. Report-led discovery is the primary generation method; the six lanes below audit missed categories. Persistence and completion of an editable broker MASTER are **orthogonal** concerns, not preconditions for quality.
 
+## Delivery contract (read before output)
+
+The first visible result must use **A. Industry chain and child-level explanation / B. named global peers with segmented revenue, product/role and earnings differences / C. independently discovered thematic event→earnings transmission**, consistent with `output-contract.md`. Log relevant sector-native-language and discovered analyst/Telegram channels per `source-scout.md`. Generic HOME/EVENT metadata without firm-by-firm economic comparability is not a completed map. Lack of segment financial disclosure is shown as unavailable, never fabricated.
+
 ## Discovery-first quality gate (read before any theme output)
 
 - Did the run search **industry/theme research reports and high-depth company news first**, across both current and historical materials, rather than only recent top headlines or existing MASTER events?
