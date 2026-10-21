@@ -1,3 +1,10 @@
+## 1.0.1 (2026-10-21)
+
+- Existing Oracle→Google Drive Telegram collector made the first discovery source when accessible; new Telegram client/login is unnecessary.
+- Daily TXT/JSON, source URL, channel/message IDs and original PDF path separate source discovery from evidence verification.
+- Auto sector-scoped retrieval and cross-country IR confirmation; channel author names are discovered, not user-supplied.
+- Evidence-readback, dedupe and privacy guards; optional later index sidecar does not modify collector.
+
 ## v1.0.0 — sector-native source scouting and A/B/C output fidelity (2026-10-21)
 
 - Restores original A value-chain/simple technical explanation, B company×product segmented revenue comparison, C event/thematic momentum as **mandatory first visible result**. HOME/EVENT remain internal fields.
