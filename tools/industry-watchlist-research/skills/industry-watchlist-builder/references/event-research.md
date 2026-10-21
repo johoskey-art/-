@@ -33,3 +33,7 @@ Group reports by the *same underlying event*; group claims separately by agreeme
 2. Current HOME-relevant EVENT display and related cross-sector secondary paths, with confirmed/contradictory evidence and a next indicator.
 3. A report-corpus audit showing which eras/neighbor sectors/broker theses were searched, which files were not readable, and what assumptions are still held.
 4. A change log: what was known in the past, what newer reports changed, what official sources rejected, why inclusion/beneficiary tier changed.
+
+## News stress check (v0.6)
+
+After a canonical event has been formed from multi-period reports and primary sources, call `references/news-audit.md` for dated real-world **confirmatory and contradictory** news evidence *before* company-beneficiary assignments. Recheck critical changes before final publication. Save both checkpoints in `news_audits` and distinguish reposts, commentary, primary law, actual customer contracts and market reactions. Missing active-event news search is a HOLD, not proof the EVENT is still valid.

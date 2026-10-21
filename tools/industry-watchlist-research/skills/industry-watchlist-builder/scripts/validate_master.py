@@ -31,10 +31,11 @@ def inspect(data):
     gids = {g.get('id') for g in groups}
     sids = {s.get('id') for s in sources}
     schema = str(data.get('schema_version', '0.1'))
-    v3 = schema.startswith(('0.3', '0.4', '0.5'))
-    v4 = schema.startswith(('0.4', '0.5'))
-    v5 = schema.startswith('0.5')
-    v2 = schema.startswith(('0.2', '0.3', '0.4', '0.5'))
+    v3 = schema.startswith(('0.3', '0.4', '0.5', '0.6'))
+    v4 = schema.startswith(('0.4', '0.5', '0.6'))
+    v5 = schema.startswith(('0.5','0.6'))
+    v6 = schema.startswith('0.6')
+    v2 = schema.startswith(('0.2', '0.3', '0.4', '0.5', '0.6'))
     for label, arr in [('company',companies),('group',groups),('source',sources),('event',events)]:
         keys=[x.get('id') for x in arr]
         if any(not k for k in keys): errors.append(f'{label}: missing id')
@@ -319,6 +320,49 @@ def inspect(data):
                 warnings.append(f'SOURCE-MIX {family}: source family not searched or unavailable; research coverage HOLD')
         for family in required-set(found):
             warnings.append(f'SOURCE-MIX: unsearched source family {family}')
+    # v0.6: news is a stress-test AFTER event-led research and BEFORE beneficiary maps,
+    # not a replacement for official documents or issuer IR. Structural inspection only.
+    if v6:
+        news_audits=data.get('news_audits',[])
+        required_stages={'PRE_BENEFICIARY','PRE_RELEASE'}
+        observed={}
+        active={e.get('id') for e in data.get('event_registry',[]) if e.get('status') in {'ACTIVE','WATCH'}}
+        if not isinstance(news_audits,list):
+            errors.append('NEWS-AUDIT: news_audits must be an array')
+            news_audits=[]
+        for i,row in enumerate(news_audits):
+            eid=row.get('event_id');stage=row.get('stage');status=row.get('status')
+            ref=f'NEWS-AUDIT[{i}] {eid or "?"}/{stage or "?"}'
+            if eid not in {e.get('id') for e in data.get('event_registry',[])}:
+                errors.append(f'{ref}: unknown canonical event ID')
+            if stage not in required_stages:
+                errors.append(f'{ref}: stage must be PRE_BENEFICIARY or PRE_RELEASE')
+            if (eid,stage) in observed:
+                errors.append(f'{ref}: duplicate event/stage audit; update same checkpoint')
+            observed[(eid,stage)]=row
+            if status not in {'CHECKED','OPEN','NOT_APPLICABLE'}:
+                warnings.append(f'{ref}: unknown news audit status')
+            if status in {'OPEN','NOT_APPLICABLE'}:
+                warnings.append(f'{ref}: NEWS_AUDIT_HOLD news checks not completed ({status})')
+                if not row.get('reason'): warnings.append(f'{ref}: HOLD without reason')
+            if status=='CHECKED':
+                for field in ('checked_at','time_window','query_or_method','source_ids','independent_origin_ids',
+                              'positive_signal','negative_signal','narrative_delta','next_indicator'):
+                    if not row.get(field):
+                        warnings.append(f'{ref}: missing {field} for news verification')
+                if row.get('narrative_verdict') not in {'CONFIRMING','CONTRADICTING','MIXED','NO_OBSERVABLE_CHANGE'}:
+                    warnings.append(f'{ref}: invalid narrative verdict')
+                if row.get('primary_verification') not in {'VERIFIED','PARTIAL','HOLD'}:
+                    warnings.append(f'{ref}: missing primary-source verification status')
+                elif row.get('primary_verification')!='VERIFIED':
+                    warnings.append(f'{ref}: NEWS_AUDIT_HOLD original evidence is not fully verified')
+            for sid in row.get('source_ids',[]):
+                if sid not in sids:
+                    errors.append(f'{ref}: unknown source_id {sid}')
+        for eid in active:
+            for stage in required_stages:
+                if (eid,stage) not in observed:
+                    warnings.append(f'NEWS_AUDIT_HOLD {eid}: missing {stage} news narrative stress test')
     return errors,warnings
 
 
@@ -355,8 +399,9 @@ def audit_summary(data, errors, warnings):
         'role_coverage_groups':len(data.get('coverage_audits',[])),
         'report_corpus_search_axes':len(data.get('report_corpus_audit',[])),
         'canonical_events':len(data.get('event_registry',[])),
+        'news_audit_checkpoints':len(data.get('news_audits',[])),
         'errors':errors,'holds_or_warnings':warnings,
-        'research_coverage_passed': len(errors)==0 and len(warnings)==0 and str(data.get('schema_version','')).startswith(('0.3','0.4','0.5')),
+        'research_coverage_passed': len(errors)==0 and len(warnings)==0 and str(data.get('schema_version','')).startswith(('0.3','0.4','0.5','0.6')),
         'external_fact_check':'NOT_PERFORMED_BY_THIS_SCRIPT',
         'broker_import_check':'NOT_PERFORMED_BY_THIS_SCRIPT'
     }

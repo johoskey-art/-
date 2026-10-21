@@ -1,3 +1,10 @@
+## 2026-10-21 — v0.6.0
+
+- User-facing **Korean natural-language commands** are default. All existing English commands remain aliases. Added `references/commands-ko.md` with all task modes and source-filtered research actions.
+- New two-stage, dated **news narrative stress test** after report-derived canonical events but before beneficiary/EPS mapping and again before release. Identify corroborating and contradictory signals, trace original reporting to primary evidence, preserve independent origins and narrative revisions; public-news/Telegram repetitions alone cannot prove sales or policy enforcement.
+- Added `news_audits[]` schema and strict structural HOLD detection for missing/weak PRE_BENEFICIARY or PRE_RELEASE event reviews in v0.6+ MASTER.
+- Maintained v0.5 dynamic PDF prioritization and legacy commands; private checkpoint/read-back remains required for resumable reads.
+
 ## v0.5.0 — Information-value reading priority over PDF count
 - 100 PDFs becomes optional broad research ambition, never a completeness certificate or minimum requirement.
 - Score candidate reports by material role/event gap, new causal mechanism, verifiable facts, earnings bridge, contradiction, relevance, recency and repetition; explicitly mark speculative pre-read rankings.

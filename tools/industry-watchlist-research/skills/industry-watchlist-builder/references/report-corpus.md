@@ -46,3 +46,7 @@ If fewer than 100 genuinely informative distinct reports exist, do not read weak
 
 ## Priority evaluation
 Read `reading-priority.md` for the two-pass selection rubric, deterministic queue signals, coverage-matrix reassessment and conditional research completion gate. `priority_reason` must explain why opening this PDF can alter HOME, EVENT, company EPS driver, negative case, or verification. A low-value title doesn't become more valuable just because the count is below 100.
+
+## 한글 보고서 명령 (v0.6)
+
+사용자에게는 영어 `CORPUS` 명령어를 요구하지 않는다. `전력기기 보고서 조사 시작해줘`, `다음 중요한 보고서 20개 이어 읽어줘`, `우선순위 다시 정해줘`, `조사 현황 보여줘`, `조사 마무리 검산해줘` 등 자연어를 먼저 제시한다. `references/commands-ko.md`에서 전체 명령/옛 별칭 매핑을 확인한다. 뉴스 검증은 보고서 숫자에 포함하지 않고 `references/news-audit.md`에 별도 보존한다.

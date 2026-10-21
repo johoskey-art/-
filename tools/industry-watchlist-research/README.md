@@ -1,18 +1,15 @@
-# Industry Watchlist Builder — v0.5.0
+# Industry Watchlist Builder — v0.6.0
+
 Private ChatGPT plugin: https://chatgpt.com/plugins/plugins_6ad7f51ac7448191a4b84bf5d859d33e
 
 ## What changed
-Research prioritizes the **next most informative PDF**, not a hard 100-report pass threshold. The 100-PDF target remains an optional *breadth ambition*. Coverage gaps, independent facts, decisive dissent, company earnings drivers and expected novelty decide what to read and when to stop.
 
-- [Main instructions](skills/industry-watchlist-builder/SKILL.md)
-- [Reading-priority rubric](skills/industry-watchlist-builder/references/reading-priority.md)
-- [Batch reading and resumption](skills/industry-watchlist-builder/references/report-corpus.md)
-- [Queue selection code](skills/industry-watchlist-builder/scripts/report_queue.py)
-- [v0.5 synthetic regression tests](skills/industry-watchlist-builder/tests/test_priority_v05.py)
+- Korean commands — [한국어 사용법](skills/industry-watchlist-builder/references/commands-ko.md). Mobile ChatGPT @ invocation with plain Korean requests for NEW, UPDATE, AUDIT, EXPORT, corpus START/NEXT/STATUS/FINALIZE, source filtering, and NEWS checks. Legacy English aliases remain.
+- News narrative stress-test — [뉴스 검증 방법](skills/industry-watchlist-builder/references/news-audit.md). Stress-test a report-derived EVENT against confirming/contradictory news and original sources BEFORE beneficiary selection, then recheck news changes before publication.
+- [SKILL.md](skills/industry-watchlist-builder/SKILL.md) — default Korean UX and two checkpoints in the workflow.
+- [Offline validator](skills/industry-watchlist-builder/scripts/validate_master.py) — v0.6 news_audits structure detects missing two-stage audit, risk-search omission, nonverified primary claims, invented source identifiers and duplicate stage records.
+- [Regression tests](skills/industry-watchlist-builder/tests/test_ko_commands_news_v06.py) — combined with earlier tests, 48 offline synthetic tests passed on 2026-10-21.
 
-Commands: `CORPUS START 전력기기 PRIORITY`, `CORPUS NEXT 20 PRIORITY`, `CORPUS RERANK`, `CORPUS STATUS`, `CORPUS FINALIZE`.
+## Quality limitations
 
-## Quality gate
-Actual source-reading receipts, independent policy/source validation, role/event × geography × history × source viewpoint coverage, high-priority unread report assessment and a grounded saturation/stop reason are required. The script scores only **estimated pre-read information value**, not truth or expected stock returns. It cannot read PDFs itself. Even 100 reads do not guarantee a high-quality map. 39 offline synthetic tests passed as of 2026-10-21.
-
-**Privacy:** This is a PUBLIC code repository; do not store user-private PDF text, collector exports, holdings, original reports, authenticated URLs, or credentials here. The private plugin author email is excluded from public manifests. Private queue checkpoints must use the user's authorized private storage with readback verification.
+Offline regression tests validate structure and instructions only, not current news coverage, verified functionality on Android, EPS model accuracy or existence of specific events. Fresh news/primary regulation verification still depends on available tools in a user-initiated run. Korean phrases are natural-language skill intents, not standalone shell commands. Private report text, Telegram collector exports, real reading ledger and accounts must not be put in this public repo. Private author email omitted from the public manifest.

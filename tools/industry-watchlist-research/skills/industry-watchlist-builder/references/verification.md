@@ -29,3 +29,7 @@
 - Legal identifiers must be matched to authoritative sources; do not silently inherit EO 14420 when controlling primary text is EO 14421. Multiple broker repeats of an erroneous identifier do not prove consensus.
 - Distinguish BESS, critical-infrastructure UPS and rack-level BBU; specific regulation may not cover all three. `UNKNOWN_SCOPE` blocks automatic direct benefit labeling.
 - Script audit can verify presence and internal consistency of these fields, but **cannot prove** that external reports were read or that beneficiaries truly capture profit.
+
+## G10 — 뉴스 내러티브 스트레스 테스트 (v0.6)
+
+각 주요 ACTIVE/WATCH 이벤트에서 (1) 수혜기업 매핑 직전 PRE_BENEFICIARY, (2) 최종 배포 직전 PRE_RELEASE를 수행했는지 확인. 양쪽 모두 탐색일, 시간범위, 독립 원본, 긍정·반론/비수혜 탐색, 공식 근거 확인 상태, EVENT 해석 변화와 다음 검증 지표를 기록한다. 기자 기사 수는 증거 수가 아니고 신문 재전재/텔레그램 포워드는 독립 확증이 아니다. 뉴스가 실적·수주 증거가 아니면 Q/P/Mix→EPS 수혜는 조건부. 미확인 상태를 QA HOLD로 표시한다.

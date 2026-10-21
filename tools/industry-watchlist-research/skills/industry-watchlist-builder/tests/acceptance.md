@@ -28,3 +28,9 @@ This document defines intended tests; none is marked passed just by creation of 
 15. **Fact boundary**: no validator score or confidence claim substitutes for externally reading primary sources. Script cannot know which stock is missing if searches were never performed.
 
 Run `python -m unittest discover -s tests -v` and `python scripts/validate_master.py audit <master>`; negative tests are intended to produce explicit HOLDs.
+
+## v0.6 Korean + NEWS tests
+
+- `@Industry Watchlist Builder` selected in chat, user says `전력기기 다음 중요한 보고서 20개 읽어줘` → map to the same resumable unread priority queue as legacy `CORPUS NEXT 20 PRIORITY`; no requirement to type English.
+- `뉴스로 전력기기 내러티브·리스크 검증해줘` → search independent news and original primary events, both confirming/contrary, distinguish reposts, production vs orders vs earnings, update event registry with dated results.
+- For important active canonical EVENT with no `PRE_BENEFICIARY` or `PRE_RELEASE`, v0.6 validator emits `NEWS_AUDIT_HOLD`. A Telegram forward alone is insufficient as original source validation. Two checkpoints validated structurally but not proof external live news was fetched.
