@@ -1,3 +1,10 @@
+## v0.5.0 — Information-value reading priority over PDF count
+- 100 PDFs becomes optional broad research ambition, never a completeness certificate or minimum requirement.
+- Score candidate reports by material role/event gap, new causal mechanism, verifiable facts, earnings bridge, contradiction, relevance, recency and repetition; explicitly mark speculative pre-read rankings.
+- `CORPUS NEXT N PRIORITY` and `CORPUS RERANK` dynamically select diversified next-best documents; store selection reasons and coverage hypotheses.
+- Separate quality completion from report count with coverage matrix, high-value unread checks, batch novelty trace and justified saturation decision.
+- Retain source-diversity, student/KIRS/Telegram provenance safeguards and prior enterprise/company/home regression tests.
+
 ## v0.4.0 — 100 substantive PDF reports across resumable sessions
 - `CORPUS START`, `CORPUS NEXT N [SOURCE]`, `CORPUS STATUS`, `CORPUS FINALIZE`.
 - 100 UNIQUE substantively body-reviewed PDF reports required before a comprehensive research claim; real read receipts, deduplication, source mix and continuity across sessions.

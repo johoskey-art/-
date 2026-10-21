@@ -31,9 +31,10 @@ def inspect(data):
     gids = {g.get('id') for g in groups}
     sids = {s.get('id') for s in sources}
     schema = str(data.get('schema_version', '0.1'))
-    v3 = schema.startswith(('0.3', '0.4'))
-    v4 = schema.startswith('0.4')
-    v2 = schema.startswith(('0.2', '0.3', '0.4'))
+    v3 = schema.startswith(('0.3', '0.4', '0.5'))
+    v4 = schema.startswith(('0.4', '0.5'))
+    v5 = schema.startswith('0.5')
+    v2 = schema.startswith(('0.2', '0.3', '0.4', '0.5'))
     for label, arr in [('company',companies),('group',groups),('source',sources),('event',events)]:
         keys=[x.get('id') for x in arr]
         if any(not k for k in keys): errors.append(f'{label}: missing id')
@@ -258,18 +259,43 @@ def inspect(data):
             if any(not i for i in ids) or len(ids)!=len(set(ids)):
                 errors.append('PDF100: invalid or duplicate report record IDs')
             target=queue.get('target_unique_body_reviewed',0)
-            if not isinstance(target,int) or target<100:
+            if not isinstance(target,int) or target<1:
+                warnings.append('CORPUS: expected target must be a positive integer (100 is an aspiration, not a quality pass)')
+            elif not v5 and target<100:
                 warnings.append('PDF100: comprehensive industry audit target must be >=100 unique body-reviewed PDF reports')
             else:
                 stat=queue_summary(queue)
-                if stat['unique_body_reviewed']<100:
+                if not v5 and stat['unique_body_reviewed']<100:
                     warnings.append(f'PDF100: only {stat["unique_body_reviewed"]}/{target} unique substantive PDF body reads (not catalog hits); {stat["remaining_to_goal"]} remaining')
                 if stat['incomplete_read_receipts']:
-                    warnings.append(f'PDF100: {stat["incomplete_read_receipts"]} read statuses have insufficient sections/findings/locators')
+                    warnings.append(f'CORPUS: {stat["incomplete_read_receipts"]} read statuses have insufficient sections/findings/locators')
                 if stat['duplicate_review_records']:
-                    warnings.append(f'PDF100: {stat["duplicate_review_records"]} duplicate/forwarded reads excluded from unique count')
+                    warnings.append(f'CORPUS: {stat["duplicate_review_records"]} duplicate/forwarded reads excluded from unique count')
                 if not queue.get('checkpoint_reference'):
-                    warnings.append('PDF100: private checkpoint location/readback not recorded; NEXT across sessions may not resume')
+                    warnings.append('CORPUS: private checkpoint location/readback not recorded; NEXT across sessions may not resume')
+            if v5:
+                if queue.get('selection_policy')!='INFORMATION_VALUE_FIRST':
+                    warnings.append('CORPUS-PRIORITY: missing information-value-first selection policy')
+                pending=[x for x in items if x.get('status') in ('CATALOGUED','DEFERRED') and x.get('document_type')=='PDF_REPORT']
+                if pending and not any(x.get('priority_reason') and x.get('priority_signals') for x in pending):
+                    warnings.append('CORPUS-PRIORITY: pending PDFs have no documented scoring/selection reasons')
+                selection=queue.get('selection_audit',{})
+                required_dimensions={'ROLE_PRODUCT','EVENT_POLICY','HISTORIC_CURRENT','COMPANY_EPS','CONTRADICTION','GEOGRAPHY','SOURCE_DIVERSITY'}
+                checked={x.get('dimension') for x in selection.get('dimensions',[]) if x.get('status') in {'REVIEWED','JUSTIFIED_NOT_APPLICABLE'}}
+                missing=required_dimensions-checked
+                if missing:
+                    warnings.append('CORPUS-PRIORITY: unassessed coverage dimensions '+', '.join(sorted(missing)))
+                if selection.get('critical_gaps'):
+                    warnings.append('CORPUS-PRIORITY: unresolved high-impact coverage gaps')
+                decision=queue.get('research_decision',{})
+                if decision.get('decision') not in {'SATURATED','COVERAGE_CONFIRMED'}:
+                    warnings.append('CORPUS-PRIORITY: research not closed with evidence-backed coverage and saturation assessment')
+                else:
+                    for field in ('reason','last_batches','high_value_unread_review','as_of'):
+                        if not decision.get(field):
+                            warnings.append(f'CORPUS-PRIORITY: research decision missing {field}')
+                    if decision.get('unresolved_critical_gaps'):
+                        warnings.append('CORPUS-PRIORITY: cannot close with unresolved critical gaps')
             for i,row in enumerate(items):
                 if row.get('status') in {'BODY_REVIEWED','DEEP_READ'} and not queue_eligible(row):
                     warnings.append(f'PDF100[{i}]: falsely marked read or missing body-reading evidence')
@@ -320,7 +346,7 @@ def audit_summary(data, errors, warnings):
     pdfstats=queue_summary(data.get('report_queue',{})) if isinstance(data.get('report_queue'),dict) else None
     return {
         'check_scope':'OFFLINE_STRUCTURAL_ONLY',
-        'pdf100_corpus':pdfstats,
+        'report_corpus_priority':pdfstats,
         'schema_version':data.get('schema_version','0.1'),
         'company_count':len(data.get('companies',[])),
         'home_group_count':len(data.get('groups',[])),
@@ -330,7 +356,7 @@ def audit_summary(data, errors, warnings):
         'report_corpus_search_axes':len(data.get('report_corpus_audit',[])),
         'canonical_events':len(data.get('event_registry',[])),
         'errors':errors,'holds_or_warnings':warnings,
-        'research_coverage_passed': len(errors)==0 and len(warnings)==0 and str(data.get('schema_version','')).startswith(('0.3','0.4')),
+        'research_coverage_passed': len(errors)==0 and len(warnings)==0 and str(data.get('schema_version','')).startswith(('0.3','0.4','0.5')),
         'external_fact_check':'NOT_PERFORMED_BY_THIS_SCRIPT',
         'broker_import_check':'NOT_PERFORMED_BY_THIS_SCRIPT'
     }

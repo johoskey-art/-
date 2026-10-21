@@ -1,6 +1,6 @@
-# v0.4 private report queue schema
+# v0.5 private report queue schema — prioritized reading
 
-`report_queue` is an object `{ "target_unique_body_reviewed": 100, "checkpoint_reference": "private Drive URL, only after verified write/readback", "items": [...] }`.
+`report_queue` is an object `{ "target_unique_body_reviewed": 100, "selection_policy":"INFORMATION_VALUE_FIRST", "checkpoint_reference": "private Drive URL verified on readback", "items": [...], "selection_audit": {...}, "research_decision": {...} }`. The 100 is an optional breadth aspiration, not the definition of completion.
 
 Each report:
 ```
@@ -11,6 +11,9 @@ Each report:
   "content_sha256": "optional actual sha256 of original PDF, not invented",
   "dedupe_key": "optional stable provider original-report edition ID",
   "status": "BODY_REVIEWED", "priority": 1,
+  "coverage_tags":["PRODUCT:PCS","EVENT:US_POWER_SECURITY"],
+  "priority_reason":"Potential unique product economics / evidence; preliminary",
+  "priority_signals":{"role_or_event_gap":4,"expected_new_mechanism":4,"primary_evidence_potential":3,"earnings_bridge":4,"contradictory_view":1,"time_sensitive_update":2,"topic_relevance":5,"redundancy_risk":0},
   "read_log": {
     "reader": "assistant", "reviewed_at": "2026-10-21",
     "sections_reviewed": ["ESS system structure", "Policy-driven cell suppliers"],
@@ -41,3 +44,10 @@ python scripts/report_queue.py status /private/industry-report-queue.json
 ```
 
 This file should remain in private storage. `import` never marks documents read; `mark` rejects missing actual reading evidence, although it still cannot independently attest that the assistant actually read the report. The user-facing ChatGPT command uses the same state transitions by available connector actions, not a promise that local Python executes on Android.
+
+## Priority and stop audit
+`selection_audit.dimensions[]` should cover ROLE_PRODUCT, EVENT_POLICY, HISTORIC_CURRENT, COMPANY_EPS, CONTRADICTION, GEOGRAPHY, SOURCE_DIVERSITY with `status:REVIEWED` and provenance/notes or a reasoned `JUSTIFIED_NOT_APPLICABLE`. Track `critical_gaps` explicitly.
+
+`research_decision` must contain `decision: CONTINUE|SATURATED|COVERAGE_CONFIRMED|BLOCKED`, `reason`, `as_of`, `last_batches` (per-batch number of new material event nodes, firms/products, independent confirmations and contradictions), `high_value_unread_review` (titles and why they do or do not change decisions), and `unresolved_critical_gaps`. A declaration without real source investigation is not proof of completeness. The numeric count can be below/above 100 while the quality gate remains independently open/closed.
+
+Ranking fields of *unread* documents are speculative title/abstract judgments only. Never upgrade them to fact evidence until actual body read. The queue selects using these factors and possible coverage tags.
