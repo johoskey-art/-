@@ -1,3 +1,9 @@
+## v0.4.0 — 100 substantive PDF reports across resumable sessions
+- `CORPUS START`, `CORPUS NEXT N [SOURCE]`, `CORPUS STATUS`, `CORPUS FINALIZE`.
+- 100 UNIQUE substantively body-reviewed PDF reports required before a comprehensive research claim; real read receipts, deduplication, source mix and continuity across sessions.
+- Global/public/Telegram original attachments/KUVIC/SMIC/S.T.A.R./KIRS added to discovery; source-dependent numerical validation.
+- Offline research queue, source diversity audit, v0.4 validator warnings for uncompleted corpus.
+
 ## v0.3.0 (2026-10-21) — event-led historical research
 - Catalogue historical/current broker reports by sector and adjacent-sector before concluding event coverage.
 - Two-pass retrieval (metadata -> novel claims/charts) and resumable corpus evidence; identify duplicates and analyst disagreements.

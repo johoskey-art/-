@@ -1,26 +1,20 @@
-# Industry Watchlist Builder — ChatGPT Plugin Source (v0.3.0)
+# Industry Watchlist Builder — v0.4.0
 
-Private [Industry Watchlist Builder plugin](https://chatgpt.com/plugins/plugins_6ad7f51ac7448191a4b84bf5d859d33e). This public GitHub folder is for version control, not ChatGPT installation.
+Private ChatGPT plugin: https://chatgpt.com/plugins/plugins_6ad7f51ac7448191a4b84bf5d859d33e
 
-## v0.3.0: historical EVENT discovery and research provenance
+## 100 unique substantive PDF report research
 
-- [SKILL.md](skills/industry-watchlist-builder/SKILL.md) — event discovery is mandatory *before* EVENT beneficiaries are selected.
-- [Report corpus](skills/industry-watchlist-builder/references/report-corpus.md) — two-pass Drive metadata indexing, date and cross-sector coverage, duplicate detection, selective deep reading, resumable audit.
-- [Canonical EVENT ledger](skills/industry-watchlist-builder/references/event-research.md) — source hierarchy, independent report theses, disagreements, first occurrence, date, legal scope, direct/indirect/negative benefit paths.
-- [Offline validator](skills/industry-watchlist-builder/scripts/validate_master.py) — missing historic/current/multi-issuer/cross-sector audit, policy source, registry links, unresolved gaps, and v0.2 firm coverage checks.
-- [Synthetic v0.3 example](skills/industry-watchlist-builder/examples/event-research-synthetic-master-v0.3.json) — **fictional** regression fixture with no user private sources.
+- [Main SKILL](skills/industry-watchlist-builder/SKILL.md)
+- [100-report workflow](skills/industry-watchlist-builder/references/report-corpus.md)
+- [Drive / external / Telegram / student research / KIRS sources](skills/industry-watchlist-builder/references/source-diversity.md)
+- [Report research queue tracker](skills/industry-watchlist-builder/scripts/report_queue.py)
+- [Queue schema](skills/industry-watchlist-builder/schemas/REPORT_QUEUE_100.md)
+- [Offline validation](skills/industry-watchlist-builder/scripts/validate_master.py)
 
-## Commands
-```bash
-cd skills/industry-watchlist-builder
-python -m unittest discover -s tests -v
-python scripts/validate_master.py audit path/to/master.json
-python scripts/validate_master.py validate path/to/master.json --strict
-```
+ChatGPT commands: `CORPUS START 전력기기 TARGET 100`, `CORPUS NEXT 20`, `CORPUS STATUS`, `CORPUS FINALIZE`.
 
-**Validation:** 22 structural Python tests passed on 2026-10-21. Passing tests do not prove that a live report catalog is complete, an EO interpretation is correct, EPS sensitivities are measured or broker instruments are supported.
+A comprehensive review requires >=100 distinct relevant PDFs actually body-reviewed with source locators and findings. A 20-document batch is a **requested batch**, not a claim of automatic completion. Titles/metadata/Telegram forwards/duplicate PDFs do not count. The queue tracks prior completed IDs and open reads. A substantive PDF read is not automatically a full-page read; `BODY_REVIEWED` and `DEEP_READ` are different.
 
-**Privacy:** Do not push full private broker report PDFs, authenticated Drive text, user portfolios, credentials or private user info into this public repository. The private plugin author contact is omitted from the public source manifest. Real report-corpus metadata and private evidence must remain in an authorized private location.
+The actual run must use available, authorized tools to fetch original PDF bodies and must persist queue checkpoints to a **private** accessible location; otherwise provide a checkpoint file for reattachment. This repository is public and contains **generic skill source and synthetic tests only**, not private Drive data, report text, collector exports, positions, accounts or author emails.
 
-## Regression example
-The official U.S. bulk-power security order dated 2026-08-26 uses **EO 14421**; some older secondary analyst notes label it EO 14420. Canonicalization must defer to primary source and preserve erroneous aliases for historical retrieval. BESS, grid-tied inverters, and certain critical UPS systems do not imply that all rack BBU units are automatically regulated.
+Run `python -m unittest discover -s tests -v` inside `skills/industry-watchlist-builder` for offline synthetic structural QA (31 tests as of 2026-10-21). Structural tests cannot prove actual sources were read or financial conclusions verified.

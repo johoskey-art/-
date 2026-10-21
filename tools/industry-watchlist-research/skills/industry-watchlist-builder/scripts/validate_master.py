@@ -9,6 +9,7 @@ market fact is independently proven.
 import argparse
 import json
 from collections import Counter
+from report_queue import summary as queue_summary, eligible as queue_eligible, canonical_key as queue_key, ORIGINS as QUEUE_ORIGINS
 from pathlib import Path
 
 ROLES = {"CORE", "STRUCTURAL", "OPTION", "SIGNAL"}
@@ -30,8 +31,9 @@ def inspect(data):
     gids = {g.get('id') for g in groups}
     sids = {s.get('id') for s in sources}
     schema = str(data.get('schema_version', '0.1'))
-    v3 = schema.startswith('0.3')
-    v2 = schema.startswith(('0.2', '0.3'))
+    v3 = schema.startswith(('0.3', '0.4'))
+    v4 = schema.startswith('0.4')
+    v2 = schema.startswith(('0.2', '0.3', '0.4'))
     for label, arr in [('company',companies),('group',groups),('source',sources),('event',events)]:
         keys=[x.get('id') for x in arr]
         if any(not k for k in keys): errors.append(f'{label}: missing id')
@@ -240,6 +242,57 @@ def inspect(data):
         for row in registry:
             if row.get('id')=='US_EO_14420_20260826':
                 warnings.append('EVENT-REGISTRY: possible EO 14420/14421 confusion; verify original official text')
+
+    # v0.4: do not certify a completed 100-PDF evidence corpus merely because
+    # old report_corpus_audit axes recorded some searches. Count actual read receipts.
+    if v4:
+        queue=data.get('report_queue')
+        if not isinstance(queue,dict):
+            warnings.append('PDF100: no durable per-document report_queue reading ledger')
+        else:
+            items=queue.get('items',[])
+            if not isinstance(items,list):
+                errors.append('PDF100: report_queue.items must be a list')
+                items=[]
+            ids=[x.get('id') for x in items]
+            if any(not i for i in ids) or len(ids)!=len(set(ids)):
+                errors.append('PDF100: invalid or duplicate report record IDs')
+            target=queue.get('target_unique_body_reviewed',0)
+            if not isinstance(target,int) or target<100:
+                warnings.append('PDF100: comprehensive industry audit target must be >=100 unique body-reviewed PDF reports')
+            else:
+                stat=queue_summary(queue)
+                if stat['unique_body_reviewed']<100:
+                    warnings.append(f'PDF100: only {stat["unique_body_reviewed"]}/{target} unique substantive PDF body reads (not catalog hits); {stat["remaining_to_goal"]} remaining')
+                if stat['incomplete_read_receipts']:
+                    warnings.append(f'PDF100: {stat["incomplete_read_receipts"]} read statuses have insufficient sections/findings/locators')
+                if stat['duplicate_review_records']:
+                    warnings.append(f'PDF100: {stat["duplicate_review_records"]} duplicate/forwarded reads excluded from unique count')
+                if not queue.get('checkpoint_reference'):
+                    warnings.append('PDF100: private checkpoint location/readback not recorded; NEXT across sessions may not resume')
+            for i,row in enumerate(items):
+                if row.get('status') in {'BODY_REVIEWED','DEEP_READ'} and not queue_eligible(row):
+                    warnings.append(f'PDF100[{i}]: falsely marked read or missing body-reading evidence')
+                if row.get('origin') not in QUEUE_ORIGINS:
+                    warnings.append(f'PDF100[{i}]: unknown source family; source diversification cannot be audited')
+                if row.get('status')=='BODY_REVIEWED' and row.get('read_log',{}).get('full_text_read') is True:
+                    warnings.append(f'PDF100[{i}]: inconsistent label BODY_REVIEWED vs full-text claim; check depth')
+        audits=data.get('source_search_audit',[])
+        required={'DRIVE_ARCHIVE','PUBLIC_WEB','GLOBAL_IR','TELEGRAM_COLLECTOR','UNIVERSITY_RESEARCH','KIRS','PUBLIC_REGULATOR'}
+        found={}
+        for i,a in enumerate(audits):
+            family=a.get('family')
+            if family not in required: errors.append(f'SOURCE-MIX[{i}]: unknown source family {family}')
+            if family in found: errors.append(f'SOURCE-MIX: duplicate source family {family}')
+            found[family]=a
+            if a.get('status') not in {'SEARCHED','OPEN','UNAVAILABLE','NOT_APPLICABLE'}:
+                warnings.append(f'SOURCE-MIX {family}: missing audit status')
+            if not a.get('query_or_method') or not a.get('as_of'):
+                warnings.append(f'SOURCE-MIX {family}: search method/date missing')
+            if a.get('status')!='SEARCHED':
+                warnings.append(f'SOURCE-MIX {family}: source family not searched or unavailable; research coverage HOLD')
+        for family in required-set(found):
+            warnings.append(f'SOURCE-MIX: unsearched source family {family}')
     return errors,warnings
 
 
@@ -264,8 +317,10 @@ def render(data):
 
 def audit_summary(data, errors, warnings):
     claims=data.get('company_product_claims',[])
+    pdfstats=queue_summary(data.get('report_queue',{})) if isinstance(data.get('report_queue'),dict) else None
     return {
         'check_scope':'OFFLINE_STRUCTURAL_ONLY',
+        'pdf100_corpus':pdfstats,
         'schema_version':data.get('schema_version','0.1'),
         'company_count':len(data.get('companies',[])),
         'home_group_count':len(data.get('groups',[])),
@@ -275,7 +330,7 @@ def audit_summary(data, errors, warnings):
         'report_corpus_search_axes':len(data.get('report_corpus_audit',[])),
         'canonical_events':len(data.get('event_registry',[])),
         'errors':errors,'holds_or_warnings':warnings,
-        'research_coverage_passed': len(errors)==0 and len(warnings)==0 and str(data.get('schema_version','')).startswith('0.3'),
+        'research_coverage_passed': len(errors)==0 and len(warnings)==0 and str(data.get('schema_version','')).startswith(('0.3','0.4')),
         'external_fact_check':'NOT_PERFORMED_BY_THIS_SCRIPT',
         'broker_import_check':'NOT_PERFORMED_BY_THIS_SCRIPT'
     }

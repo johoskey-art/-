@@ -1,3 +1,9 @@
+## v0.4.0 — 100 substantive PDF reports across resumable sessions
+- `CORPUS START`, `CORPUS NEXT N [SOURCE]`, `CORPUS STATUS`, `CORPUS FINALIZE`.
+- 100 UNIQUE substantively body-reviewed PDF reports required before a comprehensive research claim; real read receipts, deduplication, source mix and continuity across sessions.
+- Global/public/Telegram original attachments/KUVIC/SMIC/S.T.A.R./KIRS added to discovery; source-dependent numerical validation.
+- Offline research queue, source diversity audit, v0.4 validator warnings for uncompleted corpus.
+
 # Acceptance tests BEFORE treating skill as production ready
 
 1. **User boundary**: Given 'electronics excluding semiconductor test', no ISC/TSE/semiconductor socket companies enter HOME or EVENT regardless of report content. No adding new categories unrequested.

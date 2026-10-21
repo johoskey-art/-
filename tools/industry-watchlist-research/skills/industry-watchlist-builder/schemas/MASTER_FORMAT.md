@@ -27,3 +27,7 @@ Use `schema_version: "0.3"`. Retain all v0.2 fields and add:
 - Each displayed `events[]` record links `registry_id` and contains an explicit documented profit pathway and company×product exposure. No `registry_id`, no fully audited display.
 - `sources[]` may add `issuer`, `analyst`, `report_date`, `authority_level`, `independence_cluster`, `section_or_page`, `read_status`, `as_of`, `uri`. Report title alone is not a reviewed claim.
 The event register may contain active and rejected/superseded candidates; only truly high-sensitivity current events render in the compact watchlist.
+
+## v0.4 addendum: mandatory research depth for completed industries
+
+Use `schema_version: "0.4"`. Add `report_queue` and `source_search_audit` as in `REPORT_QUEUE_100.md`. v0.3's search-axis `unique_reviewed_count` is not 100-PDF evidence; count only explicit unique PDF read receipts. If source queue missing, validator emits `PDF100` and `SOURCE-MIX` holds. Run `python scripts/report_queue.py next path/to/report_queue.json --count 20` to pick unread documents, then use actual connected tools to read and persist receipts.
