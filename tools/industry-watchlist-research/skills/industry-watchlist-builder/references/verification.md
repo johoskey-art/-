@@ -19,3 +19,10 @@
 최소 출력은 (a) HOME 및 EVENT 업데이트, (b) 기업 추가·제외·이동 이유, (c) 각 신호의 확증/반증/조건부, (d) 실제 검토량·잔여 3대 우선순위, (e) 체크포인트 저장 상태. 표나 긴 설명으로 기업을 가리지 않는다.
 
 `validate_master.py`는 오프라인 **구조/회계 검사**만 한다. 소스 진위, 미발굴 기업, 무조건적 EPS 베타 수치를 자동 확인하지 않는다. Python 실행 불가능한 환경은 `AUTOMATED_VALIDATOR_NOT_RUN`을 명시하고 수동 QA를 수행한다. 장기간 미검증 내용을 삭제하지 말고 HOLD 사유와 함께 보존한다.
+
+## Capability-aware QA (v0.8)
+
+- `planned_relevant_sources` / `observed_unique_body_reviewed` / `outstanding_high_value` 수를 따로 보여준다. 예상 처리량은 관측값 없으면 `UNKNOWN`이고 계획/실제 완료를 동일시하지 않는다.
+- 대량 보고서에 적합한 수단을 선택하기 전 **파일럿 성공 증거**가 필요하다. Work로 라우팅해도 워크플로 자체의 완료로 판단하지 않는다.
+- Work handoff는 `HANDOFF_PREPARED`일 뿐 `WORK_STARTED`, `WORK_COMPLETED` 또는 `QUALITY_PASSED`가 아니다. Work 원장이 실제 저장되고 다시 읽힌 후에만 읽음 건수와 이벤트 주장 병합을 허용한다.
+- 동일 문서·전송본·중복 의견을 제거하고, 수집과 본문 읽기와 사실 검증을 분리해 감사한다. 고품질 근거 없이 출처 수만 늘리면 HOLD.

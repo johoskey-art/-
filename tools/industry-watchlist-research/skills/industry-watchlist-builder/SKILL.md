@@ -3,7 +3,7 @@ name: industry-watchlist-builder
 description: 사용자 지정 산업의 글로벌 관심종목 HOME/피어/EVENT 지도를 생성·업데이트하고, 리포트·뉴스·기업 IR·공시를 증거로 누락 기업과 투자 이벤트를 검산하는 스킬. 산업 조사, 보고서 이어 읽기, 종목 지도 수정, 증권사 관심종목 준비에 사용.
 ---
 
-# Industry Watchlist Builder — optimized v0.7
+# Industry Watchlist Builder — capacity-aware v0.8
 
 ## 사용자 인터페이스: 단순하게
 
@@ -21,11 +21,12 @@ ChatGPT 입력창에서 실제 `@Industry Watchlist Builder`를 선택한다. �
 4. **VERIFY — 검증 강도를 주장별로**: 기업이 파는 제품·지분/자회사·제조/공급/유통 방식·계약→매출 구분을 확인. 기업→다른 제품 역방향 감사로 중복 HOME 허용. 동종기업·소형주 후보의 편입/보류/제외 사유 기록. 정책 범위·발효·예외는 공식 원문 우선; 대학 리포트는 산업구조 발견에는 적극 사용하되 수치·고객·EPS는 독립 확인. `references/discovery.md`, `references/verification.md`.
 5. **STRESS TEST — 중요 EVENT에 뉴스와 반증**: 리포트/공식자료로 사건 후보를 세운 후 기업 수혜를 확정하기 전 최신·과거 뉴스를 비교해 실물 주문, 집행, 프로젝트 지연, 경쟁자 대응과 *부정적 사례*를 찾는다. **중요도가 높은 이벤트, 정책 변동, 새로운 반증이 있을 때** 출력 전 변화 여부를 재검토; 모든 이벤트마다 의미 없는 뉴스 두 번 검색을 강제하지 않는다. 원뉴스/전언/공시를 분리하고 실제 계약과 해석을 혼동하지 않는다. `references/event-research.md`.
 6. **PUBLISH INCREMENTALLY — 결과물이 먼저**: 매 실행에서 바뀐 HOME/가장 가까운 글로벌 피어/기업의 사업 방식 및 EVENT→Q/P/MIX/SHARE/UTIL/COST/YIELD→영업이익·EPS 경로를 **확인/조건부/반증**과 함께 보여준다. 조사 완료 전이라도 확인된 변화는 반영한다. 회사 이름이 분류 설명보다 앞에 오게 하고 긴 보고서 대신 누락/모멘텀 전이 지도를 제공한다.
-7. **CHECKPOINT + QA — 이어가기 가능하게**: 완료된 문서 ID·읽은 범위·후보/결론·이벤트 버전·미확인·다음 우선 조사 3건·변경사항을 비공개 원장에 저장하고 **읽어 확인**. 쓰기나 읽기 검증 실패 시 `STATE_NOT_PERSISTED`라고 표시하고 JSON 체크포인트를 제공(검증 없이 세션 간 자동 복원 약속 금지). 오프라인 스크립트는 실행 가능한 환경에서만 사용. 최종 상태는 `진행 중`/`핵심 확인 완료(잔여 한계 명시)`를 구분하고, 숫자나 형식 검증만으로 완전성을 선언하지 않는다. `references/verification.md`.
+7. **CAPABILITY GATE — 실제 읽기 능력에 맞춘 실행 분할**: 수십~수백 건을 읽어야 하더라도 PDF 건수나 고정 `30건 한도`를 가정하지 않는다. 각 실행에서 실제 본문 읽기·근거 위치 기록·원장 저장 및 재조회가 완료된 수량, 소요 난이도, 접근 실패를 측정하여 다음 조사 범위를 정한다. 중요한 미열람 후보가 처리 역량보다 많거나 여러 사이트·첨부파일을 연속 조작해야 하면 **Work 분업을 추천**하되 현재 Chat에서 Work를 자동 실행했다고 주장하지 않는다. 사용자가 Work를 선택하면 `references/work-handoff.md`에 따른 명확한 자료 범위·읽기 지시·출처·검수 기준·체크포인트를 전달한다. Work의 대량 수집 결과도 원문을 직접 읽은 증거 없이 검증 완료로 간주하지 않는다.  `scripts/workload_router.py`는 읽기/라우팅/인계 제안만 하는 오프라인 도우미이며 Work를 실행하지 않는다.
+8. **CHECKPOINT + QA — 이어가기 가능하게**: 완료된 문서 ID·읽은 범위·후보/결론·이벤트 버전·미확인·다음 우선 조사 3건·변경사항을 비공개 원장에 저장하고 **읽어 확인**. 쓰기나 읽기 검증 실패 시 `STATE_NOT_PERSISTED`라고 표시하고 JSON 체크포인트를 제공(검증 없이 세션 간 자동 복원 약속 금지). 오프라인 스크립트는 실행 가능한 환경에서만 사용. 최종 상태는 `진행 중`/`핵심 확인 완료(잔여 한계 명시)`를 구분하고, 숫자나 형식 검증만으로 완전성을 선언하지 않는다. `references/verification.md`.
 
 ## 조사 우선순위의 기본 의사결정
 
-우선순위 = **해결될 핵심 산업/이벤트 공백 + 새 제품·수익 메커니즘 + 확인 가능한 일차 근거 + 중요한 반증 + 기업 EPS 연결 − 중복 − 과도한 읽기 비용**. 읽기 전 점수는 예상치이지 실제 발견/정답이 아니다. 첫 대형리포트 이후 기업 IR, 작지만 새로운 KIRS/대학 자료, 과거 정책 보고서가 더 우선할 수 있다. 읽지 않은 문서를 이미 검토했다고 기록하지 않는다. 조회 창이 짧으면 추가 사용자 명령을 기다리되 현재 실행에서 가능한 부분부터 실제 수행하고 미수행 과제를 구체적으로 적는다.
+우선순위 = **해결될 핵심 산업/이벤트 공백 + 새 제품·수익 메커니즘 + 확인 가능한 일차 근거 + 중요한 반증 + 기업 EPS 연결 − 중복 − 과도한 읽기 비용**. 읽기 전 점수는 예상치이지 실제 발견/정답이 아니다. 첫 대형리포트 이후 기업 IR, 작지만 새로운 KIRS/대학 자료, 과거 정책 보고서가 더 우선할 수 있다. 읽지 않은 문서를 이미 검토했다고 기록하지 않는다. 조회 창이 짧으면 현재 실행에서 가능한 부분부터 수행하고 미수행 과제를 구체적으로 적는다. **실행 처리량(capacity)·필요한 읽기량(workload)·실제 검토 완료량(delivered)**을 분리한다. Work가 활성화된 별도 작업에 넘기는 경우도 첫 번째 배치 결과를 검증하기 전에는 능력 향상을 보장하지 않는다.
 
 ## 실패 방지 경계
 
@@ -43,4 +44,4 @@ ChatGPT 입력창에서 실제 `@Industry Watchlist Builder`를 선택한다. �
 3. **변경내역 + 조사상태**: 추가/삭제/이동 이유, 실제 검토한 서로 다른 문서 수 및 조사 빈칸, 정보가치 높은 다음 작업, 원장 저장 확인.
 4. **선택적 EXPORT**: 사용자 요청 및 실제 브로커 형식 검증 뒤 생성.
 
-세부 실행 참고: `references/report-corpus.md`, `references/discovery.md`, `references/event-research.md`, `references/verification.md`, `references/export.md`. 오프라인 검증 예시 `python scripts/validate_master.py audit <master.json>` 및 `python -m unittest discover -s tests -v`. 스크립트는 모바일에서 자동 실행된다고 가정하지 않는다.
+세부 실행 참고: `references/report-corpus.md`, `references/discovery.md`, `references/event-research.md`, `references/verification.md`, `references/work-handoff.md`, `references/export.md`. 오프라인 검증 예시 `python scripts/validate_master.py audit <master.json>` 및 `python -m unittest discover -s tests -v`. 스크립트는 모바일에서 자동 실행된다고 가정하지 않는다.

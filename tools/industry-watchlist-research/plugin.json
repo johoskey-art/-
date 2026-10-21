@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "industry-watchlist-research",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Build and audit evidence-backed cross-border industry watchlists, with peer groups, current earnings drivers, event maps, and broker format gates.",
   "extensions": {
     "com.openai": {

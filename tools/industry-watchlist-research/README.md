@@ -1,21 +1,20 @@
-# Industry Watchlist Builder v0.7.0 — Quality Refactor
+# Industry Watchlist Builder v0.8.0 — capability-aware execution
 
 Private personal ChatGPT plugin: https://chatgpt.com/plugins/plugins_6ad7f51ac7448191a4b84bf5d859d33e
 
-**Two user-facing intents:** `전력기기 산업지도 만들어줘/최신화해줘` and `계속 조사해줘`. Optional natural-language requests for progress, an issue-specific audit or verified broker export. Previous English labels are legacy aliases, not recommended workflow steps.
+## Purpose
+Preserve user simplicity: `전력기기 산업지도 최신화해줘` or `계속 조사해줘`. Research quality depends on **actual validated throughput**, not a promise to read 100 reports or a presumed hard 30-PDF limit.
 
-**The skill's sole goal:** produce a company-first global HOME / peer / EVENT investment watchlist, including roles, earnings mechanisms, counterexamples, small-cap/foreign discovery, and actual source provenance. Research is a means to that output.
+## Capability-aware workflow
+- [Main skill](skills/industry-watchlist-builder/SKILL.md) now includes a capacity gate.
+- [Work handoff reference](skills/industry-watchlist-builder/references/work-handoff.md) documents optional delegation of bulk browsing, original PDF reading, and evidence packet construction. **Work must be started by the user in the available ChatGPT Work mode; the plugin does not launch Work.**
+- [Offline routing helper](skills/industry-watchlist-builder/scripts/workload_router.py) accepts a private state JSON and produces `assess` guidance or an **unstarted** handoff JSON. Counts measured capacity only from run IDs actually matching validated PDF read receipts and confirmed checkpoint readback.
+- [Regression tests](skills/industry-watchlist-builder/tests/test_workload_router_v08.py) simulate 100-target/30-actual and unavailable Work without making any real website/file access claims.
+- [Research state schema](skills/industry-watchlist-builder/schemas/RESEARCH_STATE.md) distinguishes attempted, actually verified, unreviewed, and handoff status.
 
-**Optimizations**
-- Main SKILL.md shortened about 66%; merged overlapping references into four core research/QA documents, plus Korean usage and broker output.
-- PDF count is not a pass gate. Retrieve by expected information gain, historical gaps, contract/earnings relevance and contrary evidence; source mix is adaptive and readable receipts are distinct from metadata.
-- News stress-testing is relevant-event dependent: verify competing narratives and observed outcomes; refresh if there is meaningful new information rather than twice for every minor EVENT.
-- Remove the legacy arbitrary peer count warning (>6), unconditional 100-PDF target, universal seven source requirement, and automatic dual NEWS-check requirement for v0.7. Legacy tests for earlier source schema continue working.
-- Incremental HOME/EVENT delivery and verified private checkpoint persistence; if storage fails, report STATE_NOT_PERSISTED and provide JSON for reattachment.
-- 60 local offline synthetic structural and regression tests passed on 2026-10-21.
+## Quality safeguards
+Work may gather source catalog, verified PDF section/page references, claim ledger, negative evidence, and residual queue; Chat+plugin independently check HOME/EVENT beneficiary logic and business effects. Never infer an entire report was read from a Telegram forwarding message or title-only list. Do not claim successful persistence or Work completion until readback confirms it.
 
-The source here is **public, but the plugin is personal/private**. This repository contains generic skill source and synthetic examples, not private report PDFs, Telegram exports, investment holdings or account data. Private author contact metadata has been removed from public manifest copies.
+Run `cd skills/industry-watchlist-builder && python -m unittest discover -s tests -v` for offline synthetic checks (73 passed 2026-10-21). Passing tests do **not** prove Work account availability, throughput, source availability, or equity analysis correctness.
 
-See [the skill](skills/industry-watchlist-builder/SKILL.md), [the two-line Korean user guide](skills/industry-watchlist-builder/references/commands-ko.md), and [the offline validator](skills/industry-watchlist-builder/scripts/validate_master.py).
-
-**Limits:** Structural unit tests cannot prove investment facts, comprehensiveness, broker import compatibility or that Android app invocation succeeded. The queue tool does not itself fetch PDFs or guarantee background research.
+**Privacy:** This PUBLIC GitHub folder contains generic skill source and synthetic tests only; no private PDFs, raw collector exports, accounts, report evidence, or credentials. Author contact email is omitted from public source manifest copies.

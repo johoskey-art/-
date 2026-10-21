@@ -1,3 +1,11 @@
+## 2026-10-21 — v0.8.0 (capacity-aware Work handoff)
+
+- No new user commands; two natural Korean intents retained.
+- Capability gate measures actual, persisted PDF read receipts instead of presuming 30 or 100 document throughput.
+- Optional Work separation for long source collection, page/table extraction and evidence packet creation. Work is not automatically launched.
+- Handoff contract and offline routing helper added; Chat maintains final HOME/EVENT evidence adjudication.
+- Storage verification, duplicate review and unfinished high-value work remain explicit QA gates.
+
 ## 2026-10-21 — v0.7.0 quality refactor
 
 - Primary interface reduced to two Korean intents: build/update, continue researching; optional progress/export using natural language.
