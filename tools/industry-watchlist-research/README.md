@@ -1,20 +1,23 @@
-# Industry Watchlist Builder v0.8.0 — capability-aware execution
+# Industry Watchlist Builder v0.9.0 — Report-led discovery / filing-verified watchlists
 
-Private personal ChatGPT plugin: https://chatgpt.com/plugins/plugins_6ad7f51ac7448191a4b84bf5d859d33e
+Private ChatGPT plugin: https://chatgpt.com/plugins/plugins_6ad7f51ac7448191a4b84bf5d859d33e
 
-## Purpose
-Preserve user simplicity: `전력기기 산업지도 최신화해줘` or `계속 조사해줘`. Research quality depends on **actual validated throughput**, not a promise to read 100 reports or a presumed hard 30-PDF limit.
+## Primary investigation sequence
+1. Discover **thematic/industry research reports and deep company investigation articles**, across private authorized Drive, public brokerage/industry studies, KUVIC/SMIC/S.T.A.R./KIRS and original Telegram report attachments where available.
+2. Extract report-derived THEME_SEED causal graph from technology → demand/customer selection → product roles → bottleneck and upside/downside hypotheses. **EVENT means theme** for users; no event seed required.
+3. Find global peers and undercovered domestic/international smaller companies by company×product role.
+4. Verify relevant products, actual contracts, volume and economics via each jurisdiction's **primary filing and company/customer IR**: KR DART/KIND; US SEC EDGAR 10-K/10-Q/8-K; Taiwan MOPS/TWSE; Japan EDINET/TDnet; CN exchange/CNINFO; HKEXnews; other official registers.
+5. Stress-test investment narratives with new/contradictory news and original sources.
+6. Deliver **usable HOME/EVENT immediately from one independent invocation**, with primary support, uncertainty and downside cases. Existing MASTER, quotas, persistent checkpoints, Work selection and scheduled tasks are optional, not prerequisites.
 
-## Capability-aware workflow
-- [Main skill](skills/industry-watchlist-builder/SKILL.md) now includes a capacity gate.
-- [Work handoff reference](skills/industry-watchlist-builder/references/work-handoff.md) documents optional delegation of bulk browsing, original PDF reading, and evidence packet construction. **Work must be started by the user in the available ChatGPT Work mode; the plugin does not launch Work.**
-- [Offline routing helper](skills/industry-watchlist-builder/scripts/workload_router.py) accepts a private state JSON and produces `assess` guidance or an **unstarted** handoff JSON. Counts measured capacity only from run IDs actually matching validated PDF read receipts and confirmed checkpoint readback.
-- [Regression tests](skills/industry-watchlist-builder/tests/test_workload_router_v08.py) simulate 100-target/30-actual and unavailable Work without making any real website/file access claims.
-- [Research state schema](skills/industry-watchlist-builder/schemas/RESEARCH_STATE.md) distinguishes attempted, actually verified, unreviewed, and handoff status.
+## Files
+- [Main skill](skills/industry-watchlist-builder/SKILL.md)
+- [Report-led thematic discovery protocol](skills/industry-watchlist-builder/references/report-led-discovery.md)
+- [On-demand research quality gate](skills/industry-watchlist-builder/references/on-demand-quality.md)
+- [Static research snapshot checker](skills/industry-watchlist-builder/scripts/validate_snapshot.py)
+- [v0.9 regression tests](skills/industry-watchlist-builder/tests/test_report_led_v09.py)
 
-## Quality safeguards
-Work may gather source catalog, verified PDF section/page references, claim ledger, negative evidence, and residual queue; Chat+plugin independently check HOME/EVENT beneficiary logic and business effects. Never infer an entire report was read from a Telegram forwarding message or title-only list. Do not claim successful persistence or Work completion until readback confirms it.
+## Quality limits
+85 offline tests passed on 2026-10-21, but tests establish structural integrity **not** that research websites/PDFs are accessible, sources are authentic, or every material company/theme was discovered. Do not claim identical factual coverage across every ChatGPT context. The skill must disclose read scope and unavailable evidence.
 
-Run `cd skills/industry-watchlist-builder && python -m unittest discover -s tests -v` for offline synthetic checks (73 passed 2026-10-21). Passing tests do **not** prove Work account availability, throughput, source availability, or equity analysis correctness.
-
-**Privacy:** This PUBLIC GitHub folder contains generic skill source and synthetic tests only; no private PDFs, raw collector exports, accounts, report evidence, or credentials. Author contact email is omitted from public source manifest copies.
+**Privacy:** This public GitHub repo includes generic source and synthetic fixtures only, no private licensed reports, Drive text, Telegram exports, portfolios, credentials or private contact emails.

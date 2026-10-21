@@ -1,3 +1,5 @@
+# v0.9 ORDER: Start from product roles identified in report-led `THEME_SEED`; search companies both forward and reverse, then verify legal/business roles in national filings. See `report-led-discovery.md`.
+
 # 기업과 HOME 조립 — v0.7
 
 ## 양방향 탐색

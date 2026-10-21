@@ -26,3 +26,11 @@
 - 대량 보고서에 적합한 수단을 선택하기 전 **파일럿 성공 증거**가 필요하다. Work로 라우팅해도 워크플로 자체의 완료로 판단하지 않는다.
 - Work handoff는 `HANDOFF_PREPARED`일 뿐 `WORK_STARTED`, `WORK_COMPLETED` 또는 `QUALITY_PASSED`가 아니다. Work 원장이 실제 저장되고 다시 읽힌 후에만 읽음 건수와 이벤트 주장 병합을 허용한다.
 - 동일 문서·전송본·중복 의견을 제거하고, 수집과 본문 읽기와 사실 검증을 분리해 감사한다. 고품질 근거 없이 출처 수만 늘리면 HOLD.
+
+## Standalone run QA — v0.9, independent of persistence
+
+- Every `산업지도` / `EVENT` request must be independently useful in one turn and must run an autonomous EVENT search; neither a saved MASTER nor a second user invocation is required. Use `references/on-demand-quality.md`.
+- An existing registry improves dedup/delta but may not replace today's primary-source/event-role checks. An inaccessible registry must not stop new research.
+- Separate `CONTENT_QA` (searched axes, primary evidence, product/EPS linkage, contrary view, as-of and calibrated uncertainty) from `PERSISTENCE_QA` (optional write and readback). A failed write can be explicitly reported but does not turn validated research into missing research.
+- Avoid making the user invent event seeds, authorize routine already-permitted reads, switch to Work, or schedule background checks before receiving usable HOME/EVENT output.
+- Use the snapshot structural checker when available; a passing structural check does not certify that today's events or market data are accurate or exhaustive.

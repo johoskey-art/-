@@ -1,3 +1,5 @@
+# v0.9 ORDER: `THEME_SEED` from theme/industry/deep company report or substantive investigative news first, then official company/customer/regulatory filings and news falsification. EVENT=테마 for the user. See `report-led-discovery.md`. A quick six-direction scan is a late coverage audit, not the initial mechanism invention.
+
 # EVENT 계보·실적 전이·뉴스 반증 — v0.7
 
 ## 이벤트를 먼저 발굴

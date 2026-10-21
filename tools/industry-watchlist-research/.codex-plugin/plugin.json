@@ -13,7 +13,7 @@
     ]
   },
   "name": "industry-watchlist-research",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Build and audit evidence-backed cross-border industry watchlists, with peer groups, current earnings drivers, event maps, and broker format gates.",
   "author": {
     "name": "hakuna"

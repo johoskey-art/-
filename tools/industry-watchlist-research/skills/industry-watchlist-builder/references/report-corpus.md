@@ -1,3 +1,5 @@
+# v0.9 ORDER: Begin with broad **theme/industry/deep-company report discovery**, then read high-information sources for theme hypotheses. Country-specific filings validate company facts afterward. See `report-led-discovery.md`. Reading count is never a completion gate.
+
 # 우선순위 기반 리포트 조사 — v0.7
 
 **목표는 정보의 추가 가치다.** 100건 달성, 7종류 출처 체크, 문서 수집 자체를 종료 조건으로 삼지 않는다.

@@ -1,3 +1,20 @@
+## 2026-10-21 — v0.9.0
+
+- Report-led THEME/EVENT discovery is now the primary path: sector/theme indepth reports, company deep-dive journalism, and independent technical/industry research form the initial causal thesis.
+- Country-appropriate **official filings and customer/company IR** validate discovered firm×product claims (KR DART/KIND, US SEC 10-K/10-Q/8-K, TW MOPS/TWSE, JP EDINET/TDnet, CN exchanges/CNINFO, HK HKEXnews, other jurisdictions as applicable).
+- The six event categories become a late *gap audit* instead of a keyword-driven candidate generator. Event/theme are synonyms for UI.
+- Zero prior MASTER, no user-supplied event, and no Drive checkpoint must still yield a fresh evidence-calibrated HOME/EVENT view in one invocation. Work and persistence stay optional.
+- Dedicated high-value report ledger and source hierarchy; primary-verified company and contradictory news conclusions; no forced 100 PDF quota or arbitrary company count.
+
+## 2026-10-21 — v0.9.0
+
+- Shifted primary outcome from durable state + continuation to **self-contained, fresh, one-invocation quality**.
+- New autonomous six-lane EVENT exploration across policy/trade, demand/customer, supply/price, technology/spec, capex/ramp and negative competition; user need not supply a specific event.
+- Made existing MASTER/checkpoints optional accelerators; live independent source checking is mandatory.
+- Decoupled CONTENT_QA from PERSISTENCE_QA; Drive write/readback failures do not cause a freshly validated answer to be withheld or require another prompt.
+- Optional Work remains evidence collection only after providing an independently useful initial result; no surprise automations.
+- Added compact independent-delivery record and regression tests for cold starts, no-user-event-seed, missing evidence, inaccurate freshness, and storage failure.
+
 ## 2026-10-21 — v0.8.0 (capacity-aware Work handoff)
 
 - No new user commands; two natural Korean intents retained.
